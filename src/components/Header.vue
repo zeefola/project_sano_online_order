@@ -49,19 +49,16 @@
                 <div class="d-flex flex-row align-items-center">
                   <!-- site-branding -->
                   <div class="site-branding mr-auto">
-                    <a
-                      class="home-link"
-                      href="index.html"
-                      title="Agrotek"
-                      rel="home"
-                    >
+                       <router-link to="/" tag="a" class="home-link" title="Agrotek"
+                      rel="home" > 
+                   
                       <img
                         src="images/logo.png"
                         id="logo-img"
                         class="img-center"
                         alt="logo"
                       />
-                    </a>
+                    </router-link>
                   </div>
                   <!-- site-branding end -->
                   <!-- widget-info -->
@@ -112,12 +109,8 @@
               <!--site-navigation -->
               <div id="site-navigation" class="site-navigation">
                 <div class="ttm-custombutton">
-                  <a
-                    href="/contact"
-                    class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-skincolor"
-                  >
-                    Request for quote</a
-                  >
+                     <router-link to="/contact" tag="a" class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-skincolor"> Request for quote </router-link>
+                 
                 </div>
                 <!-- header-icons -->
                 <div class="ttm-header-icons ">
@@ -154,11 +147,13 @@
                      
                     </li>
                     <li>
-                      <a href="/shop">Shop</a>
+                      <router-link to="/shop" tag="a"> Shop </router-link>
+                     
                       
                     </li>
                     <li>
-                      <a href="/contact">Contact Us</a>
+                      <router-link to="/contact" tag="a"> Contact Us </router-link>
+                      
                     </li>
                   </ul>
                 </nav>
