@@ -2,7 +2,7 @@
   <!--page start-->
     <div class="page">
 
-       <app-preloader> </app-preloader>
+       <!-- <app-preloader> </app-preloader> -->
        <app-header></app-header>
        <slot name='breadcrumb'></slot>
 

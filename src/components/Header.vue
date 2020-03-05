@@ -141,18 +141,16 @@
                 <nav id="menu" class="menu">
                   <ul class="dropdown">
                     <li class="active">
-                      <a href="/">Home</a>
-                    
+                        <router-link to="/" tag="a" exact> Home </router-link>
                     </li>
                     <li>
-                      <a href="/about">About Us</a>
-                      
+                        <router-link to="/about" tag="a"> About Us </router-link>
                     </li>
                     <li>
-                      <a href="/services">Services</a>
+                        <router-link to="/services" tag="a" > Services </router-link>
                     </li>
                     <li>
-                      <a href="/faq">Faq</a>
+                      <router-link to="/faq" tag="a"> Faq </router-link>
                      
                     </li>
                     <li>
