@@ -587,6 +587,8 @@
 import Master from "@/components/Master.vue";
 import Slider from "@/components/Slider.vue";
 
+
+
 export default {
   name: "Welcome",
   components: {

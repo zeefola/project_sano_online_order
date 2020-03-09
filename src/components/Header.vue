@@ -121,7 +121,7 @@
                 </div>
                 <!-- header-icons end -->
                 <div class="ttm-menu-toggle">
-                  <input type="checkbox" id="menu-toggle-form" />
+                  <input type="checkbox" class="" id="menu-toggle-form" />
                   <label for="menu-toggle-form" class="ttm-menu-toggle-block">
                     <span class="toggle-block toggle-blocks-1"></span>
                     <span class="toggle-block toggle-blocks-2"></span>
@@ -136,9 +136,9 @@
                     <li>
                         <router-link to="/about" tag="a"> About Us </router-link>
                     </li>
-                    <li>
+                    <!-- <li>
                         <router-link to="/services" tag="a" > Services </router-link>
-                    </li>
+                    </li> -->
                     <li>
                       <router-link to="/faq" tag="a"> Faq </router-link>
                      

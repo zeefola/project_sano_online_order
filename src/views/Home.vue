@@ -1,12 +1,5 @@
 <template>
    <app-master>
-
-     <div slot='slider'>
-        <app-slider ></app-slider>
-     </div>
-
-    
-
       <div slot="main-content">
            <!-- aboutus-section -->
             <section class="ttm-row first-about-section bg-img1 clearfix">
