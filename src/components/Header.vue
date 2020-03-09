@@ -13,11 +13,11 @@
               <div class="col-lg-12">
                 <div class="ttm-topbar-content">
                   <ul class="top-contact text-left">
-                    <li>Your Trusted 24 Hours Service Provider!</li>
+                    <li>Pure Aroma From Nature</li>
                   </ul>
                   <div class="topbar-right text-right">
                     <ul class="top-contact">
-                      <li>Office Hour : 08:00am - 6:00pm</li>
+                      <li>Office Hour : 08:00am - 5:00pm</li>
                     </ul>
                     <div class="ttm-social-links-wrapper list-inline">
                       <ul class="social-icons">
@@ -25,13 +25,10 @@
                           <a href="#"><i class="fa fa-facebook"></i></a>
                         </li>
                         <li>
-                          <a href="#"><i class="fa fa-twitter"></i></a>
+                          <a href="https://twitter.com/nardusltd"><i class="fa fa-twitter"></i></a>
                         </li>
                         <li>
-                          <a href="#"><i class="fa fa-flickr"></i></a>
-                        </li>
-                        <li>
-                          <a href="#"><i class="fa fa-linkedin"></i></a>
+                          <a href="https://www.instagram.com/nardusltd/"><i class="fa fa-instagram"></i></a>
                         </li>
                       </ul>
                     </div>
@@ -67,7 +64,7 @@
                   >
                     <div class="widget_icon"><i class="flaticon-call"></i></div>
                     <div class="widget_content">
-                      <h5 class="widget_title">+123 456 7890</h5>
+                      <h5 class="widget_title">(234) 906-282-2260</h5>
                       <p class="widget_desc">Make A Call</p>
                     </div>
                   </div>
@@ -80,8 +77,8 @@
                       <i class="flaticon-email"></i>
                     </div>
                     <div class="widget_content">
-                      <h5 class="widget_title">Info@example.com</h5>
-                      <p class="widget_desc">Get A Estimate</p>
+                      <h5 class="widget_title">info@nardus.ng</h5>
+                      <p class="widget_desc">Send us </p>
                     </div>
                   </div>
                   <!-- widget-info end -->
@@ -93,8 +90,8 @@
                       <i class="flaticon-worldwide"></i>
                     </div>
                     <div class="widget_content">
-                      <h5 class="widget_title">Newyork USA</h5>
-                      <p class="widget_desc">23 Belfast ave, Florida</p>
+                      <h5 class="widget_title">Osborne Foreshore, Ikoyi</h5>
+                      <p class="widget_desc">18 Udi street, Wema Terrace</p>
                     </div>
                   </div>
                   <!-- widget-info end -->
@@ -113,7 +110,7 @@
                  
                 </div>
                 <!-- header-icons -->
-                <div class="ttm-header-icons ">
+                <!-- <div class="ttm-header-icons ">
                   <span class="ttm-header-icon ttm-header-cart-link">
                     <a href="#"
                       ><i class="fa fa-shopping-cart"></i>
@@ -121,7 +118,7 @@
                     </a>
                   </span>
          
-                </div>
+                </div> -->
                 <!-- header-icons end -->
                 <div class="ttm-menu-toggle">
                   <input type="checkbox" id="menu-toggle-form" />

@@ -40,7 +40,8 @@
                                         <h5>Phone</h5>
                                     </div>
                                     <div class="featured-desc"><!--  featured-desc -->
-                                        <p>(+0445) 1223567888</p>
+                                        <p>+234 812 262 7008</p>
+                                        <p> +234 906 282 2260  </p>
                                     </div>
                                 </div>
                             </div><!--  featured-icon-box END -->
@@ -58,7 +59,7 @@
                                         <h5>Email Us</h5>
                                     </div>
                                     <div class="featured-desc"><!--  featured-desc -->
-                                        <p>info@example.com</p>
+                                        <p>info@nardus.ng</p>
                                     </div>
                                 </div>
                             </div><!--  featured-icon-box END -->
@@ -76,7 +77,7 @@
                                         <h5>Address</h5>
                                     </div>
                                     <div class="featured-desc"><!--  featured-desc -->
-                                        <p>143, Exercitation,Gourandai USA.</p>
+                                        <p>18 Udi street, Wema Terrace, Osborne Foreshore, Ikoyi</p>
                                     </div>
                                 </div>
                             </div><!--  featured-icon-box END -->
@@ -164,7 +165,7 @@
                                             <input name="subject" type="text" placeholder="Subject" required="required" class="form-control with-border bg-white">
                                         </div>
                                     </div>
-                                    <div class="col-lg-12">
+                                    <!-- <div class="col-lg-12">
                                         <div class="form-group">
                                             <select class="form-control with-border bg-white">
                                                 <option>Services</option>
@@ -173,7 +174,7 @@
                                                 <option>Services 03</option>
                                             </select>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="col-sm-12 col-md-12">
                                         <div class="form-group">
                                             <textarea name="Massage" rows="4" placeholder="Write A Massage..." required="required" class="form-control with-border bg-white"></textarea>
@@ -182,7 +183,7 @@
                                     <div class="col-md-12">
                                         <div class="text-left">
                                             <button type="submit" id="submit" class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-darkgrey w-100" value="">
-                                                Submit Quote
+                                                Submit 
                                             </button>
                                         </div>
                                     </div>
