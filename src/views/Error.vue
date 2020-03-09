@@ -14,7 +14,7 @@
                         </div>
                         <header class="page-header"><h1 class="page-title">404 ERROR</h1></header>
                         <div class="page-content"> <p>This page may have been moved or deleted. Be sure to check your spelling.</p></div>
-                        <a class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-skincolor mb-15" href="index.html">Back To Home</a>
+                        <router-link to="/" tag="a" class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-skincolor mb-15"> Back To Home </router-link>
                     </div>
                 </div>
             </div>

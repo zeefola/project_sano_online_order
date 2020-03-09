@@ -26,7 +26,7 @@
                                 <div class="ttm-quicklink-box">
                                    <div class="ttm-rightlink-box">
                                         <i class="flaticon flaticon-support ttm-textcolor-skincolor"></i>
-                                        <h5 class="custom-heading">Help Center <span class="ti ti-arrow-circle-right ttm-arrow-box"></span></a></h5>
+                                        <h5 class="custom-heading"> <a href="#"> Help Center  <span class="ti ti-arrow-circle-right ttm-arrow-box"></span> </a> </h5>
                                   </div>    
                                 </div>
                             </div>
@@ -41,7 +41,7 @@
                             <div class="widget widget_text  clearfix">
                                 <h3 class="widget-title"> About Nardus</h3>
                                 <div class="">
-                                    <p>Nardus is the next big name in the essential oils industry. We blaze the trail as the leading local supplier of essential oils in Nigeria, poised to meet the dynamic demands of the global market.</p>
+                                    <p>Nardus Company Ltd is a global supplier of Essential Oils into the Flavour, Fragrance and Cosmetic industries. NCL offers customers a wide range of essential oils.</p>
                                     <hr>
                                     <!-- <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right" href="#">Find Us On Map  <i class="ti ti-arrow-circle-right"></i></a> -->
                                 </div>

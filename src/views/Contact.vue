@@ -10,7 +10,7 @@
                 </div><!-- /.page-title-captions -->
                 <div class="breadcrumb-wrapper">
                     <span>
-                        <a title="Homepage" href="index.html"><i class="ti ti-home"></i>&nbsp;&nbsp;Home</a>
+                       <router-link to="/" tag="a" > <i class="ti ti-home"></i>&nbsp;&nbsp;Home </router-link>
                     </span>
                     <span class="ttm-bread-sep ttm-textcolor-white">&nbsp;   →  &nbsp;</span>
                     <span class="ttm-textcolor-skincolor">Contact</span>
