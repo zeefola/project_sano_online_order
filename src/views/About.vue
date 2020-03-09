@@ -9,7 +9,7 @@
                   </div><!-- /.page-title-captions -->
                   <div class="breadcrumb-wrapper">
                       <span>
-                          <a title="Homepage" href="index.html"><i class="ti ti-home"></i>&nbsp;&nbsp;Home</a>
+                          <router-link to="/" tag="a" > <i class="ti ti-home"></i>&nbsp;&nbsp;Home </router-link>
                       </span>
                       <span class="ttm-bread-sep ttm-textcolor-white">&nbsp;   →  &nbsp;</span>
                       <span class="ttm-textcolor-skincolor">About Us</span>
@@ -46,14 +46,16 @@
                                         <span></span>
                                     </div>
                                 </div><!-- section title end -->
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud.</p>
-                                <p>If anything’s hot in today’s economy, it’s saving money, including a broad range of green businesses helping people save en</p>
-                                <div class="row ttm-bgcolor-white align-items-center mt-30">
-                                    <div class="col-md-4 col-lg-4">
+                                <p>Nardus Company Ltd is a global supplier of Essential Oils into the Flavour, Fragrance and Cosmetic industries. NCL offers customers a wide range of essential oils.</p>
+                                <p>Headquartered in Lagos, Nigeria  to support worldwide production and distribution of the finest Essential Oils, Spice Oleoresins, Herbal Extracts, Hydrosols and other natural materials.</p>
+                                <p> Besides manufacturing many of our products ourselves, our volume purchases through our Central Purchasing System enable us to offer the largest selection of pure essential oils at affordable prices. We have a wide variety of pack sizes to meet all of your specific needs, large or small. </p>
+                                <!-- <div class="row ttm-bgcolor-white align-items-center mt-30"> -->
+                                    <!-- <div class="col-md-4 col-lg-4"> -->
                                         <!--ttm-fid-->
-                                        <div class="ttm-fid inside without-icon style1">
-                                            <div class="ttm-fid-contents text-center"><!--ttm-fid-contents-->
-                                                <h4 class="ttm-fid-inner">
+                                        <!-- <div class="ttm-fid inside without-icon style1">
+                                            <div class="ttm-fid-contents text-center"> -->
+                                                <!--ttm-fid-contents-->
+                                                <!-- <h4 class="ttm-fid-inner">
                                                     <span   data-appear-animation = "animateDigits"
                                                     data-from             = "0"
                                                     data-to               = "35"
@@ -64,15 +66,18 @@
                                                     data-after-style      = "sub"
                                                 >35</span><span class="ml-5">+</span>
                                                 </h4>
-                                                <h3 class="ttm-fid-title">Our Team</h3><!--ttm-fid-title-->
-                                            </div>
-                                        </div><!-- ttm-fid end-->
-                                    </div>
-                                    <div class="col-md-4 col-lg-4">
+                                                <h3 class="ttm-fid-title">Our Team</h3> -->
+                                                <!--ttm-fid-title-->
+                                            <!-- </div>
+                                        </div> -->
+                                        <!-- ttm-fid end-->
+                                    <!-- </div> -->
+                                    <!-- <div class="col-md-4 col-lg-4"> -->
                                         <!--ttm-fid-->
-                                        <div class="ttm-fid inside  without-icon style1">
-                                            <div class="ttm-fid-contents text-center"><!--ttm-fid-contents-->
-                                                <h4 class="ttm-fid-inner">
+                                        <!-- <div class="ttm-fid inside  without-icon style1">
+                                            <div class="ttm-fid-contents text-center"> -->
+                                                <!--ttm-fid-contents-->
+                                                <!-- <h4 class="ttm-fid-inner">
                                                     <span   data-appear-animation = "animateDigits"
                                                     data-from             = "0"
                                                     data-to               = "75"
@@ -83,15 +88,18 @@
                                                     data-after-style      = "sub"
                                                 >75</span><span class="ml-5">+</span>
                                                 </h4>
-                                                <h3 class="ttm-fid-title">Our Shop</h3><!--ttm-fid-title-->
-                                            </div>
-                                        </div><!-- ttm-fid end-->
-                                    </div>
-                                    <div class="col-md-4 col-lg-4">
+                                                <h3 class="ttm-fid-title">Our Shop</h3> -->
+                                                <!--ttm-fid-title-->
+                                            <!-- </div>
+                                        </div> -->
+                                        <!-- ttm-fid end-->
+                                    <!-- </div> -->
+                                    <!-- <div class="col-md-4 col-lg-4"> -->
                                         <!--ttm-fid-->
-                                        <div class="ttm-fid inside without-icon style1">
-                                            <div class="ttm-fid-contents text-center"><!--ttm-fid-contents-->
-                                                <h4 class="ttm-fid-inner">
+                                        <!-- <div class="ttm-fid inside without-icon style1">
+                                            <div class="ttm-fid-contents text-center"> -->
+                                                <!--ttm-fid-contents-->
+                                                <!-- <h4 class="ttm-fid-inner">
                                                     <span   data-appear-animation = "animateDigits"
                                                     data-from             = "0"
                                                     data-to               = "150"
@@ -102,11 +110,13 @@
                                                     data-after-style      = "sub"
                                                 >150</span><span class="ml-5">+</span>
                                                 </h4>
-                                                <h3 class="ttm-fid-title">Our Brand</h3><!--ttm-fid-title-->
-                                            </div>
-                                        </div><!-- ttm-fid end-->
-                                    </div>
-                                </div>
+                                                <h3 class="ttm-fid-title">Our Brand</h3> -->
+                                                <!--ttm-fid-title-->
+                                            <!-- </div>
+                                        </div> -->
+                                        <!-- ttm-fid end-->
+                                    <!-- </div> -->
+                                <!-- </div> -->
                                 <div class="row mt-30">
                                     <div class="col-md-4 col-lg-4 col-sm-4">
                                         <div class="text-left pt-15">
@@ -156,36 +166,47 @@
                                                 <span></span>
                                             </div>
                                         </div><!-- section title end -->
-                                        <p>Farmers who are interested in transitioning away from animal farming. Growing protein crops for the human-consumption market.</p>
-                                        <div class="mt-40">
+                                        <p>We operate in a challenging and highly competitive environment, but we are distinguished by high level of professionalism, integrity and tact. Our facility is complete with stainless steel tanks and filtration facilities for packaging and blending.</p>
+                                        <div class="section-title clearfix">
+                                            <div class="title-header">
+                                                <h5>Objectives</h5>
+                                            </div>
+                                            <div class="heading-seperator">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="mt-40"> -->
                                             <!-- progress-bar -->
                                             <div class="ttm-progress-bar" data-percent="90%">
-                                                <div class="progress-bar-title">Saving Wildlife</div><!-- progress-bar-title -->
+                                                <div class="progress-bar-title">To contribute to the world's needs of essential oil</div><!-- progress-bar-title -->
                                                 <div class="progress-bar-inner">
                                                     <div class="progress-bar progress-bar-color-bar_skincolor"></div>
                                                 </div>
-                                                <div class="progress-bar-percent" data-percent="90">90%</div><!-- progress-bar-percent -->
+                                                <!-- <div class="progress-bar-percent" data-percent="90">90%</div> -->
+                                                <!-- progress-bar-percent -->
                                             </div>
                                             <!-- progress-bar END -->
                                             <!-- progress-bar -->
                                             <div class="ttm-progress-bar" data-percent="80%">
-                                                <div class="progress-bar-title">Recycling Materials</div><!-- progress-bar-TITLE -->
+                                                <div class="progress-bar-title">To support health and wellbeing through alternative medicine from plant extracts</div><!-- progress-bar-TITLE -->
                                                 <div class="progress-bar-inner">
                                                     <div class="progress-bar progress-bar-color-bar_skincolor"></div>
                                                 </div>
-                                                <div class="progress-bar-percent" data-percent="80">80%</div><!-- progress-bar-PERCENT -->
+                                                <!-- <div class="progress-bar-percent" data-percent="80">80%</div> -->
+                                                <!-- progress-bar-PERCENT -->
                                             </div>
                                             <!-- progress-bar END -->
                                             <!-- progress-bar -->
                                             <div class="ttm-progress-bar" data-percent="90%">
-                                                <div class="progress-bar-title">Waste Management</div><!-- progress-bar-TITLE -->
+                                                <div class="progress-bar-title">To constantly research and source new products that meet our customers growing needs.</div><!-- progress-bar-TITLE -->
                                                 <div class="progress-bar-inner">
                                                     <div class="progress-bar progress-bar-color-bar_skincolor"></div>
                                                 </div>
-                                                <div class="progress-bar-percent" data-percent="90">90%</div><!-- progress-bar-PERCENT -->
+                                                <!-- <div class="progress-bar-percent" data-percent="90">90%</div> -->
+                                                <!-- progress-bar-PERCENT -->
                                             </div>
                                             <!-- progress-bar END -->
-                                        </div>
+                                        <!-- </div> -->
                                     </div>
                                 </div>
                             </div>

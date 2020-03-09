@@ -78,7 +78,7 @@
                     </div>
                     <div class="widget_content">
                       <h5 class="widget_title">info@nardus.ng</h5>
-                      <p class="widget_desc">Send us </p>
+                      <p class="widget_desc">Send Us a Mail </p>
                     </div>
                   </div>
                   <!-- widget-info end -->
@@ -110,7 +110,7 @@
                  
                 </div>
                 <!-- header-icons -->
-                <!-- <div class="ttm-header-icons ">
+                <div class="ttm-header-icons ">
                   <span class="ttm-header-icon ttm-header-cart-link">
                     <a href="#"
                       ><i class="fa fa-shopping-cart"></i>
@@ -118,7 +118,7 @@
                     </a>
                   </span>
          
-                </div> -->
+                </div>
                 <!-- header-icons end -->
                 <div class="ttm-menu-toggle">
                   <input type="checkbox" id="menu-toggle-form" />
