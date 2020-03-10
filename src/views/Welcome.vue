@@ -30,15 +30,15 @@
                                 <!-- section title -->
                                 <div class="section-title clearfix">
                                     <div class="title-header">
-                                        <h5>About agriculture</h5>
-                                        <h2 class="title">Eco-Friendly Products Can Be Made From Scratch.</h2>
+                                        <h5>About essential oils</h5>
+                                        <h2 class="title">Pure Aroma From Nature.</h2>
                                     </div>
                                     <div class="heading-seperator">
                                         <span></span>
                                     </div>
                                 </div><!-- section title end -->
-                                <p>Eco-friendly products are, the products that do not harm the environ- ment. whether in their equipment production.</p>
-                                <p>If anything’s hot in today’s economy, it’s saving money, including a broad range of green businesses helping people save environment.</p>
+                                <p>Experience the pure potency of a natural essential oil derived through the most ethical extraction process. </p>
+                                <p>Incorporating a myriad of properties that the world is yet to fully discover, our lemongrass pure essential oil is the quintessential topical solution that helps improve your quality of life.</p>
                                 <div class="row no-gutters">
                                     <div class="col-md-6 col-lg-6 col-sm-6">
                                         <!--  featured-icon-box --> 
@@ -50,7 +50,7 @@
                                             </div>
                                             <div class="featured-content"><!--  featured-content -->
                                                 <div class="featured-title"><!--  featured-title -->
-                                                    <h5>Wind Solar Energy</h5>
+                                                    <h5>Spa</h5>
                                                 </div>
                                             </div>
                                         </div><!--  featured-icon-box END -->
@@ -65,7 +65,7 @@
                                             </div>
                                             <div class="featured-content"><!--  featured-content -->
                                                 <div class="featured-title"><!--  featured-title -->
-                                                    <h5>Forest Planting</h5>
+                                                    <h5>Massage</h5>
                                                 </div>
                                             </div>
                                         </div><!--  featured-icon-box END -->
@@ -80,7 +80,7 @@
                                             </div>
                                             <div class="featured-content"><!--  featured-content -->
                                                 <div class="featured-title"><!--  featured-title -->
-                                                    <h5>Recycling</h5>
+                                                    <h5>Fragrance</h5>
                                                 </div>
                                             </div>
                                         </div><!--  featured-icon-box END -->
@@ -95,7 +95,7 @@
                                             </div>
                                             <div class="featured-content"><!--  featured-content -->
                                                 <div class="featured-title"><!--  featured-title -->
-                                                    <h5>Solar Panels</h5>
+                                                    <h5>Flavour</h5>
                                                 </div>
                                             </div>
                                         </div><!--  featured-icon-box END -->
@@ -143,10 +143,10 @@
                                 </div>
                                 <div class="featured-content"><!--  featured-content -->
                                     <div class="featured-title"><!--  featured-title -->
-                                        <h5>25 Years Of Experiance</h5>
+                                        <h5>Essential Oil Production   </h5>
                                     </div>
                                     <div class="featured-desc"><!--  featured-desc -->
-                                        <p>All about planting and growing.</p>
+                                        <p>Aromatherapy</p>
                                     </div>
                                 </div>
                             </div><!--  featured-icon-box END -->
@@ -161,7 +161,7 @@
                                 </div>
                                 <div class="featured-content"><!--  featured-content -->
                                     <div class="featured-title"><!--  featured-title -->
-                                        <h5>Experianced Workers</h5>
+                                        <h5>Flavor Formulation</h5>
                                     </div>
                                     <div class="featured-desc"><!--  featured-desc -->
                                         <p>All about planting and growing.</p>
@@ -179,7 +179,7 @@
                                 </div>
                                 <div class="featured-content"><!--  featured-content -->
                                     <div class="featured-title"><!--  featured-title -->
-                                        <h5>100+ Awards Win</h5>
+                                        <h5>Fragrance Customization</h5>
                                     </div>
                                     <div class="featured-desc"><!--  featured-desc -->
                                         <p>All about planting and growing.</p>
@@ -207,9 +207,9 @@
                                 <!-- section-title -->
                                 <div class="section-title row-title clearfix">
                                     <div class="title-header">
-                                        <h5 class="mb-10">ABOUT AGRICULTURE</h5>
-                                        <h2 class="title fw-700 mb-5"> Agriculture Is Providing The Best </h2>
-                                        <h2 class="title font-weight-normal"> Solution Of Eco Environment </h2>
+                                        <h5 class="mb-10">ABOUT ESSENTIAL OILS</h5>
+                                        <h2 class="title fw-700 mb-5"> Pure Aroma From Nature </h2>
+                                        <!-- <h2 class="title font-weight-normal"> Solution Of Eco Environment </h2> -->
                                     </div>
                                 </div><!-- section-title end -->
                                 <a href="#" class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-darkgrey mt-20 mr-10"> About Agrotek</a>
@@ -231,21 +231,21 @@
                                 <div class="section-title clearfix">
                                     <div class="title-header">
                                         <h5>WHAT WE OFFER</h5>
-                                        <h2 class="title">Independently owned & operated</h2>
+                                        <!-- <h2 class="title">Independently owned & operated</h2> -->
                                     </div>
                                     <div class="heading-seperator">
                                         <span></span>
                                     </div>
                                 </div><!-- section title end -->
-                                <p>We provide marketing services to startups and small businesses to looking for a opment,</p>
+                                <p>Awaken your sixth sense with our 100% natural essential oil! Nardus essential oil contains nothing else but natural essential oils extracted through a rigorous steam distillation and purification process which allows it to retain most of its natural terpenes.</p>
                                 <div class="mt-25">
                                     <ul class="ttm-list ttm-list-style-icon">
-                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Procure him some great pleasure</span></li>
-                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Except to some advantage</span></li>
-                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Avoids a pain that produces resultant</span></li>
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Nardus lemongrass essential oil has been discovered to have a high citral content ranging more than 75% enhancing its aromatherapy, massage, and fragrance usage.</span></li>
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Nardus turmeric oil has been discovered to also have a high curmin level thereby enhancing its benefits as an antibacterial and antifungal agent which also helps revitalise the skin.</span></li>
+                                        <!-- <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Avoids a pain that produces resultant</span></li> -->
                                     </ul>
                                 </div>
-                                <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-darkgrey btn-inline ttm-icon-btn-right mt-15" href="#">Learn More <i class="ti ti-angle-right"></i></a>
+                                <!-- <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-darkgrey btn-inline ttm-icon-btn-right mt-15" href="#">Learn More <i class="ti ti-angle-right"></i></a> -->
                             </div>
                         </div>
                         <div class="col-lg-8">
@@ -260,7 +260,7 @@
                                         </div>
                                         <div class="featured-content"><!--  featured-content -->
                                             <div class="featured-title"><!--  featured-title -->
-                                                <h5 class="mb-5">Crop Protection Service</h5>
+                                                <h5 class="mb-5">Natural Essential Oils</h5>
                                             </div>
                                             <div class="featured-desc"><!--  featured-desc -->
                                                 <p>Lorem Ipsum is simply dummy text of the printing ndustry.</p>
@@ -279,7 +279,7 @@
                                         </div>
                                         <div class="featured-content"><!--  featured-content -->
                                             <div class="featured-title"><!--  featured-title -->
-                                                <h5 class="mb-5">Lawn & Garden Care</h5>
+                                                <h5 class="mb-5">Bath & Body</h5>
                                             </div>
                                             <div class="featured-desc"><!--  featured-desc -->
                                                 <p>Lorem Ipsum is simply dummy text of the printing ndustry.</p>
@@ -298,7 +298,7 @@
                                         </div>
                                         <div class="featured-content"><!--  featured-content -->
                                             <div class="featured-title"><!--  featured-title -->
-                                                <h5 class="mb-5">Irrigation & Drainage</h5>
+                                                <h5 class="mb-5">Household</h5>
                                             </div>
                                             <div class="featured-desc"><!--  featured-desc -->
                                                 <p>Lorem Ipsum is simply dummy text of the printing ndustry.</p>
@@ -317,7 +317,7 @@
                                         </div>
                                         <div class="featured-content"><!--  featured-content -->
                                             <div class="featured-title"><!--  featured-title -->
-                                                <h5 class="mb-5">Forest & Tree Planting</h5>
+                                                <h5 class="mb-5">Flavor</h5>
                                             </div>
                                             <div class="featured-desc"><!--  featured-desc -->
                                                 <p>Lorem Ipsum is simply dummy text of the printing ndustry.</p>
@@ -349,42 +349,53 @@
                                         <div class="section-title clearfix">
                                             <div class="title-header">
                                                 <h5>Why Choose Us?</h5>
-                                                <h2 class="title">Our Vegan has 35 year experience in Agriculture</h2>
+                                                <!-- <h2 class="title">Our Vegan has 35 year experience in Agriculture</h2> -->
                                             </div>
                                             <div class="heading-seperator">
                                                 <span></span>
                                             </div>
                                         </div><!-- section title end -->
-                                        <p>Farmers who are interested in transitioning away from animal farming. Growing protein crops for the human-consumption market.</p>
-                                        <div class="mt-40">
+                                        <p>We operate in a challenging and highly competitive environment, but we are distinguished by high level of professionalism, integrity and tact. Our facility is complete with stainless steel tanks and filtration facilities for packaging and blending.</p>
+                                        <div class="section-title clearfix">
+                                            <div class="title-header">
+                                                <h5>Objectives</h5>
+                                            </div>
+                                            <div class="heading-seperator">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="mt-40"> -->
                                             <!-- progress-bar -->
                                             <div class="ttm-progress-bar" data-percent="90%">
-                                                <div class="progress-bar-title">Saving Wildlife</div><!-- progress-bar-title -->
+                                                <div class="progress-bar-title">To contribute to the world's needs of essential oil</div><!-- progress-bar-title -->
                                                 <div class="progress-bar-inner">
                                                     <div class="progress-bar progress-bar-color-bar_skincolor"></div>
                                                 </div>
-                                                <div class="progress-bar-percent" data-percent="90">90%</div><!-- progress-bar-percent -->
+                                                <!-- <div class="progress-bar-percent" data-percent="90">90%</div> -->
+                                                <!-- progress-bar-percent -->
                                             </div>
                                             <!-- progress-bar END -->
                                             <!-- progress-bar -->
                                             <div class="ttm-progress-bar" data-percent="80%">
-                                                <div class="progress-bar-title">Recycling Materials</div><!-- progress-bar-TITLE -->
+                                                <div class="progress-bar-title">To support health and wellbeing through alternative medicine from plant extracts</div><!-- progress-bar-TITLE -->
                                                 <div class="progress-bar-inner">
                                                     <div class="progress-bar progress-bar-color-bar_skincolor"></div>
                                                 </div>
-                                                <div class="progress-bar-percent" data-percent="80">80%</div><!-- progress-bar-PERCENT -->
+                                                <!-- <div class="progress-bar-percent" data-percent="80">80%</div> -->
+                                                <!-- progress-bar-PERCENT -->
                                             </div>
                                             <!-- progress-bar END -->
                                             <!-- progress-bar -->
                                             <div class="ttm-progress-bar" data-percent="90%">
-                                                <div class="progress-bar-title">Waste Management</div><!-- progress-bar-TITLE -->
+                                                <div class="progress-bar-title">To constantly research and source new products that meet our customers growing needs.</div><!-- progress-bar-TITLE -->
                                                 <div class="progress-bar-inner">
                                                     <div class="progress-bar progress-bar-color-bar_skincolor"></div>
                                                 </div>
-                                                <div class="progress-bar-percent" data-percent="90">90%</div><!-- progress-bar-PERCENT -->
+                                                <!-- <div class="progress-bar-percent" data-percent="90">90%</div> -->
+                                                <!-- progress-bar-PERCENT -->
                                             </div>
                                             <!-- progress-bar END -->
-                                        </div>
+                                        <!-- </div> -->
                                     </div>
                                 </div>
                             </div>
