@@ -4,6 +4,7 @@ import router from "./router";
 import store from "./store";
 import "./registerServiceWorker";
 import VueMeta from 'vue-meta'
+// import $ from 'jquery'
 
 
 
@@ -11,6 +12,7 @@ import VueMeta from 'vue-meta'
 Vue.use(VueMeta)
 
 Vue.config.productionTip = false;
+Vue.config.ignoredElements = ['rs-module-wrap','rs-module','rs-slides','rs-slide','rs-layer']
 
 // window.$ = window.jQuery = require('jquery');
 

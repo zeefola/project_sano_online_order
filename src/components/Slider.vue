@@ -2,7 +2,7 @@
 <template>
   
 <!-- START homeclassicmain REVOLUTION SLIDER 6.0.1 -->
-        <rs-module-wrap id="rev_slider_1_1_wrapper" data-source="gallery">
+        <rs-module-wrap id="rev_slider_1_1_wrapper" data-source="gallery" >
             <rs-module id="rev_slider_1_1" data-version="6.1.2" class="rev_slider_1_1_height">
                 <rs-slides>
                     <rs-slide data-key="rs-1" data-title="Slide" data-thumb="https://via.placeholder.com/1920X705/888888.jpg" data-anim="ei:d;eo:d;s:d;r:0;t:zoomout;sl:d;">

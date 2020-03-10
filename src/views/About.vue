@@ -379,12 +379,23 @@
 <script>
 // @ is an alias to /src
 import Master from "@/components/Master.vue";
-import BreadCrumb from "@/components/BreadCrumb.vue"
+import BreadCrumb from "@/components/BreadCrumb.vue";
+import {seo} from "../Repositories/seo.js"
+
 export default {
   name: "About",
+  mixins: [seo],
   components: {
     "app-master" : Master,
     "app-breadcrumb": BreadCrumb
+  },
+
+
+  created(){
+      this.seoMetaData('About Us', ' ');
   }
+
+  
 };
+
 </script>

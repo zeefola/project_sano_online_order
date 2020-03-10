@@ -33,10 +33,16 @@
 <script>
 // @ is an alias to /src
 import Master from "@/components/Master.vue";
+import { seo } from "../Repositories/seo.js"
 export default {
   name: "Faq",
+  mixins : [seo],
   components: {
     "app-master" : Master,
+  },
+
+  created(){
+    this.seoMetaData('404' , ' ');
   }
 };
 </script>
