@@ -63,49 +63,34 @@
                                 <!-- toggle -->
                                 <div class="toggle">
                                     <div class="toggle-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">What does having Managed your services provider?</a>
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"  @click="display('collapseOneData')" :class="{ active: this.menu.collapseOneData}" >What does having Managed your services provider?</a>
                                     </div>
-                                    <div class="toggle-content">
+                                    <div :class="{ block: this.menu.collapseOneData }" class="toggle-content" >
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <p class="mb-0">Praesentium voluptatum deleniti atque corrupti quos as excepturi sint occaecati cupiditate non provident, similique sunt in</p>
+                                                <p class="mb-0"> Yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy  yyyyyyyyyyyyy</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div><!-- toggle end -->
-                                <!-- toggle -->
+
+
+
+                                 <!-- toggle -->
                                 <div class="toggle">
-                                    <div class="toggle-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapsetwo" class="active">What you about say your Business palnning?</a></div>
-                                    <div class="toggle-content">
+                                    <div class="toggle-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"  @click="display('collapseTwoData')" :class="{ active: this.menu.collapseTwoData}" >What does having Managed your services provider?</a>
+                                    </div>
+                                    <div :class="{ block: this.menu.collapseTwoData }" class="toggle-content" >
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <p class="mb-0">Praesentium voluptatum deleniti atque corrupti quos as excepturi sint occaecati cupiditate non provident, similique sunt in</p>
+                                                <p class="mb-0"> Yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy  yyyyyyyyyyyyy</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div><!-- toggle end -->
-                                <!-- toggle -->
-                                <div class="toggle">
-                                    <div class="toggle-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapsethree">What types of systems do you support?</a></div>
-                                    <div class="toggle-content">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <p class="mb-0">Praesentium voluptatum deleniti atque corrupti quos as excepturi sint occaecati cupiditate non provident, similique sunt in</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!-- toggle end -->
-                                <!-- toggle -->
-                                <div class="toggle">
-                                    <div class="toggle-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapsethree">What types of systems do you support?</a></div>
-                                    <div class="toggle-content">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <p class="mb-0">Praesentium voluptatum deleniti atque corrupti quos as excepturi sint occaecati cupiditate non provident, similique sunt in</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!-- toggle end -->
+
+                                
                             </div><!-- acadion  end-->
                         </div>
                     </div>
@@ -126,12 +111,67 @@
 <script>
 // @ is an alias to /src
 import Master from "@/components/Master.vue";
-import BreadCrumb from "@/components/BreadCrumb.vue"
+import BreadCrumb from "@/components/BreadCrumb.vue";
+import {  seo } from "../Repositories/seo.js"
+
 export default {
   name: "Faq",
+  mixins : [seo],
   components: {
     "app-master" : Master,
     "app-breadcrumb": BreadCrumb
+  },
+  data() {
+      return {
+          menu: {
+            collapseOneData: false,
+            collapseTwoData: false,
+            collapseThreeata: false
+          }
+      }
+
+  },
+  methods: {
+      display(val){
+          let x = this;
+          let obj = x.menu;
+
+          for(var key in obj){
+              if(obj.hasOwnProperty(key)){
+
+                  if(key == val){
+                      obj[key] = !obj[key];
+                  }else{
+                      obj[key] = false;
+
+                  }
+
+              }
+          }
+
+        //   if(val == 'collapseOne'){
+        //       this.collapseOneData = !this.collapseOneData;
+        //       this.collapseTwoData = false;
+        //   }
+        //   if(val == 'collapseTwo'){
+        //       this.collapseOneData = false;
+        //       this.collapseTwoData = !this.collapseTwoData;
+        //   }
+      }
+  },
+
+
+  created(){
+      this.seoMetaData('Frequently Ask Questions' , ' ');
+      this.display("collapseOneData");
   }
 };
 </script>
+
+
+<style>
+ .block{
+     display: block!important;
+ }
+
+</style>

@@ -46,7 +46,7 @@
                 <div class="d-flex flex-row align-items-center">
                   <!-- site-branding -->
                   <div class="site-branding mr-auto">
-                       <router-link to="/" tag="a" class="home-link" title="Agrotek"
+                       <router-link to="/" tag="a" class="home-link" title="Nardus"
                       rel="home" > 
                    
                       <img
@@ -121,14 +121,14 @@
                 </div>
                 <!-- header-icons end -->
                 <div class="ttm-menu-toggle">
-                  <input type="checkbox" class="" id="menu-toggle-form" />
-                  <label for="menu-toggle-form" class="ttm-menu-toggle-block">
+                  <input type="checkbox" :class="{ active: menuStatus }" id="menu-toggle-form" />
+                  <label for="menu-toggle-form" class="ttm-menu-toggle-block" @click="activate()">
                     <span class="toggle-block toggle-blocks-1"></span>
                     <span class="toggle-block toggle-blocks-2"></span>
                     <span class="toggle-block toggle-blocks-3"></span>
                   </label>
                 </div>
-                <nav id="menu" class="menu">
+                <nav id="menu" class="menu" :class="{ active: menuStatus }" >
                   <ul class="dropdown">
                     <li class="active">
                         <router-link to="/" tag="a" exact> Home </router-link>
@@ -136,9 +136,9 @@
                     <li>
                         <router-link to="/about" tag="a"> About Us </router-link>
                     </li>
-                    <!-- <li>
+                    <li>
                         <router-link to="/services" tag="a" > Services </router-link>
-                    </li> -->
+                    </li>
                     <li>
                       <router-link to="/faq" tag="a"> Faq </router-link>
                      
@@ -170,7 +170,17 @@
 <script>
 export default {
   name: "Header",
-  props: {}
+  props: {},
+  data(){
+    return {
+      menuStatus: false
+    }
+  },
+  methods: {
+    activate: function(){
+      this.menuStatus = !this.menuStatus;
+    }
+  }
 };
 </script>
 
