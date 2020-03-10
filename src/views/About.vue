@@ -39,8 +39,8 @@
                                 <!-- section title -->
                                 <div class="section-title clearfix">
                                     <div class="title-header">
-                                        <h5>About Garden</h5>
-                                        <h2 class="title">We Are Agriculture Farm</h2>
+                                        <h5>About The Company</h5>
+                                        <h2 class="title">Who We Are</h2>
                                     </div>
                                     <div class="heading-seperator">
                                         <span></span>
@@ -160,7 +160,7 @@
                                         <div class="section-title clearfix">
                                             <div class="title-header">
                                                 <h5>Why Choose Us?</h5>
-                                                <h2 class="title">Our Vegan has 35 year experience in Agriculture</h2>
+                                                <!-- <h2 class="title">Our Vegan has 35 year experience in Agriculture</h2> -->
                                             </div>
                                             <div class="heading-seperator">
                                                 <span></span>
