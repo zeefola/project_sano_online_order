@@ -1,6 +1,4 @@
-export const seo ={
-
-    
+export const seo ={   
     methods:{
         seoMetaData(title, description){
            localStorage.setItem('meta_title',title);
@@ -26,5 +24,6 @@ export const seo ={
             return titleChunk ? `${titleChunk} ` : 'Site Title';
             
         }
+ 
     },
 }
