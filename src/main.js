@@ -4,12 +4,39 @@ import router from "./router";
 import store from "./store";
 import "./registerServiceWorker";
 import VueMeta from 'vue-meta'
-// import $ from 'jquery'
+import Notifications from 'vue-notification'
+import Vuesax from 'vuesax'
+
+import 'vuesax/dist/vuesax.css' //Vuesax styles
+Vue.use(Vuesax, {
+  // options here
+})
+
+
+
+// axios.defaults.baseURL = 'https://www.agropark.com.ng/'
+// axios.defaults.headers.get['Accepts'] = 'application/json'
+// axios.defaults.headers.get['Content-Type'] = 'application/x-www-form-urlencoded'
+
+
+// axios.interceptors.request.use(config => {
+//   console.log(config, 'conf');
+//   return config;
+// })
+
+// axios.interceptors.response.use(res => {
+//   console.log(res, 'res');
+//   return res;
+// })
+
+
+
 
 
 
 
 Vue.use(VueMeta)
+Vue.use(Notifications)
 
 Vue.config.productionTip = false;
 Vue.config.ignoredElements = ['rs-module-wrap','rs-module','rs-slides','rs-slide','rs-layer']

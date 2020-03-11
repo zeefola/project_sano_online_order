@@ -54,7 +54,7 @@
                                         <i class="flaticon flaticon-envelope"></i><!--  ttm-icon --> 
                                     </div>
                                 </div>
-                                <div class="featured-content"><!--  featured-content -->
+                                <div class="featured-content" style="padding-bottom: 27px"><!--  featured-content -->
                                     <div class="featured-title"><!--  featured-title -->
                                         <h5>Email Us</h5>
                                     </div>
@@ -147,42 +147,50 @@
                                 <form id="ttm-quote-form" class="row ttm-quote-form clearfix" method="post" action="#">
                                     <div class="col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <input name="name" type="text" class="form-control with-border bg-white" placeholder="Full Name*" required="required">
+                                            <input v-model="formData.fullname" type="text" class="form-control with-border bg-white" placeholder="Full Name*" >
                                         </div>
                                     </div>
                                     <div class="col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <input name="phone" type="text" placeholder="Phone Number*" required="required" class="form-control with-border bg-white">
+                                            <input v-model="formData.telephone" type="text" placeholder="Phone Number*" class="form-control with-border bg-white">
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-md-6">
+                                    <div class="col-sm-6 col-md-12">
                                         <div class="form-group">
-                                            <input name="address" type="text" placeholder="Email Address*" required="required" class="form-control with-border bg-white">
+                                            <input v-model="formData.email" type="text" placeholder="Email Address*" class="form-control with-border bg-white">
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <input name="subject" type="text" placeholder="Subject" required="required" class="form-control with-border bg-white">
-                                        </div>
-                                    </div>
-                                    <!-- <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <select class="form-control with-border bg-white">
-                                                <option>Services</option>
-                                                <option>Services 01</option>
-                                                <option>Services 02</option>
-                                                <option>Services 03</option>
+                                    <div class="col-lg-12">
+                                       
+                                       <div class="form-group">
+                                            <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text" style="color: #92757d; font-size: 0.9rem" for="inputGroupSelect01">Category</label>
+                                            </div>
+                                            <select class="custom-select" v-model='formData.category'  id="inputGroupSelect01">
+                                               <option value="inquiry">Inquiry</option>
+                                                 <option value="complain">Complain</option>
+                                                 <option value="others">Others</option>
                                             </select>
+                                            </div>
+                                       </div>
+                                        
+                                       
+                                    </div> 
+                                    <div class="col-sm-6 col-md-12">
+                                        <div class="form-group">
+                                            <input v-model="formData.subject" type="text" placeholder="Subject"  class="form-control with-border bg-white">
                                         </div>
-                                    </div> -->
+                                    </div>
+                                    
                                     <div class="col-sm-12 col-md-12">
                                         <div class="form-group">
-                                            <textarea name="Massage" rows="4" placeholder="Write A Massage..." required="required" class="form-control with-border bg-white"></textarea>
+                                            <textarea v-model="formData.message" rows="4" placeholder="Write A Message..." required="required" class="form-control with-border bg-white"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="text-left">
-                                            <button type="submit" id="submit" class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-darkgrey w-100" value="">
+                                            <button type="button" ref="loadableButton" id="submit" class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-darkgrey w-100" @click.prevent="submit('SUBMIT_CONTACT_US_FORM')">
                                                 Submit 
                                             </button>
                                         </div>
@@ -209,12 +217,94 @@
 import Master from "@/components/Master.vue";
 import BreadCrumb from "@/components/BreadCrumb.vue";
 import {seo} from "../Repositories/seo.js"
+import {pick} from "../Repositories/pick.js"
+import {vuesax} from "../Repositories/vuesax"
+
 export default {
   name: "Contact",
-  mixins : [seo],
+  mixins : [seo,pick,vuesax],
   components: {
     "app-master" : Master,
     "app-breadcrumb": BreadCrumb
+  },
+  data(){
+      return {
+          formData: {
+              fullname: '',
+              telephone: '',
+              email: '',
+              category: '',
+              subject: '',
+              message: '',
+          }
+
+      }
+  },
+  methods:{
+
+    api_params(value) {
+        if(value == "SUBMIT_CONTACT_US_FORM"){
+            return { ...this.formData, key: this.API_KEY }
+        }
+    },
+
+    async api_calls(value){
+
+        let response;
+        let x = this;
+
+
+
+
+        if(value == "SUBMIT_CONTACT_US_FORM"){
+
+            /** Start loader gif */
+          this.showLoading();
+
+          response = await this.$store.dispatch("contact_us_confirm", this.api_params(value));
+
+            /** If response contain status */
+            if( response && 'status' in response){
+              
+                /** If response status is 200 */
+                if(response.status == 200){
+
+                    x.showNotif({type: 'success', message: response.data.message });
+
+                    /** Clears all input field */
+                    x.clearInputField(x.formData);
+                }
+
+
+                /** If response status is 400 or 404 */
+                if(response.status == 400 || response.status == 404){
+                  x.showNotif({type: 'warning', message: response.data.message });
+
+                }
+
+                /** If response contains error */
+                if(response.data.errors){
+                  x.showNotif({type: 'warning', message: response.data.errors });
+                  
+                }
+                
+              } 
+
+              /** End loader gif */
+              this.hideLoading();
+        }
+
+    },
+
+    async submit(value){
+        let x = this;
+      
+        if(value == "SUBMIT_CONTACT_US_FORM"){
+           this.api_calls(value);
+            
+        }
+
+    }
   },
 
   created(){
@@ -222,3 +312,10 @@ export default {
   }
 };
 </script>
+
+<style>
+
+    .vs-notifications{
+        padding: 5px 15px!important;
+    }
+</style>
