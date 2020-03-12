@@ -53,15 +53,23 @@
                                 <ul id="menu-footer-services">
                                     <router-link tag="li" to="/about"><a> About </a></router-link>
                                     <router-link to="/faq" tag="li"> <a>  Faq </a> </router-link>
-                                    <router-link to="/shop" tag="li"> <a> Shop </a> </router-link>
+                                    <router-link to="/services" tag="li"> <a> Services </a> </router-link>
                                     <router-link to="/contact" tag="li"><a> Contact Us </a></router-link>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 widget-area">
-                            <div class="widget widget_text clearfix">
-                                <h3 class="widget-title">Recent News</h3>
-                                <ul class="widget-post ttm-recent-post-list">
+                            <!-- <div class="widget widget_text clearfix"> -->
+                                <div class="widget link-widget clearfix">
+                                <h3 class="widget-title">Featured Links</h3>
+                                <ul id="menu-footer-services">
+                                    <!-- <router-link tag="li" to="/about"><a> About </a></router-link>
+                                    <router-link to="/faq" tag="li"> <a>  Faq </a> </router-link> -->
+                                    <router-link to="/shop" tag="li"> <a> Shop </a> </router-link>
+                                    <router-link to="/contact" tag="li"><a> Blog </a></router-link>
+                                </ul>
+
+                                <!-- <ul class="widget-post ttm-recent-post-list">
                                     <li>
                                         <a href="single-blog.html"><img src="https://via.placeholder.com/150X150/444444.jpg" alt="post-img"></a>
                                         <span class="post-date"><i class="fa fa-calendar"></i>May 01, 2019</span>
@@ -77,7 +85,7 @@
                                         <span class="post-date"><i class="fa fa-calendar"></i>May 05, 2019</span>
                                         <a href="single-blog.html">Rural Infrastructure for Great Agriculture</a>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 widget-area">

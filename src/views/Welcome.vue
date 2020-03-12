@@ -15,15 +15,15 @@
                         <div class="col-lg-5">
                             <!-- ttm_single_image-wrapper -->
                             <div class="ttm_single_image-wrapper mr_95 res-991-mr-0 position-relative z-1 res-991-center">
-                                <img class="img-fluid" src="https://via.placeholder.com/540X575/444444.png" title="single-img-one" alt="single-img-one">
+                                <img class="img-fluid" src="/img/essential.jpg" title="single-img-one" alt="single-img-one">
                             </div><!-- ttm_single_image-wrapper end -->
-                            <div class="ttm-play-icon-btn ttm-play-icon-btn-center style1">
+                            <!-- <div class="ttm-play-icon-btn ttm-play-icon-btn-center style1">
                                 <a href="https://youtu.be/7e90gBu4pas" target="_self" class="ttm_prettyphoto">
                                     <div class="ttm-icon ttm-icon_element-color-white ttm-icon_element-size-md z-1">
                                         <i class="flaticon flaticon-play-button-1"></i>
                                     </div>
                                 </a>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="col-lg-7">
                             <div class="spacing-1 ttm-bgcolor-white bordertop-12px-solid skincolor-border">
@@ -115,7 +115,7 @@
                                                     <p>Call to ask any question</p>
                                                 </div>
                                                 <div class="featured-title"><!--  featured-title -->
-                                                    <h5>+0123-456-7890</h5>
+                                                    <h5>+234 906-282-2260</h5>
                                                 </div>
                                             </div>
                                         </div><!--  featured-icon-box END -->
@@ -445,21 +445,22 @@
                             <!-- featured-imagebox -->
                             <div class="featured-imagebox featured-imagebox-portfolio style1">
                                 <div class="featured-thumbnail"><!-- featured-thumbnail-->
-                                    <img class="img-fluid" src="https://via.placeholder.com/722X570/444444.jpg" alt="image">
+                                    <img class="img-fluid" src="/img/handwash.jpg" alt="image">
                                 </div><!-- featured-thumbnail END-->
                                 <div class="ttm-box-view-overlay"> <!-- ttm-box-view-overlay -->
                                     <div class="ttm-media-link"><!-- ttm-media-link-->
-                                        <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" href="https://via.placeholder.com/722X570/444444.jpg" data-rel="prettyPhoto">
+                                        <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" href="/img/handwash.jpg" data-rel="prettyPhoto">
                                             <i class="ti ti-search"></i>
                                         </a>
                                     </div>
                                     <div class="featured-content"><!-- featured-content-->
                                         <div class="featured-title"><!-- featured-title-->
-                                            <h5><a href="#">Robotics in Harvests</a></h5>
+                                            <h5><a href="#">Hand Wash</a></h5>
                                         </div>
-                                        <div class="category"><!-- category -->
-                                            <p>Fresh Garden</p>
-                                        </div>
+                                        <!-- <div class="category"> -->
+                                            <!-- category -->
+                                            <!-- <p>Fresh Garden</p>
+                                        </div> -->
                                     </div>
                                 </div><!-- ttm-box-view-overlay end-->
                             </div>
@@ -469,21 +470,22 @@
                             <!-- featured-imagebox -->
                             <div class="featured-imagebox featured-imagebox-portfolio style1">
                                 <div class="featured-thumbnail"><!-- featured-thumbnail-->
-                                    <img class="img-fluid" src="https://via.placeholder.com/722X570/444444.jpg" alt="image">
+                                    <img class="img-fluid" src="/img/diffuser.jpg" alt="image">
                                 </div><!-- featured-thumbnail END-->
                                 <div class="ttm-box-view-overlay"> <!-- ttm-box-view-overlay -->
                                     <div class="ttm-media-link"><!-- ttm-media-link-->
-                                        <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" href="https://via.placeholder.com/722X570/444444.jpg" data-rel="prettyPhoto">
+                                        <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" href="/img/diffuser.jpg" data-rel="prettyPhoto">
                                             <i class="ti ti-search"></i>
                                         </a>
                                     </div>
                                     <div class="featured-content"><!-- featured-content-->
                                         <div class="featured-title"><!-- featured-title-->
-                                            <h5><a href="#">The Farming Season</a></h5>
+                                            <h5><a href="#">Diffuser</a></h5>
                                         </div>
-                                        <div class="category"><!-- category -->
-                                            <p>Dairy Farm</p>
-                                        </div>
+                                        <!-- <div class="category"> -->
+                                            <!-- category -->
+                                            <!-- <p>Dairy Farm</p>
+                                        </div> -->
                                     </div>
                                 </div><!-- ttm-box-view-overlay end-->
                             </div>
@@ -493,21 +495,22 @@
                             <!-- featured-imagebox -->
                             <div class="featured-imagebox featured-imagebox-portfolio style1">
                                 <div class="featured-thumbnail"><!-- featured-thumbnail-->
-                                    <img class="img-fluid" src="https://via.placeholder.com/722X570/444444.jpg" alt="image">
+                                    <img class="img-fluid" src="/img/oil.jpg" alt="image">
                                 </div><!-- featured-thumbnail END-->
                                 <div class="ttm-box-view-overlay"> <!-- ttm-box-view-overlay -->
                                     <div class="ttm-media-link"><!-- ttm-media-link-->
-                                        <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" href="https://via.placeholder.com/722X570/444444.jpg" data-rel="prettyPhoto">
+                                        <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" href="/img/oil.jpg" data-rel="prettyPhoto">
                                             <i class="ti ti-search"></i>
                                         </a>
                                     </div>
                                     <div class="featured-content"><!-- featured-content-->
                                         <div class="featured-title"><!-- featured-title-->
-                                            <h5><a href="#">Natural Stone Walks</a></h5>
+                                            <h5><a href="#">Essential Oil</a></h5>
                                         </div>
-                                        <div class="category"><!-- category -->
-                                            <p>Garden Care</p>
-                                        </div>
+                                        <!-- <div class="category"> -->
+                                            <!-- category -->
+                                            <!-- <p>Garden Care</p>
+                                        </div> -->
                                     </div>
                                 </div><!-- ttm-box-view-overlay end-->
                             </div>
@@ -517,21 +520,22 @@
                             <!-- featured-imagebox -->
                             <div class="featured-imagebox featured-imagebox-portfolio style1">
                                 <div class="featured-thumbnail"><!-- featured-thumbnail-->
-                                    <img class="img-fluid" src="https://via.placeholder.com/722X570/444444.jpg" alt="image">
+                                    <img class="img-fluid" src="/img/hydrosol.jpg" alt="image">
                                 </div><!-- featured-thumbnail END-->
                                 <div class="ttm-box-view-overlay"> <!-- ttm-box-view-overlay -->
                                     <div class="ttm-media-link"><!-- ttm-media-link-->
-                                        <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" href="https://via.placeholder.com/722X570/444444.jpg" data-rel="prettyPhoto">
+                                        <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" href="/img/hydrosol.jpg" data-rel="prettyPhoto">
                                             <i class="ti ti-search"></i>
                                         </a>
                                     </div>
                                     <div class="featured-content"><!-- featured-content-->
                                         <div class="featured-title"><!-- featured-title-->
-                                            <h5><a href="#">Barley Crop Field</a></h5>
+                                            <h5><a href="#">Hydrosol</a></h5>
                                         </div>
-                                        <div class="category"><!-- category -->
-                                            <p>Dairy Farm</p>
-                                        </div>
+                                        <!-- <div class="category"> -->
+                                            <!-- category -->
+                                            <!-- <p>Dairy Farm</p>
+                                        </div> -->
                                     </div>
                                 </div><!-- ttm-box-view-overlay end-->
                             </div>
@@ -541,21 +545,22 @@
                             <!-- featured-imagebox -->
                             <div class="featured-imagebox featured-imagebox-portfolio style1">
                                 <div class="featured-thumbnail"><!-- featured-thumbnail-->
-                                    <img class="img-fluid" src="https://via.placeholder.com/722X570/444444.jpg" alt="image">
+                                    <img class="img-fluid" src="/img/liquid-soap.jpg" alt="image">
                                 </div><!-- featured-thumbnail END-->
                                 <div class="ttm-box-view-overlay"> <!-- ttm-box-view-overlay -->
                                     <div class="ttm-media-link"><!-- ttm-media-link-->
-                                        <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" href="https://via.placeholder.com/722X570/444444.jpg" data-rel="prettyPhoto">
+                                        <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" href="/img/liquid-soap.jpg" data-rel="prettyPhoto">
                                             <i class="ti ti-search"></i>
                                         </a>
                                     </div>
                                     <div class="featured-content"><!-- featured-content-->
                                         <div class="featured-title"><!-- featured-title-->
-                                            <h5><a href="#">Garden Supplies</a></h5>
+                                            <h5><a href="#">Liquid Soap</a></h5>
                                         </div>
-                                        <div class="category"><!-- category -->
-                                            <p>Garden Care</p>
-                                        </div>
+                                        <!-- <div class="category"> -->
+                                            <!-- category -->
+                                            <!-- <p>Garden Care</p>
+                                        </div> -->
                                     </div>
                                 </div><!-- ttm-box-view-overlay end-->
                             </div>
@@ -565,21 +570,22 @@
                             <!-- featured-imagebox -->
                             <div class="featured-imagebox featured-imagebox-portfolio style1">
                                 <div class="featured-thumbnail"><!-- featured-thumbnail-->
-                                    <img class="img-fluid" src="https://via.placeholder.com/722X570/444444.jpg" alt="image">
+                                    <img class="img-fluid" src="/img/sanitizer.jpg" alt="image">
                                 </div><!-- featured-thumbnail END-->
                                 <div class="ttm-box-view-overlay"> <!-- ttm-box-view-overlay -->
                                     <div class="ttm-media-link"><!-- ttm-media-link-->
-                                        <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" href="https://via.placeholder.com/722X570/444444.jpg" data-rel="prettyPhoto">
+                                        <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" href="/img/sanitizer.jpg" data-rel="prettyPhoto">
                                             <i class="ti ti-search"></i>
                                         </a>
                                     </div>
                                     <div class="featured-content"><!-- featured-content-->
                                         <div class="featured-title"><!-- featured-title-->
-                                            <h5><a href="#">Organic Cultural Effect</a></h5>
+                                            <h5><a href="#">Hand Sanitizer</a></h5>
                                         </div>
-                                        <div class="category"><!-- category -->
-                                            <p>Fresh Garden, Dairy Farm</p>
-                                        </div>
+                                        <!-- <div class="category"> -->
+                                            <!-- category -->
+                                            <!-- <p>Fresh Garden, Dairy Farm</p>
+                                        </div> -->
                                     </div>
                                 </div><!-- ttm-box-view-overlay end-->
                             </div>
