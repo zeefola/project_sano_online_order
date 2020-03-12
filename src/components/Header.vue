@@ -50,7 +50,7 @@
                       rel="home" > 
                    
                       <img
-                        src="images/logo.png"
+                        src="img/logo.jpg"
                         id="logo-img"
                         class="img-center"
                         alt="logo"
