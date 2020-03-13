@@ -38,7 +38,7 @@
                                     </div>
                                 </div><!-- section title end -->
                                 <p>Experience the pure potency of a natural essential oil derived through the most ethical extraction process. </p>
-                                <p>Incorporating a myriad of properties that the world is yet to fully discover, our lemongrass pure essential oil is the quintessential topical solution that helps improve your quality of life.</p>
+                                <p>Incorporating a myriad of properties that the world is yet to fully discover, our pure essential oils is the quintessential topical solution that helps improve your quality of life.</p>
                                 <div class="row no-gutters">
                                     <div class="col-md-6 col-lg-6 col-sm-6">
                                         <!--  featured-icon-box --> 
@@ -138,7 +138,7 @@
                             <div class="featured-icon-box left-icon style2 ttm-bgcolor-white">
                                 <div class="featured-icon"><!--  featured-icon --> 
                                     <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
-                                        <i class="flaticon flaticon-clock"></i><!--  ttm-icon --> 
+                                        <i class="flaticon flaticon-trees"></i><!--  ttm-icon --> 
                                     </div>
                                 </div>
                                 <div class="featured-content"><!--  featured-content -->
@@ -156,7 +156,7 @@
                             <div class="featured-icon-box left-icon style2 ttm-bgcolor-white res-991-mt-20">
                                 <div class="featured-icon"><!--  featured-icon --> 
                                     <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
-                                        <i class="flaticon flaticon-farmer"></i><!--  ttm-icon --> 
+                                        <i class="flaticon flaticon-sprinkler"></i><!--  ttm-icon --> 
                                     </div>
                                 </div>
                                 <div class="featured-content"><!--  featured-content -->
@@ -212,8 +212,10 @@
                                         <!-- <h2 class="title font-weight-normal"> Solution Of Eco Environment </h2> -->
                                     </div>
                                 </div><!-- section-title end -->
-                                <a href="#" class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-darkgrey mt-20 mr-10"> About Agrotek</a>
-                                <a href="#" class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-skincolor mt-20"> Our Services</a>
+                                <router-link to="/about" tag="a" class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-darkgrey mt-20 mr-10"> About Nardus </router-link>
+                                <router-link to="/services" tag="a" class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-skincolor mt-20">Our Services </router-link>
+                                <!-- <a href="#" class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-darkgrey mt-20 mr-10"> About Agrotek</a>
+                                <a href="#" class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-skincolor mt-20"> Our Services</a> -->
                             </div>
                         </div>
                     </div><!-- row -->
@@ -241,7 +243,7 @@
                                 <div class="mt-25">
                                     <ul class="ttm-list ttm-list-style-icon">
                                         <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Nardus lemongrass essential oil has been discovered to have a high citral content ranging more than 75% enhancing its aromatherapy, massage, and fragrance usage.</span></li>
-                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Nardus turmeric oil has been discovered to also have a high curmin level thereby enhancing its benefits as an antibacterial and antifungal agent which also helps revitalise the skin.</span></li>
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Nardus turmeric oil has been discovered to also have a high cur['[cumin level thereby enhancing its benefits as an antibacterial and antifungal agent which also helps revitalise the skin.</span></li>
                                         <!-- <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Avoids a pain that produces resultant</span></li> -->
                                     </ul>
                                 </div>
@@ -293,7 +295,7 @@
                                     <div class="featured-icon-box left-icon icon-align-top style3 ttm-bgcolor-white">
                                         <div class="featured-icon"><!--  featured-icon --> 
                                             <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
-                                                <i class="flaticon flaticon-sprinkler"></i><!--  ttm-icon --> 
+                                                <i class="flaticon flaticon-house"></i><!--  ttm-icon --> 
                                             </div>
                                         </div>
                                         <div class="featured-content"><!--  featured-content -->
@@ -312,7 +314,7 @@
                                     <div class="featured-icon-box left-icon icon-align-top style3 ttm-bgcolor-white">
                                         <div class="featured-icon"><!--  featured-icon --> 
                                             <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
-                                                <i class="flaticon flaticon-plant-1"></i><!--  ttm-icon --> 
+                                                <i class="flaticon flaticon-sprinkler"></i><!--  ttm-icon --> 
                                             </div>
                                         </div>
                                         <div class="featured-content"><!--  featured-content -->
@@ -424,8 +426,8 @@
                             <!-- section title -->
                             <div class="section-title text-center clearfix">
                                 <div class="title-header">
-                                    <h5>RECENTLY COMPLETED</h5>
-                                    <h2 class="title">Our Latest Projects</h2>
+                                    <h5>RECENT COMPLETED</h5>
+                                    <h2 class="title">Our Latest Products</h2>
                                 </div>
                                 <div class="heading-seperator">
                                     <span></span>

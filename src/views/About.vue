@@ -131,7 +131,7 @@
                                                     <p>Call to ask any question</p>
                                                 </div>
                                                 <div class="featured-title"><!--  featured-title -->
-                                                    <h5>+0123-456-7890</h5>
+                                                    <h5>+234 906-282-2260</h5>
                                                 </div>
                                             </div>
                                         </div><!--  featured-icon-box END -->
@@ -253,7 +253,8 @@
                                     </div>
                                 </div><!--  featured-icon-box END -->
                                 <div class="">
-                                    <a href="#" class="ttm-btn ttm-btn-size-md ttm-btn-style-border ttm-btn-color-white res-767-mt-20"> Contact Us</a>
+                                    <router-link to="/contact" tag="a" class="ttm-btn ttm-btn-size-md ttm-btn-style-border ttm-btn-color-white res-767-mt-20"> Contact Us </router-link>
+                                    <!-- <a href="#" class="ttm-btn ttm-btn-size-md ttm-btn-style-border ttm-btn-color-white res-767-mt-20"> Contact Us</a> -->
                                 </div>
                             </div>
                         </div>
