@@ -12,7 +12,7 @@
                         <router-link to="/" tag="a" > <i class="ti ti-home"></i>&nbsp;&nbsp;Home </router-link>
                     </span>
                     <span class="ttm-bread-sep ttm-textcolor-white">&nbsp;   →  &nbsp;</span>
-                    <span class="ttm-textcolor-skincolor">Services 01</span>
+                    <span class="ttm-textcolor-skincolor">Services</span>
                 </div>  
             </div>
         </app-breadcrumb>
@@ -30,7 +30,7 @@
                             <div class="ml-40">
                                 <!-- ttm_single_image-wrapper -->
                                 <div class="ttm_single_image-wrapper">
-                                    <img class="img-fluid" src="https://via.placeholder.com/500X565/444444.png" title="single-img-seven" alt="single-img-seven">
+                                    <img class="img-fluid" src="/img/service.jpg" title="single-img-seven" alt="single-img-seven">
                                 </div><!-- ttm_single_image-wrapper end -->
                                 <!--ttm-fid-->
                                 <div class="ttm-fid inside without-icon ttm-highlight-fid-style-2">
@@ -156,74 +156,86 @@
                         </div>
                     </div><!-- row end -->
                     <div class="row"><!-- row -->
-                        <div class="col-md-6 col-lg-4">
+                        <!-- <div class="col-md-6 col-lg-4"> -->
                             <!-- featured-imagebox-services -->
-                            <div class="featured-imagebox featured-imagebox-services mb-30">
-                                <div class="featured-thumbnail"><!-- featured-thumbnail -->
-                                    <img class="img-fluid" src="https://via.placeholder.com/720X436/444444.jpg" alt="image">
+                            <!-- <div class="featured-imagebox featured-imagebox-services mb-30">
+                                <div class="featured-thumbnail"> -->
+                                    <!-- featured-thumbnail -->
+                                    <!-- <img class="img-fluid" src="https://via.placeholder.com/720X436/444444.jpg" alt="image">
                                 </div> 
                                 <div class="featured-content box-shadow">
                                     <div class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-md ttm-icon_element-style-rounded">
-                                        <i class="flaticon flaticon-agriculture"></i><!--  ttm-icon --> 
+                                        <i class="flaticon flaticon-agriculture"></i> -->
+                                        <!--  ttm-icon --> 
+                                    <!-- </div>
+                                    <div class="featured-title"> -->
+                                        <!-- featured-title -->
+                                        <!-- <h5><a href="#">Crop Protection Service</a></h5>
                                     </div>
-                                    <div class="featured-title"><!-- featured-title -->
-                                        <h5><a href="#">Crop Protection Service</a></h5>
-                                    </div>
-                                    <div class="featured-desc"><!-- featured-title -->
-                                        <p>Crop protection encompasses: Pesticide-based approaches such as herbicides, insecticides and fungicides.</p>
+                                    <div class="featured-desc"> -->
+                                        <!-- featured-title -->
+                                        <!-- <p>Crop protection encompasses: Pesticide-based approaches such as herbicides, insecticides and fungicides.</p>
                                     </div>
                                     <hr>
                                     <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right" href="#">Learn More <i class="ti ti-angle-double-right"></i></a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
+                        </div> -->
+                        <!-- <div class="col-md-6 col-lg-4"> -->
                             <!-- featured-imagebox-services -->
-                            <div class="featured-imagebox featured-imagebox-services mb-30">
-                                <div class="featured-thumbnail"><!-- featured-thumbnail -->
-                                    <img class="img-fluid" src="https://via.placeholder.com/720X436/444444.jpg" alt="image">
+                            <!-- <div class="featured-imagebox featured-imagebox-services mb-30">
+                                <div class="featured-thumbnail"> -->
+                                    <!-- featured-thumbnail -->
+                                    <!-- <img class="img-fluid" src="https://via.placeholder.com/720X436/444444.jpg" alt="image">
                                 </div> 
                                 <div class="featured-content box-shadow">
                                     <div class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-md ttm-icon_element-style-rounded">
-                                        <i class="flaticon flaticon-tractor-1"></i><!--  ttm-icon --> 
+                                        <i class="flaticon flaticon-tractor-1"></i> -->
+                                        <!--  ttm-icon --> 
+                                    <!-- </div>
+                                    <div class="featured-title"> -->
+                                        <!-- featured-title -->
+                                        <!-- <h5><a href="#">Stone & Hardscaping</a></h5>
                                     </div>
-                                    <div class="featured-title"><!-- featured-title -->
-                                        <h5><a href="#">Stone & Hardscaping</a></h5>
-                                    </div>
-                                    <div class="featured-desc"><!-- featured-title -->
-                                        <p>All about planting and growing trees. Each year we plant more than 2 million trees, safely, reliably and on time. </p>
+                                    <div class="featured-desc"> -->
+                                        <!-- featured-title -->
+                                        <!-- <p>All about planting and growing trees. Each year we plant more than 2 million trees, safely, reliably and on time. </p>
                                     </div>
                                     <hr>
                                     <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right" href="#">Learn More <i class="ti ti-angle-double-right"></i></a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
+                        </div> -->
+                        <!-- <div class="col-md-6 col-lg-4"> -->
                             <!-- featured-imagebox-services -->
-                            <div class="featured-imagebox featured-imagebox-services mb-30">
-                                <div class="featured-thumbnail"><!-- featured-thumbnail -->
-                                    <img class="img-fluid" src="https://via.placeholder.com/720X436/444444.jpg" alt="image">
+                            <!-- <div class="featured-imagebox featured-imagebox-services mb-30">
+                                <div class="featured-thumbnail"> -->
+                                    <!-- featured-thumbnail -->
+                                    <!-- <img class="img-fluid" src="https://via.placeholder.com/720X436/444444.jpg" alt="image">
                                 </div> 
                                 <div class="featured-content box-shadow">
                                     <div class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-md ttm-icon_element-style-rounded">
-                                        <i class="flaticon flaticon-sprout"></i><!--  ttm-icon --> 
+                                        <i class="flaticon flaticon-sprout"></i> -->
+                                        <!--  ttm-icon --> 
+                                    <!-- </div>
+                                    <div class="featured-title"> -->
+                                        <!-- featured-title -->
+                                        <!-- <h5><a href="#">Forest & Tree Planting</a></h5>
                                     </div>
-                                    <div class="featured-title"><!-- featured-title -->
-                                        <h5><a href="#">Forest & Tree Planting</a></h5>
-                                    </div>
-                                    <div class="featured-desc"><!-- featured-title -->
-                                        <p>A complete harvesting service from harvesting the grain to transporting , to the completion of the harvest.</p>
+                                    <div class="featured-desc"> -->
+                                        <!-- featured-title -->
+                                        <!-- <p>A complete harvesting service from harvesting the grain to transporting , to the completion of the harvest.</p>
                                     </div>
                                     <hr>
                                     <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right" href="#">Learn More <i class="ti ti-angle-double-right"></i></a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-md-6 col-lg-4">
                             <!-- featured-imagebox-services -->
                             <div class="featured-imagebox featured-imagebox-services mb-30">
                                 <div class="featured-thumbnail"><!-- featured-thumbnail -->
-                                    <img class="img-fluid" src="https://via.placeholder.com/720X436/444444.jpg" alt="image">
+                                    <img class="img-fluid" src="/img/a.jpg" alt="image">
                                 </div> 
                                 <div class="featured-content box-shadow">
                                     <div class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-md ttm-icon_element-style-rounded">
@@ -244,7 +256,7 @@
                             <!-- featured-imagebox-services -->
                             <div class="featured-imagebox featured-imagebox-services mb-30">
                                 <div class="featured-thumbnail"><!-- featured-thumbnail -->
-                                    <img class="img-fluid" src="https://via.placeholder.com/720X436/444444.jpg" alt="image">
+                                    <img class="img-fluid" src="img/b.jpg" alt="image">
                                 </div> 
                                 <div class="featured-content box-shadow">
                                     <div class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-md ttm-icon_element-style-rounded">
@@ -265,7 +277,7 @@
                             <!-- featured-imagebox-services -->
                             <div class="featured-imagebox featured-imagebox-services mb-30">
                                 <div class="featured-thumbnail"><!-- featured-thumbnail -->
-                                    <img class="img-fluid" src="https://via.placeholder.com/720X436/444444.jpg" alt="image">
+                                    <img class="img-fluid" src="img/c.jpg" alt="image">
                                 </div> 
                                 <div class="featured-content box-shadow">
                                     <div class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-md ttm-icon_element-style-rounded">

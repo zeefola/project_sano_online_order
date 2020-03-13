@@ -2,7 +2,9 @@
    <app-master>
 
      <div slot='slider'>
-        <app-slider ></app-slider>
+        <vueper-slides>
+  <vueper-slide v-for="(slide, i) in slides" :key="i" :title="slide.title" :content="slide.content" />
+</vueper-slides>
      </div>
 
     
@@ -411,7 +413,7 @@
                                 <div class="layer-content"></div>
                             </div>
                             <!-- col-img-img-two responsive-img-->
-                            <img src="https://via.placeholder.com/946X603/444444.jpg" class="ttm-equal-height-image" alt="bg-image">
+                            <img src="/img/home.jpg" class="ttm-equal-height-image" alt="bg-image">
                         </div>
                     </div><!-- row -->
                 </div>
@@ -606,6 +608,8 @@
 import Master from "@/components/Master.vue";
 import Slider from "@/components/Slider.vue";
 import {seo} from "../Repositories/seo.js";
+import { VueperSlides, VueperSlide } from 'vueperslides';
+import 'vueperslides/dist/vueperslides.css'
 
 
 
@@ -613,8 +617,20 @@ export default {
   name: "Welcome",
   mixins: [seo],
   components: {
+    VueperSlides,
+     VueperSlide ,
     "app-master" : Master,
     "app-slider" : Slider,
+  },
+  data(){
+      return {
+          slides: [
+    {
+      title: 'Slide #1',
+      content: 'Slide content.'
+    }
+  ]
+      }
   },
   methods: {
 

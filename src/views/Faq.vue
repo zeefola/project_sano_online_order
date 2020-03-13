@@ -42,12 +42,12 @@
                     </div><!-- row end -->
                     <!-- row -->
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6"  >
                             <!-- ttm_single_image-wrapper -->
                             <div class="ttm_single_image-wrapper">
-                                <img class="img-fluid" src="https://via.placeholder.com/1200X800/444444.jpg" title="single-img-eight" alt="single-img-eight">
+                                <img class="img-fluid" src="/img/question.jpg" title="single-img-eight" alt="single-img-eight">
                             </div><!-- ttm_single_image-wrapper end -->
-                            <div class="ttm-play-icon-btn ttm-play-icon-btn-center">
+                            <!-- <div class="ttm-play-icon-btn ttm-play-icon-btn-center">
                                 <div class="ttm-play-icon-animation">
                                     <a href="https://youtu.be/7e90gBu4pas" target="_self" class="ttm_prettyphoto">
                                         <div class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-md ttm-icon_element-style-round">
@@ -55,7 +55,7 @@
                                         </div>
                                     </a>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="col-lg-6">
                             <!-- acadion -->
@@ -63,34 +63,87 @@
                                 <!-- toggle -->
                                 <div class="toggle">
                                     <div class="toggle-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"  @click="display('collapseOneData')" :class="{ active: this.menu.collapseOneData}" >What does having Managed your services provider?</a>
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"  @click="display('collapseOneData')" :class="{ active: this.menu.collapseOneData}" >What are the real health benefits of lemongrass?</a>
                                     </div>
                                     <div :class="{ block: this.menu.collapseOneData }" class="toggle-content" >
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <p class="mb-0"> Yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy  yyyyyyyyyyyyy</p>
+                                                <p class="mb-0"> Lemongrass is versatile. Its essential oil possesses many therapeutic properties. Lemongrass essential oil improves muscle and joint pain, and inflammation, as well as toothaches and headaches. It has an uplifting aroma which reduces depression, boosts self-esteem, confidence, hope, and mental strength. It has a broad spectrum of effects against microbial growth in the organ systems, and may combat body odour and skin diseases.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div><!-- toggle end -->
-
-
 
                                  <!-- toggle -->
                                 <div class="toggle">
                                     <div class="toggle-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"  @click="display('collapseTwoData')" :class="{ active: this.menu.collapseTwoData}" >What does having Managed your services provider?</a>
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"  @click="display('collapseTwoData')" :class="{ active: this.menu.collapseTwoData}" >How do you use lemongrass oil?</a>
                                     </div>
                                     <div :class="{ block: this.menu.collapseTwoData }" class="toggle-content" >
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <p class="mb-0"> Yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy  yyyyyyyyyyyyy</p>
+                                                <p class="mb-0"> Lemongrass oil is applied topically. Because lemongrass essential oil is highly concentrated, it should not be used directly on the skin. For use in aromatherapy, you can inhale lemongrass oil directly. Add a few drops of lemongrass oil into carrier oil of your choice, then mix into a warm bath or massage into skin.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div><!-- toggle end -->
 
-                                
+                                <!-- toggle -->
+                                <div class="toggle">
+                                    <div class="toggle-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"  @click="display('collapseThreeData')" :class="{ active: this.menu.collapseThreeData}" >Can I use lemongrass oil on my sensitive skin?</a>
+                                    </div>
+                                    <div :class="{ block: this.menu.collapseThreeData }" class="toggle-content" >
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <p class="mb-0"> Lemongrass oil works effectively for all skin types, as an antiseptic and astringent. It is ideal for achieving even, glowing skin. Regular use of lemongrass oil will strengthen your skin tissues, cleanse your pores, and act as a natural toner. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- toggle end -->
+
+                                <!-- toggle -->
+                                <div class="toggle">
+                                    <div class="toggle-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"  @click="display('collapseFourData')" :class="{ active: this.menu.collapseFourData}" >Can I ingest lemongrass oil or add to food?</a>
+                                    </div>
+                                    <div :class="{ block: this.menu.collapseFourData }" class="toggle-content" >
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <p class="mb-0"> Unlike lemongrass infusions made by boiling the leaves in water, lemongrass oil is not edible. Do not swallow, or add to food or beverages. It is meant for cosmetic use. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- toggle end -->
+
+                                <!-- toggle -->
+                                <div class="toggle">
+                                    <div class="toggle-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"  @click="display('collapseFiveData')" :class="{ active: this.menu.collapseFiveData}" >How do I guarantee the authenticity of your lemongrass products?</a>
+                                    </div>
+                                    <div :class="{ block: this.menu.collapseFiveData }" class="toggle-content" >
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <p class="mb-0"> Our lemongrass line of products is created through the most ethical industry standards, and endorsed for quality by the appropriate local standards regulation agencies.  </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- toggle end -->
+
+                                <!-- toggle -->
+                                <div class="toggle">
+                                    <div class="toggle-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"  @click="display('collapseSixData')" :class="{ active: this.menu.collapseSixData}" >Where are Nardus lemongrass products made?</a>
+                                    </div>
+                                    <div :class="{ block: this.menu.collapseSixData }" class="toggle-content" >
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <p class="mb-0"> Our lemongrass is locally sourced from the best specimens to ensure superior quality and consistency. Growing and processing our products locally is part of our long-term goals to revive the Agriculture sector. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- toggle end -->
+
                             </div><!-- acadion  end-->
                         </div>
                     </div>
@@ -126,7 +179,10 @@ export default {
           menu: {
             collapseOneData: false,
             collapseTwoData: false,
-            collapseThreeata: false
+            collapseThreeData: false,
+            collapseFourData: false,
+            collapseFiveData: false,
+            collapseSixData: false
           }
       }
 

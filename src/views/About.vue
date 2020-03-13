@@ -31,7 +31,7 @@
                         <div class="col-lg-6">
                             <!-- ttm_single_image-wrapper -->
                             <div class="ttm_single_image-wrapper after-border style2 position-relative ml-20">
-                                <img class="img-fluid border-12px-solid white-border" src="https://via.placeholder.com/522X479/444444.jpg" title="single-img-five" alt="single-img-five">
+                                <img class="img-fluid border-12px-solid white-border" src="/img/who.jpg" title="single-img-five" alt="single-img-five">
                             </div><!-- ttm_single_image-wrapper end -->
                         </div>
                         <div class="col-lg-6">
