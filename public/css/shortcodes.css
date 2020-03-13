@@ -222,7 +222,7 @@
     background-size: cover !important;
 }
 .col-bg-img-two.ttm-col-bgimage-yes .ttm-col-wrapper-bg-layer{
-    background-image: url(https://via.placeholder.com/946X603/444444.jpg) !important;
+    background-image: url("/img/home.jpg") !important;
     background-position: center center!important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -608,6 +608,9 @@
 }
 @-webkit-keyframes scaling{ 100% { width:200%;height:200%;opacity:0 } }
 @keyframes scaling{ 100% { width:200%;height:200%;opacity:0 } }
+
+
+
 
 .ttm-play-icon-btn.ttm-play-icon-btn-center{
     position: absolute;
