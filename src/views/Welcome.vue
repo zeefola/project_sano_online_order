@@ -145,7 +145,7 @@
                                 </div>
                                 <div class="featured-content"><!--  featured-content -->
                                     <div class="featured-title"><!--  featured-title -->
-                                        <h5>Essential Oil Production   </h5>
+                                        <h5>Essential Oils Production   </h5>
                                     </div>
                                     <div class="featured-desc"><!--  featured-desc -->
                                         <p>Aromatherapy</p>
@@ -163,10 +163,10 @@
                                 </div>
                                 <div class="featured-content"><!--  featured-content -->
                                     <div class="featured-title"><!--  featured-title -->
-                                        <h5>Flavor Formulation</h5>
+                                        <h5>Flavour Formulation</h5>
                                     </div>
                                     <div class="featured-desc"><!--  featured-desc -->
-                                        <p>All about planting and growing.</p>
+                                        <p>Gourmet Flavors</p>
                                     </div>
                                 </div>
                             </div><!--  featured-icon-box END -->
@@ -181,10 +181,10 @@
                                 </div>
                                 <div class="featured-content"><!--  featured-content -->
                                     <div class="featured-title"><!--  featured-title -->
-                                        <h5>Fragrance Customization</h5>
+                                        <h5>Fragrance Customisation</h5>
                                     </div>
                                     <div class="featured-desc"><!--  featured-desc -->
-                                        <p>All about planting and growing.</p>
+                                        <p>Oriental Scents</p>
                                     </div>
                                 </div>
                             </div><!--  featured-icon-box END -->
@@ -267,7 +267,7 @@
                                                 <h5 class="mb-5">Natural Essential Oils</h5>
                                             </div>
                                             <div class="featured-desc"><!--  featured-desc -->
-                                                <p>Lorem Ipsum is simply dummy text of the printing ndustry.</p>
+                                                <p>A wide selection of essential oils ideal for aromatherapy and food</p>
                                             </div>
                                             <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right mt-15" href="#">Learn More <i class="fa fa-chevron-right"></i></a>
                                         </div>
@@ -286,7 +286,7 @@
                                                 <h5 class="mb-5">Bath & Body</h5>
                                             </div>
                                             <div class="featured-desc"><!--  featured-desc -->
-                                                <p>Lorem Ipsum is simply dummy text of the printing ndustry.</p>
+                                                <p>Essential oils can be added to bath or applied to skin</p>
                                             </div>
                                             <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right mt-15" href="#">Learn More <i class="fa fa-chevron-right"></i></a>
                                         </div>
@@ -305,7 +305,7 @@
                                                 <h5 class="mb-5">Household</h5>
                                             </div>
                                             <div class="featured-desc"><!--  featured-desc -->
-                                                <p>Lorem Ipsum is simply dummy text of the printing ndustry.</p>
+                                                <p>Maintain proper hygiene in the home in a natural way</p>
                                             </div>
                                             <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right mt-15" href="#">Learn More <i class="fa fa-chevron-right"></i></a>
                                         </div>
@@ -324,7 +324,7 @@
                                                 <h5 class="mb-5">Flavor</h5>
                                             </div>
                                             <div class="featured-desc"><!--  featured-desc -->
-                                                <p>Lorem Ipsum is simply dummy text of the printing ndustry.</p>
+                                                <p>Organic spices for top of the class flavouring</p>
                                             </div>
                                             <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right mt-15" href="#">Learn More <i class="fa fa-chevron-right"></i></a>
                                         </div>

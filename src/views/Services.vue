@@ -64,10 +64,11 @@
                                             </div>
                                             <div class="featured-content"><!--  featured-content -->
                                                 <div class="featured-title"><!--  featured-title -->
-                                                    <h5>We Bring Quality Services</h5>
+                                                    <h5>Excellent Delivery Service</h5>
                                                 </div>
                                                 <div class="featured-desc">
-                                                    <p>Sed ut pew rsieatis unde mnis ste ns error sit vodeta tem loream ipsum dutsed lore.</p>
+                                                    <p>A smart nationwide logistics network that guarantees safe and fast delivery.
+</p>
                                                 </div>
                                             </div>
                                         </div><!--  featured-icon-box END -->
@@ -82,10 +83,10 @@
                                             </div>
                                             <div class="featured-content"><!--  featured-content -->
                                                 <div class="featured-title"><!--  featured-title -->
-                                                    <h5>Experience & Talented</h5>
+                                                    <h5>Experience & Talent</h5>
                                                 </div>
                                                 <div class="featured-desc">
-                                                    <p>Sed ut pew rsieatis unde mnis ste ns error sit vodeta tem loream ipsum dutsed lore.</p>
+                                                    <p>Our work is founded on 20+ years of experience and driven by a line-up of remarkable corporate talents.</p>
                                                 </div>
                                             </div>
                                         </div><!--  featured-icon-box END -->
@@ -100,10 +101,10 @@
                                             </div>
                                             <div class="featured-content"><!--  featured-content -->
                                                 <div class="featured-title"><!--  featured-title -->
-                                                    <h5>Offers 24/7 Quick Support</h5>
+                                                    <h5>24/7 Customer Support</h5>
                                                 </div>
                                                 <div class="featured-desc">
-                                                    <p>Sed ut pew rsieatis unde mnis ste ns error sit vodeta tem loream ipsum dutsed lore.</p>
+                                                    <p>We have an experienced customer support team that responds to inquiries in real time.</p>
                                                 </div>
                                             </div>
                                         </div><!--  featured-icon-box END -->
@@ -113,15 +114,15 @@
                                         <div class="featured-icon-box style8 left-icon icon-align-top">
                                             <div class="featured-icon"><!--  featured-icon --> 
                                                 <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
-                                                    <i class="flaticon flaticon-garden"></i><!--  ttm-icon --> 
+                                                    <i class="flaticon flaticon-worldwide"></i><!--  ttm-icon --> 
                                                 </div>
                                             </div>
                                             <div class="featured-content"><!--  featured-content -->
                                                 <div class="featured-title"><!--  featured-title -->
-                                                    <h5>We Bring Quality Services</h5>
+                                                    <h5>Research & Development</h5>
                                                 </div>
                                                 <div class="featured-desc">
-                                                    <p>Sed ut pew rsieatis unde mnis ste ns error sit vodeta tem loream ipsum dutsed lore.</p>
+                                                    <p>Continuous research on organics with focus on promoting a healthier world.</p>
                                                 </div>
                                             </div>
                                         </div><!--  featured-icon-box END -->

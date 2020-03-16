@@ -107,17 +107,17 @@
                                     <div class="featured-icon-box left-icon style9 ttm-bgcolor-white mb-30">
                                         <div class="featured-icon"><!--  featured-icon --> 
                                             <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
-                                                <i class="flaticon flaticon-agriculture"></i><!--  ttm-icon --> 
+                                                <i class="flaticon flaticon-support"></i><!--  ttm-icon --> 
                                             </div>
                                         </div>
                                         <div class="featured-content"><!--  featured-content -->
                                             <div class="featured-title"><!--  featured-title -->
-                                                <h5 class="mb-5">Crop Protection Service</h5>
+                                                <h5 class="mb-5">24/7 Customer Support</h5>
                                             </div>
                                             <div class="featured-desc"><!--  featured-desc -->
-                                                <p>Lorem Ipsum is simply dummy text of the printing ndustry.</p>
+                                                <p>We have an experienced customer support team that responds to inquiries in real time.</p>
                                             </div>
-                                            <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right mt-15" href="#">Learn More <i class="fa fa-chevron-right"></i></a>
+                                            <!-- <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right mt-15" href="#">Learn More <i class="fa fa-chevron-right"></i></a> -->
                                         </div>
                                     </div><!--  featured-icon-box END -->
                                 </div>
@@ -126,17 +126,17 @@
                                     <div class="featured-icon-box left-icon style9 ttm-bgcolor-white">
                                         <div class="featured-icon"><!--  featured-icon --> 
                                             <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
-                                                <i class="flaticon flaticon-farmer"></i><!--  ttm-icon --> 
+                                                <i class="flaticon flaticon-lorry"></i><!--  ttm-icon --> 
                                             </div>
                                         </div>
                                         <div class="featured-content"><!--  featured-content -->
                                             <div class="featured-title"><!--  featured-title -->
-                                                <h5 class="mb-5">Technical and Account Support</h5>
+                                                <h5 class="mb-5">Excellent Delivery Service</h5>
                                             </div>
                                             <div class="featured-desc"><!--  featured-desc -->
-                                                <p>We are here to help! If you have technical issues, Contact Us. We will serve you the best support.</p>
+                                                <p>A smart nationwide logistics network that guarantees safe and fast delivery.</p>
                                             </div>
-                                            <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right mt-15" href="#">Learn More <i class="fa fa-chevron-right"></i></a>
+                                            <!-- <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right mt-15" href="#">Learn More <i class="fa fa-chevron-right"></i></a> -->
                                         </div>
                                     </div><!--  featured-icon-box END -->
                                 </div>
