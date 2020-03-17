@@ -864,12 +864,13 @@
 /* ===============================================
     12.featured-icon-box ( only contents )
 ------------------------*/
+
 .featured-icon-box { position: relative;}
 .featured-icon-box .ttm-icon{ margin-bottom: 0px; }
 .featured-icon-box.left-icon .featured-icon, 
 .featured-icon-box.left-icon .featured-content{
     display: table-cell;
-    vertical-align: middle; 
+    vertical-align: top; 
 }
 
 .featured-icon-box.iconalign-before-heading .featured-content{ display: table; }

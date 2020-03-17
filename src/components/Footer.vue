@@ -41,7 +41,7 @@
                             <div class="widget widget_text  clearfix">
                                 <h3 class="widget-title"> About Nardus</h3>
                                 <div class="">
-                                    <p>Nardus Company Ltd is a global supplier of Essential Oils into the Flavour, Fragrance and Cosmetic industries. NCL offers customers a wide range of essential oils.</p>
+                                    <p>Nardus Company Ltd are a global supplier of Essential Oils into the Flavour, Fragrance and Cosmetic industries. Nardus offer customers an extensive line of essential oils and lemongrass-based domestic products.</p>
                                     <hr>
                                     <!-- <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right" href="#">Find Us On Map  <i class="ti ti-arrow-circle-right"></i></a> -->
                                 </div>
@@ -66,7 +66,8 @@
                                     <!-- <router-link tag="li" to="/about"><a> About </a></router-link>
                                     <router-link to="/faq" tag="li"> <a>  Faq </a> </router-link> -->
                                     <router-link to="/shop" tag="li"> <a> Shop </a> </router-link>
-                                    <router-link to="/contact" tag="li"><a> Blog </a></router-link>
+                                   <li>  <a href="https://blog.nardus.ng/">Blog</a> </li>
+                                    <!-- <router-link to="https://blog.nardus.ng/" tag="li"><a> Blog </a></router-link> -->
                                 </ul>
 
                                 <!-- <ul class="widget-post ttm-recent-post-list">
