@@ -4,17 +4,12 @@ import router from "./router";
 import store from "./store";
 import "./registerServiceWorker";
 import VueMeta from 'vue-meta'
-import Notifications from 'vue-notification'
 import Vuesax from 'vuesax'
-import VueCarousel from 'vue-carousel';
-
 
 import 'vuesax/dist/vuesax.css' //Vuesax styles
 Vue.use(Vuesax, {
   // options here
 })
-Vue.use(VueCarousel);
-
 
 
 
@@ -41,7 +36,6 @@ Vue.use(VueCarousel);
 
 
 Vue.use(VueMeta)
-Vue.use(Notifications)
 
 Vue.config.productionTip = false;
 Vue.config.ignoredElements = ['rs-module-wrap','rs-module','rs-slides','rs-slide','rs-layer']
