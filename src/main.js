@@ -6,11 +6,16 @@ import "./registerServiceWorker";
 import VueMeta from 'vue-meta'
 import Notifications from 'vue-notification'
 import Vuesax from 'vuesax'
+import VueCarousel from 'vue-carousel';
+
 
 import 'vuesax/dist/vuesax.css' //Vuesax styles
 Vue.use(Vuesax, {
   // options here
 })
+Vue.use(VueCarousel);
+
+
 
 
 

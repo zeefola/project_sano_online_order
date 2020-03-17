@@ -1,10 +1,31 @@
 <template>
    <app-master>
 
-     <div slot='slider'>
-        <vueper-slides>
-  <vueper-slide v-for="(slide, i) in slides" :key="i" :title="slide.title" :content="slide.content" />
-</vueper-slides>
+     <div slot='slider' >
+         
+        <div class="sliderDimension">
+
+        <!-- Using the slider component -->
+        <slider ref="slider" :options="options">
+            <!-- slideritem wrapped package with the components you need -->
+            <slideritem v-for="(item,index) in someList" :key="index" :style="item.style">
+                
+                    <img :src='item.url' :style="item.style" >
+                    <div :class="item.position"> 
+                        <div class="subtitle">
+                            {{ item.subtitle }}
+                        </div>
+                        <div class="title">
+                            {{item.title}}
+                        </div>
+                    </div>
+                
+            </slideritem>
+            <!-- Customizable loading -->
+            <div slot="loading">loading...</div>
+        </slider>
+        </div>
+      
      </div>
 
     
@@ -608,8 +629,7 @@
 import Master from "@/components/Master.vue";
 import Slider from "@/components/Slider.vue";
 import {seo} from "../Repositories/seo.js";
-import { VueperSlides, VueperSlide } from 'vueperslides';
-import 'vueperslides/dist/vueperslides.css'
+import { slider, slideritem } from 'vue-concise-slider'
 
 
 
@@ -617,19 +637,39 @@ export default {
   name: "Welcome",
   mixins: [seo],
   components: {
-    VueperSlides,
-     VueperSlide ,
+    "slider": slider,
+    "slideritem": slideritem,
+    
     "app-master" : Master,
     "app-slider" : Slider,
   },
   data(){
       return {
-          slides: [
-    {
-      title: 'Slide #1',
-      content: 'Slide content.'
-    }
-  ]
+         someList:[
+
+          {
+            subtitle: 'subtitle',
+            title: 'Hello World',
+            position: 'center',
+            url: 'https://www.w3schools.com/css/img_5terre_wide.jpg',
+            style: {
+              'height': '700px'
+
+            }
+          },
+          
+        ],
+        options: {
+          currentPage: 0,
+          autoplay:'5000',
+          effect: 'fade',
+          pagination: true,
+          
+        },
+
+        style: {
+  
+}
       }
   },
   methods: {
@@ -642,3 +682,28 @@ export default {
   }
 };
 </script>
+
+
+<style scoped>
+
+.sliderDimension{
+    width:100%;
+    margin:0px auto;
+    height:700px
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: white;
+}
+
+img { 
+  width: 100%;
+  height: auto;
+  opacity: 1;
+}
+</style>
