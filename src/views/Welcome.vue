@@ -262,11 +262,11 @@
                                         <span></span>
                                     </div>
                                 </div><!-- section title end -->
-                                <p>Awaken your sixth sense with our 100% natural essential oil! Nardus essential oil contains nothing else but natural essential oils extracted through a rigorous steam distillation and purification process which allows it to retain most of its natural terpenes.</p>
+                                <p>Here at Nardus, we do what we do best—sort the best plant and herb specimens to make superior quality essential oils. Our essential oils contain only natural extracts derived through an ethical steam distillation and purification process. This ensures the consistency in aroma, flavour, and potency.</p>
                                 <div class="mt-25">
                                     <ul class="ttm-list ttm-list-style-icon">
-                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Nardus lemongrass essential oil has been discovered to have a high citral content ranging more than 75% enhancing its aromatherapy, massage, and fragrance usage.</span></li>
-                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Nardus turmeric oil has been discovered to also have a high cur['[cumin level thereby enhancing its benefits as an antibacterial and antifungal agent which also helps revitalise the skin.</span></li>
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Nardus lemongrass essential oil has possesses a highly concentrated citral compound which tops 75% of its formulation. This guarantees its effectiveness in aromatherapy, massage, and cosmetics.</span></li>
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Nardus turmeric oil has a high cumin compound found in the cumin plant. It is an effective antibacterial and antifungal agent which also improves skin health.</span></li>
                                         <!-- <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Avoids a pain that produces resultant</span></li> -->
                                     </ul>
                                 </div>
@@ -290,7 +290,7 @@
                                             <div class="featured-desc"><!--  featured-desc -->
                                                 <p>A wide selection of essential oils ideal for aromatherapy and food</p>
                                             </div>
-                                            <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right mt-15" href="#">Learn More <i class="fa fa-chevron-right"></i></a>
+                                            <!-- <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right mt-15" href="#">Learn More <i class="fa fa-chevron-right"></i></a> -->
                                         </div>
                                     </div><!--  featured-icon-box END -->
                                 </div>
@@ -309,7 +309,7 @@
                                             <div class="featured-desc"><!--  featured-desc -->
                                                 <p>Essential oils can be added to bath or applied to skin</p>
                                             </div>
-                                            <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right mt-15" href="#">Learn More <i class="fa fa-chevron-right"></i></a>
+                                            <!-- <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right mt-15" href="#">Learn More <i class="fa fa-chevron-right"></i></a> -->
                                         </div>
                                     </div><!--  featured-icon-box END -->
                                 </div>
@@ -328,7 +328,7 @@
                                             <div class="featured-desc"><!--  featured-desc -->
                                                 <p>Maintain proper hygiene in the home in a natural way</p>
                                             </div>
-                                            <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right mt-15" href="#">Learn More <i class="fa fa-chevron-right"></i></a>
+                                            <!-- <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right mt-15" href="#">Learn More <i class="fa fa-chevron-right"></i></a> -->
                                         </div>
                                     </div><!--  featured-icon-box END -->
                                 </div>
@@ -347,7 +347,7 @@
                                             <div class="featured-desc"><!--  featured-desc -->
                                                 <p>Organic spices for top of the class flavouring</p>
                                             </div>
-                                            <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right mt-15" href="#">Learn More <i class="fa fa-chevron-right"></i></a>
+                                            <!-- <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right mt-15" href="#">Learn More <i class="fa fa-chevron-right"></i></a> -->
                                         </div>
                                     </div><!--  featured-icon-box END -->
                                 </div>
@@ -380,7 +380,7 @@
                                                 <span></span>
                                             </div>
                                         </div><!-- section title end -->
-                                        <p>We operate in a challenging and highly competitive environment, but we are distinguished by high level of professionalism, integrity and tact. Our facility is complete with stainless steel tanks and filtration facilities for packaging and blending.</p>
+                                        <p>Our level of professionalism, integrity and tact sets us in a class of our own. We operate in a facility that houses state-of-the-art equipment for blending, filtration and packaging.</p>
                                         <div class="section-title clearfix">
                                             <div class="title-header">
                                                 <h5>Objectives</h5>
@@ -392,7 +392,7 @@
                                         <!-- <div class="mt-40"> -->
                                             <!-- progress-bar -->
                                             <div class="ttm-progress-bar" data-percent="90%">
-                                                <div class="progress-bar-title">To contribute to the world's needs of essential oil</div><!-- progress-bar-title -->
+                                                <div class="progress-bar-title">To make a significant contribution to the world's need of essential oils</div><!-- progress-bar-title -->
                                                 <div class="progress-bar-inner">
                                                     <div class="progress-bar progress-bar-color-bar_skincolor"></div>
                                                 </div>
@@ -412,7 +412,7 @@
                                             <!-- progress-bar END -->
                                             <!-- progress-bar -->
                                             <div class="ttm-progress-bar" data-percent="90%">
-                                                <div class="progress-bar-title">To constantly research and source new products that meet our customers growing needs.</div><!-- progress-bar-TITLE -->
+                                                <div class="progress-bar-title">To constantly research and source new products that meet our customers’ growing needs</div><!-- progress-bar-TITLE -->
                                                 <div class="progress-bar-inner">
                                                     <div class="progress-bar progress-bar-color-bar_skincolor"></div>
                                                 </div>
@@ -653,7 +653,8 @@ export default {
             position: 'center',
             url: 'https://www.w3schools.com/css/img_5terre_wide.jpg',
             style: {
-              'height': '700px'
+              'height': '500px',
+              'object-fit': 'fill'
 
             }
           },
@@ -689,7 +690,7 @@ export default {
 .sliderDimension{
     width:100%;
     margin:0px auto;
-    height: 600px
+    height: 500px
 }
 
 @media screen and (max-width: 800px){

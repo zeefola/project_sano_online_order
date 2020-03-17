@@ -46,9 +46,9 @@
                                         <span></span>
                                     </div>
                                 </div><!-- section title end -->
-                                <p>Nardus Company Ltd is a global supplier of Essential Oils into the Flavour, Fragrance and Cosmetic industries. NCL offers customers a wide range of essential oils.</p>
-                                <p>Headquartered in Lagos, Nigeria  to support worldwide production and distribution of the finest Essential Oils, Spice Oleoresins, Herbal Extracts, Hydrosols and other natural materials.</p>
-                                <p> Besides manufacturing many of our products ourselves, our volume purchases through our Central Purchasing System enable us to offer the largest selection of pure essential oils at affordable prices. We have a wide variety of pack sizes to meet all of your specific needs, large or small. </p>
+                                <p>Nardus Company Ltd are a global supplier of Essential Oils into the Flavour, Fragrance and Cosmetic industries. Nardus offer customers an extensive line of essential oils and lemongrass-based domestic products.</p>
+                                <p>Headquartered in Lagos, Nigeria, we support the worldwide production and distribution of the finest Essential Oils, Spice Oleoresins, Herbal Extracts, Hydrosols and other naturally formulated homecare products.</p>
+                                <p> Apart from manufacturing many of our products ourselves, our volume purchases through our Central Purchasing System enable us to offer the largest selection of pure essential oils at affordable prices. We have a wide variety of pack sizes to meet all your specific needs, large, small, or anywhere between. </p>
                                 <!-- <div class="row ttm-bgcolor-white align-items-center mt-30"> -->
                                     <!-- <div class="col-md-4 col-lg-4"> -->
                                         <!--ttm-fid-->
@@ -166,7 +166,7 @@
                                                 <span></span>
                                             </div>
                                         </div><!-- section title end -->
-                                        <p>We operate in a challenging and highly competitive environment, but we are distinguished by high level of professionalism, integrity and tact. Our facility is complete with stainless steel tanks and filtration facilities for packaging and blending.</p>
+                                        <p>Our level of professionalism, integrity and tact sets us in a class of our own. We operate in a facility that houses state-of-the-art equipment for blending, filtration and packaging.</p>
                                         <div class="section-title clearfix">
                                             <div class="title-header">
                                                 <h5>Objectives</h5>
@@ -178,7 +178,7 @@
                                         <!-- <div class="mt-40"> -->
                                             <!-- progress-bar -->
                                             <div class="ttm-progress-bar" data-percent="90%">
-                                                <div class="progress-bar-title">To contribute to the world's needs of essential oil</div><!-- progress-bar-title -->
+                                                <div class="progress-bar-title">To make a significant contribution to the world's need of essential oils</div><!-- progress-bar-title -->
                                                 <div class="progress-bar-inner">
                                                     <div class="progress-bar progress-bar-color-bar_skincolor"></div>
                                                 </div>
@@ -198,7 +198,7 @@
                                             <!-- progress-bar END -->
                                             <!-- progress-bar -->
                                             <div class="ttm-progress-bar" data-percent="90%">
-                                                <div class="progress-bar-title">To constantly research and source new products that meet our customers growing needs.</div><!-- progress-bar-TITLE -->
+                                                <div class="progress-bar-title">To constantly research and source new products that meet our customers’ growing needs</div><!-- progress-bar-TITLE -->
                                                 <div class="progress-bar-inner">
                                                     <div class="progress-bar progress-bar-color-bar_skincolor"></div>
                                                 </div>

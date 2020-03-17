@@ -37,6 +37,25 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue")
   },
+
+  {
+    path: "/essential-oils",
+    name: "Essential Oils",
+    component: () => import("../views/Essential-oils.vue")
+  },
+
+  {
+    path: "/hand-sanitizer",
+    name: "Hand Sanitizer",
+    component: () => import("../views/Hand-sanitizer.vue")
+  },
+
+  {
+    path: "/hydrosol",
+    name: "Hydrosol",
+    component: () => import("../views/Hydrosol.vue")
+  },
+
   {
     path: "/404",
     name: "Error",

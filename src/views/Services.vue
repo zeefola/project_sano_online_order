@@ -147,8 +147,8 @@
                             <!-- section title -->
                             <div class="section-title text-center clearfix">
                                 <div class="title-header mb-50">
-                                    <h5>WHAT WE OFFER</h5>
-                                    <h2 class="title">We Provide Best Services</h2>
+                                    <h5>DISCOVER OUR PRODUCTS</h5>
+                                    <h2 class="title">100% Pure and Organic</h2>
                                 </div>
                                 <div class="heading-seperator">
                                     <span></span>
@@ -236,20 +236,21 @@
                             <!-- featured-imagebox-services -->
                             <div class="featured-imagebox featured-imagebox-services mb-30">
                                 <div class="featured-thumbnail"><!-- featured-thumbnail -->
-                                    <img class="img-fluid" src="/img/a.jpg" alt="image">
+                                    <img class="img-fluid" src="/img/c.jpg" alt="image">
                                 </div> 
                                 <div class="featured-content box-shadow">
                                     <div class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-md ttm-icon_element-style-rounded">
-                                        <i class="flaticon flaticon-watering"></i><!--  ttm-icon --> 
+                                        <i class="flaticon flaticon-agriculture"></i><!--  ttm-icon --> 
                                     </div>
                                     <div class="featured-title"><!-- featured-title -->
-                                        <h5><a href="#">Watering Systems</a></h5>
+                                        <h5><a href="#">Essential Oils</a></h5>
                                     </div>
                                     <div class="featured-desc"><!-- featured-title -->
-                                        <p>The primary focus of our this services is to optimize the performance of our water treatment programs.</p>
+                                        <p>As humans we have used traditional methods to medicate ourselves for ages, and essential oils are an important part of </p>
                                     </div>
                                     <hr>
-                                    <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right" href="#">Learn More <i class="ti ti-angle-double-right"></i></a>
+                                    <router-link to="/essential-oils" tag="a" class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right"> Learn More <i class="ti ti-angle-double-right"></i> </router-link>
+                                    <!-- <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right" href="#">Learn More <i class="ti ti-angle-double-right"></i></a> -->
                                 </div>
                             </div>
                         </div>
@@ -257,20 +258,21 @@
                             <!-- featured-imagebox-services -->
                             <div class="featured-imagebox featured-imagebox-services mb-30">
                                 <div class="featured-thumbnail"><!-- featured-thumbnail -->
-                                    <img class="img-fluid" src="img/b.jpg" alt="image">
+                                    <img class="img-fluid" src="img/2a.jpg" alt="image">
                                 </div> 
                                 <div class="featured-content box-shadow">
                                     <div class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-md ttm-icon_element-style-rounded">
                                         <i class="flaticon flaticon-drone"></i><!--  ttm-icon --> 
                                     </div>
                                     <div class="featured-title"><!-- featured-title -->
-                                        <h5><a href="#">Irrigation & Drainage</a></h5>
+                                        <h5><a href="#">Hand Sanitizer</a></h5>
                                     </div>
                                     <div class="featured-desc"><!-- featured-title -->
-                                        <p>Lorem idolorame conseetur sadipscing elit- diam nonumy eirmod tecontary to mpor invi- dunt ut labore</p>
+                                        <p>Hand sanitizer is often an alcohol-based gelatinous solution that’s effective against harmful agents which have the potential of</p>
                                     </div>
                                     <hr>
-                                    <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right" href="#">Learn More <i class="ti ti-angle-double-right"></i></a>
+                                     <router-link to="/hand-sanitizer" tag="a" class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right"> Learn More <i class="ti ti-angle-double-right"></i> </router-link>
+                                    <!-- <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right" href="#">Learn More <i class="ti ti-angle-double-right"></i></a> -->
                                 </div>
                             </div>
                         </div>
@@ -278,20 +280,20 @@
                             <!-- featured-imagebox-services -->
                             <div class="featured-imagebox featured-imagebox-services mb-30">
                                 <div class="featured-thumbnail"><!-- featured-thumbnail -->
-                                    <img class="img-fluid" src="img/c.jpg" alt="image">
+                                    <img class="img-fluid" src="img/3.jpg" alt="image">
                                 </div> 
                                 <div class="featured-content box-shadow">
                                     <div class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-md ttm-icon_element-style-rounded">
                                         <i class="flaticon flaticon-agriculture-4"></i><!--  ttm-icon --> 
                                     </div>
                                     <div class="featured-title"><!-- featured-title -->
-                                        <h5><a href="#">Preparing Landscape</a></h5>
+                                        <h5><a href="#">Hydrosol</a></h5>
                                     </div>
                                     <div class="featured-desc"><!-- featured-title -->
-                                        <p>Lorem idolorame conseetur sadipscing elit- diam nonumy eirmod tecontary to mpor invi- dunt ut labore</p>
+                                        <p>Also known as herbal distillates or floral waters, hydrosols are “by products” of essential oils extracted through</p>
                                     </div>
                                     <hr>
-                                    <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right" href="#">Learn More <i class="ti ti-angle-double-right"></i></a>
+                                    <router-link to="/hydrosol" tag="a" class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right"> Learn More <i class="ti ti-angle-double-right"></i> </router-link>
                                 </div>
                             </div>
                         </div>
