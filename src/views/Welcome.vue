@@ -9,16 +9,16 @@
         <slider ref="slider" :options="options">
             <!-- slideritem wrapped package with the components you need -->
             <slideritem v-for="(item,index) in someList" :key="index" :style="item.style">
-                
+
                     <img :src='item.url' :style="item.style" >
-                    <div :class="item.position"> 
+                    <!-- <div :class="item.position"> 
                         <div class="subtitle">
                             {{ item.subtitle }}
                         </div>
                         <div class="title">
                             {{item.title}}
                         </div>
-                    </div>
+                    </div> -->
                 
             </slideritem>
             <!-- Customizable loading -->
@@ -689,7 +689,15 @@ export default {
 .sliderDimension{
     width:100%;
     margin:0px auto;
-    height:700px
+    height: 600px
+}
+
+@media screen and (max-width: 800px){
+    .sliderDimension{
+        width:100%;
+        margin:0px auto;
+        height:381px
+   }
 }
 
 .center {
