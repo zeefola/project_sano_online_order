@@ -74,7 +74,7 @@
                                                     <!-- <h5 class="mb-5">Quality & Reliability</h5>
                                                 </div> -->
                                                 <div class="featured-desc"><!--  featured-desc -->
-                                                    <p>Nardus Hydrosol is produced by steam-distilling our own 100% organic lemongrass plant. The result is a perfect distillate which carries along with it a potent protective quality against foreign bodies and harmful organisms that cause infection and disease.</p>
+                                                    <p>Nardus Hydrosol is produced by steam-distilling our own 100% organic lemongrass plant. The result is a perfect distillate which carries with it a potent protective quality against foreign bodies and harmful organisms that cause infection and disease.</p>
                                                 </div>
                                             </div>
                                         </div><!--  featured-icon-box END -->
