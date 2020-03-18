@@ -258,7 +258,7 @@
                             <!-- featured-imagebox-services -->
                             <div class="featured-imagebox featured-imagebox-services mb-30">
                                 <div class="featured-thumbnail"><!-- featured-thumbnail -->
-                                    <img class="img-fluid" src="img/2a.jpg" alt="image">
+                                    <img class="img-fluid" src="img/3.jpg" alt="image">
                                 </div> 
                                 <div class="featured-content box-shadow">
                                     <div class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-md ttm-icon_element-style-rounded">
@@ -280,7 +280,7 @@
                             <!-- featured-imagebox-services -->
                             <div class="featured-imagebox featured-imagebox-services mb-30">
                                 <div class="featured-thumbnail"><!-- featured-thumbnail -->
-                                    <img class="img-fluid" src="img/3.jpg" alt="image">
+                                    <img class="img-fluid" src="img/2.jpg" alt="image">
                                 </div> 
                                 <div class="featured-content box-shadow">
                                     <div class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-md ttm-icon_element-style-rounded">

@@ -187,7 +187,7 @@
                                         <h5>Flavour Formulation</h5>
                                     </div>
                                     <div class="featured-desc"><!--  featured-desc -->
-                                        <p>Gourmet Flavors</p>
+                                        <p>Gourmet Flavours</p>
                                     </div>
                                 </div>
                             </div><!--  featured-icon-box END -->
@@ -265,8 +265,8 @@
                                 <p>Here at Nardus, we do what we do best—sort the best plant and herb specimens to make superior quality essential oils. Our essential oils contain only natural extracts derived through an ethical steam distillation and purification process. This ensures the consistency in aroma, flavour, and potency.</p>
                                 <div class="mt-25">
                                     <ul class="ttm-list ttm-list-style-icon">
-                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Nardus lemongrass essential oil has possesses a highly concentrated citral compound which tops 75% of its formulation. This guarantees its effectiveness in aromatherapy, massage, and cosmetics.</span></li>
-                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Nardus turmeric oil has a high cumin compound found in the cumin plant. It is an effective antibacterial and antifungal agent which also improves skin health.</span></li>
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Nardus lemongrass essential oil possesses a highly concentrated citral compound which tops 75% of its formulation. This guarantees its effectiveness in aromatherapy, massage, and cosmetics.</span></li>
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Nardus turmeric oil has a high cumin component found in the cumin plant. It is an effective antibacterial and antifungal agent which also improves skin health.</span></li>
                                         <!-- <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Avoids a pain that produces resultant</span></li> -->
                                     </ul>
                                 </div>
