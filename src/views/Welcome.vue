@@ -651,13 +651,27 @@ export default {
             subtitle: 'subtitle',
             title: 'Hello World',
             position: 'center',
-            url: 'https://www.w3schools.com/css/img_5terre_wide.jpg',
+            url: '/img/slide1.jpg',
             style: {
               'height': '500px',
               'object-fit': 'fill'
 
             }
           },
+
+           {
+            subtitle: 'subtitle',
+            title: 'Hello World',
+            position: 'center',
+            url: '/img/slide2.jpg',
+            style: {
+              'height': '500px',
+              'object-fit': 'fill'
+
+            }
+          },
+
+          
           
         ],
         options: {
