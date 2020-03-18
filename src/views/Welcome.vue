@@ -266,7 +266,7 @@
                                 <div class="mt-25">
                                     <ul class="ttm-list ttm-list-style-icon">
                                         <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Nardus lemongrass essential oil possesses a highly concentrated citral compound which tops 75% of its formulation. This guarantees its effectiveness in aromatherapy, massage, and cosmetics.</span></li>
-                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Nardus turmeric oil has a high cumin component found in the cumin plant. It is an effective antibacterial and antifungal agent which also improves skin health.</span></li>
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Nardus turmeric essential oil possesses a high concentration of the cumin compound. It is an effective antibacterial and anti-fungal agent, and it also improves skin health.</span></li>
                                         <!-- <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Avoids a pain that produces resultant</span></li> -->
                                     </ul>
                                 </div>
