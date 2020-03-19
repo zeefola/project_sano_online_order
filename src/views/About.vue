@@ -281,13 +281,13 @@
                                     <h4 class="ttm-fid-inner">
                                         <span   data-appear-animation = "animateDigits"
                                         data-from             = "0"
-                                        data-to               = "478"
+                                        data-to               = "88"
                                         data-interval         = "5"
                                         data-before           = ""
                                         data-before-style     = "sup"
                                         data-after            = ""
                                         data-after-style      = "sub"
-                                    >478</span>
+                                    >88</span>
                                     </h4>
                                     <h3 class="ttm-fid-title">Happy Customers</h3><!--ttm-fid-title-->
                                 </div>
@@ -305,15 +305,15 @@
                                     <h4 class="ttm-fid-inner">
                                         <span   data-appear-animation = "animateDigits"
                                         data-from             = "0"
-                                        data-to               = "1432"
-                                        data-interval         = "10"
+                                        data-to               = "20"
+                                        data-interval         = "5"
                                         data-before           = ""
                                         data-before-style     = "sup"
                                         data-after            = ""
                                         data-after-style      = "sub"
-                                    >1432</span>
+                                    >20</span>
                                     </h4>
-                                    <h3 class="ttm-fid-title">Projects Done</h3><!--ttm-fid-title-->
+                                    <h3 class="ttm-fid-title">Product Range</h3><!--ttm-fid-title-->
                                 </div>
                             </div><!-- ttm-fid end-->
                         </div>
@@ -329,15 +329,15 @@
                                     <h4 class="ttm-fid-inner">
                                         <span   data-appear-animation = "animateDigits"
                                         data-from             = "0"
-                                        data-to               = "785"
-                                        data-interval         = "5"
+                                        data-to               = "10"
+                                        data-interval         = "2"
                                         data-before           = ""
                                         data-before-style     = "sup"
                                         data-after            = ""
                                         data-after-style      = "sub"
-                                    >785</span>
+                                    >10</span>
                                     </h4>
-                                    <h3 class="ttm-fid-title">Technology Types</h3><!--ttm-fid-title-->
+                                    <h3 class="ttm-fid-title">Essential Oils</h3><!--ttm-fid-title-->
                                 </div>
                             </div><!-- ttm-fid end-->
                         </div>
@@ -346,22 +346,23 @@
                             <div class="ttm-fid inside ttm-fid-view-lefticon style3">
                                 <div class="ttm-fid-left"><!--ttm-fid-left-->
                                     <div class="ttm-fid-icon-wrapper">
-                                        <i class="flaticon flaticon-agronomy"></i>
+                                        <i class="flaticon flaticon-worldwide"></i>
+                                        <!-- <i class="ti ti-cup"></i> -->
                                     </div>
                                 </div>
                                 <div class="ttm-fid-contents text-left"><!--ttm-fid-contents-->
                                     <h4 class="ttm-fid-inner">
                                         <span   data-appear-animation = "animateDigits"
                                         data-from             = "0"
-                                        data-to               = "547"
+                                        data-to               = "5"
                                         data-interval         = "5"
                                         data-before           = ""
                                         data-before-style     = "sup"
                                         data-after            = ""
                                         data-after-style      = "sub"
-                                    >547</span>
+                                    >5</span>
                                     </h4>
-                                    <h3 class="ttm-fid-title">Awards & Features</h3><!--ttm-fid-title-->
+                                    <h3 class="ttm-fid-title">Awards</h3><!--ttm-fid-title-->
                                 </div>
                             </div><!-- ttm-fid end-->
                         </div>
