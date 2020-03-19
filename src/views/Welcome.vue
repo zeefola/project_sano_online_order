@@ -1,16 +1,15 @@
 <template>
    <app-master>
 
-     <div slot='slider' >
+     <div slot='slider' class="sliderDimension">
          
-        <div class="sliderDimension">
-
+       
         <!-- Using the slider component -->
         <slider ref="slider" :options="options">
             <!-- slideritem wrapped package with the components you need -->
-            <slideritem v-for="(item,index) in someList" :key="index" :style="item.style">
+            <slideritem v-for="(item,index) in someList"  :key="index" :style="item.style"  :class="{ 'sly' : true }"  style="background-position-y: 100%!important;">
 
-                    <img :src='item.url' :style="item.style" >
+                    <!-- <img :src='item.url' :style="item.style" > -->
                     <!-- <div :class="item.position"> 
                         <div class="subtitle">
                             {{ item.subtitle }}
@@ -26,16 +25,16 @@
         </slider>
         </div>
       
-     </div>
+    
 
     
 
       <div slot="main-content">
            <!-- aboutus-section -->
-            <section class="ttm-row first-about-section bg-img1 clearfix">
+            <section class="ttm-row first-about-section bg-img1 clearfix noPadding">
                 <div class="container">
-                    <div class="row"><!-- row -->
-                        <div class="col-lg-5">
+                    <div class="row " ><!-- row -->
+                        <div class="col-lg-5 hideMe">
                             <!-- ttm_single_image-wrapper -->
                             <div class="ttm_single_image-wrapper mr_95 res-991-mr-0 position-relative z-1 res-991-center">
                                 <img class="img-fluid" src="/img/essential.jpg" title="single-img-one" alt="single-img-one">
@@ -651,10 +650,13 @@ export default {
             subtitle: 'subtitle',
             title: 'Hello World',
             position: 'center',
-            url: '/img/slide1.jpg',
+            tag: false,
+
             style: {
-              'height': '500px',
-              'object-fit': 'fill'
+              'height': '100%',
+              'background-image': "url('/img/slide1.jpg')",
+              'background-size': 'cover',
+              
 
             }
           },
@@ -663,11 +665,13 @@ export default {
             subtitle: 'subtitle',
             title: 'Hello World',
             position: 'center',
-            url: '/img/slide2.jpg',
+            tag: true ,
             style: {
-              'height': '500px',
-              'object-fit': 'fill'
-
+              'height': '100%',
+              'background-image': "url('/img/slide2.jpg')",
+              'background-size': 'cover',
+              'background-position-x': '50%'
+              
             }
           },
 
@@ -678,7 +682,7 @@ export default {
           currentPage: 0,
           autoplay:'5000',
           effect: 'fade',
-          pagination: true,
+          loop: true,
           
         },
 
@@ -704,14 +708,30 @@ export default {
 .sliderDimension{
     width:100%;
     margin:0px auto;
-    height: 500px
+    height: 600px;
+}
+
+.sly{
+    background-position-x: 50%!important;
+}
+
+.normal{
+    background-position-x: 0%!important;
 }
 
 @media screen and (max-width: 800px){
     .sliderDimension{
         width:100%;
         margin:0px auto;
-        height:381px
+        height:481px
+   }
+
+   .hideMe{
+       display: none;
+   }
+
+   .noPadding{
+       padding-top: 0px!important;
    }
 }
 
