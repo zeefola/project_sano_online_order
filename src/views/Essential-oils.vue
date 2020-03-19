@@ -41,7 +41,7 @@
                                     <h4>What are Essential Oils?</h4>
                                    <p>Essential oils are extracts of hydrophobic compounds found in plants—trapped as molecules in tiny pockets of the leaf, flower, fruit rind, or tree bark of plants. Each oil extract has a unique aromatic compound which gives the oil its distinctive qualities.</p>
                                    <p>Oils from plants are typically extracted through steam (or water) distillation. However, extraction of some oils is best done through a mechanical process called cold pressing—for example, oils drawn from the rind of citrus fruits.</p>
-                                   <p>Essential oils are normally not formulated for internal congestion, except in cases where a specific area of concern is targeted. Their major use is in aromatherapy, in which they are inhaled and absorbed through various methods. This extraction process allows the essential oils to retain the natural flavours, aromas, and healing properties of the plant. </p>
+                                   <p>Essential oils are normally not formulated for ingestion, except in cases where a specific area of concern is targeted. Their major use is in aromatherapy, in which they are inhaled and absorbed through various methods. This extraction process allows the essential oils to retain the natural flavours, aromas, and healing properties of the plant. </p>
                                 </div>
                             
                                 <div class="row">

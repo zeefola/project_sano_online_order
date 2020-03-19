@@ -52,15 +52,15 @@
                                 <!-- section title -->
                                 <div class="section-title clearfix">
                                     <div class="title-header">
-                                        <h5>About essential oils</h5>
+                                        <h5>About lemmongrass essential oil</h5>
                                         <h2 class="title">Pure Aroma From Nature.</h2>
                                     </div>
                                     <div class="heading-seperator">
                                         <span></span>
                                     </div>
                                 </div><!-- section title end -->
-                                <p>Experience the pure potency of a natural essential oil derived through the most ethical extraction process. </p>
-                                <p>Incorporating a myriad of properties that the world is yet to fully discover, our pure essential oils is the quintessential topical solution that helps improve your quality of life.</p>
+                                <p>Experience the sheer potency of a natural essential oil derived through the most ethical extraction and purification process. </p>
+                                <p>Incorporating a myriad of properties that the world is yet to fully discover, our pure lemongrass essential oil is the quintessential topical solution that helps improve your quality of life.</p>
                                 <div class="row no-gutters">
                                     <div class="col-md-6 col-lg-6 col-sm-6">
                                         <!--  featured-icon-box --> 
