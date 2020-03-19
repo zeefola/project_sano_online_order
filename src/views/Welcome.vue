@@ -53,7 +53,7 @@
                                 <div class="section-title clearfix">
                                     <div class="title-header">
                                         <h5>About lemmongrass essential oil</h5>
-                                        <h2 class="title">Pure Aroma From Nature.</h2>
+                                        <h2 class="title">Pure Aroma from Nature</h2>
                                     </div>
                                     <div class="heading-seperator">
                                         <span></span>

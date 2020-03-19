@@ -239,16 +239,18 @@
                                 <!--  featured-icon-box --> 
                                 <div class="featured-icon-box left-icon icon-align-top">
                                     <div class="featured-icon"><!--  featured-icon --> 
-                                        <div class="ttm-icon ttm-icon_element-color-white ttm-icon_element-size-lg">
-                                            <i class="flaticon flaticon-agriculture"></i><!--  ttm-icon --> 
-                                        </div>
+                                        <!-- <div class="ttm-icon ttm-icon_element-color-white ttm-icon_element-size-lg">
+                                            <i class="flaticon flaticon-agriculture"></i> -->
+                                            <!--  ttm-icon --> 
+                                        <!-- </div> -->
                                     </div>
                                     <div class="featured-content"><!--  featured-content -->
-                                        <div class="featured-desc"><!--  featured-desc -->
-                                            <p>AGROTEK SPECIAL OFFERS</p>
-                                        </div>
+                                        <!-- <div class="featured-desc"> -->
+                                            <!--  featured-desc -->
+                                            <!-- <p>AGROTEK SPECIAL OFFERS</p>
+                                        </div> -->
                                         <div class="featured-title"><!--  featured-title -->
-                                            <h5 class="fs-30">Get A Free Agriculture Services</h5>
+                                            <h5 class="fs-30">Talk to Our Support Team</h5>
                                         </div>
                                     </div>
                                 </div><!--  featured-icon-box END -->

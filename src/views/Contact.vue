@@ -100,7 +100,7 @@
                                     <span></span>
                                 </div>
                             </div><!-- section title end -->
-                            <p>Our Team is happy to answer your Questions. Fill out the form, and we’ll be in touch as soon as Possible.</p>
+                            <p>Our customer support team is happy to answer your questions. Fill out the form, and we’ll be in touch within the day.</p>
                             <div class="row">
                                 <div class="col-md-12">
                                     <!--  featured-icon-box --> 
