@@ -130,28 +130,26 @@
                 </div>
                 <nav id="menu" class="menu" :class="{ active: menuStatus }" >
                   <ul class="dropdown">
-                    <li class="active">
-                        <router-link to="/" tag="a" exact> Home </router-link>
-                    </li>
-                    <li>
-                        <router-link to="/about" tag="a"> About Us </router-link>
-                    </li>
-                    <li>
-                        <router-link to="/services" tag="a" > Services </router-link>
-                    </li>
-                    <li>
-                      <router-link to="/faq" tag="a"> Faq </router-link>
+                   
+                        <router-link to="/" tag="li" exact-active-class="active" exact> <a> Home </a> </router-link>
+                  
+                        <router-link to="/about" tag="li" exact-active-class="active" exact > <a> About Us </a></router-link>
+                    
+                  
+                        <router-link to="/services"  tag="li" exact-active-class="active" exact ><a> Services </a> </router-link>
+                    
+                   
+                      <router-link to="/faq"  tag="li" exact-active-class="active" exact> <a> Faq </a></router-link>
                      
-                    </li>
-                    <li>
-                      <router-link to="/shop" tag="a"> Shop </router-link>
+                    
+                      <router-link to="/shop"  tag="li" exact-active-class="active" exact><a> Shop </a> </router-link>
                      
                       
-                    </li>
-                    <li>
-                      <router-link to="/contact" tag="a"> Contact Us </router-link>
+                   
+                    
+                      <router-link to="/contact"  tag="li" exact-active-class="active" exact > <a> Contact Us </a></router-link>
                       
-                    </li>
+                    
                   </ul>
                 </nav>
               </div>

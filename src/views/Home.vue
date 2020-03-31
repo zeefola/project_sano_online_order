@@ -95,11 +95,7 @@
                                     </div>
                                 </div>
                                 <div class="row mt-30">
-                                    <div class="col-md-4 col-lg-4 col-sm-4">
-                                        <div class="text-left pt-15">
-                                            <img src="https://via.placeholder.com/145X60/444444.png" alt="about-sign">
-                                        </div>
-                                    </div>
+                                    
                                     <div class="col-md-8 col-lg-8 col-sm-8">
                                         <!--  featured-icon-box --> 
                                         <div class="featured-icon-box without-icon style1 text-left pt-15">
@@ -588,3 +584,11 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+ @media screen and (max-width: 500px) {
+     .hideMe{
+         display: none;
+     }
+ }
+</style>

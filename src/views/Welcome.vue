@@ -124,8 +124,8 @@
                                     </div>
                                 </div>
                                 <div class="row mt-30">
-                                    <div class="col-md-4 col-lg-4 col-sm-4">
-                                        <div class="text-left pt-15">
+                                    <div class="col-md-4 col-lg-4 col-sm-4 hideMe">
+                                        <div class="text-left pt-15 ">
                                             <img src="https://via.placeholder.com/145X60/444444.png" alt="about-sign">
                                         </div>
                                     </div>
