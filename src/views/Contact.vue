@@ -77,7 +77,7 @@
                                         <h5>Address</h5>
                                     </div>
                                     <div class="featured-desc"><!--  featured-desc -->
-                                        <p>18 Udi street, Wema Terrace, Osborne Foreshore, Ikoyi</p>
+                                        <p>18 Udi street, Wema Terrace, Osborne Foreshore, Ikoyi, Lagos, Nigeria</p>
                                     </div>
                                 </div>
                             </div><!--  featured-icon-box END -->

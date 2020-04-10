@@ -93,7 +93,7 @@
                             <div class="widget contact-widget">
                                 <h3 class="widget-title">Get in touch</h3>      
                                 <ul class="contact-widget-wrapper">
-                                    <li><i class="fa fa-map-marker"></i>18 Udi street, Wema Terrace <br> Osborne Foreshore, Ikoyi</li>
+                                    <li><i class="fa fa-map-marker"></i>18 Udi street, Wema Terrace <br> Osborne Foreshore, Ikoyi <br> Lagos, Nigeria</li>
                                     <li><i class="fa fa-phone"></i> (234) 906-282-2260 </li>
                                     <li><i class="fa fa-envelope-o"></i><a href="mailto:info@nardus.ng" target="_blank">info@nardus.ng</a></li>
                                 </ul>
