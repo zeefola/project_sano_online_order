@@ -90,7 +90,7 @@
                       <i class="flaticon-worldwide"></i>
                     </div>
                     <div class="widget_content">
-                      <h5 class="widget_title">Osborne Foreshore, Ikoyi</h5>
+                      <h5 class="widget_title">Osborne Foreshore, Ikoyi, Lagos, Nigeria</h5>
                       <p class="widget_desc">18 Udi street, Wema Terrace</p>
                     </div>
                   </div>
