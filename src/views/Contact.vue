@@ -40,8 +40,9 @@
                                         <h5>Phone</h5>
                                     </div>
                                     <div class="featured-desc"><!--  featured-desc -->
+                                         <p> +234 906 282 2260  </p>
                                         <p>+234 812 262 7008</p>
-                                        <p> +234 906 282 2260  </p>
+                                       
                                     </div>
                                 </div>
                             </div><!--  featured-icon-box END -->
