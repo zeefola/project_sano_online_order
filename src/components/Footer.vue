@@ -18,7 +18,7 @@
                             <div class="ttm-custom-ctabox">
                                 <div class="cta-bg-icon"><span class="flaticon-support"></span></div>
                                 <h3 class="ttm-cta-heading ttm-textcolor-skincolor">Call Us On</h3>
-                                <h5 class="ttm-cta-content">+234 812 262 7008</h5>
+                                <h5 class="ttm-cta-content">+234 906 282 2260</h5>
                             </div>
                         </div>
                         <div class="col-lg-4">
