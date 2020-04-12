@@ -1241,6 +1241,10 @@ div.product ul.tabs li a,
     display: inline-block;
     position: relative;
 }
+.top-contact--bg{
+    background: #2d2c2adb;
+    color: white;
+}
 .topbar-right .top-contact li:before {
     content: "";
     height: 18px;

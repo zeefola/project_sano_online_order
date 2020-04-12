@@ -7,7 +7,7 @@ export const seo ={
     },
 
     metaInfo: {
-        title: 'Nardus ',
+        title: 'Organic Chicken ',
         meta: [{
           vmid: 'description',
           name: 'description',
