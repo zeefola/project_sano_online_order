@@ -46,257 +46,30 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="col-lg-3 col-md-6 col-sm-6" v-for="(product, index) in products" :key="index+'product'">
                                 <div class="product"><!-- product -->
                                     <div class="product-thumbnail"><!-- product-thumbnail -->
-                                        <img class="img-fluid w-100" src="https://via.placeholder.com/470X520/444444.jpg" alt="">
+                                    <!-- <span class="onsale">Sale!</span> -->
+                                        <img class="img-fluid w-100" :src="product.featured_image" alt="">
                                         <div class="ttm-shop-icon"><!-- ttm-shop-icon -->
                                             <div class="product-btn add-to-cart-btn"><a href="#">ADD TO CART</a></div>
                                         </div>
                                     </div><!-- product-thumbnail end -->
                                     <div class="product-content text-left"><!-- product-content -->
                                         <div class="product-title"><!-- product-title -->
-                                            <h2><a href="product-details.html">Corn Tree</a></h2>
+                                            <h2><a href="#">{{ product.name }}</a></h2>
                                         </div>
-                                        <div class="ttm-ratting-star"><!-- ratting-star -->
+                                        <div class="ttm-ratting-star">
+                                            <span> {{ product.Category }}</span>
+                                            <!-- ratting-star -->
+                                            <!-- <i class="fa fa-star"> </i>
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <span class="product-price"><!-- product-Price -->
-                                            <span class="product-Price-currencySymbol">$</span>16.00
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="product"><!-- product -->
-                                    <div class="product-thumbnail"><!-- product-thumbnail -->
-                                        <span class="onsale">Sale!</span>
-                                        <img class="img-fluid w-100" src="https://via.placeholder.com/470X520/444444.jpg" alt="">
-                                        <div class="ttm-shop-icon"><!-- ttm-shop-icon -->
-                                            <div class="product-btn add-to-cart-btn"><a href="#">ADD TO CART</a></div>
-                                        </div>
-                                    </div><!-- product-thumbnail end -->
-                                    <div class="product-content text-left"><!-- product-content -->
-                                        <div class="product-title"><!-- product-title -->
-                                            <h2><a href="product-details.html">Beardrock Root</a></h2>
-                                        </div>
-                                        <div class="ttm-ratting-star"><!-- ratting-star -->
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i> -->
                                         </div>
                                         <span class="product-price"><!-- product-Price -->
-                                            <span class="product-Price-currencySymbol">
-                                                <del><span class="product-Price-amount">
-                                                        <span class="product-Price-currencySymbol">$</span>20.00
-                                                    </span>
-                                                </del>
-                                                <ins><span class="product-Price-amount">
-                                                        <span class="product-Price-currencySymbol">$</span>18.00
-                                                    </span>
-                                                </ins>
-                                            </span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="product"><!-- product -->
-                                    <div class="product-thumbnail"><!-- product-thumbnail -->
-                                        <img class="img-fluid w-100" src="https://via.placeholder.com/470X520/444444.jpg" alt="">
-                                        <div class="ttm-shop-icon"><!-- ttm-shop-icon -->
-                                            <div class="product-btn add-to-cart-btn"><a href="#">ADD TO CART</a></div>
-                                        </div>
-                                    </div><!-- product-thumbnail end -->
-                                    <div class="product-content text-left"><!-- product-content -->
-                                        <div class="product-title"><!-- product-title -->
-                                            <h2><a href="product-details.html">Fresh Okra</a></h2>
-                                        </div>
-                                        <div class="ttm-ratting-star"><!-- ratting-star -->
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <span class="product-price"><!-- product-Price -->
-                                            <span class="product-Price-currencySymbol">$</span>16.00
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="product"><!-- product -->
-                                    <div class="product-thumbnail"><!-- product-thumbnail -->
-                                        <img class="img-fluid w-100" src="https://via.placeholder.com/470X520/444444.jpg" alt="">
-                                        <div class="ttm-shop-icon"><!-- ttm-shop-icon -->
-                                            <div class="product-btn add-to-cart-btn"><a href="#">ADD TO CART</a></div>
-                                        </div>
-                                    </div><!-- product-thumbnail end -->
-                                    <div class="product-content text-left"><!-- product-content -->
-                                        <div class="product-title"><!-- product-title -->
-                                            <h2><a href="product-details.html">Green Broccoli</a></h2>
-                                        </div>
-                                        <div class="ttm-ratting-star"><!-- ratting-star -->
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <span class="product-price"><!-- product-Price -->
-                                            <span class="product-Price-currencySymbol">$</span>16.00
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="product"><!-- product -->
-                                    <div class="product-thumbnail"><!-- product-thumbnail -->
-                                        <span class="onsale">Sale!</span>
-                                        <img class="img-fluid w-100" src="https://via.placeholder.com/470X520/444444.jpg" alt="">
-                                        <div class="ttm-shop-icon"><!-- ttm-shop-icon -->
-                                            <div class="product-btn add-to-cart-btn"><a href="#">ADD TO CART</a></div>
-                                        </div>
-                                    </div><!-- product-thumbnail end -->
-                                    <div class="product-content text-left"><!-- product-content -->
-                                        <div class="product-title"><!-- product-title -->
-                                            <h2><a href="product-details.html">Long Sleeve Tee</a></h2>
-                                        </div>
-                                        <div class="ttm-ratting-star"><!-- ratting-star -->
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <span class="product-price"><!-- product-Price -->
-                                            <span class="product-Price-currencySymbol">
-                                                <del><span class="product-Price-amount">
-                                                        <span class="product-Price-currencySymbol">$</span>40.00
-                                                    </span>
-                                                </del>
-                                                <ins><span class="product-Price-amount">
-                                                        <span class="product-Price-currencySymbol">$</span>35.00
-                                                    </span>
-                                                </ins>
-                                            </span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="product"><!-- product -->
-                                    <div class="product-thumbnail"><!-- product-thumbnail -->
-                                        <img class="img-fluid w-100" src="https://via.placeholder.com/470X520/444444.jpg" alt="">
-                                        <div class="ttm-shop-icon"><!-- ttm-shop-icon -->
-                                            <div class="product-btn add-to-cart-btn"><a href="#">ADD TO CART</a></div>
-                                        </div>
-                                    </div><!-- product-thumbnail end -->
-                                    <div class="product-content text-left"><!-- product-content -->
-                                        <div class="product-title"><!-- product-title -->
-                                            <h2><a href="product-details.html">Red Beet</a></h2>
-                                        </div>
-                                        <div class="ttm-ratting-star"><!-- ratting-star -->
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <span class="product-price"><!-- product-Price -->
-                                            <span class="product-Price-currencySymbol">$</span>16.00
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="product"><!-- product -->
-                                    <div class="product-thumbnail"><!-- product-thumbnail -->
-                                        <img class="img-fluid w-100" src="https://via.placeholder.com/470X520/444444.jpg" alt="">
-                                        <div class="ttm-shop-icon"><!-- ttm-shop-icon -->
-                                            <div class="product-btn add-to-cart-btn"><a href="#">ADD TO CART</a></div>
-                                        </div>
-                                    </div><!-- product-thumbnail end -->
-                                    <div class="product-content text-left"><!-- product-content -->
-                                        <div class="product-title"><!-- product-title -->
-                                            <h2><a href="product-details.html">Long Sleeve Tee</a></h2>
-                                        </div>
-                                        <div class="ttm-ratting-star"><!-- ratting-star -->
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <span class="product-price"><!-- product-Price -->
-                                            <span class="product-Price-currencySymbol">$</span>32.00
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="product"><!-- product -->
-                                    <div class="product-thumbnail"><!-- product-thumbnail -->
-                                        <img class="img-fluid w-100" src="https://via.placeholder.com/470X520/444444.jpg" alt="">
-                                        <div class="ttm-shop-icon"><!-- ttm-shop-icon -->
-                                            <div class="product-btn add-to-cart-btn"><a href="#">ADD TO CART</a></div>
-                                        </div>
-                                    </div><!-- product-thumbnail end -->
-                                    <div class="product-content text-left"><!-- product-content -->
-                                        <div class="product-title"><!-- product-title -->
-                                            <h2><a href="product-details.html">Red Beet</a></h2>
-                                        </div>
-                                        <div class="ttm-ratting-star"><!-- ratting-star -->
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <span class="product-price"><!-- product-Price -->
-                                            <span class="product-Price-currencySymbol">$</span>40.00
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="product"><!-- product -->
-                                    <div class="product-thumbnail"><!-- product-thumbnail -->
-                                        <span class="onsale">Sale!</span>
-                                        <img class="img-fluid w-100" src="https://via.placeholder.com/470X520/444444.jpg" alt="">
-                                        <div class="ttm-shop-icon"><!-- ttm-shop-icon -->
-                                            <div class="product-btn add-to-cart-btn"><a href="#">ADD TO CART</a></div>
-                                        </div>
-                                    </div><!-- product-thumbnail end -->
-                                    <div class="product-content text-left"><!-- product-content -->
-                                        <div class="product-title"><!-- product-title -->
-                                            <h2><a href="product-details.html">Fresh Okra</a></h2>
-                                        </div>
-                                        <div class="ttm-ratting-star"><!-- ratting-star -->
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <span class="product-price"><!-- product-Price -->
-                                            <span class="product-Price-currencySymbol">
-                                                <del><span class="product-Price-amount">
-                                                        <span class="product-Price-currencySymbol">$</span>50.00
-                                                    </span>
-                                                </del>
-                                                <ins><span class="product-Price-amount">
-                                                        <span class="product-Price-currencySymbol">$</span>40.00
-                                                    </span>
-                                                </ins>
-                                            </span>
+                                            <span class="product-Price-currencySymbol">N</span>{{ product.price }}
                                         </span>
                                     </div>
                                 </div>
@@ -318,12 +91,13 @@ import Master from "@/components/Master.vue";
 import Slider from "@/components/Slider.vue";
 import BreadCrumb from "@/components/BreadCrumb.vue";
 import {seo} from "../Repositories/seo.js";
+import { database } from "../Repositories/database.js"
 
 
 
 export default {
   name: "Welcome",
-  mixins: [seo],
+  mixins: [seo,database],
   components: {
     "app-master" : Master,
     "app-breadcrumb": BreadCrumb
