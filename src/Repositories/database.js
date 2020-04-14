@@ -97,12 +97,142 @@ export const database ={
                 },
                 {
                     id: '12',
-                    name: 'Chicken Back',
-                    price: '600',
-                    featured_image: '/img/33.png',
-                    Category : 'Fish & Meat',
+                    name: 'Fresh corn',
+                    price: '200',
+                    featured_image: '/img/22.png',
+                    Category : 'Staples & Vegetables',
 
                 },
+                {
+                    id: '13',
+                    name: 'Fresh lemongrass',
+                    price: '200',
+                    featured_image: '/img/22.png',
+                    Category : 'Staples & Vegetables',
+
+                },
+                {
+                    id: '14',
+                    name: 'Fresh mint leaf',
+                    price: '200',
+                    featured_image: '/img/26.png',
+                    Category : 'Staples & Vegetables',
+
+                },
+
+                {
+                    id: '15',
+                    name: 'Garri',
+                    price: '300',
+                    featured_image: '/img/24.png',
+                    Category : 'Staples & Vegetables',
+
+                },
+                {
+                    id: '16',
+                    name: 'Fresh sweet basil',
+                    price: '200',
+                    featured_image: '/img/30.png',
+                    Category : 'Staples & Vegetables',
+
+                },
+                {
+                    id: '17',
+                    name: 'Fresh scent leaf',
+                    price: '200',
+                    featured_image: '/img/25.png',
+                    Category : 'Staples & Vegetables',
+
+                },
+                {
+                    id: '18',
+                    name: 'Thyme',
+                    price: '350',
+                    featured_image: '/img/25.png',
+                    Category : 'Spices',
+
+                },
+                {
+                    id: '19',
+                    name: 'Curry',
+                    price: '350',
+                    featured_image: '/img/38.png',
+                    Category : 'Spices',
+
+                },
+                {
+                    id: '20',
+                    name: 'Turmeric',
+                    price: '350',
+                    featured_image: '/img/35.png',
+                    Category : 'Spices',
+
+                },
+                {
+                    id: '21',
+                    name: 'Chilli pepper',
+                    price: '300',
+                    featured_image: '/img/32.png',
+                    Category : 'Spices',
+
+                },
+                {
+                    id: '22',
+                    name: 'Sweet basil',
+                    price: '500',
+                    featured_image: '/img/36.png',
+                    Category : 'Spices',
+
+                },
+                {
+                    id: '23',
+                    name: 'Tropical basil',
+                    price: '350',
+                    featured_image: '/img/37.png',
+                    Category : 'Spices',
+
+                },
+                {
+                    id: '24',
+                    name: 'All soup seasoning',
+                    price: '350',
+                    featured_image: '/img/31.png',
+                    Category : 'Spices',
+
+                },
+                {
+                    id: '25',
+                    name: 'Chicken seasoning',
+                    price: '350',
+                    featured_image: '/img/28.png',
+                    Category : 'Spices',
+
+                },
+                {
+                    id: '26',
+                    name: 'Fried rice seasoning',
+                    price: '350',
+                    featured_image: '/img/29.png',
+                    Category : 'Spices',
+
+                },
+                {
+                    id: '27',
+                    name: 'Jollof rice seasoning',
+                    price: '350',
+                    featured_image: '/img/34.png',
+                    Category : 'Spices',
+
+                },
+                {
+                    id: '28',
+                    name: 'Pepper soup seasoning',
+                    price: '350',
+                    featured_image: '/img/27.png',
+                    Category : 'Spices',
+
+                },
+                
 
             ],
 
