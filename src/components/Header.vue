@@ -12,9 +12,21 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="ttm-topbar-content">
+
                   <ul class="top-contact top-contact--bg text-left">
-                    <li>Organic Chicken</li>
+                   <router-link to="/" tag="li" > <a> Organic Chicken </a></router-link>
+                    <router-link to="/cart" tag="li" > <a> Cart </a></router-link>
+                     <router-link to="/checkout" tag="li" > <a> Checkout </a></router-link>
                   </ul>
+
+                  <!-- <div class="topbar-center">
+                    <ul class="topbar-center__items">
+                      <li class="topbar-center__item"> <a href="/cart"> Cart</a> </li>
+                       <li class="topbar-center__item"> <a href="/checkout"> Checkout</a> </li>
+                    </ul>
+
+                  </div> -->
+
                   <div class="topbar-right text-right">
                     <ul class="top-contact">
                       <li>Office Hour : 08:00am - 5:00pm</li>
@@ -33,6 +45,8 @@
                       </ul>
                     </div>
                   </div>
+
+
                 </div>
               </div>
             </div>

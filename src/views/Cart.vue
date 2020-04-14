@@ -34,79 +34,35 @@
                                     <thead>
                                         <tr>
                                             <th class="product-remove">&nbsp;</th>
-                                            <th class="product-thumbnail">&nbsp;</th>
                                             <th class="product-name">Product</th>
                                             <th class="product-mainprice">Price</th>
                                             <th class="product-quantity">Quantity</th>
-                                            <th class="product-subtotal">Total</th>
+                                            
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="cart_item">
+                                        <tr class="cart_item" v-for="(item, index) in cart" :key="index+'item'">
                                             <td class="product-remove">
-                                                <a href="#" class="remove">×</a>
+                                                <a @click.prevent="REMOVE_CART_ITEM(index)" class="remove">×</a>
                                             </td>
-                                            <td class="product-thumbnail">
-                                                <a href="product-details.html">
-                                                    <img class="img-fluid" src="https://via.placeholder.com/470X520/444444.jpg" alt="product-img">
-                                                </a>
-                                            </td>
+                                           
                                             <td class="product-name" data-title="Product">
-                                                <a href="product-details.html">Beardrock Root</a>
+                                                <a href="product-details.html">{{item.name}}</a>
                                             </td>
                                             <td class="product-mainprice" data-title="Price">
                                                 <span class="Price-amount">
-                                                    <span class="Price-currencySymbol">$</span>40.00
+                                                    <span class="Price-currencySymbol">&#8358;</span>{{ item.price}}
                                                 </span>
                                             </td>
                                             <td class="product-quantity" data-title="Quantity">
                                                 <div class="quantity">
-                                                    <input type="number" class="form-control" value="1" min="0" title="Qty">
+                                                    <input type="number" class="product-quantity____input" @keyup="modifyCart($event,index)" :value="item.quantity" min="1" title="Qty">
                                                 </div>
                                             </td>
-                                            <td class="product-subtotal" data-title="Total">
-                                                <span class="Price-amount">
-                                                    <span class="Price-currencySymbol">$</span>40.00
-                                                </span>
-                                            </td>
+                                            
                                         </tr>
-                                        <tr class="cart_item">
-                                            <td class="product-remove">
-                                                <a href="#" class="remove">×</a>
-                                            </td>
-                                            <td class="product-thumbnail">
-                                                <a href="product-details.html">
-                                                    <img class="img-fluid" src="https://via.placeholder.com/470X520/444444.jpg" alt="product-img">
-                                                </a>
-                                            </td>
-                                            <td class="product-name" data-title="Product">
-                                                <a href="product-details.html">Beardrock Root</a>
-                                            </td>
-                                            <td class="product-price">
-                                                <span class="Price-amount" data-title="Price">
-                                                    <span class="Price-currencySymbol">$</span>18.00
-                                                </span>
-                                            </td>
-                                            <td class="product-quantity" data-title="Quantity">
-                                                <div class="quantity">
-                                                    <input type="number" class="form-control" value="1" min="0" title="Qty">
-                                                </div>
-                                            </td>
-                                            <td class="product-subtotal" data-title="Total">
-                                                <span class="Price-amount">
-                                                    <span class="Price-currencySymbol">$</span>18.00
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="6" class="actions">
-                                                <div class="coupon">
-                                                    <input type="text" name="coupon_code" class="form-control border" value="" placeholder="Coupon code">
-                                                    <button type="submit" class="button ttm-btn ttm-btn-bgcolor-darkgrey" name="apply_coupon" value="Apply coupon">Apply coupon</button>
-                                                </div>
-                                                <button type="submit" class="cart_button button ttm-btn ttm-btn-bgcolor-darkgrey" name="update_cart" value="Update cart" disabled="disabled">Update cart</button>
-                                            </td>
-                                        </tr>
+                                       
+                                        
                                     </tbody>
                                 </table>
                             </form><!-- ttm-cart-form end -->
@@ -120,7 +76,7 @@
                                                 <th>Subtotal</th>
                                                 <td data-title="Subtotal">
                                                     <span class="Price-amount">
-                                                        <span class="Price-currencySymbol">$</span>128.00
+                                                        <span class="Price-currencySymbol">&#8358;</span> {{ getCartTotal }}
                                                     </span>
                                                 </td>
                                             </tr>
@@ -128,14 +84,15 @@
                                                 <th>Total</th>
                                                 <td data-title="Total">
                                                     <strong><span class="Price-amount">
-                                                        <span class="Price-currencySymbol">$</span>128.00</span>
+                                                        <span class="Price-currencySymbol">&#8358;</span> {{ getCartTotal }}</span>
                                                     </strong>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                     <div class="proceed-to-checkout">
-                                        <a href="checkout.html" class="button ttm-btn ttm-btn-bgcolor-darkgrey checkout-button">Proceed to checkout</a>
+                                        <router-link  to="/checkout" class="button ttm-btn ttm-btn-bgcolor-darkgrey checkout-button"> Proceed to checkout </router-link>
+    
                                     </div>
                                 </div>
                             </div><!-- cart-collaterals end-->
@@ -159,16 +116,43 @@
 import Master from "@/components/Master.vue";
 import BreadCrumb from "@/components/BreadCrumb.vue";
 import {seo} from "../Repositories/seo.js"
+import { mapGetters, mapMutations, mapState } from 'vuex';
+
 
 export default {
   name: "Cart",
   mixins: [seo],
   components: {
     "app-master" : Master,
-    "app-breadcrumb": BreadCrumb
+    "app-breadcrumb": BreadCrumb,
+  },
+  computed: {
+      ...mapState([
+          'cart'
+      ]),
+
+      ...mapGetters([
+          'getCartTotal'
+      ])
+
   },
 
+  methods: {
+      ...mapMutations([
+          'REMOVE_CART_ITEM',
+          'MODIFY_CART_ITEM'
 
+      ]),
+
+      modifyCart(event,index){
+          let quantity = event.target.value;
+
+          if(quantity){
+              this.$store.commit('MODIFY_CART_ITEM',{quantity: quantity, index: index});
+          }
+          
+      }
+  },
   created(){
       this.seoMetaData('Cart', ' ');
   }
@@ -177,3 +161,15 @@ export default {
 };
 
 </script>
+
+<style>
+.product-quantity____input{
+    width: 100%;
+    overflow: hidden;
+}
+
+.product-remove,
+.product-remove a{
+    cursor: pointer;
+}
+</style>

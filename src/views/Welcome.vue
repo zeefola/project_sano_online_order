@@ -5,14 +5,14 @@
         <app-breadcrumb>
             <div class="title-box text-left">
                 <div class="page-title-heading">
-                    <h1 class="title">FAQ's</h1>
+                    <h1 class="title">Products</h1>
                 </div><!-- /.page-title-captions -->
                 <div class="breadcrumb-wrapper">
                     <span>
                        <router-link to="/" tag="a" > <i class="ti ti-home"></i>&nbsp;&nbsp;Home </router-link>
                     </span>
                     <span class="ttm-bread-sep ttm-textcolor-white">&nbsp;   →  &nbsp;</span>
-                    <span class="ttm-textcolor-skincolor">faq</span>
+                    <span class="ttm-textcolor-skincolor">Products</span>
                 </div>  
             </div>
         </app-breadcrumb>
@@ -30,29 +30,25 @@
                     <div class="col-lg-12 content-area">
                         <div class="row">
                             <div class="col-md-12">
-                                <p class="products-result-count">Showing 1–9 of 14 results</p>
-                                <form class="products-ordering float-sm-right" method="get">
+                                <p class="products-result-count">Showing {{ items.length }} items  {{ cart }}</p>
+                                <form class="products-ordering float-sm-right">
                                     <div class="form-group mb-30">
-                                        <select name="orderby" class="form-control border">
-                                            <option value="menu_order" selected="selected">Default sorting</option>
-                                            <option value="popularity">Sort by popularity</option>
-                                            <option value="rating">Sort by average rating</option>
-                                            <option value="date">Sort by newness</option>
-                                            <option value="price">Sort by price: low to high</option>
-                                            <option value="price-desc">Sort by price: high to low</option>
+                                        <select class="form-control border">
+                                            <option  @click.prevent="fetchAllItems()">All Categories</option>
+                                            <option v-for="(category, index) in categories" :key="index+'category'"  @click.prevent="fetchItemsByCategory(category)">{{ category}}</option>
                                         </select>
                                     </div>
                                 </form>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-3 col-md-6 col-sm-6" v-for="(product, index) in products" :key="index+'product'">
+                            <div class="col-lg-3 col-md-6 col-sm-6" v-for="(product, index) in items" :key="index+'items'">
                                 <div class="product"><!-- product -->
                                     <div class="product-thumbnail"><!-- product-thumbnail -->
                                     <!-- <span class="onsale">Sale!</span> -->
                                         <img class="img-fluid w-100" :src="product.featured_image" alt="">
-                                        <div class="ttm-shop-icon"><!-- ttm-shop-icon -->
-                                            <div class="product-btn add-to-cart-btn"><a href="#">ADD TO CART</a></div>
+                                        <div class="ttm-shop-icon" @click="ADD_TO_CART(product)"><!-- ttm-shop-icon -->
+                                            <div class="product-btn add-to-cart-btn"><a >ADD TO CART</a></div>
                                         </div>
                                     </div><!-- product-thumbnail end -->
                                     <div class="product-content text-left"><!-- product-content -->
@@ -69,7 +65,7 @@
                                             <i class="fa fa-star"></i> -->
                                         </div>
                                         <span class="product-price"><!-- product-Price -->
-                                            <span class="product-Price-currencySymbol">N</span>{{ product.price }}
+                                            <span class="product-Price-currencySymbol">&#8358;</span>{{ product.price }}
                                         </span>
                                     </div>
                                 </div>
@@ -91,34 +87,64 @@ import Master from "@/components/Master.vue";
 import Slider from "@/components/Slider.vue";
 import BreadCrumb from "@/components/BreadCrumb.vue";
 import {seo} from "../Repositories/seo.js";
-import { database } from "../Repositories/database.js"
+import {database} from "../Repositories/database"
+import { mapState, mapMutations } from "vuex"
 
 
 
 export default {
   name: "Welcome",
-  mixins: [seo,database],
+  mixins: [seo, database],
   components: {
     "app-master" : Master,
     "app-breadcrumb": BreadCrumb
   },
   data(){
-      return {
-         
-      }
+      return {}
+  },
+  computed: {
+
+      ...mapState([
+          'items',
+          'categories',
+          'cart'
+      ])
+
+
   },
   methods: {
+      ...mapMutations([
+          'fetchAllItems',
+          'fetchItemsByCategory',
+          'fetchItemCategories',
+          'FETCH_PRELOADER',
+          'ADD_TO_CART',
+          
+      ]),
+
 
   },
-  created(){
-      //   (title, description)
-      this.seoMetaData('Home','Largest Essential Oil Producer'); 
+    created(){
+        //   (title, description)
+        this.seoMetaData('Home','Largest Essential Oil Producer');
 
-  }
+        //Preloader
+        this.FETCH_PRELOADER(this.products)
+
+        //Fetch categories
+        this.fetchItemCategories()
+        
+
+    }
 };
 </script>
 
 
 <style scoped>
-
+    .add-to-cart-btn a:hover,
+    .add-to-cart-btn a:active
+    {
+        cursor: pointer;
+        color: white;
+    }
 </style>

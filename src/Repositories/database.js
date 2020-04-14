@@ -12,7 +12,7 @@ export const database ={
                     name: 'Dressed Chicken',
                     price: '1000',
                     featured_image: '/img/10.png',
-                    Category : 'Fish & Meat',
+                    category : 'Fish & Meat',
 
                 },
                 {
@@ -20,7 +20,7 @@ export const database ={
                     name: '4 Parts Cut',
                     price: '1050',
                     featured_image: '/img/11.png',
-                    Category : 'Fish & Meat',
+                    category : 'Fish & Meat',
 
                 },
                 {
@@ -28,7 +28,7 @@ export const database ={
                     name: '8 Parts Cut',
                     price: '1050',
                     featured_image: '/img/12.png',
-                    Category : 'Fish & Meat',
+                    category : 'Fish & Meat',
 
                 },
                 {
@@ -36,7 +36,7 @@ export const database ={
                     name: 'Pork',
                     price: '1400',
                     featured_image: '/img/13.png',
-                    Category : 'Fish & Meat',
+                    category : 'Fish & Meat',
 
                 },
                 {
@@ -44,7 +44,7 @@ export const database ={
                     name: 'Chicken Gizzard',
                     price: '1200',
                     featured_image: '/img/14.png',
-                    Category : 'Fish & Meat',
+                    category : 'Fish & Meat',
 
                 },
                 {
@@ -52,7 +52,7 @@ export const database ={
                     name: 'Chicken Laps',
                     price: '1200',
                     featured_image: '/img/15.png',
-                    Category : 'Fish & Meat',
+                    category : 'Fish & Meat',
 
                 },
                 {
@@ -60,7 +60,7 @@ export const database ={
                     name: 'Chicken Breast With Bone',
                     price: '1100',
                     featured_image: '/img/16.png',
-                    Category : 'Fish & Meat',
+                    category : 'Fish & Meat',
 
                 },
                 {
@@ -68,7 +68,7 @@ export const database ={
                     name: 'Smoked Fish',
                     price: '1000',
                     featured_image: '/img/17.png',
-                    Category : 'Fish & Meat',
+                    category : 'Fish & Meat',
 
                 },
                 {
@@ -76,7 +76,7 @@ export const database ={
                     name: 'Chicken Wings',
                     price: '1100',
                     featured_image: '/img/18.png',
-                    Category : 'Fish & Meat',
+                    category : 'Fish & Meat',
 
                 },
                 {
@@ -84,7 +84,7 @@ export const database ={
                     name: 'Neck',
                     price: '450',
                     featured_image: '/img/19.png',
-                    Category : 'Fish & Meat',
+                    category : 'Fish & Meat',
 
                 },
                 {
@@ -92,7 +92,7 @@ export const database ={
                     name: 'Chicken Back',
                     price: '600',
                     featured_image: '/img/33.png',
-                    Category : 'Fish & Meat',
+                    category : 'Fish & Meat',
 
                 },
                 {
@@ -100,7 +100,7 @@ export const database ={
                     name: 'Fresh corn',
                     price: '200',
                     featured_image: '/img/22.png',
-                    Category : 'Staples & Vegetables',
+                    category : 'Staples & Vegetables',
 
                 },
                 {
@@ -108,7 +108,7 @@ export const database ={
                     name: 'Fresh lemongrass',
                     price: '200',
                     featured_image: '/img/22.png',
-                    Category : 'Staples & Vegetables',
+                    category : 'Staples & Vegetables',
 
                 },
                 {
@@ -116,7 +116,7 @@ export const database ={
                     name: 'Fresh mint leaf',
                     price: '200',
                     featured_image: '/img/26.png',
-                    Category : 'Staples & Vegetables',
+                    category : 'Staples & Vegetables',
 
                 },
 
@@ -125,7 +125,7 @@ export const database ={
                     name: 'Garri',
                     price: '300',
                     featured_image: '/img/24.png',
-                    Category : 'Staples & Vegetables',
+                    category : 'Staples & Vegetables',
 
                 },
                 {
@@ -133,7 +133,7 @@ export const database ={
                     name: 'Fresh sweet basil',
                     price: '200',
                     featured_image: '/img/30.png',
-                    Category : 'Staples & Vegetables',
+                    category : 'Staples & Vegetables',
 
                 },
                 {
@@ -141,7 +141,7 @@ export const database ={
                     name: 'Fresh scent leaf',
                     price: '200',
                     featured_image: '/img/25.png',
-                    Category : 'Staples & Vegetables',
+                    category : 'Staples & Vegetables',
 
                 },
                 {
@@ -149,7 +149,7 @@ export const database ={
                     name: 'Thyme',
                     price: '350',
                     featured_image: '/img/25.png',
-                    Category : 'Spices',
+                    category : 'Spices',
 
                 },
                 {
@@ -157,7 +157,7 @@ export const database ={
                     name: 'Curry',
                     price: '350',
                     featured_image: '/img/38.png',
-                    Category : 'Spices',
+                    category : 'Spices',
 
                 },
                 {
@@ -165,7 +165,7 @@ export const database ={
                     name: 'Turmeric',
                     price: '350',
                     featured_image: '/img/35.png',
-                    Category : 'Spices',
+                    category : 'Spices',
 
                 },
                 {
@@ -173,7 +173,7 @@ export const database ={
                     name: 'Chilli pepper',
                     price: '300',
                     featured_image: '/img/32.png',
-                    Category : 'Spices',
+                    category : 'Spices',
 
                 },
                 {
@@ -181,7 +181,7 @@ export const database ={
                     name: 'Sweet basil',
                     price: '500',
                     featured_image: '/img/36.png',
-                    Category : 'Spices',
+                    category : 'Spices',
 
                 },
                 {
@@ -189,7 +189,7 @@ export const database ={
                     name: 'Tropical basil',
                     price: '350',
                     featured_image: '/img/37.png',
-                    Category : 'Spices',
+                    category : 'Spices',
 
                 },
                 {
@@ -197,7 +197,7 @@ export const database ={
                     name: 'All soup seasoning',
                     price: '350',
                     featured_image: '/img/31.png',
-                    Category : 'Spices',
+                    category : 'Spices',
 
                 },
                 {
@@ -205,7 +205,7 @@ export const database ={
                     name: 'Chicken seasoning',
                     price: '350',
                     featured_image: '/img/28.png',
-                    Category : 'Spices',
+                    category : 'Spices',
 
                 },
                 {
@@ -213,7 +213,7 @@ export const database ={
                     name: 'Fried rice seasoning',
                     price: '350',
                     featured_image: '/img/29.png',
-                    Category : 'Spices',
+                    category : 'Spices',
 
                 },
                 {
@@ -221,7 +221,7 @@ export const database ={
                     name: 'Jollof rice seasoning',
                     price: '350',
                     featured_image: '/img/34.png',
-                    Category : 'Spices',
+                    category : 'Spices',
 
                 },
                 {
@@ -229,7 +229,7 @@ export const database ={
                     name: 'Pepper soup seasoning',
                     price: '350',
                     featured_image: '/img/27.png',
-                    Category : 'Spices',
+                    category : 'Spices',
 
                 },
                 
@@ -258,7 +258,7 @@ export const database ={
                     state: 'oyo',
                     zone: 'ibadan-1',
                     cost: '700',
-                    Category : ' ',
+                    category : ' ',
                 },
 
                 {
@@ -266,7 +266,7 @@ export const database ={
                     state: 'lagos',
                     zone: 'island',
                     cost: '1500',
-                    Category : ' ',
+                    category : ' ',
                 },
                 
             ],

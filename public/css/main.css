@@ -1227,6 +1227,8 @@ div.product ul.tabs li a,
     padding-left: 20px;
     padding-right: 20px;
 }
+
+
 .ttm-header-style-02 .ttm-topbar-wrapper .top-contact.text-left li:first-child{padding-left: 0;}
 .ttm-header-style-01 .top-contact li{
     border-left: 1px solid #e9ecef;
@@ -1245,6 +1247,21 @@ div.product ul.tabs li a,
     background: #2d2c2adb;
     color: white;
 }
+
+.top-contact--bg li a{
+    color: white;
+}
+
+.top-contact--bg li:hover,
+.top-contact--bg li:active{
+    background: #1ba85a;
+}
+
+
+.top-contact--bg .active{
+    background: #1ba85a;
+}
+
 .topbar-right .top-contact li:before {
     content: "";
     height: 18px;

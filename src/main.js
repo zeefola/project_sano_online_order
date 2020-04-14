@@ -38,9 +38,6 @@ Vue.use(Vuesax, {
 Vue.use(VueMeta)
 
 Vue.config.productionTip = false;
-Vue.config.ignoredElements = ['rs-module-wrap','rs-module','rs-slides','rs-slide','rs-layer']
-
-// window.$ = window.jQuery = require('jquery');
 
 new Vue({
   router,
