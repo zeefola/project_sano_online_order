@@ -22,6 +22,9 @@ export default new Vuex.Store({
 
     getCartTotal(state){
       return state.cart.reduce(function (acc, obj) { return acc + parseInt(obj.price); }, 0);
+    },
+    getCartCount(state){
+      return state.cart.reduce(function (acc, obj) { return acc + parseInt(obj.quantity); }, 0);
     }
     
 

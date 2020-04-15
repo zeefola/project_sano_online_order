@@ -14,8 +14,17 @@
                 <div class="ttm-topbar-content">
 
                   <ul class="top-contact top-contact--bg text-left">
-                   <router-link to="/" tag="li" > <a> Organic Chicken </a></router-link>
-                    <router-link to="/cart" tag="li" > <a> Cart </a></router-link>
+                   <router-link to="/" tag="li" exact-active-class=""> <a> Organic Chicken </a></router-link>
+                    <router-link to="/cart" tag="li" class="cart-anchor" > 
+                    <a> Cart </a> 
+                  
+                        <span class="fa fa-shopping-cart cart-box">
+                          <span class="cart-box__count">{{ getCartCount }}</span>
+                        </span>
+                        
+                      
+                    
+                    </router-link>
                      <router-link to="/checkout" tag="li" > <a> Checkout </a></router-link>
                   </ul>
 
@@ -64,6 +73,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 export default {
   name: "Header",
   props: {},
@@ -71,6 +81,11 @@ export default {
     return {
       menuStatus: false
     }
+  },
+  computed: {
+    ...mapGetters([
+      'getCartCount',
+    ])
   },
   methods: {
     activate: function(){
@@ -81,4 +96,27 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style></style>
+<style>
+.cart-box{
+  font-size: 15px;
+}
+.cart-box__count{
+  position: absolute;
+  display: inline-block;
+  top: 10px;
+  width: 12px;
+  background: #c80e0e;
+  text-align: center;
+  border-radius: 88%;
+  color: white;
+  font-weight: bold;
+}
+
+
+.cart-anchor{
+  position: relative;
+    display: inline-block;
+
+}
+
+</style>

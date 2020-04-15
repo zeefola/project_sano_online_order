@@ -28,6 +28,11 @@
                     <!-- row -->
                     <div class="row">
                         <div class="col-lg-12">
+                            <div class="coupon_toggle" v-if="cart.length < 1" >
+                                <div class="coupon_code">
+                                    Ooops!!! Your cart is empty <router-link to='/' tag="a">.... Click here to add items to your cart</router-link>
+                                </div>
+                            </div>
                             <!-- ttm-cart-form -->
                             <form class="ttm-cart-form" action="#" method="post">
                                 <table class="shop_table shop_table_responsive">
@@ -56,7 +61,7 @@
                                             </td>
                                             <td class="product-quantity" data-title="Quantity">
                                                 <div class="quantity">
-                                                    <input type="number" class="product-quantity____input" @keyup="modifyCart($event,index)" :value="item.quantity" min="1" title="Qty">
+                                                    <input type="number" class="product-quantity____input" @change="modifyCart($event,index)"  :value="item.quantity" min="1" title="Qty">
                                                 </div>
                                             </td>
                                             
@@ -76,7 +81,7 @@
                                                 <th>Subtotal</th>
                                                 <td data-title="Subtotal">
                                                     <span class="Price-amount">
-                                                        <span class="Price-currencySymbol">&#8358;</span> {{ getCartTotal }}
+                                                        <span class="Price-currencySymbol">&#8358;</span> {{ getCartTotal | number_format }}
                                                     </span>
                                                 </td>
                                             </tr>
@@ -84,7 +89,7 @@
                                                 <th>Total</th>
                                                 <td data-title="Total">
                                                     <strong><span class="Price-amount">
-                                                        <span class="Price-currencySymbol">&#8358;</span> {{ getCartTotal }}</span>
+                                                        <span class="Price-currencySymbol">&#8358;</span> {{ getCartTotal | number_format }}</span>
                                                     </strong>
                                                 </td>
                                             </tr>
@@ -117,11 +122,12 @@ import Master from "@/components/Master.vue";
 import BreadCrumb from "@/components/BreadCrumb.vue";
 import {seo} from "../Repositories/seo.js"
 import { mapGetters, mapMutations, mapState } from 'vuex';
+import { pick } from "../Repositories/pick"
 
 
 export default {
   name: "Cart",
-  mixins: [seo],
+  mixins: [seo, pick],
   components: {
     "app-master" : Master,
     "app-breadcrumb": BreadCrumb,
@@ -136,6 +142,8 @@ export default {
       ])
 
   },
+
+  
 
   methods: {
       ...mapMutations([

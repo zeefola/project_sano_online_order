@@ -28,11 +28,11 @@
                     <!-- row -->
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="coupon_toggle">
+                            <!-- <div class="coupon_toggle">
                                 <div class="coupon_code">
                                     Have a coupon? <a href="checkout.html">Click here to enter your code</a>
                                 </div>
-                            </div>
+                            </div> -->
                             <form name="checkout" method="post" class="checkout row" action="#">
                                 <div class="col-lg-6">
                                     <h4>Billing details</h4>
@@ -207,6 +207,9 @@ export default {
   components: {
     "app-master" : Master,
     "app-breadcrumb": BreadCrumb
+  },
+  computed: {
+      
   },
 
 

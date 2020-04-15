@@ -65,7 +65,7 @@
                                             <i class="fa fa-star"></i> -->
                                         </div>
                                         <span class="product-price"><!-- product-Price -->
-                                            <span class="product-Price-currencySymbol">&#8358;</span>{{ product.price }}
+                                            <span class="product-Price-currencySymbol">&#8358;</span>{{ product.price | number_format }}
                                         </span>
                                     </div>
                                 </div>
@@ -87,6 +87,7 @@ import Master from "@/components/Master.vue";
 import Slider from "@/components/Slider.vue";
 import BreadCrumb from "@/components/BreadCrumb.vue";
 import {seo} from "../Repositories/seo.js";
+import { pick } from "../Repositories/pick"
 import {database} from "../Repositories/database"
 import { mapState, mapMutations } from "vuex"
 
@@ -94,7 +95,7 @@ import { mapState, mapMutations } from "vuex"
 
 export default {
   name: "Welcome",
-  mixins: [seo, database],
+  mixins: [seo, database, pick],
   components: {
     "app-master" : Master,
     "app-breadcrumb": BreadCrumb
