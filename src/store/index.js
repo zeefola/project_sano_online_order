@@ -1,8 +1,8 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import contactus from "./contactus"
+import shop from "./shop"
 import cart from "./cart"
-import { database } from "../Repositories/database"
+import checkout from "./checkout"
 
 
 
@@ -10,12 +10,12 @@ import { database } from "../Repositories/database"
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  mixins: [database],
   state: {
     products: [],
     items: [],
     categories: [],
     cart: [],
+   
     
   },
   getters: {
@@ -23,6 +23,7 @@ export default new Vuex.Store({
     getCartTotal(state){
       return state.cart.reduce(function (acc, obj) { return acc + parseInt(obj.price); }, 0);
     },
+
     getCartCount(state){
       return state.cart.reduce(function (acc, obj) { return acc + parseInt(obj.quantity); }, 0);
     }
@@ -153,7 +154,8 @@ export default new Vuex.Store({
   //  }
   },
   modules: {
-    contactus,
-    // cart
+    shop,
+    // cart,
+    checkout,
   }
 });

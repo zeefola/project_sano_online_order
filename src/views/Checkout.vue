@@ -39,37 +39,44 @@
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <div class="form-group">
-                                                <label>First Name<abbr>*</abbr></label>
-                                                <input type="text" name="fname" class="form-control border">
+                                                <label>Fullname<abbr>*</abbr></label>
+                                                <input type="text" v-model="fullname"  class="form-control border">
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-group">
-                                                <label>Last Name<abbr>*</abbr></label>
-                                                <input type="text" name="lname" class="form-control border">
+                                                <label>Email<abbr>*</abbr></label>
+                                                <input type="email" v-model="email" class="form-control border">
                                             </div>
                                         </div>
-                                        <div class="col-sm-12">
+                                        <div class="col-sm-6">
                                             <div class="form-group">
-                                                <label>Company name (optional)<abbr>*</abbr></label>
-                                                <input type="text" name="cname" class="form-control border">
+                                                <label>Telephone<abbr>*</abbr></label>
+                                                <input type="text" v-model="telephone" class="form-control border">
                                             </div>
                                         </div>
-                                        <div class="col-sm-12">
+
+                                      
+                                        <div class="col-sm-6">
                                             <div class="form-group">
-                                                <label>Country <abbr class="">*</abbr></label>
-                                                <select name="billing_country" tabindex="-1" aria-hidden="true" class="form-control border">
-                                                    <option value="">Select a country…</option>
-                                                    <option value="AX">Åland Islands</option>
-                                                    <option value="AF">Afghanistan</option>
-                                                    <option value="AL">Albania</option>
-                                                    <option value="DZ">Algeria</option>
-                                                    <option value="AS">American Samoa</option>
-                                                    <option value="AD">Andorra</option>
+                                                <label>State <abbr class="">*</abbr></label>
+                                                <select v-model="state" tabindex="-1" aria-hidden="true" class="form-control border"> 
+                                                    <option value="lagos">Lagos</option>
+                                                    <option value="ibadan">Oyo</option>
                                                 </select>
                                             </div>
                                         </div>
+
                                         <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label>City<abbr>*</abbr></label>
+                                                <input type="text" v-model="city" class="form-control border">
+                                            </div>
+                                        </div>
+
+
+
+                                        <!-- <div class="col-sm-12">
                                             <div class="form-group">
                                                 <label>Street address<abbr>*</abbr></label>
                                                 <input type="text" name="address" class="form-control border">
@@ -104,18 +111,29 @@
                                                 <label>Phone (optional)<abbr>*</abbr></label>
                                                 <input type="text" name="phone" class="form-control border">
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <h4>Additional information</h4>
+                                    <h4>Shipping Information</h4>
                                     <div class="row">
                                         <div class="col-sm-12">
                                             <div class="form-group">
-                                                <label>Order notes <abbr>*</abbr></label>
-                                                <textarea name="order" class="form-control border" rows="4"></textarea>
+                                                <label>Shipping Address <abbr>*</abbr></label>
+                                                <textarea  class="form-control border" rows="4"></textarea>
                                             </div>
                                         </div>
+
+                                         <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label>Local Govt Area <abbr class="">*</abbr></label>
+                                                <select v-model="state" tabindex="-1" aria-hidden="true" class="form-control border"> 
+                                                    <option value="lagos">Lagos</option>
+                                                    <option value="ibadan">Oyo</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
@@ -166,13 +184,13 @@
                                             </tfoot>
                                         </table>
                                         <div id="payment" class="checkout-payment">
-                                            <ul class="payment_methods">
+                                            <!-- <ul class="payment_methods">
                                                 <li class="payment_method_ppec_paypal">
                                                     <div class="payment_box">
                                                         <p class="mb-0">Sorry, it seems that there are no available payment methods for your state. Please contact us if you require assistance or wish to make alternate arrangements.</p>
                                                     </div>
                                                 </li>
-                                            </ul>
+                                            </ul> -->
                                             <div class="checkout-form place-order clearfix">
                                                 <p class="payment_policy">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <a href="#" class="ttm-textcolor-skincolor">Privecy policy</a> </p>
                                                 <button type="submit" class="button ttm-btn ttm-btn-size-sm ttm-btn-bgcolor-darkgrey pull-right" name="checkout_place_order" id="place_order" value="Place order" data-value="Place order">Place order</button>
