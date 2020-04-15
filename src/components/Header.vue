@@ -25,6 +25,7 @@
                       
                     
                     </router-link>
+                      <router-link to="/shipping" tag="li" > <a> Shipping </a></router-link>
                      <router-link to="/checkout" tag="li" > <a> Checkout </a></router-link>
                   </ul>
 
@@ -83,7 +84,9 @@ export default {
     }
   },
   computed: {
-    ...mapGetters([
+    ...mapGetters(
+      'cart',
+    [
       'getCartCount',
     ])
   },

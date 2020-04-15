@@ -42,7 +42,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-3 col-md-6 col-sm-6" v-for="(product, index) in items" :key="index+'items'">
+                            <div class="col-lg-3 col-md-6 col-sm-6" v-for="(product, index) in this.$store.state.shop.items" :key="index+'items'">
                                 <div class="product"><!-- product -->
                                     <div class="product-thumbnail"><!-- product-thumbnail -->
                                     <!-- <span class="onsale">Sale!</span> -->
@@ -105,23 +105,40 @@ export default {
   },
   computed: {
 
-      ...mapState([
+        ...mapState(
+          'shop',
+          [
           'items',
           'categories',
-          'cart'
-      ])
+          ]
+        ),
+
+        ...mapState(
+          'cart',
+          [
+          'cart',
+          ]
+        )
 
 
   },
   methods: {
-      ...mapMutations([
+        ...mapMutations(
+          'shop',
+          [
           'fetchAllItems',
           'fetchItemsByCategory',
           'fetchItemCategories',
           'FETCH_PRELOADER',
+          ]
+        ),
+
+        ...mapMutations(
+          'cart',
+          [
           'ADD_TO_CART',
-          
-      ]),
+          ]
+        ),
 
 
   },
@@ -134,6 +151,7 @@ export default {
 
         //Fetch categories
         this.fetchItemCategories()
+       
         
 
     }

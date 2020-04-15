@@ -33,109 +33,14 @@
                                     Have a coupon? <a href="checkout.html">Click here to enter your code</a>
                                 </div>
                             </div> -->
+
+                            <div class="coupon_toggle" v-if="cart.length < 1" >
+                                <div class="coupon_code">
+                                    Ooops!!! Your cart is empty <router-link to='/' tag="a">.... Click here to add items to your cart</router-link>
+                                </div>
+                            </div>
                             <form name="checkout" method="post" class="checkout row" action="#">
-                                <div class="col-lg-6">
-                                    <h4>Billing details</h4>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label>Fullname<abbr>*</abbr></label>
-                                                <input type="text" v-model="fullname"  class="form-control border">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label>Email<abbr>*</abbr></label>
-                                                <input type="email" v-model="email" class="form-control border">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label>Telephone<abbr>*</abbr></label>
-                                                <input type="text" v-model="telephone" class="form-control border">
-                                            </div>
-                                        </div>
-
-                                      
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label>State <abbr class="">*</abbr></label>
-                                                <select v-model="state" tabindex="-1" aria-hidden="true" class="form-control border"> 
-                                                    <option value="lagos">Lagos</option>
-                                                    <option value="ibadan">Oyo</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-12">
-                                            <div class="form-group">
-                                                <label>City<abbr>*</abbr></label>
-                                                <input type="text" v-model="city" class="form-control border">
-                                            </div>
-                                        </div>
-
-
-
-                                        <!-- <div class="col-sm-12">
-                                            <div class="form-group">
-                                                <label>Street address<abbr>*</abbr></label>
-                                                <input type="text" name="address" class="form-control border">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12">
-                                            <div class="form-group">
-                                                <label>Town / City<abbr>*</abbr></label>
-                                                <input type="text" name="city" class="form-control border">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12">
-                                            <div class="form-group">
-                                                <label>State<abbr>*</abbr></label>
-                                                <select name="billing_state" id="billing_state" class="form-control border">
-                                                    <option value="">Select a state…</option>
-                                                    <option value="AP">Andhra Pradesh</option>
-                                                    <option value="AR">Arunachal Pradesh</option>
-                                                    <option value="AS">Assam</option>
-                                                    <option value="BR">Bihar</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12">
-                                            <div class="form-group">
-                                                <label>ZIP<abbr>*</abbr></label>
-                                                <input type="text" name="zip" class="form-control border">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12">
-                                            <div class="form-group">
-                                                <label>Phone (optional)<abbr>*</abbr></label>
-                                                <input type="text" name="phone" class="form-control border">
-                                            </div>
-                                        </div> -->
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <h4>Shipping Information</h4>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <div class="form-group">
-                                                <label>Shipping Address <abbr>*</abbr></label>
-                                                <textarea  class="form-control border" rows="4"></textarea>
-                                            </div>
-                                        </div>
-
-                                         <div class="col-sm-12">
-                                            <div class="form-group">
-                                                <label>Local Govt Area <abbr class="">*</abbr></label>
-                                                <select v-model="state" tabindex="-1" aria-hidden="true" class="form-control border"> 
-                                                    <option value="lagos">Lagos</option>
-                                                    <option value="ibadan">Oyo</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
+                                
                                 <div class="col-lg-12">
                                     <h3 id="order_review_heading">Your order</h3>
                                     <div id="order_review" class="checkout-review-order">
@@ -147,39 +52,39 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr class="cart_item">
-                                                    <td class="product-name">Beardrock Root&nbsp;
-                                                        <strong class="product-quantity">× 1</strong>
+                                                <tr class="cart_item" v-for="(item, index) in cart" :key="index+'item'">
+                                                    <td class="product-name">{{ item.name }} &nbsp;
+                                                        <strong class="product-quantity">× {{ item.quantity}}</strong>
                                                     </td>
                                                     <td class="product-total">
                                                         <span class="Price-amount amount">
-                                                            <span class="Price-currencySymbol">$</span>40.00
+                                                            <span class="Price-currencySymbol">&#8358;</span> {{ item.price | number_format }}
                                                         </span>
                                                     </td>
                                                 </tr>
-                                                <tr class="cart_item">
-                                                    <td class="product-name">Beardrock Root&nbsp;
-                                                        <strong class="product-quantity">× 1</strong>
-                                                    </td>
-                                                    <td class="product-total">
-                                                        <span class="Price-amount">
-                                                            <span class="Price-currencySymbol">$</span>18.00
-                                                        </span>
-                                                    </td>
-                                                </tr>
+                                                
                                             </tbody>
                                             <tfoot>
-                                                <tr class="cart-subtotal">
+                                                <tr class="cart-subtotal bg-grey-light">
                                                     <th>Subtotal</th>
                                                     <td>
                                                         <span class="Price-amount amount">
-                                                            <span class="Price-currencySymbol">$</span>1610.00
+                                                            <span class="Price-currencySymbol">&#8358;</span> {{ getCartTotal | number_format }}
                                                         </span>
                                                     </td>
                                                 </tr>
-                                                <tr class="order-total">
+
+                                                <tr class="cart-subtotal bg-grey-light">
+                                                    <th>Shipping</th>
+                                                    <td>
+                                                        <span class="Price-amount amount">
+                                                            <span class="Price-currencySymbol">&#8358;</span> {{ shipping.cost |number_format  }}
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="order-total bg-grey-light">
                                                     <th>Total</th>
-                                                    <td><strong><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>1610.00</span></strong> </td>
+                                                    <td><strong><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#8358;</span> {{ getCartWithShippingTotal | number_format }} </span></strong> </td>
                                                 </tr>
                                             </tfoot>
                                         </table>
@@ -193,7 +98,13 @@
                                             </ul> -->
                                             <div class="checkout-form place-order clearfix">
                                                 <p class="payment_policy">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <a href="#" class="ttm-textcolor-skincolor">Privecy policy</a> </p>
-                                                <button type="submit" class="button ttm-btn ttm-btn-size-sm ttm-btn-bgcolor-darkgrey pull-right" name="checkout_place_order" id="place_order" value="Place order" data-value="Place order">Place order</button>
+                                                <span class="pull-right float-right">
+
+                                                    <router-link class="button margin-sm ttm-btn ttm-btn-size-sm ttm-btn-bgcolor-darkgrey bg-dark" tag="a" to='/shipping'><a>Back</a></router-link>
+                                                  
+                                                <button type="submit" class="button margin-sm bg-green ttm-btn ttm-btn-size-sm ttm-btn-bgcolor-darkgrey " name="checkout_place_order" id="place_order" value="Place order" data-value="Place order">Place order</button>
+                                                </span>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -218,15 +129,52 @@
 import Master from "@/components/Master.vue";
 import BreadCrumb from "@/components/BreadCrumb.vue";
 import {seo} from "../Repositories/seo.js"
+import { pick } from "../Repositories/pick"
+import { mapState, mapMutations, mapGetters } from 'vuex';
 
 export default {
   name: "Checkout",
-  mixins: [seo],
+  mixins: [seo,pick],
   components: {
     "app-master" : Master,
     "app-breadcrumb": BreadCrumb
   },
   computed: {
+
+    //    fullname(){
+
+    //    },
+
+        ...mapState(
+          'cart',
+          [
+          'cart',
+          ]
+        ),
+
+         ...mapState(
+          'checkout',
+          [
+          'shipping',
+          ]
+        ),
+
+      ...mapGetters(
+          'checkout',
+          [
+              'getCartWithShippingTotal'
+          ]
+      ),
+
+
+      ...mapGetters(
+          'cart',
+          [
+              'getCartTotal'
+          ]
+      )
+
+      
       
   },
 
@@ -239,3 +187,32 @@ export default {
 };
 
 </script>
+
+
+<style>
+.bg-grey-light{
+    background: #cccccc24;
+}
+
+.float-right{
+    float: right;
+}
+
+.margin-sm{
+    margin: 3px;
+}
+
+.bg-green{
+    background: #00A85A!important;
+}
+
+.bg-dark{
+    background: #232323!important ;
+}
+
+.bg-dark:hover,
+.bg-dark:active{
+    background: #232323!important;
+}
+
+</style>

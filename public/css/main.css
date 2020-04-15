@@ -2313,3 +2313,33 @@ article.ttm-blog-classic .ttm-blog-classic-content {
 }
 .ttm-team-member-education-box span{font-size: 16px;line-height: 28px;font-weight: 500;}
 
+.button-block{
+    display: inline-block;
+    width: 100%;
+    outline: none;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.button-block .button-block__item{
+    display: inline-block;
+    background: gainsboro;
+     width: 49%;
+     margin: 0px 3px;
+     padding: 8px 12px;
+     cursor: pointer;
+     color: white;
+     background: #232323;
+     font: inherit;
+     outline: none;
+}
+
+.button-block .prev{
+    background: #232323;
+    margin-left: 0px;
+}
+
+.button-block .next{
+    background: #00A85A;
+    margin-right: 0px;
+}

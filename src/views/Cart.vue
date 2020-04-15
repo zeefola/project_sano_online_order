@@ -95,9 +95,11 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <div class="proceed-to-checkout">
-                                        <router-link  to="/checkout" class="button ttm-btn ttm-btn-bgcolor-darkgrey checkout-button"> Proceed to checkout </router-link>
-    
+                                    <div class="button-block">
+                                         <router-link  to="/" class="button-block__item prev"> Back </router-link>
+                                        <div class="button-block__item next">Proceed to shipping </div>
+                                        
+             
                                     </div>
                                 </div>
                             </div><!-- cart-collaterals end-->
@@ -133,30 +135,35 @@ export default {
     "app-breadcrumb": BreadCrumb,
   },
   computed: {
-      ...mapState([
-          'cart'
-      ]),
+      ...mapState(
+        'cart',['cart']
+      ),
 
-      ...mapGetters([
-          'getCartTotal'
-      ])
+      ...mapGetters(
+        'cart',
+        [
+         'getCartTotal'
+        ]
+       )
 
   },
 
   
 
   methods: {
-      ...mapMutations([
+      ...mapMutations(
+          'cart',
+        [
           'REMOVE_CART_ITEM',
           'MODIFY_CART_ITEM'
-
-      ]),
+      ]
+      ),
 
       modifyCart(event,index){
           let quantity = event.target.value;
 
           if(quantity){
-              this.$store.commit('MODIFY_CART_ITEM',{quantity: quantity, index: index});
+              this.$store.commit('cart/MODIFY_CART_ITEM',{quantity: quantity, index: index});
           }
           
       }
@@ -180,4 +187,7 @@ export default {
 .product-remove a{
     cursor: pointer;
 }
+
+
+
 </style>
