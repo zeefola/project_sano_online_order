@@ -30,7 +30,7 @@
                     <div class="col-lg-12 content-area">
                         <div class="row">
                             <div class="col-md-12">
-                                <p class="products-result-count">Showing {{ items.length }} items  {{ cart }}</p>
+                                <p class="products-result-count">Showing {{ items.length }} items  </p>
                                 <form class="products-ordering float-sm-right">
                                     <div class="form-group mb-30">
                                         <select class="form-control border">

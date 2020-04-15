@@ -69,6 +69,20 @@
       <!-- ttm-stickable-header-w end-->
     </div>
     <!--ttm-header-wrap end -->
+
+    <div class="nav-block">
+      <div class="nav-block__items">
+        <router-link to="/" tag="div" class="nav-block__items__item" > <a> Organic Chicken </a></router-link>
+
+        <router-link to="/cart" tag="div" class="nav-block__items__item" > 
+         <a> Cart </a>
+          <span class="fa fa-shopping-cart cart-box"><span class="cart-box__count">{{ getCartCount }}</span></span>
+        </router-link>
+
+         <router-link to="/shipping" tag="div" class="nav-block__items__item" > <a> Shipping </a></router-link>
+         <router-link to="/checkout" tag="div" class="nav-block__items__item" > <a> Checkout </a></router-link>
+      </div>
+    </div>
   </header>
   <!--header end-->
 </template>
@@ -122,4 +136,56 @@ export default {
 
 }
 
+
+.nav-block{
+  display: block;
+  width: 100%;
+  height: 3.2rem;
+  background: white;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 100;
+  display: none;
+
+}
+
+.nav-block__items{
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.nav-block__items__item{
+  display: inline-block;
+  height: 100%;
+  background: #4a4947;
+  vertical-align: middle;
+  outline: none;
+  padding: 10px 16px;
+  margin: 0px 2px 0px 0px;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+
+
+}
+
+.nav-block__items a{
+  color: white;
+}
+
+.nav-block__items__item:hover,
+.nav-block__items__item:active{
+  background: #1ba85a;
+}
+
+
+@media (min-width: 0px) and (max-width: 1200px){
+  .nav-block{
+    display: block;
+  }
+}
 </style>
