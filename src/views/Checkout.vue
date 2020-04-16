@@ -43,6 +43,7 @@
                                 
                                 <div class="col-lg-12">
                                     <h3 id="order_review_heading">Your order</h3>
+                                    {{ getFormData }}
                                     <div id="order_review" class="checkout-review-order">
                                         <table class="shop_table checkout-review-order-table">
                                             <thead>
@@ -78,7 +79,7 @@
                                                     <th>Shipping</th>
                                                     <td>
                                                         <span class="Price-amount amount">
-                                                            <span class="Price-currencySymbol">&#8358;</span> {{ shipping.cost |number_format  }}
+                                                            <span class="Price-currencySymbol">&#8358;</span> {{ shipping_details.cost |number_format  }}
                                                         </span>
                                                     </td>
                                                 </tr>
@@ -153,16 +154,17 @@ export default {
         ),
 
          ...mapState(
-          'checkout',
-          [
           'shipping',
+          [
+          'shipping_details',
           ]
         ),
 
       ...mapGetters(
           'checkout',
           [
-              'getCartWithShippingTotal'
+              'getCartWithShippingTotal',
+              'getFormData'
           ]
       ),
 

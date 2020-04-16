@@ -35,15 +35,16 @@
                             </div> -->
                             <form name="checkout" method="post" class="checkout row" action="#">
                                 <div class="col-lg-6">
-                                    <h4>Billing details</h4>
+                                    <h4>Billing details  </h4>
                                     <div class="row">
-                                        <!-- <div class="col-sm-6">
+                                        
+                                        <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label>Fullname<abbr>*</abbr></label>
                                                 <input type="text" v-model="fullname"  class="form-control border">
                                             </div>
-                                        </div> -->
-                                        <!-- <div class="col-sm-6">
+                                        </div> 
+                                        <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label>Email<abbr>*</abbr></label>
                                                 <input type="email" v-model="email" class="form-control border">
@@ -61,8 +62,12 @@
                                             <div class="form-group">
                                                 <label>State <abbr class="">*</abbr></label>
                                                 <select v-model="state" tabindex="-1" aria-hidden="true" class="form-control border"> 
-                                                    <option value="lagos">Lagos</option>
-                                                    <option value="ibadan">Oyo</option>
+                                                    
+                                                    <option  v-for="(shipping_state, index) in getStatesFromShippingRate" :key="index+'state'"  :value="shipping_state">
+                                                        {{ shipping_state }}
+                                                    </option>
+                                                    
+                                                    
                                                 </select>
                                             </div>
                                         </div>
@@ -72,7 +77,7 @@
                                                 <label>City<abbr>*</abbr></label>
                                                 <input type="text" v-model="city" class="form-control border">
                                             </div>
-                                        </div> -->
+                                        </div>
 
 
 
@@ -85,16 +90,17 @@
                                         <div class="col-sm-12">
                                             <div class="form-group">
                                                 <label>Shipping Address <abbr>*</abbr></label>
-                                                <textarea  class="form-control border" rows="4"></textarea>
+                                                <textarea  class="form-control border" rows="4" v-model="address"></textarea>
                                             </div>
                                         </div>
 
                                          <div class="col-sm-12">
                                             <div class="form-group">
                                                 <label>Local Govt Area <abbr class="">*</abbr></label>
-                                                <select v-model="state" tabindex="-1" aria-hidden="true" class="form-control border"> 
-                                                    <option value="lagos">Lagos</option>
-                                                    <option value="ibadan">Oyo</option>
+                                                <select v-model="zone" tabindex="-1" aria-hidden="true" class="form-control border"> 
+                                                    <option  v-for="(shipping_zone, index) in getZonesFromShippingRateUsingState(state)" :key="index+'zone'"  :value="shipping_zone">
+                                                        {{ shipping_zone }}
+                                                    </option>
                                                 </select>
                                             </div>
                                         </div>
@@ -142,11 +148,98 @@ export default {
     "app-master" : Master,
     "app-breadcrumb": BreadCrumb
   },
+  watch: {
+      zone: function(val){
+         this.$store.commit('shipping/UPDATE_SHIPPING_DETAILS',val);
+
+      }
+  },
   computed: {
 
-    //    fullname(){
+    fullname: {
+        get(){
+            return this.$store.state.shipping.customer_details.fullname;
+        },
+        set(value){
+            this.$store.commit('shipping/UPDATE_FULLNAME',value);
+        }    
+    },
 
-    //    },
+    email: {
+        get(){
+            return this.$store.state.shipping.customer_details.email;
+        },
+        set(value){
+            this.$store.commit('shipping/UPDATE_EMAIL',value);
+        }    
+    },
+
+    telephone: {
+        get(){
+            return this.$store.state.shipping.customer_details.telephone;
+        },
+        set(value){
+            this.$store.commit('shipping/UPDATE_TELEPHONE',value);
+        }    
+    },
+
+    state: {
+        get(){
+            return this.$store.state.shipping.customer_details.state;
+        },
+        set(value){
+            this.$store.commit('shipping/UPDATE_STATE',value);
+        }    
+    },
+
+    city: {
+        get(){
+            return this.$store.state.shipping.customer_details.city;
+        },
+        set(value){
+            this.$store.commit('shipping/UPDATE_CITY',value);
+        }    
+    },
+
+    address: {
+        get(){
+            return this.$store.state.shipping.customer_details.address;
+        },
+        set(value){
+            this.$store.commit('shipping/UPDATE_ADDRESS',value);
+        }    
+    },
+
+    zone: {
+        get(){
+            return this.$store.state.shipping.shipping_details.zone;
+        },
+        set(value){
+            this.$store.commit('shipping/UPDATE_ZONE',value);
+        }    
+    },
+
+    cost: {
+        get(){
+            return this.$store.state.shipping.shipping_details.cost;
+        },
+        set(value){
+            this.$store.commit('shipping/UPDATE_COST',value);
+        }    
+    },
+
+
+    ...mapGetters(
+        'shipping',
+        [
+            'getZonesFromShippingRateUsingState',
+            'getStatesFromShippingRate'
+        ]
+
+    )
+
+
+
 
        
       

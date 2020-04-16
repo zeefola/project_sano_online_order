@@ -237,39 +237,7 @@ export const database ={
             ],
 
 
-            shipping_rate: [
-                {
-                    id: '1',
-                    state: 'lagos',
-                    zone: 'mainland',
-                    cost: '1000',
-                    
-                },
-                {
-                    id: '2',
-                    state: 'lagos',
-                    zone: 'island',
-                    cost: '1500',
-                    
-                },
-
-                {
-                    id: '3',
-                    state: 'oyo',
-                    zone: 'ibadan-1',
-                    cost: '700',
-                    category : ' ',
-                },
-
-                {
-                    id: '2',
-                    state: 'lagos',
-                    zone: 'island',
-                    cost: '1500',
-                    category : ' ',
-                },
-                
-            ],
+           
 
 
 
