@@ -47,7 +47,7 @@
                                     <div class="product-thumbnail"><!-- product-thumbnail -->
                                     <!-- <span class="onsale">Sale!</span> -->
                                         <img class="img-fluid w-100" :src="product.featured_image" alt="">
-                                        <div class="ttm-shop-icon" @click="ADD_TO_CART(product)"><!-- ttm-shop-icon -->
+                                        <div class="ttm-shop-icon" @click="add_to_cart(product)"><!-- ttm-shop-icon -->
                                             <div class="product-btn add-to-cart-btn"><a >ADD TO CART</a></div>
                                         </div>
                                     </div><!-- product-thumbnail end -->
@@ -89,13 +89,14 @@ import BreadCrumb from "@/components/BreadCrumb.vue";
 import {seo} from "../Repositories/seo.js";
 import { pick } from "../Repositories/pick"
 import {database} from "../Repositories/database"
-import { mapState, mapMutations } from "vuex"
+import { vuesax } from "../Repositories/vuesax"
+import { mapState, mapMutations, mapActions } from "vuex"
 
 
 
 export default {
   name: "Welcome",
-  mixins: [seo, database, pick],
+  mixins: [seo, database, pick, vuesax],
   components: {
     "app-master" : Master,
     "app-breadcrumb": BreadCrumb
@@ -133,12 +134,15 @@ export default {
           ]
         ),
 
-        ...mapMutations(
-          'cart',
-          [
-          'ADD_TO_CART',
-          ]
-        ),
+        
+
+        add_to_cart(payload){ 
+            let x = this;
+           this.$store.dispatch('cart/add_to_cart',payload).then((yes) =>{
+              
+              x.showNotif({ type: 'success', position: 'bottom-right', message: 'Product added to cart'});
+           })
+        }
 
 
   },
@@ -148,6 +152,8 @@ export default {
 
         //Preloader
         this.FETCH_PRELOADER(this.products)
+
+        
 
         //Fetch categories
         this.fetchItemCategories()
@@ -159,11 +165,12 @@ export default {
 </script>
 
 
-<style scoped>
+<style>
     .add-to-cart-btn a:hover,
     .add-to-cart-btn a:active
     {
         cursor: pointer;
         color: white;
     }
+
 </style>

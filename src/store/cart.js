@@ -101,7 +101,10 @@ const mutations = {
 }
 const actions = {
 
-
+  async add_to_cart ({ commit }, payload) {
+     commit('ADD_TO_CART', payload);
+     return true;
+  },
 
 
 

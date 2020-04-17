@@ -12,7 +12,8 @@ export const vuesax ={
             this.activeLoading = false
             this.$vs.loading.close()
         },
-
+ 
+        
         
         showNotif (obj) {
 
@@ -28,7 +29,7 @@ export const vuesax ={
                             x.$vs.notify({
                                 text: obj.message[key],
                                 color: 'red',
-                                time: 5000,
+                                time: 3000,
                                 position: obj.position ? obj.position : 'bottom-right' ,
                   
                             })
@@ -41,7 +42,7 @@ export const vuesax ={
                     this.$vs.notify({
                         text: obj.message,
                         color: 'red',
-                        time: 5000,
+                        time: 3000,
                         position: obj.position ? obj.position : 'bottom-right' ,
           
                     })
@@ -59,7 +60,7 @@ export const vuesax ={
                 this.$vs.notify({
                     text: obj.message,
                     color: 'green',
-                    time: 5000,
+                    time: 3000,
                     position: obj.position ? obj.position : 'bottom-right' ,
       
                 })
@@ -73,7 +74,7 @@ export const vuesax ={
                 this.$vs.notify({
                     text: obj.message,
                     color: 'teal',
-                    time: 5000,
+                    time: 3000,
                     position: obj.position ? obj.position : 'bottom-right' ,
       
                 })

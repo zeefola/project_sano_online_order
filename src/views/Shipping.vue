@@ -139,11 +139,14 @@ import Master from "@/components/Master.vue";
 import BreadCrumb from "@/components/BreadCrumb.vue";
 import {seo} from "../Repositories/seo.js"
 import { pick } from "../Repositories/pick"
+import { middleware } from "../Repositories/middleware"
+import { vuesax } from "../Repositories/vuesax"
 import { mapState, mapMutations, mapGetters } from 'vuex';
+
 
 export default {
   name: "Checkout",
-  mixins: [seo,pick],
+  mixins: [seo,pick, vuesax, middleware],
   components: {
     "app-master" : Master,
     "app-breadcrumb": BreadCrumb
@@ -236,18 +239,23 @@ export default {
             'getStatesFromShippingRate'
         ]
 
-    )
+    ),
 
 
 
-
+    
        
       
   },
 
 
   created(){
+      
+      //SEO
       this.seoMetaData('Shipping', ' ');
+
+      //Middleware 
+      this.cartMiddleware();
   }
 
   

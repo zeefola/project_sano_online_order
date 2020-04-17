@@ -97,8 +97,8 @@
                                     </table>
                                     <div class="button-block">
                                          <router-link  to="/" class="button-block__item prev"> Back </router-link>
-                                        <div class="button-block__item next">Proceed to shipping </div>
-                                        
+                                         <router-link  to="/shipping" class="button-block__item next"> Proceed to shipping </router-link>
+                                      
              
                                     </div>
                                 </div>
@@ -124,12 +124,14 @@ import Master from "@/components/Master.vue";
 import BreadCrumb from "@/components/BreadCrumb.vue";
 import {seo} from "../Repositories/seo.js"
 import { mapGetters, mapMutations, mapState } from 'vuex';
+import { middleware } from "../Repositories/middleware"
 import { pick } from "../Repositories/pick"
+import { vuesax } from "../Repositories/vuesax"
 
 
 export default {
   name: "Cart",
-  mixins: [seo, pick],
+  mixins: [seo, pick, vuesax, middleware],
   components: {
     "app-master" : Master,
     "app-breadcrumb": BreadCrumb,
@@ -166,10 +168,15 @@ export default {
               this.$store.commit('cart/MODIFY_CART_ITEM',{quantity: quantity, index: index});
           }
           
-      }
+      },
+
   },
   created(){
+
+      //SEO
       this.seoMetaData('Cart', ' ');
+
+      this.cartMiddleware();
   }
 
   
