@@ -131,21 +131,19 @@ import Master from "@/components/Master.vue";
 import BreadCrumb from "@/components/BreadCrumb.vue";
 import {seo} from "../Repositories/seo.js"
 import { pick } from "../Repositories/pick"
+import { middleware } from "../Repositories/middleware"
 import { mapState, mapMutations, mapGetters } from 'vuex';
+import { vuesax } from '../Repositories/vuesax';
+
 
 export default {
   name: "Checkout",
-  mixins: [seo,pick],
+  mixins: [seo,pick, middleware, vuesax],
   components: {
     "app-master" : Master,
     "app-breadcrumb": BreadCrumb
   },
   computed: {
-
-    //    fullname(){
-
-    //    },
-
         ...mapState(
           'cart',
           [
@@ -182,7 +180,13 @@ export default {
 
 
   created(){
+
+      //SEO
       this.seoMetaData('Checkout', ' ');
+
+      //Middleware 
+      this.cartMiddleware();
+      this.shippingMiddleware();
   }
 
   
