@@ -67,6 +67,19 @@ export const vuesax ={
 
             }
 
+            if(obj.type == 'successLong'){
+                
+
+                this.$vs.notify({
+                    text: obj.message,
+                    color: 'green',
+                    time: 12000,
+                    position: obj.position ? obj.position : 'bottom-right' ,
+      
+                })
+
+            }
+
 
 
             if(obj.type == 'info'){

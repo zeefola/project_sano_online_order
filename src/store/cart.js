@@ -95,6 +95,10 @@ const mutations = {
       REMOVE_CART_ITEM(state, id){
         state.cart.splice(id, 1);
       },
+
+      CLEAR_CART(state){
+        state.cart = [];
+      }
   
   
    

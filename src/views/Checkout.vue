@@ -43,7 +43,7 @@
                                 
                                 <div class="col-lg-12">
                                     <h3 id="order_review_heading">Your order</h3>
-                                    {{ getFormData }}
+                                    
                                     <div id="order_review" class="checkout-review-order">
                                         <table class="shop_table checkout-review-order-table">
                                             <thead>
@@ -174,19 +174,59 @@ export default {
           ]
       ),
 
+      
+
+      
+      
+  },
+
+  methods: {
       api_calls(type){
+          let x = this;
+           /** Start loader gif */
+          this.showLoading();
+          
           let key = { key: this.API_KEY };
           if(type == 'PLACE_ORDER'){
               this.$store.dispatch('checkout/place_order',key).then((response) => {
-                  console.dir(response);
+                 
+                /** If response status is 200 */
+                if(response.status == 200){
+
+                    x.showNotif({type: 'successLong', message: response.data.message });
+
+                    //clear all input field
+                    x.$store.commit('cart/CLEAR_CART');
+
+                    x.$router.push('/');
+
+                }
+
+                  
+                /** If response status is 400 or 404 */
+                if(response.status == 400 || response.status == 404){
+                  x.showNotif({type: 'warning', message: response.data.message });
+
+                }
+
+                /** If response contains error */
+                if(response.data.errors){
+                  x.showNotif({type: 'warning', message: response.data.errors });
+                  
+                }
+
+
+                 x.hideLoading();
 
               })
           }
 
-      }
 
-      
-      
+          
+              /** End loader gif */
+              this.hideLoading();
+
+      }
   },
 
 

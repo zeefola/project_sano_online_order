@@ -10,12 +10,14 @@ const getters = {
     },
 
     getFormData(state, getters, rootState, rootGetters){
+
         let data = '';
         let cart = rootState.cart.cart;
         let customer_details = rootState.shipping.customer_details;
         let shipping_details = rootState.shipping.shipping_details;
+        let total_cost = getters.getCartWithShippingTotal;
 
-        return { orders: cart, ...customer_details, ...shipping_details}
+        return { orders: cart, total_cost: total_cost, ...customer_details, ...shipping_details}
 
         
 
@@ -23,12 +25,13 @@ const getters = {
 
 }
 const mutations = { 
-   
+
+    
 }
 const actions = {
 
     async place_order({commit, getters}, payload){
-        let value = { ...payload, ...getters.getFormData()};
+        let value = { ...payload, ...getters.getFormData};
 
         try {
             var response = await axios
@@ -42,6 +45,9 @@ const actions = {
         } 
   
     },
+
+
+    
 
 
 
