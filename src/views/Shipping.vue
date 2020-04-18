@@ -36,7 +36,7 @@
                             <form name="checkout" method="post" class="checkout row" action="#">
                                 <div class="col-lg-6">
                                     <h4>Billing details  </h4>
-                                    <div class="row">
+                                    <div class="row" style="margin-bottom: 2rem!important">
                                         
                                         <div class="col-sm-6">
                                             <div class="form-group" >
