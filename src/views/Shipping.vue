@@ -96,7 +96,7 @@
 
                                          <div class="col-sm-12">
                                             <div class="form-group">
-                                                <label>Shipping Zone  <abbr class="">*</abbr></label>
+                                                <label> Shipping Zone <abbr class="">*</abbr></label>
                                                 <select v-model="zone" tabindex="-1" aria-hidden="true" class="form-control border"> 
                                                     <option  v-for="(shipping_zone, index) in getZonesFromShippingRateUsingState(state)" :key="index+'zone'"  :value="shipping_zone">
                                                         {{ shipping_zone }}
