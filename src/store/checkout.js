@@ -11,6 +11,8 @@ const getters = {
 
     getFormData(state, getters, rootState, rootGetters){
 
+        
+
         let data = '';
         let cart = rootState.cart.cart;
         let customer_details = rootState.shipping.customer_details;
@@ -29,6 +31,9 @@ const mutations = {
     
 }
 const actions = {
+
+    
+
 
     async place_order({commit, getters}, payload){
         let value = { ...payload, ...getters.getFormData};

@@ -67,6 +67,8 @@ export const vuesax ={
 
             }
 
+           
+
             if(obj.type == 'successLong'){
                 
 
@@ -82,6 +84,7 @@ export const vuesax ={
 
 
 
+            
             if(obj.type == 'info'){
 
                 this.$vs.notify({
