@@ -39,7 +39,7 @@
                                     <div class="row">
                                         
                                         <div class="col-sm-6">
-                                            <div class="form-group">
+                                            <div class="form-group" >
                                                 <label>Fullname<abbr>*</abbr></label>
                                                 <input type="text" v-model="fullname"  class="form-control border">
                                             </div>
@@ -108,7 +108,8 @@
                                         <div class="col-sm-12">
                                              <div class="button-block">
                                                 <router-link  to="/cart" class="button-block__item prev"> Back </router-link>
-                                                <div class="button-block__item next">Proceed to checkout </div>
+                                                <router-link  to="/checkout" class="button-block__item next"> Proceed to checkout  </router-link>
+                                                
                                                 
                     
                                             </div>

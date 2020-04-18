@@ -88,7 +88,6 @@ import Slider from "@/components/Slider.vue";
 import BreadCrumb from "@/components/BreadCrumb.vue";
 import {seo} from "../Repositories/seo.js";
 import { pick } from "../Repositories/pick"
-import {database} from "../Repositories/database"
 import { vuesax } from "../Repositories/vuesax"
 import { mapState, mapMutations, mapActions } from "vuex"
 
@@ -96,7 +95,7 @@ import { mapState, mapMutations, mapActions } from "vuex"
 
 export default {
   name: "Welcome",
-  mixins: [seo, database, pick, vuesax],
+  mixins: [seo, pick, vuesax],
   components: {
     "app-master" : Master,
     "app-breadcrumb": BreadCrumb
@@ -151,12 +150,15 @@ export default {
         this.seoMetaData('Home','Largest Essential Oil Producer');
 
         //Preloader
-        this.FETCH_PRELOADER(this.products)
+        this.FETCH_PRELOADER()
 
         
 
         //Fetch categories
         this.fetchItemCategories()
+
+
+        //console.log(process.env.VUE_APP_API_KEY)
        
         
 
@@ -165,7 +167,7 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
     .add-to-cart-btn a:hover,
     .add-to-cart-btn a:active
     {

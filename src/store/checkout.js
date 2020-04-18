@@ -27,6 +27,22 @@ const mutations = {
 }
 const actions = {
 
+    async place_order({commit, getters}, payload){
+        let value = { ...payload, ...getters.getFormData()};
+
+        try {
+            var response = await axios
+            .post(
+                "https://www.agropark.com.ng/api/v1/section/sano_customer_order_placement",value
+            );
+           
+            return await response;
+        }catch(error){
+            return await error.response;
+        } 
+  
+    },
+
 
 
 

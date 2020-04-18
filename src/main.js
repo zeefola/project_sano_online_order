@@ -6,6 +6,7 @@ import "./registerServiceWorker";
 import VueMeta from 'vue-meta'
 import Vuesax from 'vuesax'
 
+
 import 'vuesax/dist/vuesax.css' //Vuesax styles
 Vue.use(Vuesax, {
   // options here

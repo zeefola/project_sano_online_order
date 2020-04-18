@@ -103,7 +103,7 @@
 
                                                     <router-link class="button margin-sm ttm-btn ttm-btn-size-sm ttm-btn-bgcolor-darkgrey bg-dark" tag="a" to='/shipping'><a>Back</a></router-link>
                                                   
-                                                <button type="submit" class="button margin-sm bg-green ttm-btn ttm-btn-size-sm ttm-btn-bgcolor-darkgrey " name="checkout_place_order" id="place_order" value="Place order" data-value="Place order">Place order</button>
+                                                <button type="button" @click="api_calls('PLACE_ORDER')" class="button margin-sm bg-green ttm-btn ttm-btn-size-sm ttm-btn-bgcolor-darkgrey " name="checkout_place_order" id="place_order" value="Place order" data-value="Place order">Place order</button>
                                                 </span>
                                                 
                                             </div>
@@ -172,7 +172,18 @@ export default {
           [
               'getCartTotal'
           ]
-      )
+      ),
+
+      api_calls(type){
+          let key = { key: this.API_KEY };
+          if(type == 'PLACE_ORDER'){
+              this.$store.dispatch('checkout/place_order',key).then((response) => {
+                  console.dir(response);
+
+              })
+          }
+
+      }
 
       
       
