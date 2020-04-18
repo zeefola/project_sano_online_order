@@ -169,6 +169,7 @@ export default {
   color: white;
   font: inherit;
   cursor: pointer;
+  
 
 
 }
@@ -186,6 +187,10 @@ export default {
 @media (min-width: 0px) and (max-width: 1200px){
   .nav-block{
     display: block;
+  }
+
+  .nav-block__items__item{
+    font-size: 0.75rem!important;
   }
 }
 </style>
