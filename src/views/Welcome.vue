@@ -301,5 +301,11 @@ export default {
             font-weight: normal;
             font-size: 0.8rem;
         }
+
+         .item .item__featured_image{
+            height: auto;
+            width: 100%;
+            
+        }
     }
 </style>
