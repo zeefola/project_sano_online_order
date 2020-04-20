@@ -193,5 +193,15 @@ export default {
     font-size: 0.65rem!important;
      padding: 0.5rem 0.8rem;
   }
+
+
+  
+  .cart-box__count{
+
+    font-weight: 500;
+    font-size: 0.8rem;
+    font-family: inherit
+
+  }
 }
 </style>

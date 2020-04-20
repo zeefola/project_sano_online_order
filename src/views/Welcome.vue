@@ -33,9 +33,9 @@
                                 <p class="products-result-count">Showing {{ items.length }} items  </p>
                                 <form class="products-ordering float-sm-right">
                                     <div class="form-group mb-30">
-                                        <select class="form-control border">
-                                            <option  @click.prevent="fetchAllItems()">All Categories</option>
-                                            <option v-for="(category, index) in categories" :key="index+'category'"  @click.prevent="fetchItemsByCategory(category)">{{ category}}</option>
+                                        <select class="form-control border" @change="check($event)" >
+                                            <option  value="all" selected>All Categories</option>
+                                            <option v-for="(category, index) in categories" :key="index+'category'" :value="category">{{ category}}</option>
                                         </select>
                                     </div>
                                 </form>
@@ -116,7 +116,9 @@ export default {
     "app-breadcrumb": BreadCrumb
   },
   data(){
-      return {}
+      return {
+          cat: '',
+      }
   },
   computed: {
 
@@ -138,6 +140,14 @@ export default {
 
   },
   methods: {
+        check(e){
+           let new_val = e.target.value;
+           if( new_val != 'all'){
+              this.fetchItemsByCategory(new_val);
+            }else{
+                this.fetchAllItems()
+            }
+        },
         ...mapMutations(
           'shop',
           [
@@ -304,8 +314,7 @@ export default {
 
          .item .item__featured_image{
             height: auto;
-            width: 100%;
-            
+            width: 100%;   
         }
     }
 </style>
