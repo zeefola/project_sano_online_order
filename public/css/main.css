@@ -2334,6 +2334,13 @@ article.ttm-blog-classic .ttm-blog-classic-content {
      outline: none;
 }
 
+
+@media (min-width: 0px) and (max-width: 1200px){
+    .button-block .button-block__item{
+        font-size: 0.8rem;
+    }
+  }
+
 .button-block .prev{
     background: #232323;
     margin-left: 0px;

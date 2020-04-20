@@ -41,39 +41,54 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-3 col-md-6 col-sm-6" v-for="(product, index) in this.$store.state.shop.items" :key="index+'items'">
-                                <div class="product"><!-- product -->
-                                    <div class="product-thumbnail"><!-- product-thumbnail -->
-                                    <!-- <span class="onsale">Sale!</span> -->
-                                        <img class="img-fluid w-100" :src="product.featured_image" alt="">
-                                        <div class="ttm-shop-icon" @click="add_to_cart(product)"><!-- ttm-shop-icon -->
-                                            <div class="product-btn add-to-cart-btn"><a >ADD TO CART</a></div>
-                                        </div>
-                                    </div><!-- product-thumbnail end -->
-                                    <div class="product-content text-left"><!-- product-content -->
-                                        <div class="product-title"><!-- product-title -->
-                                            <h2><a href="#">{{ product.name }}</a></h2>
-                                        </div>
-                                        <div class="ttm-ratting-star">
-                                            <span> {{ product.Category }}</span>
-                                            <!-- ratting-star -->
-                                            <!-- <i class="fa fa-star"> </i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i> -->
-                                        </div>
-                                        <span class="product-price"><!-- product-Price -->
-                                            <span class="product-Price-currencySymbol">&#8358;</span>{{ product.price | number_format }}
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+                       
+
+
+               
                        
                     </div>
                 </div><!-- row end -->
+
+
+                 
+                  <div class="flex-container">
+                    <div class="item"  v-for="(product, index) in this.$store.state.shop.items" :key="index+'items'">
+                        <div class="item__featured_image">
+                            <img :src="product.featured_image">
+
+                           
+                        </div>
+                         
+
+                        <div class="item__content">
+                            <div class="item__content__title">
+                                {{ product.name }}
+                            </div>
+
+                            <div class="item__content__price">
+                                &#8358; {{ product.price | number_format }}
+                            </div>
+
+
+                        </div>
+
+                        <div class="item__overlay">
+                             <div class="item__overlay__container">
+                                  <div class="item__overlay__container__button" @click.prevent="add_to_cart(product)">
+                                      Add to cart
+                                  </div>
+                             </div>
+                         </div>
+                        
+                    </div>
+
+                        
+                  </div>
+                
+
+
+
             </div>
         </div>
         <!-- sidebar end -->
@@ -178,4 +193,113 @@ export default {
         color: white;
     }
 
+
+
+    .flex-container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        
+    }
+
+    
+
+
+    .item{
+        display: flex;
+        flex-flow: column wrap;
+        width: 16.4rem;
+        height: auto;
+        margin: 20px 5px;
+        position: relative;
+        border: 1px solid beige;
+
+      
+        
+    }
+
+    .item__overlay{
+        position: absolute;
+        height: 100%;
+        background: rgba(0,0,0,0.2);
+        display: none;
+        
+    }
+
+    .item__overlay__container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item__overlay__container__button{
+      width: auto;
+      background: #232323;
+      color: white;
+      font: inherit;
+      text-align: center;
+      padding: 8px 16px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .item__overlay__container__button:hover,
+    .item__overlay__container__button:active{
+        background: #00a85a;
+    }
+
+    .item:hover .item__overlay,
+    .item:active .item__overlay{
+        width: 100%;
+        display: block;
+    }
+
+
+    .item .item__featured_image{
+        height: 262px;
+        width: 100%;
+        
+    }
+
+     .item .item__featured_image img{
+         height: 100%;
+         width: 100%;
+     }
+
+    .item .item__content{
+        height: 90px;
+        padding: 18px;
+        border-top: 1px solid #f0f0f0;
+        color: #232323;
+    }
+
+    .item .item__content .item__content__title{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+     .item .item__content .item__content__price{
+        font-size: 1rem;
+    }
+
+
+
+    @media (min-width: 0px) and (max-width: 600px){
+        .item{
+            width: 45%;
+            height: auto;
+        }
+
+        .item .item__content .item__content__title{
+            font-weight: normal;
+            font-size: 0.8rem;
+        }
+
+        .item .item__content .item__content__price{
+            font-weight: normal;
+            font-size: 0.8rem;
+        }
+    }
 </style>
