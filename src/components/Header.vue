@@ -190,7 +190,8 @@ export default {
   }
 
   .nav-block__items__item{
-    font-size: 0.75rem!important;
+    font-size: 0.65rem!important;
+     padding: 0.5rem 0.8rem;
   }
 }
 </style>

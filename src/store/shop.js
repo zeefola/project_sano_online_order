@@ -77,8 +77,8 @@ const state = {
         },
         {
             id: '10',
-            name: 'Neck',
-            price: '450',
+            name: 'Chicken Neck',
+            price: '500',
             featured_image: '/img/19.png',
             category : 'Fish & Meat',
 
@@ -86,7 +86,7 @@ const state = {
         {
             id: '11',
             name: 'Chicken Back',
-            price: '600',
+            price: '750',
             featured_image: '/img/33.png',
             category : 'Fish & Meat',
 
@@ -99,14 +99,14 @@ const state = {
             category : 'Staples & Vegetables',
 
         },
-        {
-            id: '13',
-            name: 'Fresh lemongrass',
-            price: '200',
-            featured_image: '/img/22.png',
-            category : 'Staples & Vegetables',
+        // {
+        //     id: '13',
+        //     name: 'Fresh lemongrass',
+        //     price: '200',
+        //     featured_image: '/img/22.png',
+        //     category : 'Staples & Vegetables',
 
-        },
+        // },
         {
             id: '14',
             name: 'Fresh mint leaf',
@@ -140,14 +140,14 @@ const state = {
             category : 'Staples & Vegetables',
 
         },
-        {
-            id: '18',
-            name: 'Thyme',
-            price: '350',
-            featured_image: '/img/25.png',
-            category : 'Spices',
+        // {
+        //     id: '18',
+        //     name: 'Thyme',
+        //     price: '350',
+        //     featured_image: '/img/25.png',
+        //     category : 'Spices',
 
-        },
+        // },
         {
             id: '19',
             name: 'Curry',

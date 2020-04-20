@@ -56,7 +56,10 @@
                     <div class="item"  v-for="(product, index) in this.$store.state.shop.items" :key="index+'items'">
                         <div class="item__featured_image">
                             <img :src="product.featured_image">
+
+                           
                         </div>
+                         
 
                         <div class="item__content">
                             <div class="item__content__title">
@@ -70,7 +73,14 @@
 
                         </div>
 
-                        <!-- <div class="item__overlay"></div> -->
+                        <div class="item__overlay">
+                             <div class="item__overlay__container">
+                                  <div class="item__overlay__container__button" @click.prevent="add_to_cart(product)">
+                                      Add to cart
+                                  </div>
+                             </div>
+                         </div>
+                        
                     </div>
 
                         
@@ -203,6 +213,7 @@ export default {
         margin: 20px 5px;
         position: relative;
         border: 1px solid beige;
+
       
         
     }
@@ -211,7 +222,38 @@ export default {
         position: absolute;
         height: 100%;
         background: rgba(0,0,0,0.2);
+        display: none;
+        
+    }
+
+    .item__overlay__container{
         width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item__overlay__container__button{
+      width: auto;
+      background: #232323;
+      color: white;
+      font: inherit;
+      text-align: center;
+      padding: 8px 16px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .item__overlay__container__button:hover,
+    .item__overlay__container__button:active{
+        background: #00a85a;
+    }
+
+    .item:hover .item__overlay,
+    .item:active .item__overlay{
+        width: 100%;
+        display: block;
     }
 
 
@@ -252,6 +294,12 @@ export default {
 
         .item .item__content .item__content__title{
             font-weight: normal;
+            font-size: 0.8rem;
+        }
+
+        .item .item__content .item__content__price{
+            font-weight: normal;
+            font-size: 0.8rem;
         }
     }
 </style>
