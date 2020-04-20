@@ -103,7 +103,7 @@ const state = {
             id: '13',
             name: 'Fresh lemongrass',
             price: '200',
-            featured_image: '/img/22.png',
+            featured_image: '/img/lg.jpg',
             category : 'Staples & Vegetables',
 
         },
