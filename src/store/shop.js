@@ -99,14 +99,16 @@ const state = {
             category : 'Staples & Vegetables',
 
         },
-        // {
-        //     id: '13',
-        //     name: 'Fresh lemongrass',
-        //     price: '200',
-        //     featured_image: '/img/22.png',
-        //     category : 'Staples & Vegetables',
 
-        // },
+        {
+            id: '13',
+            name: 'Fresh lemongrass',
+            price: '200',
+            featured_image: '/img/lg.jpg',
+            category : 'Staples & Vegetables',
+
+        },
+   
         {
             id: '14',
             name: 'Fresh mint leaf',
