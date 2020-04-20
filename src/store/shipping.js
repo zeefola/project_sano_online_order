@@ -125,6 +125,7 @@ const mutations = {
         state.shipping_details.zone = zone;
        
     }
+    
  }
 const actions = {}
 
