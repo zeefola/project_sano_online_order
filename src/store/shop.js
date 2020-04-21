@@ -253,9 +253,8 @@ const mutations = {
     },
   
     fetchItemsByCategory(state,category){
-        console.log('In')
+        
         state.items = state.products.filter(function(product){
-            console.log(product)
             return  product.category === category
             
         });

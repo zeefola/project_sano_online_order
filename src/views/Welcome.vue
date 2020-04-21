@@ -1,99 +1,132 @@
 <template>
-   <app-master>
-
-    <div slot='breadcrumb'>
-        <app-breadcrumb>
-            <div class="title-box text-left">
-                <div class="page-title-heading">
-                    <h1 class="title">Products</h1>
-                </div><!-- /.page-title-captions -->
-                <div class="breadcrumb-wrapper">
-                    <span>
-                       <router-link to="/" tag="a" > <i class="ti ti-home"></i>&nbsp;&nbsp;Home </router-link>
-                    </span>
-                    <span class="ttm-bread-sep ttm-textcolor-white">&nbsp;   →  &nbsp;</span>
-                    <span class="ttm-textcolor-skincolor">Products</span>
-                </div>  
-            </div>
-        </app-breadcrumb>
-    </div>
-
 
     
+   <div class="main-container">
 
-      <div slot="main-content">
-            <!-- sidebar -->
-        <div class="sidebar ttm-bgcolor-white clearfix">
-            <div class="container">
-                <!-- row -->
-                <div class="row">
-                    <div class="col-lg-12 content-area">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p class="products-result-count">Showing {{ items.length }} items  </p>
-                                <form class="products-ordering float-sm-right">
-                                    <div class="form-group mb-30">
-                                        <select class="form-control border" @change="check($event)" >
-                                            <option  value="all" selected>All Categories</option>
-                                            <option v-for="(category, index) in categories" :key="index+'category'" :value="category">{{ category}}</option>
-                                        </select>
-                                    </div>
-                                </form>
-                            </div>
+       <!-- this is a flexBox -->
+       <div class="banner">
+           <div class="banner__logo">
+               <img src="" alt="logo">
+           </div>
+
+           <div class="banner__title">
+               Your favorite restaurants, delivered
+           </div>
+
+       </div>
+
+
+
+
+        <section class="brief">
+
+        </section>
+
+
+
+       
+        <main>
+
+
+            
+          
+             <!-- this is another flexBox -->
+            <div class="main-category">
+                <div class="main-category__items">
+                        <div class="main-category__items__thumbnail">
+                            <img src="/images/ScootScoot.svg">
+                            
+                            
                         </div>
 
-                       
-
-
-               
-                       
-                    </div>
-                </div><!-- row end -->
-
-
-                 
-                  <div class="flex-container">
-                    <div class="item"  v-for="(product, index) in this.$store.state.shop.items" :key="index+'items'">
-                        <div class="item__featured_image">
-                            <img :src="product.featured_image">
-
-                           
-                        </div>
-                         
-
-                        <div class="item__content">
-                            <div class="item__content__title">
-                                {{ product.name }}
+                        <div class="main-category__items__content">
+                            <div class="main-category__items__content__title">
+                                Become a Dasher 
+                            </div>
+                            <div class="main-category__items__content__subtitle">
+                                <p> As a delivery driver, you'll make reliable money—working anytime, anywhere. </p>
                             </div>
 
-                            <div class="item__content__price">
-                                &#8358; {{ product.price | number_format }}
+                            <div class="main-category__items__content__link">
+                                Start earning 
                             </div>
-
-
                         </div>
+                </div>
 
-                        <div class="item__overlay">
-                             <div class="item__overlay__container">
-                                  <div class="item__overlay__container__button" @click.prevent="add_to_cart(product)">
-                                      Add to cart
-                                  </div>
-                             </div>
-                         </div>
+
+
+
+                <div class="main-category__items">
+                        <div class="main-category__items__thumbnail">
+                            <img src="/images/Storefront 2.svg">
                         
-                    </div>
+                        </div>
 
-                        
-                  </div>
-                
+                        <div class="main-category__items__content">
+                            <div class="main-category__items__content__title">
+                                 Become a Dasher
+                            </div>
+                            <div class="main-category__items__content__subtitle">
+                                <p> As a delivery driver, you'll make reliable money—working anytime, anywhere. </p>
+                            </div>
+
+                            <div class="main-category__items__content__link">
+                                Start earning 
+                            </div>
+                        </div>
+                </div>
+
+
+
+
+                <div class="main-category__items">
+                        <div class="main-category__items__thumbnail">
+                             <img src="/images/iphone.svg">
+                        </div>
+
+                        <div class="main-category__items__content">
+                            <div class="main-category__items__content__title">
+                               Become a Dasher
+                            </div>
+                            <div class="main-category__items__content__subtitle">
+                                <p>As a delivery driver, you'll make reliable money—working anytime, anywhere. </p>
+                            </div>
+
+                            <div class="main-category__items__content__link">
+                            Start earning 
+                            </div>
+                        </div>
+                </div>
 
 
 
             </div>
-        </div>
-        <!-- sidebar end -->
-      </div>
-   </app-master>
+        </main>
+
+
+
+        <footer>
+            <div class="items">
+                   <a href=""> Home </a>
+            </div>
+
+            <div class="items">
+                   <a href=""> Shop </a>
+            </div>
+
+            <div class="items">
+                   <a href=""> Products </a>
+            </div>
+
+            <div class="items">
+                   <a href=""> Contact Us </a>
+            </div>
+
+        </footer>
+       
+
+
+   </div>
 </template>
 
 <script>
@@ -122,71 +155,13 @@ export default {
   },
   computed: {
 
-        ...mapState(
-          'shop',
-          [
-          'items',
-          'categories',
-          ]
-        ),
-
-        ...mapState(
-          'cart',
-          [
-          'cart',
-          ]
-        )
-
-
   },
   methods: {
-        check(e){
-           let new_val = e.target.value;
-           if( new_val != 'all'){
-              this.fetchItemsByCategory(new_val);
-            }else{
-                this.fetchAllItems()
-            }
-        },
-        ...mapMutations(
-          'shop',
-          [
-          'fetchAllItems',
-          'fetchItemsByCategory',
-          'fetchItemCategories',
-          'FETCH_PRELOADER',
-          ]
-        ),
-
-        
-
-        add_to_cart(payload){ 
-            let x = this;
-           this.$store.dispatch('cart/add_to_cart',payload).then((yes) =>{
-              
-              x.showNotif({ type: 'success', position: 'bottom-right', message: 'Product added to cart'});
-           })
-        }
 
 
   },
     created(){
-        //   (title, description)
-        this.seoMetaData('Home','Largest Essential Oil Producer');
-
-        //Preloader
-        this.FETCH_PRELOADER()
-
-        
-
-        //Fetch categories
-        this.fetchItemCategories()
-
-
-        
-        //console.log(process.env.VUE_APP_API_KEY)
-
-        //console.log(process.env.VUE_APP_API_KEY)
+       
        
         
 
@@ -196,125 +171,128 @@ export default {
 
 
 <style scoped>
-    .add-to-cart-btn a:hover,
-    .add-to-cart-btn a:active
-    {
+
+   .main-container{
+       
+       margin: 0;
+       box-sizing: border-box;
+       margin-top: 0px
+   }
+
+
+    .banner{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 500px;
+        background: url('/images/banner.png');
+        width: 100%;
+        justify-content: center;
+        align-items: center; 
+    }
+
+
+    .banner__logo{
+        border: 1px solid black;
+        padding: 16px 8px; 
+    }
+
+
+    section.brief{
+        background: #ccc;
+        display: block;
+        margin: auto;
+        width: 70%;
+        height: 500px;
+        margin-top: 20px;
+    }
+
+    main{
+        display: block;
+        margin: auto;
+        width: 70%;
+    }
+
+
+    .main-category{
+        display: flex;
+        width: 100%;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 96px 0px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        
+    }
+
+    .main-category .main-category__items{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        text-align: center;
+        margin: 0px 17px;
+        padding: 16px;
+        width: 350px;
         cursor: pointer;
-        color: white;
+    }
+
+
+    .main-category .main-category__items .main-category__items__thumbnail{
+        height: 10rem;
+    }
+
+    .main-category .main-category__items .main-category__items__thumbnail img{
+        height: 100%;
+    }
+
+    .main-category__items__content .main-category__items__content__title{
+        font-family: inherit;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        color: rgb(25, 25, 25);
+    }
+
+    .main-category__items__content .main-category__items__content__subtitle{
+        margin-top: 10px
+    }
+
+
+    .main-category__items__content .main-category__items__content__link{
+        color: red;
+        font-size: 1rem;
     }
 
 
 
-    .flex-container{
+    footer{
+        background: rgb(25, 25, 25);
+        height: 70px;
+        width: 100%;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        
-    }
-
-    
-
-
-    .item{
-        display: flex;
-        flex-flow: column wrap;
-        width: 16.4rem;
-        height: auto;
-        margin: 20px 5px;
-        position: relative;
-        border: 1px solid beige;
-
-      
-        
-    }
-
-    .item__overlay{
-        position: absolute;
-        height: 100%;
-        background: rgba(0,0,0,0.2);
-        display: none;
-        
-    }
-
-    .item__overlay__container{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
         align-items: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
     }
 
-    .item__overlay__container__button{
-      width: auto;
-      background: #232323;
-      color: white;
-      font: inherit;
-      text-align: center;
-      padding: 8px 16px;
-      cursor: pointer;
-      font-size: 1rem;
-    }
+    footer .items a{
+        color: white;
+        margin: 0px 10px;
+       
 
-    .item__overlay__container__button:hover,
-    .item__overlay__container__button:active{
-        background: #00a85a;
-    }
-
-    .item:hover .item__overlay,
-    .item:active .item__overlay{
-        width: 100%;
-        display: block;
     }
 
 
-    .item .item__featured_image{
-        height: 262px;
-        width: 100%;
-        
-    }
-
-     .item .item__featured_image img{
-         height: 100%;
-         width: 100%;
-     }
-
-    .item .item__content{
-        height: 90px;
-        padding: 18px;
-        border-top: 1px solid #f0f0f0;
-        color: #232323;
-    }
-
-    .item .item__content .item__content__title{
-        font-size: 1rem;
-        font-weight: 500;
-    }
-
-     .item .item__content .item__content__price{
-        font-size: 1rem;
-    }
 
 
 
     @media (min-width: 0px) and (max-width: 600px){
-        .item{
-            width: 45%;
-            height: auto;
-        }
-
-        .item .item__content .item__content__title{
-            font-weight: normal;
-            font-size: 0.8rem;
-        }
-
-        .item .item__content .item__content__price{
-            font-weight: normal;
-            font-size: 0.8rem;
-        }
-
-         .item .item__featured_image{
-            height: auto;
-            width: 100%;   
+        main{
+            width: 100%;
         }
     }
+
+
+    
 </style>
