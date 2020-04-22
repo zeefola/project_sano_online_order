@@ -17,10 +17,55 @@
 
 
 
+        
+        
 
         <section class="brief">
 
+            <div class="brief__contentBlock">
+
+                <div class="brief__contentBlock__subtitle">
+                    ABOUT US
+                </div>
+
+                <div class="brief__contentBlock__title">
+                   Brief Introduction
+                </div>
+
+                <div class="brief__contentBlock__description">
+                   <p> ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
+                    architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                     sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione </p>
+                     
+                     <p>voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                      consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et 
+                      dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum 
+                      exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                       Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+                        vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+                    </p>
+                </div>
+
+            </div>
+            <div class="brief__imageBlock">
+                <div class="handle">
+                    <img src="/images/ScootScoot.svg" style="width: 100%; height: 100% ">
+                </div>
+
+            </div>
+
+            
+
         </section>
+
+
+
+
+        <div class="space-gap"></div>
+
+
+
 
 
 
@@ -172,8 +217,12 @@ export default {
 
 <style scoped>
 
+   .handle{
+     width: 100%;
+     height: 100%;
+   }
+
    .main-container{
-       
        margin: 0;
        box-sizing: border-box;
        margin-top: 0px
@@ -184,11 +233,12 @@ export default {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        height: 500px;
+        height: 400px;
         background: url('/images/banner.png');
         width: 100%;
         justify-content: center;
         align-items: center; 
+        position: relative;
     }
 
 
@@ -199,16 +249,64 @@ export default {
 
 
     section.brief{
-        background: #ccc;
-        display: block;
-        margin: auto;
+        display: flex;
         width: 70%;
         height: 500px;
-        margin-top: 20px;
+        margin: auto;
+        margin-top: 5rem;
+        padding: 10px;
+       
+    }
+
+
+    .brief__contentBlock{
+        display: inline-block;
+        width: 55%;
+        
+        height: 100%;
+    }
+
+
+    .brief .brief__contentBlock__subtitle{
+        font-size: 15px;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        padding: 10px 5px;
+        line-height: 1;
+        color: #ff431e;
+    }
+
+
+    .brief .brief__contentBlock__title{
+        font-size: 27px;
+        text-transform: capitalize;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        padding: 5px 5px;
+        line-height: 1;
+        color: #000000c4;
+    }
+
+
+     .brief .brief__contentBlock__description{
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        padding: 10px 5px;
+        line-height: 2;
+        color: black;
+    }
+
+    .brief__imageBlock{
+        display: inline-block;
+        width: 45%;
+        height: 100%;
     }
 
     main{
         display: block;
+        margin-top: 100px;
         margin: auto;
         width: 70%;
     }
@@ -263,6 +361,12 @@ export default {
     }
 
 
+    .space-gap{
+         margin-top: 200px; 
+         display: none
+    }
+
+
 
     footer{
         background: rgb(25, 25, 25);
@@ -291,6 +395,33 @@ export default {
         main{
             width: 100%;
         }
+
+
+        section.brief{
+            display: flex;
+            flex-flow: column;
+            width: 100%;
+            margin-top: 5rem;
+        
+        }
+
+
+        .brief__contentBlock{
+            width: 100%;
+
+        }
+
+        .brief__imageBlock{
+            height: 100%;
+            width: 100%;
+            display: none;
+        }
+
+        .space-gap{
+            display: block;
+        }
+
+
     }
 
 
