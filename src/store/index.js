@@ -4,12 +4,16 @@ import shop from "./shop"
 import cart from "./cart"
 import checkout from "./checkout"
 import shipping from "./shipping"
+import welcome from "./welcome"
+import config from "./config"
 
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {},
+  state: {
+    
+  },
   getters: {},
   
   mutations: {},
@@ -21,9 +25,11 @@ export default new Vuex.Store({
   //  }
   },
   modules: {
+    welcome,
     shop,
     cart,
     checkout,
     shipping,
+    config
   }
 });

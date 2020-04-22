@@ -1,90 +1,108 @@
 
 <template>
   <!--header start-->
-  <header id="masthead" class="header ttm-header-style-01">
-    <!-- ttm-header-wrap -->
-    <div class="ttm-header-wrap">
-      <!-- ttm-stickable-header-w -->
-      <div id="ttm-stickable-header-w" class="ttm-stickable-header-w clearfix">
-        <!-- ttm-topbar-wrapper -->
-        <div class="ttm-topbar-wrapper clearfix">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="ttm-topbar-content">
-
-                  <ul class="top-contact top-contact--bg text-left">
-                   <router-link to="/" tag="li" exact-active-class=""> <a> Organic Chicken </a></router-link>
-                    <router-link to="/cart" tag="li" class="cart-anchor" > 
-                    <a> Cart </a> 
-                  
-                        <span class="fa fa-shopping-cart cart-box">
-                          <span class="cart-box__count">{{ getCartCount }}</span>
-                        </span>
-                        
-                      
-                    
-                    </router-link>
-                      <router-link to="/shipping" tag="li" > <a> Shipping </a></router-link>
-                     <router-link to="/checkout" tag="li" > <a> Checkout </a></router-link>
-                  </ul>
-
-                  <!-- <div class="topbar-center">
-                    <ul class="topbar-center__items">
-                      <li class="topbar-center__item"> <a href="/cart"> Cart</a> </li>
-                       <li class="topbar-center__item"> <a href="/checkout"> Checkout</a> </li>
-                    </ul>
-
-                  </div> -->
-
-                  <div class="topbar-right text-right">
-                    <ul class="top-contact">
-                      <li>Office Hour : 08:00am - 5:00pm</li>
-                    </ul>
-                    <div class="ttm-social-links-wrapper list-inline">
-                      <ul class="social-icons">
-                        <li>
-                          <a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li>
-                          <a href="https://twitter.com/nardusltd"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li>
-                          <a href="https://www.instagram.com/nardusltd/"><i class="fa fa-instagram"></i></a>
-                        </li>
-                      </ul>
+        <header id="masthead" class="header ttm-header-style-02">
+            <!-- ttm-topbar-wrapper -->
+            <div class="ttm-topbar-wrapper ttm-bgcolor-darkgrey ttm-textcolor-white clearfix">
+                <div class="container">
+                    <div class="ttm-topbar-content">
+                        <ul class="top-contact text-left">
+                            <li class="list-inline-item">{{ this.$store.state.config.tagline }}</li>
+                        </ul>
+                        <div class="topbar-right text-right">
+                            <div class="ttm-social-links-wrapper list-inline">
+                                <ul class="social-icons">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="top-contact ttm-highlight-right">
+                                <li><strong><i class="fa fa-phone"></i>Talk To Expert :</strong> <span class="tel-no">0 (143) 456 7897</span></li>
+                            </ul>
+                        </div>
                     </div>
-                  </div>
-
-
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- ttm-topbar-wrapper end -->
-        
-        
-      </div>
-      <!-- ttm-stickable-header-w end-->
-    </div>
-    <!--ttm-header-wrap end -->
+            </div><!-- ttm-topbar-wrapper end -->
+            <!-- ttm-header-wrap -->
+            <div class="ttm-header-wrap">
+                <!-- ttm-stickable-header-w -->
+                <div id="ttm-stickable-header-w" class="ttm-stickable-header-w clearfix">
+                    <div id="site-header-menu" class="site-header-menu">
+                        <div class="site-header-menu-inner ttm-stickable-header">
+                            <div class="container">
+                                <!-- site-branding -->
+                                <div class="site-branding">
+                                    <a class="home-link" href="index.html" title="Agrotek" rel="home">
+                                        <img id="logo-img" class="img-center" src="images/logo.png" alt="logo-img">
+                                    </a>
+                                </div><!-- site-branding end -->
+                                <!--site-navigation -->
+                                <div id="site-navigation" class="site-navigation">
+                                    <!-- header-icons -->
+                                    <div class="ttm-header-icons ">
+                                        <span class="ttm-header-icon ttm-header-cart-link">
 
-    <div class="nav-block">
-      <div class="nav-block__items">
-        <router-link to="/" tag="div" class="nav-block__items__item" > <a> Organic Chicken </a></router-link>
-
-        <router-link to="/cart" tag="div" class="nav-block__items__item" > 
-         <a> Cart </a>
-          <span class="fa fa-shopping-cart cart-box"><span class="cart-box__count">{{ getCartCount }}</span></span>
-        </router-link>
-
-         <router-link to="/shipping" tag="div" class="nav-block__items__item" > <a> Shipping </a></router-link>
-         <router-link to="/checkout" tag="div" class="nav-block__items__item" > <a> Checkout </a></router-link>
-      </div>
-    </div>
-  </header>
-  <!--header end-->
+                                            <router-link to="/cart">
+                                                <i class="fa fa-shopping-cart"></i>
+                                                <span class="number-cart">{{ getCartCount }}</span>
+                                            </router-link>
+                                            
+                                        </span>
+                                        <div class="ttm-header-icon ttm-header-search-link">
+                                            <a href="#" class="sclose"><i class="ti ti-search"></i></a>
+                                            <div class="ttm-search-overlay">
+                                                <div class="ttm-bg-layer"></div>
+                                                <div class="ttm-icon-close"></div>
+                                                <div class="ttm-search-outer">
+                                                    <form method="get" class="ttm-site-searchform" action="#">
+                                                        <input type="search" class="field searchform-s" name="s" placeholder="Type Word Then Enter...">
+                                                        <button type="submit">
+                                                            <i class="ti ti-search"></i>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- header-icons end -->
+                                    <div class="ttm-menu-toggle">
+                                        <input type="checkbox" id="menu-toggle-form" :class="{ active: menuStatus }" />
+                                        <label for="menu-toggle-form" class="ttm-menu-toggle-block"  @click="activate()">
+                                            <span class="toggle-block toggle-blocks-1"></span>
+                                            <span class="toggle-block toggle-blocks-2"></span>
+                                            <span class="toggle-block toggle-blocks-3"></span>
+                                        </label>
+                                    </div>
+                                    <nav id="menu" class="menu" :class="{ active: menuStatus }">
+                                        <ul class="dropdown">
+                                             <router-link to="/" tag="li" exact-active-class="active" exact> <a> Home </a> </router-link>
+                  
+                        <router-link to="/products" tag="li" exact-active-class="active" exact > <a> Products </a></router-link>
+                    
+                  
+                        <router-link to="/cart"  tag="li" exact-active-class="active" exact ><a> Cart </a> </router-link>
+                    
+                   
+                      <router-link to="/shipping"  tag="li" exact-active-class="active" exact> <a> Shipping </a></router-link>
+                     
+                      <router-link to="/contact"  tag="li" exact-active-class="active" exact > <a> Contact Us </a></router-link>
+                      
+                                            
+                                            
+                                        </ul>
+                                    </nav>
+                                </div><!-- site-navigation end-->
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- ttm-stickable-header-w end-->
+            </div><!--ttm-header-wrap end -->
+        </header><!--header en -->
 </template>
 
 <script>
@@ -94,7 +112,7 @@ export default {
   props: {},
   data(){
     return {
-      menuStatus: false
+      menuStatus: false,
     }
   },
   computed: {
@@ -112,96 +130,3 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-.cart-box{
-  font-size: 15px;
-}
-.cart-box__count{
-  position: absolute;
-  display: inline-block;
-  top: 10px;
-  width: 12px;
-  background: #c80e0e;
-  text-align: center;
-  border-radius: 88%;
-  color: white;
-  font-weight: bold;
-}
-
-
-.cart-anchor{
-  position: relative;
-    display: inline-block;
-
-}
-
-
-.nav-block{
-  display: block;
-  width: 100%;
-  height: 3.2rem;
-  background: white;
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  z-index: 100;
-  display: none;
-
-}
-
-.nav-block__items{
-  display: block;
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-
-.nav-block__items__item{
-  display: inline-block;
-  height: 100%;
-  background: #4a4947;
-  vertical-align: middle;
-  outline: none;
-  padding: 10px 16px;
-  margin: 0px 2px 0px 0px;
-  color: white;
-  font: inherit;
-  cursor: pointer;
-  
-
-
-}
-
-.nav-block__items a{
-  color: white;
-}
-
-.nav-block__items__item:hover,
-.nav-block__items__item:active{
-  background: #1ba85a;
-}
-
-
-@media (min-width: 0px) and (max-width: 1200px){
-  .nav-block{
-    display: block;
-  }
-
-  .nav-block__items__item{
-    font-size: 0.65rem!important;
-     padding: 0.5rem 0.8rem;
-  }
-
-
-  
-  .cart-box__count{
-
-    font-weight: 500;
-    font-size: 0.8rem;
-    font-family: inherit
-
-  }
-}
-</style>

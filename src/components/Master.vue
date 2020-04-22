@@ -5,9 +5,6 @@
        <!-- <app-preloader> </app-preloader> -->
        <app-header></app-header>
        <slot name='breadcrumb'></slot>
-
-        <slot name="slider"></slot>
-        
         
         <div class="site-main">
              <slot name="main-content"></slot>
@@ -27,7 +24,6 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
 import Footer from "@/components/Footer.vue";
 import Preloader from "@/components/Preloader.vue";
 import Header from "@/components/Header.vue";
@@ -39,7 +35,6 @@ export default {
     "app-footer" : Footer,
     "app-preloader": Preloader,
     "app-header": Header,
-
     "app-back-to-top" : BackToTop,
   }
 };

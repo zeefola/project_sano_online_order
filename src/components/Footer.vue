@@ -39,7 +39,7 @@
                     <div class="row copyright">
                         <div class="col-md-12">
                             <div class="text-center">
-                                <span>Copyright © 2020&nbsp;<a href="#">Organic Chicken</a> All Right Reserved </span>
+                                <span>Copyright © 2020&nbsp;<a href="#"> {{ this.$store.state.config.app_name }} </a> All Right Reserved </span>
                             </div>
                         </div>
                     </div>
@@ -53,6 +53,11 @@
 <script>
 export default {
   name: "Footer",
+  data(){
+      return {
+        
+      }
+  }
   
 };
 </script>

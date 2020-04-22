@@ -5,14 +5,14 @@
         <app-breadcrumb>
             <div class="title-box text-left">
                 <div class="page-title-heading">
-                    <h1 class="title">Products</h1>
+                    <h1 class="title"> {{ name.replace(/-/g,' ') }} </h1>
                 </div><!-- /.page-title-captions -->
                 <div class="breadcrumb-wrapper">
                     <span>
                        <router-link to="/" tag="a" > <i class="ti ti-home"></i>&nbsp;&nbsp;Home </router-link>
                     </span>
                     <span class="ttm-bread-sep ttm-textcolor-white">&nbsp;   →  &nbsp;</span>
-                    <span class="ttm-textcolor-skincolor">Products</span>
+                    <span class="ttm-textcolor-skincolor">{{ name.replace(/-/g,' ') }}</span>
                 </div>  
             </div>
         </app-breadcrumb>
@@ -99,7 +99,6 @@
 <script>
 // @ is an alias to /src
 import Master from "@/components/Master.vue";
-import Slider from "@/components/Slider.vue";
 import BreadCrumb from "@/components/BreadCrumb.vue";
 import {seo} from "../Repositories/seo.js";
 import { pick } from "../Repositories/pick"
@@ -117,6 +116,7 @@ export default {
   },
   data(){
       return {
+          name: this.$route.params.name,
           cat: '',
       }
   },
@@ -163,7 +163,6 @@ export default {
         add_to_cart(payload){ 
             let x = this;
            this.$store.dispatch('cart/add_to_cart',payload).then((yes) =>{
-              
               x.showNotif({ type: 'success', position: 'bottom-right', message: 'Product added to cart'});
            })
         }
@@ -171,24 +170,18 @@ export default {
 
   },
     created(){
-        //   (title, description)
-        this.seoMetaData('Home','Largest Essential Oil Producer');
+
+
+        let x  = this; 
+        this.seoMetaData(x.name.replace(/-/g,' '), '');
+
 
         //Preloader
         this.FETCH_PRELOADER()
 
-        
 
         //Fetch categories
         this.fetchItemCategories()
-
-
-        
-        //console.log(process.env.VUE_APP_API_KEY)
-
-        //console.log(process.env.VUE_APP_API_KEY)
-       
-        
 
     }
 };

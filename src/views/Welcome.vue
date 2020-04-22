@@ -1,183 +1,150 @@
 <template>
+   <app-master>
+
+
+        <div slot='breadcrumb'>
+        <app-breadcrumb>
+             <div class="title-box text-left" >
+                <div class="page-title-heading" style="text-align: center">
+                    <h1 class="title" >{{ this.$store.state.config.app_name }}</h1>
+                </div><!-- /.page-title-captions -->
+                <div class="breadcrumb-wrapper" style="text-align: center">
+                    <span class="ttm-textcolor-skincolor"> &nbsp;&nbsp; {{ this.$store.state.config.tagline }} </span>
+                </div>  
+            </div>
+        </app-breadcrumb>
+    </div>
 
     
-   <div class="main-container">
 
-       <!-- this is a flexBox -->
-       <div class="banner">
-           <div class="banner__logo">
-               <img src="" alt="logo">
-           </div>
-
-           <div class="banner__title">
-               Your favorite restaurants, delivered
-           </div>
-
-       </div>
+      <div slot="main-content">
 
 
-
-        
-        
-
-        <section class="brief">
-
-            <div class="brief__contentBlock">
-
-                <div class="brief__contentBlock__subtitle">
-                    ABOUT US
+           <section class="ttm-row about-section clearfix">
+                <div class="container">
+                    <div class="row"><!-- row -->
+                        <div class="col-lg-5">
+                           <div class="ml_130 res-991-ml-0">
+                                            <!-- ttm_single_image-wrapper -->
+                                            <div class="ttm_single_image-wrapper after-border style1 position-relative">
+                                                <img class="img-fluid" src="/images/food_one.png" title="single-img-three" alt="single-img-three">
+                                            </div><!-- ttm_single_image-wrapper end -->
+                                            <div class="about-overlay-02 center-overlay-style1">
+                                                <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-md">
+                                                    <i class="flaticon flaticon-cow-3"></i><!--  ttm-icon --> 
+                                                </div>
+                                                <h6>Founded in <br> 1996</h6>
+                                            </div>
+                                        </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="res-991-mt-30">
+                                <!-- section title -->
+                                <div class="section-title clearfix">
+                                    <div class="title-header">
+                                        <h5>About farming</h5>
+                                        <h2 class="title">Welcome To Agrotek Dairy Farm</h2>
+                                    </div>
+                                    <div class="heading-seperator">
+                                        <span></span>
+                                    </div>
+                                </div><!-- section title end -->
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printing gallery making this the first true generator.</p>
+                                <div class="row mt-30">
+                                    <div class="col-md-4 col-lg-4 col-sm-4">
+                                        <div class="text-left pt-15">
+                                            <img src="https://via.placeholder.com/145X60/444444.png" alt="about-sign">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-lg-8 col-sm-8">
+                                        <!--  featured-icon-box --> 
+                                        <div class="featured-icon-box without-icon style1 text-left pt-15">
+                                            <div class="featured-content"><!--  featured-content -->
+                                                <div class="featured-desc"><!--  featured-desc -->
+                                                    <p>Call to ask any question</p>
+                                                </div>
+                                                <div class="featured-title"><!--  featured-title -->
+                                                    <h5>+0123-456-7890</h5>
+                                                </div>
+                                            </div>
+                                        </div><!--  featured-icon-box END -->
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- row end -->
                 </div>
-
-                <div class="brief__contentBlock__title">
-                   Brief Introduction
-                </div>
-
-                <div class="brief__contentBlock__description">
-                   <p> ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
-                    architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-                     sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione </p>
-                     
-                     <p>voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                      consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et 
-                      dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum 
-                      exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-                       Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
-                        vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
-                    </p>
-                </div>
-
-            </div>
-            <div class="brief__imageBlock">
-                <div class="handle">
-                    <img src="/images/ScootScoot.svg" style="width: 100%; height: 100% ">
-                </div>
-
-            </div>
-
-            
-
-        </section>
+            </section>
+            <!-- aboutus-section end -->
 
 
-
-
-        <div class="space-gap"></div>
-
-
-
-
-
-
-       
-        <main>
-
-
-            
           
-             <!-- this is another flexBox -->
-            <div class="main-category">
-                <div class="main-category__items">
-                        <div class="main-category__items__thumbnail">
-                            <img src="/images/ScootScoot.svg">
-                            
-                            
+
+
+
+              <!-- team-section -->
+            <section class="ttm-row second-team-section clearfix" style="margin-top: 0px; padding-top: 40px">
+                <div class="container">
+                    <div class="row"><!-- row -->
+                        <div class="col-lg-9 col-xl-10 col-md-9">
+                            <!-- section-title -->
+                            <div class="section-title style2 clearfix">
+                                <div class="title-header">
+                                    <h5>Team Member</h5>
+                                    <h2 class="title">Meet Our Great Team</h2>
+                                </div>
+                                <div class="title-desc">Our team mission is to promote agricultural practices designed to provide abundant healthy food, fiber and other services for all communities.</div>
+                            </div><!-- section-title end -->
                         </div>
-
-                        <div class="main-category__items__content">
-                            <div class="main-category__items__content__title">
-                                Become a Dasher 
-                            </div>
-                            <div class="main-category__items__content__subtitle">
-                                <p> As a delivery driver, you'll make reliable money—working anytime, anywhere. </p>
-                            </div>
-
-                            <div class="main-category__items__content__link">
-                                Start earning 
+                        <div class="col-lg-3 col-xl-2 col-md-3">
+                            <div class="text-md-right">
+                                
+                                <router-link class="ttm-btn ttm-btn-size-md ttm-btn-style-border ttm-btn-color-darkgrey mb-40" to='/products' > <a> view more </a></router-link>
+                                
                             </div>
                         </div>
-                </div>
-
-
-
-
-                <div class="main-category__items">
-                        <div class="main-category__items__thumbnail">
-                            <img src="/images/Storefront 2.svg">
+                    </div>
+                    <!-- row end -->
+                    <!-- row -->
+                    <div class="row slick_slider ttm-boxes-spacing-15px" data-slick='{"slidesToShow": 3, "slidesToScroll": 3, "dots":false, "arrows":false, "autoplay":false, "infinite":true, "centerMode":false}'>
                         
+                        <div class="ttm-box-col-wrapper col-lg-4" v-for="(category, index) in categories" :key="index+'category'">
+                            <!-- featured-imagebox-team -->
+                            <div class="featured-imagebox featured-imagebox-team style1">
+                                <div class="featured-thumbnail"><!-- featured-thumbnail -->
+                                    <img class="img-fluid" src="https://via.placeholder.com/500X560/444444.jpg" alt="image">
+                                    <div class="ttm-social-links-wrapper">
+                                      <router-link  :to="{ name: 'Category', params: { name: convertToSlug(category.name) } }" class="main-category__items__content__link" > <a> View Products </a></router-link>
+                                    </div>
+                                </div> 
+                                <div class="featured-content box-shadow">
+                                    <div class="featured-title"><!-- featured-title -->
+                                         <router-link  :to="{ name: 'Category', params: { name: convertToSlug(category.name) } }" class="main-category__items__content__link"  tag="h5"> <a> {{ category.name }} </a></router-link>
+                                    </div>
+                                    <p class="category">{{ category.description }}</p><!-- category -->
+                                </div>
+                            </div><!-- featured-imagebox-team end-->
                         </div>
-
-                        <div class="main-category__items__content">
-                            <div class="main-category__items__content__title">
-                                 Become a Dasher
-                            </div>
-                            <div class="main-category__items__content__subtitle">
-                                <p> As a delivery driver, you'll make reliable money—working anytime, anywhere. </p>
-                            </div>
-
-                            <div class="main-category__items__content__link">
-                                Start earning 
-                            </div>
-                        </div>
+                        
+                     
+                    </div>
+                    <!-- row end-->
                 </div>
+            </section>
+            <!-- team-section end -->
 
 
 
 
-                <div class="main-category__items">
-                        <div class="main-category__items__thumbnail">
-                             <img src="/images/iphone.svg">
-                        </div>
-
-                        <div class="main-category__items__content">
-                            <div class="main-category__items__content__title">
-                               Become a Dasher
-                            </div>
-                            <div class="main-category__items__content__subtitle">
-                                <p>As a delivery driver, you'll make reliable money—working anytime, anywhere. </p>
-                            </div>
-
-                            <div class="main-category__items__content__link">
-                            Start earning 
-                            </div>
-                        </div>
-                </div>
-
-
-
-            </div>
-        </main>
-
-
-
-        <footer>
-            <div class="items">
-                   <a href=""> Home </a>
-            </div>
-
-            <div class="items">
-                   <a href=""> Shop </a>
-            </div>
-
-            <div class="items">
-                   <a href=""> Products </a>
-            </div>
-
-            <div class="items">
-                   <a href=""> Contact Us </a>
-            </div>
-
-        </footer>
-       
-
-
-   </div>
+      </div>
+   </app-master>
 </template>
 
 <script>
 // @ is an alias to /src
 import Master from "@/components/Master.vue";
-import Slider from "@/components/Slider.vue";
 import BreadCrumb from "@/components/BreadCrumb.vue";
 import {seo} from "../Repositories/seo.js";
 import { pick } from "../Repositories/pick"
@@ -200,13 +167,62 @@ export default {
   },
   computed: {
 
+        ...mapState(
+        'welcome',
+        [
+            'categories'
+        ])
+
+
   },
   methods: {
+        check(e){
+           let new_val = e.target.value;
+           if( new_val != 'all'){
+              this.fetchItemsByCategory(new_val);
+            }else{
+                this.fetchAllItems()
+            }
+        },
+        ...mapMutations(
+          'shop',
+          [
+          'fetchAllItems',
+          'fetchItemsByCategory',
+          'fetchItemCategories',
+          'FETCH_PRELOADER',
+          ]
+        ),
+
+        
+
+        add_to_cart(payload){ 
+            let x = this;
+           this.$store.dispatch('cart/add_to_cart',payload).then((yes) =>{
+              
+              x.showNotif({ type: 'success', position: 'bottom-right', message: 'Product added to cart'});
+           })
+        }
 
 
   },
     created(){
-       
+        //   (title, description)
+        this.seoMetaData('Home','');
+
+        //Preloader
+        this.FETCH_PRELOADER()
+
+        
+
+        //Fetch categories
+        this.fetchItemCategories()
+
+
+        
+        //console.log(process.env.VUE_APP_API_KEY)
+
+        //console.log(process.env.VUE_APP_API_KEY)
        
         
 
@@ -216,214 +232,126 @@ export default {
 
 
 <style scoped>
-
-   .handle{
-     width: 100%;
-     height: 100%;
-   }
-
-   .main-container{
-       margin: 0;
-       box-sizing: border-box;
-       margin-top: 0px
-   }
+    .add-to-cart-btn a:hover,
+    .add-to-cart-btn a:active
+    {
+        cursor: pointer;
+        color: white;
+    }
 
 
-    .banner{
+
+    .flex-container{
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 400px;
-        background: url('/images/banner.png');
-        width: 100%;
-        justify-content: center;
-        align-items: center; 
-        position: relative;
-    }
-
-
-    .banner__logo{
-        border: 1px solid black;
-        padding: 16px 8px; 
-    }
-
-
-    section.brief{
-        display: flex;
-        width: 70%;
-        height: 500px;
-        margin: auto;
-        margin-top: 5rem;
-        padding: 10px;
-       
-    }
-
-
-    .brief__contentBlock{
-        display: inline-block;
-        width: 55%;
-        
-        height: 100%;
-    }
-
-
-    .brief .brief__contentBlock__subtitle{
-        font-size: 15px;
-        text-transform: uppercase;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-        padding: 10px 5px;
-        line-height: 1;
-        color: #ff431e;
-    }
-
-
-    .brief .brief__contentBlock__title{
-        font-size: 27px;
-        text-transform: capitalize;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 600;
-        padding: 5px 5px;
-        line-height: 1;
-        color: #000000c4;
-    }
-
-
-     .brief .brief__contentBlock__description{
-        font-size: 1rem;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-        padding: 10px 5px;
-        line-height: 2;
-        color: black;
-    }
-
-    .brief__imageBlock{
-        display: inline-block;
-        width: 45%;
-        height: 100%;
-    }
-
-    main{
-        display: block;
-        margin-top: 100px;
-        margin: auto;
-        width: 70%;
-    }
-
-
-    .main-category{
-        display: flex;
-        width: 100%;
         flex-flow: row wrap;
         justify-content: center;
-        margin: 96px 0px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
         
     }
 
-    .main-category .main-category__items{
+    
+
+
+    .item{
         display: flex;
         flex-flow: column wrap;
-        align-items: center;
-        text-align: center;
-        margin: 0px 17px;
-        padding: 16px;
-        width: 350px;
-        cursor: pointer;
+        width: 16.4rem;
+        height: auto;
+        margin: 20px 5px;
+        position: relative;
+        border: 1px solid beige;
+
+      
+        
     }
 
-
-    .main-category .main-category__items .main-category__items__thumbnail{
-        height: 10rem;
-    }
-
-    .main-category .main-category__items .main-category__items__thumbnail img{
+    .item__overlay{
+        position: absolute;
         height: 100%;
+        background: rgba(0,0,0,0.2);
+        display: none;
+        
     }
 
-    .main-category__items__content .main-category__items__content__title{
-        font-family: inherit;
-        font-size: 1.5rem;
-        line-height: 2.5rem;
-        color: rgb(25, 25, 25);
-    }
-
-    .main-category__items__content .main-category__items__content__subtitle{
-        margin-top: 10px
-    }
-
-
-    .main-category__items__content .main-category__items__content__link{
-        color: red;
-        font-size: 1rem;
-    }
-
-
-    .space-gap{
-         margin-top: 200px; 
-         display: none
-    }
-
-
-
-    footer{
-        background: rgb(25, 25, 25);
-        height: 70px;
+    .item__overlay__container{
         width: 100%;
+        height: 100%;
         display: flex;
-        flex-flow: row wrap;
         justify-content: center;
         align-items: center;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
     }
 
-    footer .items a{
-        color: white;
-        margin: 0px 10px;
-       
+    .item__overlay__container__button{
+      width: auto;
+      background: #232323;
+      color: white;
+      font: inherit;
+      text-align: center;
+      padding: 8px 16px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
 
+    .item__overlay__container__button:hover,
+    .item__overlay__container__button:active{
+        background: #00a85a;
+    }
+
+    .item:hover .item__overlay,
+    .item:active .item__overlay{
+        width: 100%;
+        display: block;
     }
 
 
+    .item .item__featured_image{
+        height: 262px;
+        width: 100%;
+        
+    }
+
+     .item .item__featured_image img{
+         height: 100%;
+         width: 100%;
+     }
+
+    .item .item__content{
+        height: 90px;
+        padding: 18px;
+        border-top: 1px solid #f0f0f0;
+        color: #232323;
+        background: #cccccc2e;
+    }
+
+    .item .item__content .item__content__title{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+     .item .item__content .item__content__price{
+        font-size: 1rem;
+    }
 
 
 
     @media (min-width: 0px) and (max-width: 600px){
-        main{
-            width: 100%;
+        .item{
+            width: 45%;
+            height: auto;
         }
 
-
-        section.brief{
-            display: flex;
-            flex-flow: column;
-            width: 100%;
-            margin-top: 5rem;
-        
+        .item .item__content .item__content__title{
+            font-weight: normal;
+            font-size: 0.8rem;
         }
 
-
-        .brief__contentBlock{
-            width: 100%;
-
+        .item .item__content .item__content__price{
+            font-weight: normal;
+            font-size: 0.8rem;
         }
 
-        .brief__imageBlock{
-            height: 100%;
-            width: 100%;
-            display: none;
+         .item .item__featured_image{
+            height: auto;
+            width: 100%;   
         }
-
-        .space-gap{
-            display: block;
-        }
-
-
     }
-
-
-    
 </style>

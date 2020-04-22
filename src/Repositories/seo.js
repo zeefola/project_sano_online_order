@@ -7,7 +7,7 @@ export const seo ={
     },
 
     metaInfo: {
-        title: 'Organic Chicken ',
+        title: process.env.VUE_APP_NAME,
         meta: [{
           vmid: 'description',
           name: 'description',
