@@ -12,18 +12,30 @@
                         <div class="topbar-right text-right">
                             <div class="ttm-social-links-wrapper list-inline">
                                 <ul class="social-icons">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a>
+                                    {{ this.$store.state.config.facebook }}
+                                    <li>
+                                        <router-link :to="this.$store.state.config.facebook">
+                                            <i class="fa fa-facebook"></i>
+                                        </router-link>
                                     </li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a>
+
+                                    <li>
+                                        <router-link :to="this.$store.state.config.twitter">
+                                            <i class="fa fa-twitter"></i>
+                                        </router-link>
                                     </li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a>
+
+                                    <li>
+                                        <router-link :to="this.$store.state.config.instagram">
+                                            <i class="fa fa-instagram"></i>
+                                        </router-link>
                                     </li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                                    </li>
+                                    
+                
                                 </ul>
                             </div>
                             <ul class="top-contact ttm-highlight-right">
-                                <li><strong><i class="fa fa-phone"></i>Talk To Expert :</strong> <span class="tel-no">0 (143) 456 7897</span></li>
+                                <li><strong><i class="fa fa-phone"></i>Talk To Expert :</strong> <span class="tel-no">{{ this.$store.state.config.telephone }}</span></li>
                             </ul>
                         </div>
                     </div>
@@ -82,15 +94,15 @@
                                         <ul class="dropdown">
                                              <router-link to="/" tag="li" exact-active-class="active" exact> <a> Home </a> </router-link>
                   
-                        <router-link to="/products" tag="li" exact-active-class="active" exact > <a> Products </a></router-link>
+                                            <router-link to="/products" tag="li" exact-active-class="active" exact > <a> Products </a></router-link>
                     
                   
-                        <router-link to="/cart"  tag="li" exact-active-class="active" exact ><a> Cart </a> </router-link>
+                                            <router-link to="/cart"  tag="li" exact-active-class="active" exact ><a> Cart </a> </router-link>
                     
                    
-                      <router-link to="/shipping"  tag="li" exact-active-class="active" exact> <a> Shipping </a></router-link>
+                                            <router-link to="/shipping"  tag="li" exact-active-class="active" exact> <a> Shipping </a></router-link>
                      
-                      <router-link to="/contact"  tag="li" exact-active-class="active" exact > <a> Contact Us </a></router-link>
+                                             <router-link to="/contact"  tag="li" exact-active-class="active" exact > <a> Contact Us </a></router-link>
                       
                                             
                                             

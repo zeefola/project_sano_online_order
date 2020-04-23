@@ -40,8 +40,8 @@
                                         <h5>Phone</h5>
                                     </div>
                                     <div class="featured-desc"><!--  featured-desc -->
-                                        <p>+234 812 262 7008</p>
-                                        <p> +234 906 282 2260  </p>
+                                        <p>{{ this.$store.state.config.telephone }}</p>
+                                        
                                     </div>
                                 </div>
                             </div><!--  featured-icon-box END -->
@@ -59,7 +59,7 @@
                                         <h5>Email Us</h5>
                                     </div>
                                     <div class="featured-desc"><!--  featured-desc -->
-                                        <p>info@foodpark.ng</p>
+                                        <p>{{ this.$store.state.config.email }}</p>
                                     </div>
                                 </div>
                             </div><!--  featured-icon-box END -->
@@ -77,7 +77,7 @@
                                         <h5>Address</h5>
                                     </div>
                                     <div class="featured-desc"><!--  featured-desc -->
-                                        <p>18 Udi street, Wema Terrace, Osborne Foreshore, Ikoyi</p>
+                                        <p>{{ this.$store.state.config.address }}</p>
                                     </div>
                                 </div>
                             </div><!--  featured-icon-box END -->

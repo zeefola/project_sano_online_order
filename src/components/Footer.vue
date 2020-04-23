@@ -18,7 +18,7 @@
                             <div class="ttm-custom-ctabox">
                                 <div class="cta-bg-icon"><span class="flaticon-support"></span></div>
                                 <h3 class="ttm-cta-heading ttm-textcolor-skincolor">Call Us On</h3>
-                                <h5 class="ttm-cta-content">+234 906 282 2260</h5>
+                                <h5 class="ttm-cta-content">{{ this.$store.state.config.telephone }}</h5>
                             </div>
                         </div>
                         <div class="col-lg-4">
@@ -26,7 +26,7 @@
                                 <div class="ttm-quicklink-box">
                                    <div class="ttm-rightlink-box">
                                         <i class="flaticon flaticon-support ttm-textcolor-skincolor"></i>
-                                        <h5 class="custom-heading"> <a href="#"> Help Center  <span class="ti ti-arrow-circle-right ttm-arrow-box"></span> </a> </h5>
+                                        <h5 class="custom-heading"> <router-link to="/contact"> Help Center  <span class="ti ti-arrow-circle-right ttm-arrow-box"></span> </router-link> </h5>
                                   </div>    
                                 </div>
                             </div>
