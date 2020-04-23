@@ -12,23 +12,23 @@
                         <div class="topbar-right text-right">
                             <div class="ttm-social-links-wrapper list-inline">
                                 <ul class="social-icons">
-                                    {{ this.$store.state.config.facebook }}
+                                    
                                     <li>
-                                        <router-link :to="this.$store.state.config.facebook">
+                                        <a :href="this.$store.state.config.facebook" target="_blank">
                                             <i class="fa fa-facebook"></i>
-                                        </router-link>
+                                        </a>
                                     </li>
 
                                     <li>
-                                        <router-link :to="this.$store.state.config.twitter">
+                                        <a :href="this.$store.state.config.twitter" target="_blank">
                                             <i class="fa fa-twitter"></i>
-                                        </router-link>
+                                        </a>
                                     </li>
 
                                     <li>
-                                        <router-link :to="this.$store.state.config.instagram">
+                                        <a :href="this.$store.state.config.instagram" target="_blank">
                                             <i class="fa fa-instagram"></i>
-                                        </router-link>
+                                        </a>
                                     </li>
                                     
                 

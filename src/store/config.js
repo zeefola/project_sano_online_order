@@ -6,9 +6,9 @@ const state = {
     email: 'info@foodpark.ng',
     telephone: '+234 906 282 2260',
     address: '18 Udi street, Wema Terrace, Osborne Foreshore, Ikoyi',
-    facebook: '',
+    facebook: ' https://www.facebook.com/Foodpark-108913344131907/ ',
     twitter: '',
-    instagram: '',
+    instagram: 'https://www.instagram.com/foodpark__/',
     
 }
 const getters = { 

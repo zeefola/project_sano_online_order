@@ -42,14 +42,14 @@
                                 <!-- section title -->
                                 <div class="section-title clearfix">
                                     <div class="title-header">
-                                        <h5>About farming</h5>
-                                        <h2 class="title">Welcome To Agrotek Dairy Farm</h2>
+                                        <h5>ABOUT FOOD PARK</h5>
+                                        <h2 class="title">Welcome to Food Park Limited</h2>
                                     </div>
                                     <div class="heading-seperator">
                                         <span></span>
                                     </div>
                                 </div><!-- section title end -->
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printing gallery making this the first true generator.</p>
+                                <p>Food Park creates an efficient supply chain of food while creating synergy between the most dynamic players in the food processing industry. We are tantamount to a seal of quality, and will we make you look at food through new lens.</p>
                                 <div class="row mt-30">
                                     <div class="col-md-4 col-lg-4 col-sm-4">
                                         <div class="text-left pt-15">
@@ -93,9 +93,9 @@
                             <div class="section-title style2 clearfix">
                                 <div class="title-header">
                                     <h5>Product Categories</h5>
-                                    <h2 class="title">Meet Our Great Team</h2>
+                                    <h2 class="title">Meet Our  Product Line</h2>
                                 </div>
-                                <div class="title-desc">Our team mission is to promote agricultural practices designed to provide abundant healthy food, fiber and other services for all communities.</div>
+                                <div class="title-desc">Allow us to introduce you to a fine line of organic products: A rollout of healthy food that will gratify your palate.</div>
                             </div><!-- section-title end -->
                         </div>
                         <div class="col-lg-3 col-xl-2 col-md-3">
