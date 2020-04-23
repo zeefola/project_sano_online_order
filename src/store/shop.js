@@ -288,27 +288,27 @@ const state = {
             id: '1',
             name: 'Fish & Meat',
             featured_image: '/images/ScootScoot.svg',
-            description: 'As a delivery driver, you will make reliable money—working anytime, anywhere.'
+            description: 'Organic animal protein which improves your diet needs and food safety.'
         },
 
         {
             id: '2',
             name: 'Staples & Vegetables',
             featured_image: '/images/Storefront 2.svg',
-            description: 'As a delivery driver, you will make reliable money—working anytime, anywhere.',
+            description: 'A wide offering of essential foods cultivated and processed in the best conditions.',
         },
 
         {
             id: '3',
             name: 'Spices',
             featured_image: '/images/iphone.svg',
-            description: 'As a delivery driver, you will make reliable money—working anytime, anywhere.',
+            description: 'Choose from, or collect our entire offering of spices for your cooking delight.',
         },
         {
             id: '4',
             name: 'Household Materials',
             featured_image: '/images/iphone.svg',
-            description: 'As a delivery driver, you will make reliable money—working anytime, anywhere.',
+            description: 'Our selection of household materials is formulated to keep you clean, safe, and healthy.',
         }
     ],
 
