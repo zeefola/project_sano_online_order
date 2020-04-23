@@ -176,7 +176,7 @@ export default {
       //SEO
       this.seoMetaData('Cart', ' ');
 
-      this.cartMiddleware();
+    //   this.cartMiddleware();
   }
 
   

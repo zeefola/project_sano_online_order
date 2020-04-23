@@ -32,12 +32,12 @@
                             <div class="col-md-12">
                                 <p class="products-result-count">Showing {{ items.length }} items  </p>
                                 <form class="products-ordering float-sm-right">
-                                    <div class="form-group mb-30">
+                                    <!-- <div class="form-group mb-30">
                                         <select class="form-control border" @change="check($event)" >
                                             <option  value="all" selected>All Categories</option>
                                             <option v-for="(category, index) in categories" :key="index+'category'" :value="category">{{ category}}</option>
                                         </select>
-                                    </div>
+                                    </div> -->
                                 </form>
                             </div>
                         </div>
@@ -53,7 +53,7 @@
 
                  
                   <div class="flex-container">
-                    <div class="item"  v-for="(product, index) in this.$store.state.shop.items" :key="index+'items'">
+                    <div class="item"  v-for="(product, index) in items" :key="index+'items'">
                         <div class="item__featured_image">
                             <img :src="product.featured_image">
 
@@ -123,19 +123,15 @@ export default {
   computed: {
 
         ...mapState(
-          'shop',
+          'category',
           [
           'items',
-          'categories',
+          'sub_categories',
           ]
         ),
 
-        ...mapState(
-          'cart',
-          [
-          'cart',
-          ]
-        )
+
+
 
 
   },
@@ -148,18 +144,9 @@ export default {
                 this.fetchAllItems()
             }
         },
-        ...mapMutations(
-          'shop',
-          [
-          'fetchAllItems',
-          'fetchItemsByCategory',
-          'fetchItemCategories',
-          'FETCH_PRELOADER',
-          ]
-        ),
 
-        
 
+     
         add_to_cart(payload){ 
             let x = this;
            this.$store.dispatch('cart/add_to_cart',payload).then((yes) =>{
@@ -175,13 +162,10 @@ export default {
         let x  = this; 
         this.seoMetaData(x.name.replace(/-/g,' '), '');
 
+        console.log(x.name.replace(/-/g,' '))
 
         //Preloader
-        this.FETCH_PRELOADER()
-
-
-        //Fetch categories
-        this.fetchItemCategories()
+        this.$store.dispatch('category/preloader',x.name.replace(/-/g,' '));
 
     }
 };

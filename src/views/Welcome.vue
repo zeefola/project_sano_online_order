@@ -92,7 +92,7 @@
                             <!-- section-title -->
                             <div class="section-title style2 clearfix">
                                 <div class="title-header">
-                                    <h5>Team Member</h5>
+                                    <h5>Product Categories</h5>
                                     <h2 class="title">Meet Our Great Team</h2>
                                 </div>
                                 <div class="title-desc">Our team mission is to promote agricultural practices designed to provide abundant healthy food, fiber and other services for all communities.</div>
@@ -110,7 +110,7 @@
                     <!-- row -->
                     <div class="row slick_slider ttm-boxes-spacing-15px" data-slick='{"slidesToShow": 3, "slidesToScroll": 3, "dots":false, "arrows":false, "autoplay":false, "infinite":true, "centerMode":false}'>
                         
-                        <div class="ttm-box-col-wrapper col-lg-4" v-for="(category, index) in categories" :key="index+'category'">
+                        <div class="ttm-box-col-wrapper col-lg-4" v-for="(category, index) in product_categories" :key="index+'category'">
                             <!-- featured-imagebox-team -->
                             <div class="featured-imagebox featured-imagebox-team style1">
                                 <div class="featured-thumbnail"><!-- featured-thumbnail -->
@@ -168,62 +168,18 @@ export default {
   computed: {
 
         ...mapState(
-        'welcome',
+        'shop',
         [
-            'categories'
+            'product_categories'
         ])
 
 
   },
-  methods: {
-        check(e){
-           let new_val = e.target.value;
-           if( new_val != 'all'){
-              this.fetchItemsByCategory(new_val);
-            }else{
-                this.fetchAllItems()
-            }
-        },
-        ...mapMutations(
-          'shop',
-          [
-          'fetchAllItems',
-          'fetchItemsByCategory',
-          'fetchItemCategories',
-          'FETCH_PRELOADER',
-          ]
-        ),
-
-        
-
-        add_to_cart(payload){ 
-            let x = this;
-           this.$store.dispatch('cart/add_to_cart',payload).then((yes) =>{
-              
-              x.showNotif({ type: 'success', position: 'bottom-right', message: 'Product added to cart'});
-           })
-        }
-
-
-  },
+  methods: {},
     created(){
         //   (title, description)
         this.seoMetaData('Home','');
 
-        //Preloader
-        this.FETCH_PRELOADER()
-
-        
-
-        //Fetch categories
-        this.fetchItemCategories()
-
-
-        
-        //console.log(process.env.VUE_APP_API_KEY)
-
-        //console.log(process.env.VUE_APP_API_KEY)
-       
         
 
     }
@@ -232,126 +188,5 @@ export default {
 
 
 <style scoped>
-    .add-to-cart-btn a:hover,
-    .add-to-cart-btn a:active
-    {
-        cursor: pointer;
-        color: white;
-    }
-
-
-
-    .flex-container{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        
-    }
-
     
-
-
-    .item{
-        display: flex;
-        flex-flow: column wrap;
-        width: 16.4rem;
-        height: auto;
-        margin: 20px 5px;
-        position: relative;
-        border: 1px solid beige;
-
-      
-        
-    }
-
-    .item__overlay{
-        position: absolute;
-        height: 100%;
-        background: rgba(0,0,0,0.2);
-        display: none;
-        
-    }
-
-    .item__overlay__container{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .item__overlay__container__button{
-      width: auto;
-      background: #232323;
-      color: white;
-      font: inherit;
-      text-align: center;
-      padding: 8px 16px;
-      cursor: pointer;
-      font-size: 1rem;
-    }
-
-    .item__overlay__container__button:hover,
-    .item__overlay__container__button:active{
-        background: #00a85a;
-    }
-
-    .item:hover .item__overlay,
-    .item:active .item__overlay{
-        width: 100%;
-        display: block;
-    }
-
-
-    .item .item__featured_image{
-        height: 262px;
-        width: 100%;
-        
-    }
-
-     .item .item__featured_image img{
-         height: 100%;
-         width: 100%;
-     }
-
-    .item .item__content{
-        height: 90px;
-        padding: 18px;
-        border-top: 1px solid #f0f0f0;
-        color: #232323;
-        background: #cccccc2e;
-    }
-
-    .item .item__content .item__content__title{
-        font-size: 1rem;
-        font-weight: 500;
-    }
-
-     .item .item__content .item__content__price{
-        font-size: 1rem;
-    }
-
-
-
-    @media (min-width: 0px) and (max-width: 600px){
-        .item{
-            width: 45%;
-            height: auto;
-        }
-
-        .item .item__content .item__content__title{
-            font-weight: normal;
-            font-size: 0.8rem;
-        }
-
-        .item .item__content .item__content__price{
-            font-weight: normal;
-            font-size: 0.8rem;
-        }
-
-         .item .item__featured_image{
-            height: auto;
-            width: 100%;   
-        }
-    }
 </style>

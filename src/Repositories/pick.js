@@ -24,7 +24,7 @@ export const pick ={
         {
             return Text
                 .toLowerCase()
-                .replace(/[^\w ]+/g,'')
+                // .replace(/[^\w ]+/g,'')
                 .replace(/ +/g,'-')
                 ;
         }
