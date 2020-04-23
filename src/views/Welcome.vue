@@ -27,7 +27,7 @@
                            <div class="ml_130 res-991-ml-0">
                                             <!-- ttm_single_image-wrapper -->
                                             <div class="ttm_single_image-wrapper after-border style1 position-relative">
-                                                <img class="img-fluid" src="/images/food_one.png" title="single-img-three" alt="single-img-three">
+                                                <img class="img-fluid" src="/img/brief.png" title="single-img-three" alt="single-img-three">
                                             </div><!-- ttm_single_image-wrapper end -->
                                             <div class="about-overlay-02 center-overlay-style1">
                                                 <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-md">
@@ -64,7 +64,7 @@
                                                     <p>Call to ask any question</p>
                                                 </div>
                                                 <div class="featured-title"><!--  featured-title -->
-                                                    <h5>+0123-456-7890</h5>
+                                                    <h5>+234 904 604 0991</h5>
                                                 </div>
                                             </div>
                                         </div><!--  featured-icon-box END -->
@@ -114,7 +114,7 @@
                             <!-- featured-imagebox-team -->
                             <div class="featured-imagebox featured-imagebox-team style1">
                                 <div class="featured-thumbnail"><!-- featured-thumbnail -->
-                                    <img class="img-fluid" src="https://via.placeholder.com/500X560/444444.jpg" alt="image">
+                                    <img class="img-fluid" :src="category.featured_image" alt="image">
                                     <div class="ttm-social-links-wrapper">
                                       <router-link  :to="{ name: 'Category', params: { name: convertToSlug(category.name) } }" class="main-category__items__content__link" > <a> View Products </a></router-link>
                                     </div>
