@@ -35,7 +35,7 @@
                                 </ul>
                             </div>
                             <ul class="top-contact ttm-highlight-right">
-                                <li><strong><i class="fa fa-phone"></i>Talk To Expert :</strong> <span class="tel-no">{{ this.$store.state.config.telephone }}</span></li>
+                                <li><strong><i class="fa fa-phone"></i>Talk To Expert :</strong> <span class="tel-no">{{ this.$store.state.config.telephone1 }}</span></li>
                             </ul>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
                                 <!-- site-branding -->
                                 <div class="site-branding">
                                     <a class="home-link" href="index.html" title="Agrotek" rel="home">
-                                        <img id="logo-img" class="img-center" src="images/logo.png" alt="logo-img">
+                                        <img id="logo-img" class="img-center" src="/img/logo.png" alt="logo-img">
                                     </a>
                                 </div><!-- site-branding end -->
                                 <!--site-navigation -->

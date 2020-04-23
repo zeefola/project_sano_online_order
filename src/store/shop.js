@@ -235,7 +235,7 @@ const state = {
             name: 'Hand Sanitizer(40ml)',
             price: '300',
             featured_image: '/img/sm.png',
-            category : 'household',
+            category : 'household materials',
 
         },
         {
@@ -243,7 +243,7 @@ const state = {
             name: 'Hand Sanitizer(250ml)',
             price: '900',
             featured_image: '/img/big.png',
-            category : 'household',
+            category : 'household materials',
 
         },
         {
@@ -251,7 +251,7 @@ const state = {
             name: 'Lemongrass Liquid Soap',
             price: '250',
             featured_image: '/img/liquid.png',
-            category : 'household',
+            category : 'household materials',
 
         },
         {
@@ -259,7 +259,7 @@ const state = {
             name: 'Lemongrass Hand Wash',
             price: '300',
             featured_image: '/img/han.png',
-            category : 'household',
+            category : 'household materials',
 
         },
         {
@@ -267,7 +267,7 @@ const state = {
             name: 'Lemongrass Hydrosol',
             price: '300',
             featured_image: '/img/hydo.png',
-            category : 'household',
+            category : 'household materials',
 
         },
         {
@@ -275,7 +275,7 @@ const state = {
             name: 'Lemongrass Essential Oil',
             price: '1500',
             featured_image: '/img/hh.png',
-            category : 'household',
+            category : 'household materials',
 
         },
 
@@ -287,27 +287,27 @@ const state = {
         {
             id: '1',
             name: 'Fish & Meat',
-            featured_image: '/images/ScootScoot.svg',
+            featured_image: '/img/fish.png',
             description: 'Organic animal protein which improves your diet needs and food safety.'
         },
 
         {
             id: '2',
             name: 'Staples & Vegetables',
-            featured_image: '/images/Storefront 2.svg',
+            featured_image: '/img/veg.png',
             description: 'A wide offering of essential foods cultivated and processed in the best conditions.',
         },
 
         {
             id: '3',
             name: 'Spices',
-            featured_image: '/images/iphone.svg',
+            featured_image: '/img/sp2.png',
             description: 'Choose from, or collect our entire offering of spices for your cooking delight.',
         },
         {
             id: '4',
             name: 'Household Materials',
-            featured_image: '/images/iphone.svg',
+            featured_image: '/img/hus.png',
             description: 'Our selection of household materials is formulated to keep you clean, safe, and healthy.',
         }
     ],
