@@ -2,8 +2,9 @@ import axios from 'axios'
 
 
 const state = {
-    tagline: process.env.VUE_APP_TAGLINE,
-    app_name: process.env.VUE_APP_NAME
+    tagline: 'Changing Your Food Experience',
+    app_name: 'Food Park'
+    
 }
 const getters = { 
 

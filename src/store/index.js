@@ -11,19 +11,11 @@ import config from "./config"
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {
-    
-  },
+  state: {},
   getters: {},
   
   mutations: {},
-  actions: {
-  //   incrementAsync ({ commit }) {
-  //     setTimeout(() => {
-  //         commit('increment')
-  //     }, 1000)
-  //  }
-  },
+  actions: {},
   modules: {
     welcome,
     shop,
