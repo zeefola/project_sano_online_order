@@ -8,7 +8,7 @@ const state = {
             name: 'Dressed Chicken',
             price: '1000',
             featured_image: '/img/10.png',
-            category : 'Fish & Meat',
+            category : 'fish & meat',
 
         },
         {
@@ -16,7 +16,7 @@ const state = {
             name: '4 Parts Cut',
             price: '1050',
             featured_image: '/img/11.png',
-            category : 'Fish & Meat',
+            category : 'fish & meat',
 
         },
         {
@@ -24,7 +24,7 @@ const state = {
             name: '8 Parts Cut',
             price: '1050',
             featured_image: '/img/12.png',
-            category : 'Fish & Meat',
+            category : 'fish & meat',
 
         },
         {
@@ -32,7 +32,7 @@ const state = {
             name: 'Pork',
             price: '1400',
             featured_image: '/img/13.png',
-            category : 'Fish & Meat',
+            category : 'fish & meat',
 
         },
         {
@@ -40,7 +40,7 @@ const state = {
             name: 'Chicken Gizzard',
             price: '1200',
             featured_image: '/img/14.png',
-            category : 'Fish & Meat',
+            category : 'fish & meat',
 
         },
         {
@@ -48,7 +48,7 @@ const state = {
             name: 'Chicken Laps',
             price: '1200',
             featured_image: '/img/15.png',
-            category : 'Fish & Meat',
+            category : 'fish & meat',
 
         },
         {
@@ -56,7 +56,7 @@ const state = {
             name: 'Chicken Breast With Bone',
             price: '1100',
             featured_image: '/img/16.png',
-            category : 'Fish & Meat',
+            category : 'fish & meat',
 
         },
         {
@@ -64,7 +64,7 @@ const state = {
             name: 'Smoked Fish',
             price: '1000',
             featured_image: '/img/17.png',
-            category : 'Fish & Meat',
+            category : 'fish & meat',
 
         },
         {
@@ -72,7 +72,7 @@ const state = {
             name: 'Chicken Wings',
             price: '1100',
             featured_image: '/img/18.png',
-            category : 'Fish & Meat',
+            category : 'fish & meat',
 
         },
         {
@@ -80,7 +80,7 @@ const state = {
             name: 'Chicken Neck',
             price: '500',
             featured_image: '/img/19.png',
-            category : 'Fish & Meat',
+            category : 'fish & meat',
 
         },
         {
@@ -88,15 +88,15 @@ const state = {
             name: 'Chicken Back',
             price: '750',
             featured_image: '/img/33.png',
-            category : 'Fish & Meat',
+            category : 'fish & meat',
 
         },
         {
             id: '12',
-            name: 'Fresh corn',
+            name: 'fresh corn',
             price: '200',
             featured_image: '/img/22.png',
-            category : 'Staples & Vegetables',
+            category : 'staples & vegetables',
 
         },
 
@@ -105,7 +105,7 @@ const state = {
             name: 'Fresh lemongrass',
             price: '200',
             featured_image: '/img/lg.jpg',
-            category : 'Staples & Vegetables',
+            category : 'staples & vegetables',
 
         },
    
@@ -114,7 +114,7 @@ const state = {
             name: 'Fresh mint leaf',
             price: '200',
             featured_image: '/img/26.png',
-            category : 'Staples & Vegetables',
+            category : 'staples & vegetables',
 
         },
 
@@ -123,7 +123,7 @@ const state = {
             name: 'Garri',
             price: '300',
             featured_image: '/img/24.png',
-            category : 'Staples & Vegetables',
+            category : 'staples & vegetables',
 
         },
         {
@@ -131,7 +131,7 @@ const state = {
             name: 'Fresh sweet basil',
             price: '200',
             featured_image: '/img/30.png',
-            category : 'Staples & Vegetables',
+            category : 'staples & vegetables',
 
         },
         {
@@ -139,7 +139,7 @@ const state = {
             name: 'Fresh scent leaf',
             price: '200',
             featured_image: '/img/25.png',
-            category : 'Staples & Vegetables',
+            category : 'staples & vegetables',
 
         },
         // {
@@ -155,7 +155,7 @@ const state = {
             name: 'Curry',
             price: '350',
             featured_image: '/img/38.png',
-            category : 'Spices',
+            category : 'spices',
 
         },
         {
@@ -163,7 +163,7 @@ const state = {
             name: 'Turmeric',
             price: '350',
             featured_image: '/img/35.png',
-            category : 'Spices',
+            category : 'spices',
 
         },
         {
@@ -171,7 +171,7 @@ const state = {
             name: 'Chilli pepper',
             price: '300',
             featured_image: '/img/32.png',
-            category : 'Spices',
+            category : 'spices',
 
         },
         {
@@ -179,7 +179,7 @@ const state = {
             name: 'Sweet basil',
             price: '500',
             featured_image: '/img/36.png',
-            category : 'Spices',
+            category : 'spices',
 
         },
         {
@@ -187,7 +187,7 @@ const state = {
             name: 'Tropical basil',
             price: '350',
             featured_image: '/img/37.png',
-            category : 'Spices',
+            category : 'spices',
 
         },
         {
@@ -195,7 +195,7 @@ const state = {
             name: 'All soup seasoning',
             price: '350',
             featured_image: '/img/31.png',
-            category : 'Spices',
+            category : 'spices',
 
         },
         {
@@ -203,7 +203,7 @@ const state = {
             name: 'Chicken seasoning',
             price: '350',
             featured_image: '/img/28.png',
-            category : 'Spices',
+            category : 'spices',
 
         },
         {
@@ -211,7 +211,7 @@ const state = {
             name: 'Fried rice seasoning',
             price: '350',
             featured_image: '/img/29.png',
-            category : 'Spices',
+            category : 'spices',
 
         },
         {
@@ -219,7 +219,7 @@ const state = {
             name: 'Jollof rice seasoning',
             price: '350',
             featured_image: '/img/34.png',
-            category : 'Spices',
+            category : 'spices',
 
         },
         {
@@ -227,9 +227,59 @@ const state = {
             name: 'Pepper soup seasoning',
             price: '350',
             featured_image: '/img/27.png',
-            category : 'Spices',
+            category : 'spices',
 
         },
+        {
+            id: '29',
+            name: 'Hand Sanitizer(40ml)',
+            price: '300',
+            featured_image: '/img/sm.png',
+            category : 'household',
+
+        },
+        {
+            id: '30',
+            name: 'Hand Sanitizer(250ml)',
+            price: '900',
+            featured_image: '/img/big.png',
+            category : 'household',
+
+        },
+        {
+            id: '31',
+            name: 'Lemongrass Liquid Soap',
+            price: '250',
+            featured_image: '/img/liquid.png',
+            category : 'household',
+
+        },
+        {
+            id: '32',
+            name: 'Lemongrass Hand Wash',
+            price: '300',
+            featured_image: '/img/han.png',
+            category : 'household',
+
+        },
+        {
+            id: '33',
+            name: 'Lemongrass Hydrosol',
+            price: '300',
+            featured_image: '/img/hydo.png',
+            category : 'household',
+
+        },
+        {
+            id: '34',
+            name: 'Lemongrass Essential Oil',
+            price: '1500',
+            featured_image: '/img/hh.png',
+            category : 'household',
+
+        },
+
+
         
 
     ],
