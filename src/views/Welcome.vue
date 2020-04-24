@@ -42,8 +42,8 @@
                                 <!-- section title -->
                                 <div class="section-title clearfix">
                                     <div class="title-header">
-                                        <h5>ABOUT FOOD PARK</h5>
-                                        <h2 class="title">Welcome to Food Park Limited</h2>
+                                        <!-- <h5>ABOUT FOOD PARK</h5> -->
+                                        <h2 class="title">Welcome to Food Park</h2>
                                     </div>
                                     <div class="heading-seperator">
                                         <span></span>
@@ -63,27 +63,6 @@
                                 </div>
                                 <p class="mine"> Over 800 farmers have been enlisted on our platform.</p>
                                 <p class="mine"> Patronize us to Change your Food Experience. </p>
-
-                                <div class="row mt-30">
-                                    <div class="col-md-4 col-lg-4 col-sm-4">
-                                        <div class="text-left pt-15">
-                                            <img src="https://via.placeholder.com/145X60/444444.png" alt="about-sign">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 col-lg-8 col-sm-8">
-                                        <!--  featured-icon-box --> 
-                                        <div class="featured-icon-box without-icon style1 text-left pt-15">
-                                            <div class="featured-content"><!--  featured-content -->
-                                                <div class="featured-desc"><!--  featured-desc -->
-                                                    <p>Call to ask any question</p>
-                                                </div>
-                                                <div class="featured-title"><!--  featured-title -->
-                                                    <h5>+234 904 604 0991</h5>
-                                                </div>
-                                            </div>
-                                        </div><!--  featured-icon-box END -->
-                                    </div>
-                                </div>
                                 
                             </div>
                         </div>
@@ -107,9 +86,7 @@
                             <div class="section-title style2 clearfix">
                                 <div class="title-header">
                                     <h5>Product Categories</h5>
-                                    <h2 class="title">Meet Our  Product Line</h2>
                                 </div>
-                                <div class="title-desc">Allow us to introduce you to a fine line of organic products: A rollout of healthy food that will gratify your palate.</div>
                             </div><!-- section-title end -->
                         </div>
                         <div class="col-lg-3 col-xl-2 col-md-3">
