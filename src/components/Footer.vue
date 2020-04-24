@@ -18,7 +18,7 @@
                             <div class="ttm-custom-ctabox">
                                 <div class="cta-bg-icon"><span class="flaticon-support"></span></div>
                                 <h3 class="ttm-cta-heading ttm-textcolor-skincolor">Call Us On</h3>
-                                <h5 class="ttm-cta-content">{{ this.$store.state.config.telephone }}</h5>
+                                <h5 class="ttm-cta-content">{{ this.$store.state.config.telephone2 }}</h5>
                             </div>
                         </div>
                         <div class="col-lg-4">

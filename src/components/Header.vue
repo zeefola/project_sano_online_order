@@ -50,7 +50,7 @@
                             <div class="container">
                                 <!-- site-branding -->
                                 <div class="site-branding">
-                                    <a class="home-link" href="index.html" title="Agrotek" rel="home">
+                                    <a class="home-link" href="#" title="FoodPark" rel="home">
                                         <img id="logo-img" class="img-center" src="/img/logo.png" alt="logo-img">
                                     </a>
                                 </div><!-- site-branding end -->
@@ -66,7 +66,7 @@
                                             </router-link>
                                             
                                         </span>
-                                        <div class="ttm-header-icon ttm-header-search-link">
+                                        <!-- <div class="ttm-header-icon ttm-header-search-link">
                                             <a href="#" class="sclose"><i class="ti ti-search"></i></a>
                                             <div class="ttm-search-overlay">
                                                 <div class="ttm-bg-layer"></div>
@@ -80,7 +80,7 @@
                                                     </form>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div><!-- header-icons end -->
                                     <div class="ttm-menu-toggle">
                                         <input type="checkbox" id="menu-toggle-form" :class="{ active: menuStatus }" />
