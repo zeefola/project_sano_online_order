@@ -9,6 +9,7 @@ const state = {
             price: '1000',
             featured_image: '/img/10.png',
             category : 'fish & meat',
+            sub_category : 'fresh',
 
         },
         {
@@ -17,6 +18,7 @@ const state = {
             price: '1050',
             featured_image: '/img/11.png',
             category : 'fish & meat',
+            sub_category : 'fresh',
 
         },
         {
@@ -25,6 +27,7 @@ const state = {
             price: '1050',
             featured_image: '/img/12.png',
             category : 'fish & meat',
+            sub_category : 'fresh',
 
         },
         {
@@ -33,6 +36,7 @@ const state = {
             price: '1400',
             featured_image: '/img/13.png',
             category : 'fish & meat',
+            sub_category : 'fresh',
 
         },
         {
@@ -41,6 +45,7 @@ const state = {
             price: '1200',
             featured_image: '/img/14.png',
             category : 'fish & meat',
+            sub_category : 'fresh',
 
         },
         {
@@ -49,6 +54,7 @@ const state = {
             price: '1200',
             featured_image: '',
             category : 'fish & meat',
+            sub_category : 'fresh',
 
         },
         {
@@ -57,6 +63,7 @@ const state = {
             price: '1100',
             featured_image: '/img/16.png',
             category : 'fish & meat',
+            sub_category : 'fresh',
 
         },
         {
@@ -65,6 +72,7 @@ const state = {
             price: '1000',
             featured_image: '/img/17.png',
             category : 'fish & meat',
+            sub_category : 'ready-to-eat',
 
         },
         {
@@ -73,6 +81,7 @@ const state = {
             price: '1100',
             featured_image: '/img/18.png',
             category : 'fish & meat',
+            sub_category : 'fresh',
 
         },
         {
@@ -81,6 +90,7 @@ const state = {
             price: '500',
             featured_image: '/img/19.png',
             category : 'fish & meat',
+            sub_category : 'fresh',
 
         },
         {
@@ -89,6 +99,7 @@ const state = {
             price: '750',
             featured_image: '/img/33.png',
             category : 'fish & meat',
+            sub_category : 'fresh',
 
         },
         {
