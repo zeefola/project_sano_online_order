@@ -23,7 +23,7 @@
            <section class="ttm-row about-section clearfix">
                 <div class="container">
                     <div class="row"><!-- row -->
-                        <div class="col-lg-5">
+                        <div class="col-lg-4">
                            <div class="ml_130 res-991-ml-0">
                                             <!-- ttm_single_image-wrapper -->
                                             <div class="ttm_single_image-wrapper after-border style1 position-relative">
@@ -37,7 +37,7 @@
                                             </div>
                                         </div>
                         </div>
-                        <div class="col-lg-7">
+                        <div class="col-lg-8">
                             <div class="res-991-mt-30">
                                 <!-- section title -->
                                 <div class="section-title clearfix">
@@ -101,7 +101,7 @@
                     <!-- row -->
                     <div class="row slick_slider ttm-boxes-spacing-15px" data-slick='{"slidesToShow": 3, "slidesToScroll": 3, "dots":false, "arrows":false, "autoplay":false, "infinite":true, "centerMode":false}'>
                         
-                        <div class="ttm-box-col-wrapper col-lg-4" v-for="(category, index) in product_categories" :key="index+'category'">
+                        <div class="ttm-box-col-wrapper col-lg-3" v-for="(category, index) in product_categories" :key="index+'category'">
                             <!-- featured-imagebox-team -->
                             <div class="featured-imagebox featured-imagebox-team style1">
                                 <div class="featured-thumbnail"><!-- featured-thumbnail -->
