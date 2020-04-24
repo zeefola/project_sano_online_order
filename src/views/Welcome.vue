@@ -20,7 +20,7 @@
       <div slot="main-content">
 
 
-           <section class="ttm-row about-section clearfix">
+           <section class="ttm-row about-section clearfix" style="padding-bottom:40px;">
                 <div class="container">
                     <div class="row"><!-- row -->
                         <div class="col-lg-4">
