@@ -49,7 +49,21 @@
                                         <span></span>
                                     </div>
                                 </div><!-- section title end -->
-                                <p>Food Park creates an efficient supply chain of food while creating synergy between the most dynamic players in the food processing industry. We are tantamount to a seal of quality, and will we make you look at food through new lens.</p>
+                                <p class="mine">Food Park provides high quality food processing infrastructure near farms.</p>
+                                <p class="mine">Our mission is to foster a world of healthy food through establishing direct linkages from the farm - to processing - to consumer markets.</p>
+                                <p class="mine"> Ecommerce Focus: we solely enrol food products that are; </p>
+                                   <div class="mt-15">
+                                    <ul class="ttm-list ttm-list-style-icon">
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Naturally grown</span></li>
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Under gone Good Agricultural Practices</span></li>
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Good Manufacturing Practices </span></li>
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Standard Hygiene Process</span></li>
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Food Safety and Traceability</span></li>
+                                    </ul>
+                                </div>
+                                <p class="mine"> Over 800 farmers have been enlisted on our platform.</p>
+                                <p class="mine"> Patronize us to Change your Food Experience. </p>
+
                                 <div class="row mt-30">
                                     <div class="col-md-4 col-lg-4 col-sm-4">
                                         <div class="text-left pt-15">
@@ -178,7 +192,7 @@ export default {
   methods: {},
     created(){
         //   (title, description)
-        this.seoMetaData('Home','');
+        this.seoMetaData('Organic food – fish & meat, staples & vegetables, spices, household','Eat organic for food safety and better nutrition. Food Park promotes healthy living by offering up naturally-grown farm produce processed in the most hygienic environments.');
 
         
 
@@ -188,5 +202,7 @@ export default {
 
 
 <style scoped>
-    
+   .mine{
+    margin : 0 0 8px;
+    }
 </style>
