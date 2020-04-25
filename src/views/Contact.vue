@@ -40,7 +40,11 @@
                                         <h5>Phone</h5>
                                     </div>
                                     <div class="featured-desc"><!--  featured-desc -->
-                                        <p>{{ this.$store.state.config.telephone }}</p>
+                                        <p>{{ this.$store.state.config.telephone1 }}</p>
+                                        
+                                    </div>
+                                    <div class="featured-desc"><!--  featured-desc -->
+                                        <p>{{ this.$store.state.config.telephone2 }}</p>
                                         
                                     </div>
                                 </div>

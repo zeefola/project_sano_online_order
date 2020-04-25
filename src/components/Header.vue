@@ -12,30 +12,30 @@
                         <div class="topbar-right text-right">
                             <div class="ttm-social-links-wrapper list-inline">
                                 <ul class="social-icons">
-                                    {{ this.$store.state.config.facebook }}
+                                    
                                     <li>
-                                        <router-link :to="this.$store.state.config.facebook">
+                                        <a :href="this.$store.state.config.facebook" target="_blank">
                                             <i class="fa fa-facebook"></i>
-                                        </router-link>
+                                        </a>
                                     </li>
 
                                     <li>
-                                        <router-link :to="this.$store.state.config.twitter">
+                                        <a :href="this.$store.state.config.twitter" target="_blank">
                                             <i class="fa fa-twitter"></i>
-                                        </router-link>
+                                        </a>
                                     </li>
 
                                     <li>
-                                        <router-link :to="this.$store.state.config.instagram">
+                                        <a :href="this.$store.state.config.instagram" target="_blank">
                                             <i class="fa fa-instagram"></i>
-                                        </router-link>
+                                        </a>
                                     </li>
                                     
                 
                                 </ul>
                             </div>
                             <ul class="top-contact ttm-highlight-right">
-                                <li><strong><i class="fa fa-phone"></i>Talk To Expert :</strong> <span class="tel-no">{{ this.$store.state.config.telephone }}</span></li>
+                                <li><strong><i class="fa fa-phone"></i>Talk To Expert :</strong> <span class="tel-no">{{ this.$store.state.config.telephone1 }}</span></li>
                             </ul>
                         </div>
                     </div>
@@ -50,8 +50,8 @@
                             <div class="container">
                                 <!-- site-branding -->
                                 <div class="site-branding">
-                                    <a class="home-link" href="index.html" title="Agrotek" rel="home">
-                                        <img id="logo-img" class="img-center" src="images/logo.png" alt="logo-img">
+                                    <a class="home-link" href="#" title="FoodPark" rel="home">
+                                        <img id="logo-img" class="img-center" src="/img/logo.png" alt="logo-img">
                                     </a>
                                 </div><!-- site-branding end -->
                                 <!--site-navigation -->
@@ -66,7 +66,7 @@
                                             </router-link>
                                             
                                         </span>
-                                        <div class="ttm-header-icon ttm-header-search-link">
+                                        <!-- <div class="ttm-header-icon ttm-header-search-link">
                                             <a href="#" class="sclose"><i class="ti ti-search"></i></a>
                                             <div class="ttm-search-overlay">
                                                 <div class="ttm-bg-layer"></div>
@@ -80,7 +80,7 @@
                                                     </form>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div><!-- header-icons end -->
                                     <div class="ttm-menu-toggle">
                                         <input type="checkbox" id="menu-toggle-form" :class="{ active: menuStatus }" />

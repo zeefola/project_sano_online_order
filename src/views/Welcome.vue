@@ -20,14 +20,14 @@
       <div slot="main-content">
 
 
-           <section class="ttm-row about-section clearfix">
+           <section class="ttm-row about-section clearfix" style="padding-bottom:40px;">
                 <div class="container">
                     <div class="row"><!-- row -->
-                        <div class="col-lg-5">
+                        <div class="col-lg-4">
                            <div class="ml_130 res-991-ml-0">
                                             <!-- ttm_single_image-wrapper -->
                                             <div class="ttm_single_image-wrapper after-border style1 position-relative">
-                                                <img class="img-fluid" src="/images/food_one.png" title="single-img-three" alt="single-img-three">
+                                                <img class="img-fluid" src="/img/brief.png" title="single-img-three" alt="single-img-three">
                                             </div><!-- ttm_single_image-wrapper end -->
                                             <div class="about-overlay-02 center-overlay-style1">
                                                 <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-md">
@@ -37,39 +37,32 @@
                                             </div>
                                         </div>
                         </div>
-                        <div class="col-lg-7">
+                        <div class="col-lg-8">
                             <div class="res-991-mt-30">
                                 <!-- section title -->
                                 <div class="section-title clearfix">
                                     <div class="title-header">
-                                        <h5>About farming</h5>
-                                        <h2 class="title">Welcome To Agrotek Dairy Farm</h2>
+                                        <!-- <h5>ABOUT FOOD PARK</h5> -->
+                                        <h2 class="title">Welcome to Food Park</h2>
                                     </div>
                                     <div class="heading-seperator">
                                         <span></span>
                                     </div>
                                 </div><!-- section title end -->
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printing gallery making this the first true generator.</p>
-                                <div class="row mt-30">
-                                    <div class="col-md-4 col-lg-4 col-sm-4">
-                                        <div class="text-left pt-15">
-                                            <img src="https://via.placeholder.com/145X60/444444.png" alt="about-sign">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 col-lg-8 col-sm-8">
-                                        <!--  featured-icon-box --> 
-                                        <div class="featured-icon-box without-icon style1 text-left pt-15">
-                                            <div class="featured-content"><!--  featured-content -->
-                                                <div class="featured-desc"><!--  featured-desc -->
-                                                    <p>Call to ask any question</p>
-                                                </div>
-                                                <div class="featured-title"><!--  featured-title -->
-                                                    <h5>+0123-456-7890</h5>
-                                                </div>
-                                            </div>
-                                        </div><!--  featured-icon-box END -->
-                                    </div>
+                                <p class="mine">Food Park provides high quality food processing infrastructure near farms.</p>
+                                <p class="mine">Our mission is to foster a world of healthy food through establishing direct linkages from the farm - to processing - to consumer markets.</p>
+                                <p class="mine"> Ecommerce Focus: we solely enrol food products that are; </p>
+                                   <div class="mt-15">
+                                    <ul class="ttm-list ttm-list-style-icon">
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Naturally grown</span></li>
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Under gone Good Agricultural Practices</span></li>
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Good Manufacturing Practices </span></li>
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Standard Hygiene Process</span></li>
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Food Safety and Traceability</span></li>
+                                    </ul>
                                 </div>
+                                <p class="mine"> Over 800 farmers have been enlisted on our platform.</p>
+                                <p class="mine"> Patronize us to Change your Food Experience. </p>
                                 
                             </div>
                         </div>
@@ -93,9 +86,7 @@
                             <div class="section-title style2 clearfix">
                                 <div class="title-header">
                                     <h5>Product Categories</h5>
-                                    <h2 class="title">Meet Our Great Team</h2>
                                 </div>
-                                <div class="title-desc">Our team mission is to promote agricultural practices designed to provide abundant healthy food, fiber and other services for all communities.</div>
                             </div><!-- section-title end -->
                         </div>
                         <div class="col-lg-3 col-xl-2 col-md-3">
@@ -110,11 +101,11 @@
                     <!-- row -->
                     <div class="row slick_slider ttm-boxes-spacing-15px" data-slick='{"slidesToShow": 3, "slidesToScroll": 3, "dots":false, "arrows":false, "autoplay":false, "infinite":true, "centerMode":false}'>
                         
-                        <div class="ttm-box-col-wrapper col-lg-4" v-for="(category, index) in product_categories" :key="index+'category'">
+                        <div class="ttm-box-col-wrapper col-lg-3" v-for="(category, index) in product_categories" :key="index+'category'">
                             <!-- featured-imagebox-team -->
                             <div class="featured-imagebox featured-imagebox-team style1">
                                 <div class="featured-thumbnail"><!-- featured-thumbnail -->
-                                    <img class="img-fluid" src="https://via.placeholder.com/500X560/444444.jpg" alt="image">
+                                    <img class="img-fluid" :src="category.featured_image" alt="image">
                                     <div class="ttm-social-links-wrapper">
                                       <router-link  :to="{ name: 'Category', params: { name: convertToSlug(category.name) } }" class="main-category__items__content__link" > <a> View Products </a></router-link>
                                     </div>
@@ -178,7 +169,7 @@ export default {
   methods: {},
     created(){
         //   (title, description)
-        this.seoMetaData('Home','');
+        this.seoMetaData('Organic food – fish & meat, staples & vegetables, spices, household','Eat organic for food safety and better nutrition. Food Park promotes healthy living by offering up naturally-grown farm produce processed in the most hygienic environments.');
 
         
 
@@ -188,5 +179,7 @@ export default {
 
 
 <style scoped>
-    
+   .mine{
+    margin : 0 0 8px;
+    }
 </style>

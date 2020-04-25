@@ -173,7 +173,7 @@ export default {
   },
     created(){
         //   (title, description)
-        this.seoMetaData('Products','Largest Essential Oil Producer');
+        this.seoMetaData('Organic food – fish & meat, staples & vegetables, spices, household','Food Park works with the best food companies to produce a robust range of organic foods and household essentials. Non-GMO, pesticide-free, hormone-free.');
 
         //Preloader
         this.FETCH_PRELOADER()

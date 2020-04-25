@@ -9,6 +9,7 @@ const state = {
             price: '1000',
             featured_image: '/img/10.png',
             category : 'fish & meat',
+            sub_category : 'fresh',
 
         },
         {
@@ -17,6 +18,7 @@ const state = {
             price: '1050',
             featured_image: '/img/11.png',
             category : 'fish & meat',
+            sub_category : 'fresh',
 
         },
         {
@@ -25,6 +27,7 @@ const state = {
             price: '1050',
             featured_image: '/img/12.png',
             category : 'fish & meat',
+            sub_category : 'fresh',
 
         },
         {
@@ -33,6 +36,7 @@ const state = {
             price: '1400',
             featured_image: '/img/13.png',
             category : 'fish & meat',
+            sub_category : 'fresh',
 
         },
         {
@@ -41,14 +45,16 @@ const state = {
             price: '1200',
             featured_image: '/img/14.png',
             category : 'fish & meat',
+            sub_category : 'fresh',
 
         },
         {
             id: '6',
             name: 'Chicken Laps',
             price: '1200',
-            featured_image: '/img/15.png',
+            featured_image: '',
             category : 'fish & meat',
+            sub_category : 'fresh',
 
         },
         {
@@ -57,6 +63,7 @@ const state = {
             price: '1100',
             featured_image: '/img/16.png',
             category : 'fish & meat',
+            sub_category : 'fresh',
 
         },
         {
@@ -65,6 +72,7 @@ const state = {
             price: '1000',
             featured_image: '/img/17.png',
             category : 'fish & meat',
+            sub_category : 'ready-to-eat',
 
         },
         {
@@ -73,6 +81,7 @@ const state = {
             price: '1100',
             featured_image: '/img/18.png',
             category : 'fish & meat',
+            sub_category : 'fresh',
 
         },
         {
@@ -81,6 +90,7 @@ const state = {
             price: '500',
             featured_image: '/img/19.png',
             category : 'fish & meat',
+            sub_category : 'fresh',
 
         },
         {
@@ -89,6 +99,7 @@ const state = {
             price: '750',
             featured_image: '/img/33.png',
             category : 'fish & meat',
+            sub_category : 'fresh',
 
         },
         {
@@ -235,7 +246,7 @@ const state = {
             name: 'Hand Sanitizer(40ml)',
             price: '300',
             featured_image: '/img/sm.png',
-            category : 'household',
+            category : 'household materials',
 
         },
         {
@@ -243,7 +254,7 @@ const state = {
             name: 'Hand Sanitizer(250ml)',
             price: '900',
             featured_image: '/img/big.png',
-            category : 'household',
+            category : 'household materials',
 
         },
         {
@@ -251,7 +262,7 @@ const state = {
             name: 'Lemongrass Liquid Soap',
             price: '250',
             featured_image: '/img/liquid.png',
-            category : 'household',
+            category : 'household materials',
 
         },
         {
@@ -259,7 +270,7 @@ const state = {
             name: 'Lemongrass Hand Wash',
             price: '300',
             featured_image: '/img/han.png',
-            category : 'household',
+            category : 'household materials',
 
         },
         {
@@ -267,7 +278,7 @@ const state = {
             name: 'Lemongrass Hydrosol',
             price: '300',
             featured_image: '/img/hydo.png',
-            category : 'household',
+            category : 'household materials',
 
         },
         {
@@ -275,7 +286,7 @@ const state = {
             name: 'Lemongrass Essential Oil',
             price: '1500',
             featured_image: '/img/hh.png',
-            category : 'household',
+            category : 'household materials',
 
         },
 
@@ -287,28 +298,28 @@ const state = {
         {
             id: '1',
             name: 'Fish & Meat',
-            featured_image: '/images/ScootScoot.svg',
-            description: 'As a delivery driver, you will make reliable money—working anytime, anywhere.'
+            featured_image: '/img/fish.png',
+            description: 'Organic animal protein which improves your diet needs and food safety.'
         },
 
         {
             id: '2',
             name: 'Staples & Vegetables',
-            featured_image: '/images/Storefront 2.svg',
-            description: 'As a delivery driver, you will make reliable money—working anytime, anywhere.',
+            featured_image: '/img/veg.png',
+            description: 'A wide offering of essential foods cultivated and processed in the best conditions.',
         },
 
         {
             id: '3',
             name: 'Spices',
-            featured_image: '/images/iphone.svg',
-            description: 'As a delivery driver, you will make reliable money—working anytime, anywhere.',
+            featured_image: '/img/sp2.png',
+            description: 'Choose from, or collect our entire offering of spices for your cooking delight.',
         },
         {
             id: '4',
             name: 'Household Materials',
-            featured_image: '/images/iphone.svg',
-            description: 'As a delivery driver, you will make reliable money—working anytime, anywhere.',
+            featured_image: '/img/hus.png',
+            description: 'Our selection of household materials is formulated to keep you clean, safe, and healthy.',
         }
     ],
 
