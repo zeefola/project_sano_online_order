@@ -71,12 +71,11 @@
                             <div class="item__content__price">
                                 &#8358; {{ product.price | number_format }}
                             </div>
-
-
                         </div>
 
                         <div class="item__overlay">
                              <div class="item__overlay__container">
+                               
                                  <div class="item__overlay__container__text">
                                       {{ product.description }}
                                   </div> 
@@ -84,6 +83,7 @@
                                   <div class="item__overlay__container__button" @click.prevent="add_to_cart(product)">
                                       Add to cart
                                   </div>
+                                  
                              </div>
                          </div>
                         
