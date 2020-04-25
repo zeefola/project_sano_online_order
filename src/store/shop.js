@@ -439,8 +439,8 @@ const state = {
         {
             id: '36',
             name: 'Picante Pork',
-            price: ' ',
-            featured_image: ' ',
+            price: '2200',
+            featured_image: '/img/pork.png',
             category : 'fish & meat',
             sub_category : 'ready-to-eat',
             description: 'Spiced-rubbed grilled pork',
@@ -452,8 +452,8 @@ const state = {
         {
             id: '37',
             name: 'Picante Gizzard',
-            price: ' ',
-            featured_image: ' ',
+            price: '2000',
+            featured_image: '/img/giz.png',
             category : 'fish & meat',
             sub_category : 'ready-to-eat',
             description: 'Spiced grilled gizzard',
@@ -479,7 +479,7 @@ const state = {
             id: '39',
             name: 'Picante Wings',
             price: ' 2100',
-            featured_image: ' ',
+            featured_image: '/img/wings.png',
             category : 'fish & meat',
             sub_category : 'ready-to-eat',
             description: 'Marinated spiced Chicken- wings ',
@@ -491,8 +491,8 @@ const state = {
         {
             id: '40',
             name: 'Picante Rabbit',
-            price: ' ',
-            featured_image: ' ',
+            price: '4000',
+            featured_image: '/img/rabbit.png',
             category : 'fish & meat',
             sub_category : 'ready-to-eat',
             description: 'Spiced marinated rabbit cuisine',
@@ -504,8 +504,8 @@ const state = {
         {
             id: '41',
             name: 'Picante Snail',
-            price: ' ',
-            featured_image: ' ',
+            price: '4500',
+            featured_image: '/img/snaill.png',
             category : 'fish & meat',
             sub_category : 'ready-to-eat',
             description: 'Spiced grilled snails',
@@ -517,8 +517,8 @@ const state = {
         {
             id: '42',
             name: 'Rabbit',
-            price: ' ',
-            featured_image: ' ',
+            price: '3000 ',
+            featured_image: '/img/20.png',
             category : 'fish & meat',
             sub_category : 'fresh',
             description: ' ',
@@ -530,8 +530,8 @@ const state = {
         {
             id: '43',
             name: 'Snail',
-            price: ' ',
-            featured_image: ' ',
+            price: '3500 ',
+            featured_image: '/img/sn.png',
             category : 'fish & meat',
             sub_category : 'fresh',
             description: ' ',
@@ -549,7 +549,7 @@ const state = {
         {
             id: '1',
             name: 'Fish & Meat',
-            featured_image: '/img/fish.png',
+            featured_image: '/img/meat.png',
             description: 'Organic animal protein which improves your diet needs and food safety.'
         },
 
@@ -563,7 +563,7 @@ const state = {
         {
             id: '3',
             name: 'Spices',
-            featured_image: '/img/sp2.png',
+            featured_image: '/img/spices.png',
             description: 'Choose from, or collect our entire offering of spices for your cooking delight.',
         },
         {
