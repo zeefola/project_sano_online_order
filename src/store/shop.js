@@ -10,6 +10,7 @@ const state = {
             featured_image: '/img/10.png',
             category : 'fish & meat',
             sub_category : 'fresh',
+            description: ' ',
 
         },
         {
@@ -19,6 +20,7 @@ const state = {
             featured_image: '/img/11.png',
             category : 'fish & meat',
             sub_category : 'fresh',
+            description: ' ',
 
         },
         {
@@ -28,6 +30,7 @@ const state = {
             featured_image: '/img/12.png',
             category : 'fish & meat',
             sub_category : 'fresh',
+            description: ' ',
 
         },
         {
@@ -37,6 +40,7 @@ const state = {
             featured_image: '/img/13.png',
             category : 'fish & meat',
             sub_category : 'fresh',
+            description: ' ',
 
         },
         {
@@ -46,6 +50,7 @@ const state = {
             featured_image: '/img/14.png',
             category : 'fish & meat',
             sub_category : 'fresh',
+            description: ' ',
 
         },
         {
@@ -55,6 +60,7 @@ const state = {
             featured_image: '',
             category : 'fish & meat',
             sub_category : 'fresh',
+            description: ' ',
 
         },
         {
@@ -64,6 +70,7 @@ const state = {
             featured_image: '/img/16.png',
             category : 'fish & meat',
             sub_category : 'fresh',
+            description: ' ',
 
         },
         {
@@ -73,6 +80,7 @@ const state = {
             featured_image: '/img/17.png',
             category : 'fish & meat',
             sub_category : 'ready-to-eat',
+            description: ' ',
 
         },
         {
@@ -82,6 +90,7 @@ const state = {
             featured_image: '/img/18.png',
             category : 'fish & meat',
             sub_category : 'fresh',
+            description: ' ',
 
         },
         {
@@ -91,6 +100,7 @@ const state = {
             featured_image: '/img/19.png',
             category : 'fish & meat',
             sub_category : 'fresh',
+            description: ' ',
 
         },
         {
@@ -100,6 +110,7 @@ const state = {
             featured_image: '/img/33.png',
             category : 'fish & meat',
             sub_category : 'fresh',
+            description: ' ',
 
         },
         {
@@ -108,6 +119,8 @@ const state = {
             price: '200',
             featured_image: '/img/22.png',
             category : 'staples & vegetables',
+            description: ' ',
+            
 
         },
 
@@ -117,6 +130,7 @@ const state = {
             price: '200',
             featured_image: '/img/lg.jpg',
             category : 'staples & vegetables',
+            description: ' ',
 
         },
    
@@ -126,6 +140,7 @@ const state = {
             price: '200',
             featured_image: '/img/26.png',
             category : 'staples & vegetables',
+            description: ' ',
 
         },
 
@@ -135,6 +150,7 @@ const state = {
             price: '300',
             featured_image: '/img/24.png',
             category : 'staples & vegetables',
+            description: ' ',
 
         },
         {
@@ -143,6 +159,7 @@ const state = {
             price: '200',
             featured_image: '/img/30.png',
             category : 'staples & vegetables',
+            description: ' ',
 
         },
         {
@@ -151,13 +168,14 @@ const state = {
             price: '200',
             featured_image: '/img/25.png',
             category : 'staples & vegetables',
+            description: ' ',
 
         },
         // {
         //     id: '18',
         //     name: 'Thyme',
         //     price: '350',
-        //     featured_image: '/img/25.png',
+        //     featured_image: ' ',
         //     category : 'Spices',
 
         // },
@@ -167,6 +185,7 @@ const state = {
             price: '350',
             featured_image: '/img/38.png',
             category : 'spices',
+            description: ' ',
 
         },
         {
@@ -175,6 +194,7 @@ const state = {
             price: '350',
             featured_image: '/img/35.png',
             category : 'spices',
+            description: ' ',
 
         },
         {
@@ -183,6 +203,7 @@ const state = {
             price: '300',
             featured_image: '/img/32.png',
             category : 'spices',
+            description: ' ',
 
         },
         {
@@ -191,6 +212,7 @@ const state = {
             price: '500',
             featured_image: '/img/36.png',
             category : 'spices',
+            description: ' ',
 
         },
         {
@@ -199,6 +221,7 @@ const state = {
             price: '350',
             featured_image: '/img/37.png',
             category : 'spices',
+            description: ' ',
 
         },
         {
@@ -207,6 +230,7 @@ const state = {
             price: '350',
             featured_image: '/img/31.png',
             category : 'spices',
+            description: ' ',
 
         },
         {
@@ -215,6 +239,7 @@ const state = {
             price: '350',
             featured_image: '/img/28.png',
             category : 'spices',
+            description: ' ',
 
         },
         {
@@ -223,6 +248,7 @@ const state = {
             price: '350',
             featured_image: '/img/29.png',
             category : 'spices',
+            description: ' ',
 
         },
         {
@@ -231,6 +257,7 @@ const state = {
             price: '350',
             featured_image: '/img/34.png',
             category : 'spices',
+            description: ' ',
 
         },
         {
@@ -239,6 +266,7 @@ const state = {
             price: '350',
             featured_image: '/img/27.png',
             category : 'spices',
+            description: ' ',
 
         },
         {
@@ -247,6 +275,7 @@ const state = {
             price: '300',
             featured_image: '/img/sm.png',
             category : 'household materials',
+            description: ' ',
 
         },
         {
@@ -255,6 +284,7 @@ const state = {
             price: '900',
             featured_image: '/img/big.png',
             category : 'household materials',
+            description: ' ',
 
         },
         {
@@ -263,6 +293,7 @@ const state = {
             price: '250',
             featured_image: '/img/liquid.png',
             category : 'household materials',
+            description: ' ',
 
         },
         {
@@ -271,6 +302,7 @@ const state = {
             price: '300',
             featured_image: '/img/han.png',
             category : 'household materials',
+            description: ' ',
 
         },
         {
@@ -279,6 +311,7 @@ const state = {
             price: '300',
             featured_image: '/img/hydo.png',
             category : 'household materials',
+            description: ' ',
 
         },
         {
@@ -287,6 +320,17 @@ const state = {
             price: '1500',
             featured_image: '/img/hh.png',
             category : 'household materials',
+            description: ' ',
+
+        },
+        {
+            id: '35',
+            name: 'Picante Chicken',
+            price: '2000',
+            featured_image: '/img/pic.png',
+            category : 'fish & meat',
+            sub_category : 'ready-to-eat',
+            description: 'Marinated spiced Chicken- with turmeric and basil',
 
         },
 
