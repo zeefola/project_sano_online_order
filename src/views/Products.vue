@@ -32,7 +32,7 @@
                     <div class="col-lg-12 content-area">
                         <div class="row">
                             <div class="col-md-12">
-                                <p class="products-result-count">Showing {{ items.length }} items  </p>
+                                <p class="products-result-count">Showing {{ items.length }} items {{ cart }}  </p>
                                 <form class="products-ordering float-sm-right">
                                     <div class="form-group mb-30">
                                         <select class="form-control border" @change="check($event)" >
@@ -80,7 +80,7 @@
                                  <div class="item__overlay__container__text">
                                       {{ product.description }}
                                   </div> 
-                                  
+
                                   <div class="item__overlay__container__button" @click.prevent="add_to_cart(product)">
                                       Add to cart
                                   </div>

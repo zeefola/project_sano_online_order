@@ -10,6 +10,7 @@ const state = {
             featured_image: '/img/10.png',
             category : 'fish & meat',
             sub_category : 'fresh',
+            
 
         },
         {
