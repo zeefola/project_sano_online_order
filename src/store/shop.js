@@ -11,6 +11,9 @@ const state = {
             category : 'fish & meat',
             sub_category : 'fresh',
             description: ' ',
+            unit: 'kg',
+            unit_rate: ['1.0','1.1','1.2','1.3','1.4','1.5'],
+            weight: '1' // default
 
 
         },
@@ -22,6 +25,9 @@ const state = {
             category : 'fish & meat',
             sub_category : 'fresh',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -32,6 +38,9 @@ const state = {
             category : 'fish & meat',
             sub_category : 'fresh',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -42,6 +51,9 @@ const state = {
             category : 'fish & meat',
             sub_category : 'fresh',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -52,6 +64,9 @@ const state = {
             category : 'fish & meat',
             sub_category : 'fresh',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -62,6 +77,9 @@ const state = {
             category : 'fish & meat',
             sub_category : 'fresh',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -72,6 +90,9 @@ const state = {
             category : 'fish & meat',
             sub_category : 'fresh',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -82,6 +103,9 @@ const state = {
             category : 'fish & meat',
             sub_category : 'ready-to-eat',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -92,6 +116,9 @@ const state = {
             category : 'fish & meat',
             sub_category : 'fresh',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -102,6 +129,9 @@ const state = {
             category : 'fish & meat',
             sub_category : 'fresh',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -112,6 +142,9 @@ const state = {
             category : 'fish & meat',
             sub_category : 'fresh',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -121,6 +154,9 @@ const state = {
             featured_image: '/img/22.png',
             category : 'staples & vegetables',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
             
 
         },
@@ -132,6 +168,9 @@ const state = {
             featured_image: '/img/lg.jpg',
             category : 'staples & vegetables',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
    
@@ -142,6 +181,9 @@ const state = {
             featured_image: '/img/26.png',
             category : 'staples & vegetables',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
 
@@ -152,6 +194,9 @@ const state = {
             featured_image: '/img/24.png',
             category : 'staples & vegetables',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -161,6 +206,9 @@ const state = {
             featured_image: '/img/30.png',
             category : 'staples & vegetables',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -170,6 +218,9 @@ const state = {
             featured_image: '/img/25.png',
             category : 'staples & vegetables',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         // {
@@ -187,6 +238,9 @@ const state = {
             featured_image: '/img/38.png',
             category : 'spices',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -196,6 +250,9 @@ const state = {
             featured_image: '/img/35.png',
             category : 'spices',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -205,6 +262,9 @@ const state = {
             featured_image: '/img/32.png',
             category : 'spices',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -214,6 +274,9 @@ const state = {
             featured_image: '/img/36.png',
             category : 'spices',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -223,6 +286,9 @@ const state = {
             featured_image: '/img/37.png',
             category : 'spices',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -232,6 +298,9 @@ const state = {
             featured_image: '/img/31.png',
             category : 'spices',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -241,6 +310,9 @@ const state = {
             featured_image: '/img/28.png',
             category : 'spices',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -250,6 +322,9 @@ const state = {
             featured_image: '/img/29.png',
             category : 'spices',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -259,6 +334,9 @@ const state = {
             featured_image: '/img/34.png',
             category : 'spices',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -268,6 +346,9 @@ const state = {
             featured_image: '/img/27.png',
             category : 'spices',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -277,6 +358,9 @@ const state = {
             featured_image: '/img/sm.png',
             category : 'household materials',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -286,6 +370,9 @@ const state = {
             featured_image: '/img/big.png',
             category : 'household materials',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -295,6 +382,9 @@ const state = {
             featured_image: '/img/liquid.png',
             category : 'household materials',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -304,6 +394,9 @@ const state = {
             featured_image: '/img/han.png',
             category : 'household materials',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -313,6 +406,9 @@ const state = {
             featured_image: '/img/hydo.png',
             category : 'household materials',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -322,6 +418,9 @@ const state = {
             featured_image: '/img/hh.png',
             category : 'household materials',
             description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
         {
@@ -332,6 +431,9 @@ const state = {
             category : 'fish & meat',
             sub_category : 'ready-to-eat',
             description: 'Marinated spiced Chicken- with turmeric and basil',
+            unit: '',
+            unit_rate: [],
+            weight: '',
 
         },
 
