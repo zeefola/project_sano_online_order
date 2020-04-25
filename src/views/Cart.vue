@@ -53,6 +53,12 @@
                                            
                                             <td class="product-name" data-title="Product">
                                                 <a href="product-details.html">{{item.name}}</a>
+
+                                                <select class="form-control" @change="modifyCartViaWeight($event,index)">
+                                                    <option value="">1.5</option>
+                                                    <option value="">1.6</option>
+                                                    <option value="">1.7</option>
+                                                </select>
                                             </td>
                                             <td class="product-mainprice" data-title="Price">
                                                 <span class="Price-amount">
@@ -169,6 +175,16 @@ export default {
           }
           
       },
+
+
+      modifyCartViaWeight(event, index){
+          let weight = event.target.value;
+
+          if(weight){
+              this.$store.commit('cart/MODIFY_CART_ITEM_VIA_WEIGHT',{weight: weight, index: index});
+          }
+
+      }
 
   },
   created(){

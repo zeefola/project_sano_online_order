@@ -54,6 +54,9 @@
                         </div>
                         <div class="item__overlay">
                              <div class="item__overlay__container">
+                                  <div class="item__overlay__container__text">
+                                      Eco-friendly products are, the products that do not harm the environ- ment. whether in their equipment production.
+                                  </div>
                                   <div class="item__overlay__container__button" @click.prevent="add_to_cart(product)">
                                       Add to cart
                                   </div>
@@ -98,6 +101,10 @@
                         </div>
                         <div class="item__overlay">
                              <div class="item__overlay__container">
+                                 <div class="item__overlay__container__text">
+                                      {{ product.description }}
+                                  </div> 
+
                                   <div class="item__overlay__container__button" @click.prevent="add_to_cart(product)">
                                       Add to cart
                                   </div>
@@ -210,127 +217,5 @@ export default {
     }
 
 
-    .mt-lg{
-            margin-top: 7rem;
-    }
-
-
-    .flex-container{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-        margin-bottom: 5rem;
-        /* padding: 0.5rem; */
-        
-    }
-
-    
-
-
-    .item{
-        display: flex;
-        flex-flow: column wrap;
-        width: 16.4rem;
-        height: auto;
-        margin: 20px 5px;
-        position: relative;
-        border: 1px solid beige;
-
-      
-        
-    }
-
-    .item__overlay{
-        position: absolute;
-        height: 100%;
-        background: rgba(0,0,0,0.2);
-        display: none;
-        
-    }
-
-    .item__overlay__container{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .item__overlay__container__button{
-      width: auto;
-      background: #232323;
-      color: white;
-      font: inherit;
-      text-align: center;
-      padding: 8px 16px;
-      cursor: pointer;
-      font-size: 1rem;
-    }
-
-    .item__overlay__container__button:hover,
-    .item__overlay__container__button:active{
-        background: #00a85a;
-    }
-
-    .item:hover .item__overlay,
-    .item:active .item__overlay{
-        width: 100%;
-        display: block;
-    }
-
-
-    .item .item__featured_image{
-        height: 262px;
-        width: 100%;
-        
-    }
-
-     .item .item__featured_image img{
-         height: 100%;
-         width: 100%;
-     }
-
-    .item .item__content{
-        height: 90px;
-        padding: 18px;
-        border-top: 1px solid #f0f0f0;
-        color: #232323;
-        background: #cccccc2e;
-    }
-
-    .item .item__content .item__content__title{
-        font-size: 1rem;
-        font-weight: 500;
-    }
-
-     .item .item__content .item__content__price{
-        font-size: 1rem;
-    }
-
-
-
-    @media (min-width: 0px) and (max-width: 600px){
-        .mt-lg{
-            margin-top: 3rem;
-        }
-        .item{
-            width: 45%;
-            height: auto;
-        }
-
-        .item .item__content .item__content__title{
-            font-weight: normal;
-            font-size: 0.8rem;
-        }
-
-        .item .item__content .item__content__price{
-            font-weight: normal;
-            font-size: 0.8rem;
-        }
-
-         .item .item__featured_image{
-            height: auto;
-            width: 100%;   
-        }
-    }
+   
 </style>

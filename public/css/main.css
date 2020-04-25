@@ -2313,6 +2313,15 @@ article.ttm-blog-classic .ttm-blog-classic-content {
 }
 .ttm-team-member-education-box span{font-size: 16px;line-height: 28px;font-weight: 500;}
 
+
+
+
+
+
+
+
+
+
 .button-block{
     display: inline-block;
     width: 100%;
@@ -2349,4 +2358,172 @@ article.ttm-blog-classic .ttm-blog-classic-content {
 .button-block .next{
     background: #00A85A;
     margin-right: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mt-lg{
+    margin-top: 7rem;
+}
+
+
+.flex-container{
+display: flex;
+flex-flow: row wrap;
+justify-content: flex-start;
+margin-bottom: 5rem;
+/* padding: 0.5rem; */
+
+}
+
+
+
+
+.item{
+display: flex;
+flex-flow: column wrap;
+width: 16.4rem;
+height: auto;
+margin: 20px 5px;
+position: relative;
+border: 1px solid beige;
+
+
+
+}
+
+.item__overlay{
+position: absolute;
+height: 100%;
+background: rgba(0,0,0,0.6);
+display: none;
+
+}
+
+.item__overlay__container{
+width: 100%;
+height: 100%;
+display: flex;
+flex-flow: column wrap;
+justify-content: center;
+align-items: center;
+}
+
+.item__overlay__container__button{
+width: auto;
+background:  #00a85a;
+color: white;
+font: inherit;
+text-align: center;
+padding: 8px 16px;
+cursor: pointer;
+font-size: 1rem;
+}
+
+.item__overlay__container__text{
+text-align: center;
+color: white;
+margin-bottom: 1rem;
+padding: 0.8rem;
+}
+
+.item__overlay__container__button:hover,
+.item__overlay__container__button:active{
+background: black;
+cursor: pointer;
+}
+
+.item:hover .item__overlay,
+.item:active .item__overlay{
+width: 100%;
+display: block;
+}
+
+
+.item .item__featured_image{
+height: 262px;
+width: 100%;
+
+}
+
+.item .item__featured_image img{
+ height: 100%;
+ width: 100%;
+}
+
+.item .item__content{
+height: 90px;
+padding: 18px;
+border-top: 1px solid #f0f0f0;
+color: #232323;
+background: #cccccc2e;
+}
+
+.item .item__content .item__content__title{
+font-size: 1rem;
+font-weight: 500;
+}
+
+.item .item__content .item__content__price{
+font-size: 1rem;
+}
+
+
+
+@media (min-width: 0px) and (max-width: 600px){
+
+.mt-lg{
+    margin-top: 3rem;
+}
+.item{
+    width: 45%;
+    height: auto;
+}
+
+.item .item__content .item__content__title{
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+.item .item__content .item__content__price{
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+ .item .item__featured_image{
+    height: auto;
+    width: 100%;   
+}
+
+ .item__overlay__container__text{
+      font-size: 0.6rem;
+      text-align: center;
+      color: white;
+      margin-bottom: 0.5rem;
+      padding: 0.4rem;
+ }
 }

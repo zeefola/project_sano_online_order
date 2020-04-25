@@ -26,7 +26,11 @@ const mutations = {
            category: payloadX.category,
            price: payloadX.price,
            quantity: 1,
-           rate: parseInt(payloadX.price)
+           rate: parseInt(payloadX.price),
+
+           unit: payloadX.unit,  //  (e.g kg, ml)
+           unit_rate: payloadX.unit_rate, //( e.g [1,2,3])
+           weight: payloadX.weight,  // (e.g 1)
          }
   
         //@@ Step 2: Assigning variables
@@ -48,6 +52,13 @@ const mutations = {
                  price: parseInt(cart[key].price)+parseInt(payload.price),
                  quantity: parseInt(cart[key].quantity)+1,
                  rate: parseInt(cart[key].rate),
+
+                 
+                unit: cart[key].unit,  //  (e.g kg, ml)
+                unit_rate: cart[key].unit_rate, //( e.g [1,2,3])
+                weight: cart[key].weight,  // (e.g 1)
+
+
                }
   
                //Mutating cart
@@ -82,14 +93,52 @@ const mutations = {
           name: obj.name,
           category: obj.category,
           quantity: parseInt(quantity),
-          price: parseInt(obj_rate)*parseInt(quantity),
+          price: parseInt(obj.weight) *parseInt(obj_rate)*parseInt(quantity),
           rate: parseInt(obj.rate),
+
+          unit: obj.unit,  //  (e.g kg, ml)
+          unit_rate: obj.unit_rate, //( e.g [1,2,3])
+          weight: obj.weight,  // (e.g 1)
+
+
         }
   
         
         state.cart.splice(index,1,result);
   
         
+      },
+
+      MODIFY_CART_ITEM_VIA_WEIGHT(state,payload){
+
+        let index = payload.index;
+        let weight = payload.weight;
+        let cart = state.cart;
+  
+        let obj = cart[index];
+        let obj_rate = obj.rate;
+
+
+        let calculated_price =   parseInt(weight) * parseInt(obj_rate)*parseInt(quantity)
+  
+       
+  
+         let result = {
+          id: obj.id,
+          name: obj.name,
+          category: obj.category,
+          quantity: parseInt(quantity),
+          price: calculated_price,
+          rate: parseInt(obj.rate),
+
+          unit: obj.unit,  //  (e.g kg, ml)
+          unit_rate: obj.unit_rate, //( e.g [1,2,3])
+          weight: parseInt(weight),  // (e.g 1)
+        }
+  
+        
+        state.cart.splice(index,1,result);
+
       },
   
       REMOVE_CART_ITEM(state, id){
