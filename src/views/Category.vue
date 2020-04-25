@@ -55,7 +55,7 @@
                         <div class="item__overlay">
                              <div class="item__overlay__container">
                                   <div class="item__overlay__container__text">
-                                      Eco-friendly products are, the products that do not harm the environ- ment. whether in their equipment production.
+                                      
                                   </div>
                                   <div class="item__overlay__container__button" @click.prevent="add_to_cart(product)">
                                       Add to cart

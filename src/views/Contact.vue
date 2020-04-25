@@ -51,6 +51,24 @@
                                         <p>{{ this.$store.state.config.telephone2 }}</p>
                                         
                                     </div>
+                                    
+                                   
+
+                                </div>
+                            </div><!--  featured-icon-box END -->
+                        </div>
+                        <div class="col-lg-4">
+                            <!--  featured-icon-box --> 
+                            <div class="featured-icon-box left-icon p-15 ttm-bgcolor-white mb-20">
+                                <div class="featured-icon"><!--  featured-icon --> 
+                                    <div class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-sm">
+                                        <i class="flaticon flaticon-phone-call"></i><!--  ttm-icon --> 
+                                    </div>
+                                </div>
+                                <div class="featured-content"><!--  featured-content -->
+                                    <div class="featured-title"><!--  featured-title -->
+                                        <h5>Phone</h5>
+                                    </div>
                                     <div class="featured-desc"><!--  featured-desc -->
                                         <p>Ibadan</p>
                                         
@@ -63,15 +81,32 @@
                                         <p>{{ this.$store.state.config.telephone4 }}</p>
                                         
                                     </div>
+                                    
+                                   
+
+                                </div>
+                            </div><!--  featured-icon-box END -->
+                        </div>
+                        <div class="col-lg-4">
+                            <!--  featured-icon-box --> 
+                            <div class="featured-icon-box left-icon p-15 ttm-bgcolor-white mb-20">
+                                <div class="featured-icon"><!--  featured-icon --> 
+                                    <div class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-sm">
+                                        <i class="flaticon flaticon-phone-call"></i><!--  ttm-icon --> 
+                                    </div>
+                                </div>
+                                <div class="featured-content"><!--  featured-content -->
+                                    <div class="featured-title"><!--  featured-title -->
+                                        <h5>Phone</h5>
+                                    </div>
                                     <div class="featured-desc"><!--  featured-desc -->
-                                        <p>Ogun</p>
+                                        <p>Abeokuta</p>
                                         
                                     </div>
                                     <div class="featured-desc"><!--  featured-desc -->
                                         <p>{{ this.$store.state.config.telephone5 }}</p>
                                         
                                     </div>
-                                   
 
                                 </div>
                             </div><!--  featured-icon-box END -->
