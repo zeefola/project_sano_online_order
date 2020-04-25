@@ -50,9 +50,10 @@
                             <div class="container">
                                 <!-- site-branding -->
                                 <div class="site-branding">
-                                    <a class="home-link" href="#" title="FoodPark" rel="home">
-                                        <img id="logo-img" class="img-center" src="/img/logo.png" alt="logo-img">
-                                    </a>
+                                    <router-link class="home-link" to="/" title="FoodPark" rel="home">
+                                         <img id="logo-img" class="img-center" src="/img/logo.png" alt="logo-img">
+                                    </router-link>
+                                   
                                 </div><!-- site-branding end -->
                                 <!--site-navigation -->
                                 <div id="site-navigation" class="site-navigation">

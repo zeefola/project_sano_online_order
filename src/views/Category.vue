@@ -24,55 +24,34 @@
       <div slot="main-content">
             <!-- sidebar -->
         <div class="sidebar ttm-bgcolor-white clearfix">
-            <div class="container">
+            <div class="container mt-lg" >
                 <!-- row -->
-                <div class="row">
+                <!-- <div class="row"  >
                     <div class="col-lg-12 content-area">
                         <div class="row">
                             <div class="col-md-12">
                                 <p class="products-result-count">Showing {{ items.length }} items  </p>
-                                <form class="products-ordering float-sm-right">
-                                    <!-- <div class="form-group mb-30">
-                                        <select class="form-control border" @change="check($event)" >
-                                            <option  value="all" selected>All Categories</option>
-                                            <option v-for="(category, index) in categories" :key="index+'category'" :value="category">{{ category}}</option>
-                                        </select>
-                                    </div> -->
-                                </form>
                             </div>
                         </div>
-
-                       
-
-
-               
-                       
                     </div>
-                </div><!-- row end -->
+                </div> -->
+                <!-- row end -->
 
 
-                 
-                  <div class="flex-container">
+                  <!-- if subcategories length is less than 1 -->
+                <div class="flex-container" v-if="this.$store.state.category.sub_categories.length < 1" style="padding: 0.5rem!important" >
                     <div class="item"  v-for="(product, index) in items" :key="index+'items'">
                         <div class="item__featured_image">
                             <img :src="product.featured_image">
-
-                           
                         </div>
-                         
-
                         <div class="item__content">
                             <div class="item__content__title">
                                 {{ product.name }}
                             </div>
-
                             <div class="item__content__price">
                                 &#8358; {{ product.price | number_format }}
                             </div>
-
-
                         </div>
-
                         <div class="item__overlay">
                              <div class="item__overlay__container">
                                   <div class="item__overlay__container__button" @click.prevent="add_to_cart(product)">
@@ -80,11 +59,54 @@
                                   </div>
                              </div>
                          </div>
-                        
-                    </div>
-
-                        
+                    </div> 
                   </div>
+
+
+
+
+                
+
+
+                 
+                  <!-- if subcategories length is greater than 0 -->
+                 
+                <div  v-if="this.$store.state.category.sub_categories.length > 0" style="padding: 0.5rem!important">
+                <div v-for="(sub_category, index) in this.$store.state.category.sub_categories" :key="index+sub_category">
+                  <div class="section-title clearfix " >
+                    <div class="title-header">
+                        <h5>{{ name.replace(/-/g,' ').toUpperCase() }} </h5>
+                        <h3 class="singel_product_title">{{ sub_category.toUpperCase()  }}</h3>
+                    </div>
+                    <div class="heading-seperator" >
+                        <span></span>
+                    </div>
+                  </div>
+
+                  <div class="flex-container">
+                    <div class="item"  v-for="(product, index) in  getItemsViaSubcategory(sub_category)  " :key="index+'items'">
+                        <div class="item__featured_image">
+                            <img :src="product.featured_image">
+                        </div>
+                        <div class="item__content">
+                            <div class="item__content__title">
+                                {{ product.name }}
+                            </div>
+                            <div class="item__content__price">
+                                &#8358; {{ product.price | number_format }}
+                            </div>
+                        </div>
+                        <div class="item__overlay">
+                             <div class="item__overlay__container">
+                                  <div class="item__overlay__container__button" @click.prevent="add_to_cart(product)">
+                                      Add to cart
+                                  </div>
+                             </div>
+                         </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
                 
 
 
@@ -103,7 +125,7 @@ import BreadCrumb from "@/components/BreadCrumb.vue";
 import {seo} from "../Repositories/seo.js";
 import { pick } from "../Repositories/pick"
 import { vuesax } from "../Repositories/vuesax"
-import { mapState, mapMutations, mapActions } from "vuex"
+import { mapState, mapGetters, mapMutations, mapActions } from "vuex"
 
 
 
@@ -129,6 +151,13 @@ export default {
           'sub_categories',
           ]
         ),
+
+        ...mapGetters(
+            'category',
+            [
+              'getItemsViaSubcategory'
+            ]
+        )
 
 
 
@@ -181,11 +210,17 @@ export default {
     }
 
 
+    .mt-lg{
+            margin-top: 7rem;
+    }
+
 
     .flex-container{
         display: flex;
         flex-flow: row wrap;
-        justify-content: center;
+        justify-content: flex-start;
+        margin-bottom: 5rem;
+        /* padding: 0.5rem; */
         
     }
 
@@ -275,6 +310,9 @@ export default {
 
 
     @media (min-width: 0px) and (max-width: 600px){
+        .mt-lg{
+            margin-top: 3rem;
+        }
         .item{
             width: 45%;
             height: auto;

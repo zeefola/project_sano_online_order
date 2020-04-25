@@ -7,10 +7,6 @@ const state = {
 }
 const getters = { 
 
-    
-
-    
-
     // getItemsByCategory: (state, getters, rootState, rootGetters) => (category) => {
     //     let products = rootState.shop.products;
 
@@ -18,6 +14,17 @@ const getters = {
     //         return  product.category === category
     //     });
     // },
+
+    getItemsViaSubcategory: (state) => (sub_category) => {
+        //console.log(state)
+        return state.items.filter(function(item){
+           
+            if(item.sub_category){
+                return item.sub_category.toLowerCase() === sub_category.toLowerCase()
+            }
+           
+        });
+    }
 
 
 }
@@ -38,7 +45,10 @@ const mutations = {
         let obj = state.items;
         for (var key in obj) {
           if (obj.hasOwnProperty(key)) {
-              sub_categories.push(obj[key].sub_category)
+              if(obj[key].sub_category){
+                sub_categories.push(obj[key].sub_category)
+              }
+              
           }
         }
         state.sub_categories = Array.from(new Set(sub_categories))
@@ -56,9 +66,8 @@ const actions = {
             return  product.category.toLowerCase() === category.toLowerCase()  
         });
 
-        console.log(items)
-
         commit('UPDATE_ITEMS', items);
+        commit('UPDATE_ITEM_SUB_CATEGORIES')
         return true;
     },
 
