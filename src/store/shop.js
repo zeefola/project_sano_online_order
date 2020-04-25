@@ -466,7 +466,7 @@ const state = {
             id: '38',
             name: 'Picante Laps',
             price: ' 2300',
-            featured_image: ' ',
+            featured_image: '/img/laps.png',
             category : 'fish & meat',
             sub_category : 'ready-to-eat',
             description: 'Chicken laps with spiced cuisine',
@@ -556,7 +556,7 @@ const state = {
         {
             id: '2',
             name: 'Staples & Vegetables',
-            featured_image: '/img/veg.png',
+            featured_image: '/img/staples.png',
             description: 'A wide offering of essential foods cultivated and processed in the best conditions.',
         },
 
