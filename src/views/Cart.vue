@@ -67,10 +67,10 @@
                                             <td class="product-quantity" data-title="Quantity">
                                                 <div class="quantity">
 
-                                                    <select class="form-control iform-control" @change="modifyCartViaWeight($event,index)" v-if="item.unit_rate.length > 0">
+                                                    <!-- <select class="form-control iform-control" @change="modifyCartViaWeight($event,index)" v-if="item.unit_rate.length > 0">
                                                         <option  v-for="(unitX, index) in item.unit_rate" :key="index+'unitX'" :value="unitX"> {{ unitX+' '+item.unit }}</option>
                                                     
-                                                    </select>
+                                                    </select> -->
                                                     <input type="number" class="product-quantity____input" @change="modifyCart($event,index)"  :value="item.quantity" min="1" title="Qty">
                                                 </div>
                                             </td>

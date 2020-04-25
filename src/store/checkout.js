@@ -43,9 +43,13 @@ const actions = {
             .post(
                 "https://www.agropark.com.ng/api/v1/section/sano_customer_order_placement",value
             );
+
+            console.log(response)
            
             return await response;
         }catch(error){
+
+            console.log(error)
             return await error.response;
         } 
   

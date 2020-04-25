@@ -189,6 +189,8 @@ export default {
           let key = { key: this.API_KEY };
           if(type == 'PLACE_ORDER'){
               this.$store.dispatch('checkout/place_order',key).then((response) => {
+
+                  console.log(response);
                  
                 /** If response status is 200 */
                 if(response.status == 200){
