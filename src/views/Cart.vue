@@ -52,7 +52,7 @@
                                             </td>
                                            
                                             <td class="product-name" data-title="Product">
-                                                <a href="product-details.html">{{item.name}}</a>
+                                                <a href="#">{{item.name}}</a>
 
                                                 <select class="form-control iform-control" @change="modifyCartViaWeight($event,index)" v-if="item.unit_rate.length > 0">
                                                     <option  v-for="(unitX, index) in item.unit_rate" :key="index+'unitX'" :value="unitX"> {{ unitX+' '+item.unit }}</option>
@@ -66,6 +66,11 @@
                                             </td>
                                             <td class="product-quantity" data-title="Quantity">
                                                 <div class="quantity">
+
+                                                    <select class="form-control iform-control" @change="modifyCartViaWeight($event,index)" v-if="item.unit_rate.length > 0">
+                                                        <option  v-for="(unitX, index) in item.unit_rate" :key="index+'unitX'" :value="unitX"> {{ unitX+' '+item.unit }}</option>
+                                                    
+                                                    </select>
                                                     <input type="number" class="product-quantity____input" @change="modifyCart($event,index)"  :value="item.quantity" min="1" title="Qty">
                                                 </div>
                                             </td>
