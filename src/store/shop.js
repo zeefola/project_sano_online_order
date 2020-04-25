@@ -73,7 +73,7 @@ const state = {
             id: '6',
             name: 'Chicken Laps',
             price: '1200',
-            featured_image: '',
+            featured_image: '/img/lap.jpg',
             category : 'fish & meat',
             sub_category : 'fresh',
             description: ' ',
