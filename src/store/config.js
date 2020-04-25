@@ -5,7 +5,10 @@ const state = {
     app_name: 'Food Park',
     email: 'enquiry@foodpark.ng',
     telephone1: '+234 906 282 2258',
-    telephone2: '+234 904 604 0991',
+    telephone2: '+234 904 604 0991', // Lagos
+    telephone3: '+234 906 243 1189',
+    telephone4: '+234 904 300 8269', // Ibadan
+    telephone5: '+234 814 308 8123', // Abeokuta
     address: '18 Udi street, Wema Terrace, Osborne Foreshore, Ikoyi',
     facebook: ' https://www.facebook.com/Foodpark-108913344131907/ ',
     twitter: '',

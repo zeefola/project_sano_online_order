@@ -40,6 +40,10 @@
                                         <h5>Phone</h5>
                                     </div>
                                     <div class="featured-desc"><!--  featured-desc -->
+                                        <p>Lagos</p>
+                                        
+                                    </div>
+                                    <div class="featured-desc"><!--  featured-desc -->
                                         <p>{{ this.$store.state.config.telephone1 }}</p>
                                         
                                     </div>
@@ -47,6 +51,28 @@
                                         <p>{{ this.$store.state.config.telephone2 }}</p>
                                         
                                     </div>
+                                    <div class="featured-desc"><!--  featured-desc -->
+                                        <p>Ibadan</p>
+                                        
+                                    </div>
+                                    <div class="featured-desc"><!--  featured-desc -->
+                                        <p>{{ this.$store.state.config.telephone3 }}</p>
+                                        
+                                    </div>
+                                    <div class="featured-desc"><!--  featured-desc -->
+                                        <p>{{ this.$store.state.config.telephone4 }}</p>
+                                        
+                                    </div>
+                                    <div class="featured-desc"><!--  featured-desc -->
+                                        <p>Ogun</p>
+                                        
+                                    </div>
+                                    <div class="featured-desc"><!--  featured-desc -->
+                                        <p>{{ this.$store.state.config.telephone5 }}</p>
+                                        
+                                    </div>
+                                   
+
                                 </div>
                             </div><!--  featured-icon-box END -->
                         </div>
