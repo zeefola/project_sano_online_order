@@ -54,10 +54,9 @@
                                             <td class="product-name" data-title="Product">
                                                 <a href="product-details.html">{{item.name}}</a>
 
-                                                <select class="form-control" @change="modifyCartViaWeight($event,index)">
-                                                    <option value="">1.5</option>
-                                                    <option value="">1.6</option>
-                                                    <option value="">1.7</option>
+                                                <select class="form-control iform-control" @change="modifyCartViaWeight($event,index)" v-if="item.unit_rate.length > 0">
+                                                    <option  v-for="(unitX, index) in item.unit_rate" :key="index+'unitX'" :value="unitX"> {{ unitX+' '+item.unit }}</option>
+                                                    
                                                 </select>
                                             </td>
                                             <td class="product-mainprice" data-title="Price">
@@ -209,6 +208,20 @@ export default {
 .product-remove,
 .product-remove a{
     cursor: pointer;
+}
+
+.iform-control{
+    display: inline-block;
+
+outline: 1px solid black;
+
+width: 5rem;
+
+height: 2rem;
+
+padding: 0px;
+
+margin-left: 1rem;
 }
 
 

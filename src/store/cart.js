@@ -93,7 +93,7 @@ const mutations = {
           name: obj.name,
           category: obj.category,
           quantity: parseInt(quantity),
-          price: parseInt(obj.weight) *parseInt(obj_rate)*parseInt(quantity),
+          price: parseFloat(obj.weight) *parseInt(obj_rate)*parseInt(quantity),
           rate: parseInt(obj.rate),
 
           unit: obj.unit,  //  (e.g kg, ml)
@@ -119,7 +119,12 @@ const mutations = {
         let obj_rate = obj.rate;
 
 
-        let calculated_price =   parseInt(weight) * parseInt(obj_rate)*parseInt(quantity)
+        let calculated_price =   parseFloat(weight) * parseInt(obj_rate)*parseInt(obj.quantity)
+
+        // console.log( parseFloat(weight),'weight')
+        // console.log( parseInt(obj_rate),'rate')
+
+        // console.log(parseInt(obj.quantity),'quantity')
   
        
   
@@ -127,13 +132,13 @@ const mutations = {
           id: obj.id,
           name: obj.name,
           category: obj.category,
-          quantity: parseInt(quantity),
+          quantity: obj.quantity,
           price: calculated_price,
           rate: parseInt(obj.rate),
 
           unit: obj.unit,  //  (e.g kg, ml)
           unit_rate: obj.unit_rate, //( e.g [1,2,3])
-          weight: parseInt(weight),  // (e.g 1)
+          weight: parseFloat(weight),  // (e.g 1)
         }
   
         
