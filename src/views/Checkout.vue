@@ -54,7 +54,11 @@
                                             </thead>
                                             <tbody>
                                                 <tr class="cart_item" v-for="(item, index) in cart" :key="index+'item'">
-                                                    <td class="product-name">{{ item.name }} &nbsp;
+                                                    <td class="product-name">{{ item.name }}  
+                                                         <span v-if="item.weight">
+                                                             ( {{ item.weight+' '+ item.unit }} )
+                                                         </span>
+                                                         &nbsp;
                                                         <strong class="product-quantity">× {{ item.quantity}}</strong>
                                                     </td>
                                                     <td class="product-total">
