@@ -85,6 +85,14 @@ const mutations = {
   
         let obj = cart[index];
         let obj_rate = obj.rate;
+        let calculated_price = 0;
+
+
+        if(obj.weight){
+           calculated_price = parseFloat(obj.weight) *parseInt(obj_rate)*parseInt(quantity);
+        }else{
+            calculated_price = parseInt(obj_rate)*parseInt(quantity);
+        }
   
        
   
@@ -93,7 +101,7 @@ const mutations = {
           name: obj.name,
           category: obj.category,
           quantity: parseInt(quantity),
-          price: parseFloat(obj.weight) *parseInt(obj_rate)*parseInt(quantity),
+          price: calculated_price,
           rate: parseInt(obj.rate),
 
           unit: obj.unit,  //  (e.g kg, ml)
@@ -117,15 +125,16 @@ const mutations = {
   
         let obj = cart[index];
         let obj_rate = obj.rate;
+        let calculated_price = 0;
 
 
-        let calculated_price =   parseFloat(weight) * parseInt(obj_rate)*parseInt(obj.quantity)
 
-        // console.log( parseFloat(weight),'weight')
-        // console.log( parseInt(obj_rate),'rate')
+        if(weight){
+          calculated_price =  parseFloat(weight) * parseInt(obj_rate)*parseInt(obj.quantity);
+        }else{
+            calculated_price = parseInt(obj_rate)*parseInt(obj.quantity);
+        }
 
-        // console.log(parseInt(obj.quantity),'quantity')
-  
        
   
          let result = {

@@ -65,7 +65,7 @@
                                             </td>
                                             <td class="product-mainprice" data-title="Price">
                                                 <span class="Price-amount">
-                                                    <span class="Price-currencySymbol">&#8358;</span>{{ item.price}}
+                                                    <span class="Price-currencySymbol">&#8358;</span>{{ item.price | number_format}}
                                                 </span>
                                                 
                                             </td>
@@ -179,6 +179,8 @@ export default {
 
       modifyCart(event,index){
           let quantity = event.target.value;
+
+          
 
           if(quantity){
               this.$store.commit('cart/MODIFY_CART_ITEM',{quantity: quantity, index: index});
