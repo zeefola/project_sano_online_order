@@ -56,22 +56,27 @@
 
                                                 <select class="form-control iform-control" @change="modifyCartViaWeight($event,index)" v-if="item.unit_rate.length > 0">
                                                     <option  v-for="(unitX, index) in item.unit_rate" :key="index+'unitX'" :value="unitX"> {{ unitX+' '+item.unit }}</option>
-                                                    
+                             
                                                 </select>
+
+                                                <div class="product-duplicator" title="duplicate item" @click.prevent="DUPLICATE_CART_ITEM(index)"  v-if="item.unit_rate.length > 0">
+                                                      <span class="fa fa-shopping-cart" style="font-size: 0.8rem"></span>
+                                                </div>
                                             </td>
                                             <td class="product-mainprice" data-title="Price">
                                                 <span class="Price-amount">
                                                     <span class="Price-currencySymbol">&#8358;</span>{{ item.price}}
                                                 </span>
+                                                
                                             </td>
                                             <td class="product-quantity" data-title="Quantity">
                                                 <div class="quantity">
 
-                                                    <!-- <select class="form-control iform-control" @change="modifyCartViaWeight($event,index)" v-if="item.unit_rate.length > 0">
-                                                        <option  v-for="(unitX, index) in item.unit_rate" :key="index+'unitX'" :value="unitX"> {{ unitX+' '+item.unit }}</option>
+                                                    <select class="form-control iform-control" style="margin-left: 0rem; margin-top: 0.2rem" @change="modifyCart($event,index)" >
+                                                        <option  v-for="(x, index) in 500" :key="index+'x'" :value="x" :selected="x == item.quantity"> {{ x }}</option>
                                                     
-                                                    </select> -->
-                                                    <input type="number" class="product-quantity____input" @change="modifyCart($event,index)"  :value="item.quantity" min="1" title="Qty">
+                                                    </select>
+                                                   
                                                 </div>
                                             </td>
                                             
@@ -167,7 +172,8 @@ export default {
           'cart',
         [
           'REMOVE_CART_ITEM',
-          'MODIFY_CART_ITEM'
+          'MODIFY_CART_ITEM',
+          'DUPLICATE_CART_ITEM'
       ]
       ),
 
@@ -222,11 +228,23 @@ outline: 1px solid black;
 
 width: 5rem;
 
-height: 2rem;
+height: 1.7rem;
 
 padding: 0px;
 
 margin-left: 1rem;
+}
+
+
+.product-duplicator{
+    display: inline-block;
+    margin-left: 0.6rem;
+    width: auto;
+    border: 1px solid;
+    padding: 3px 6px;
+    color: white;
+    background: green;
+    cursor: pointer;
 }
 
 

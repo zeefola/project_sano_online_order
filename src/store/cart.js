@@ -150,6 +150,14 @@ const mutations = {
         state.cart.splice(id, 1);
       },
 
+      DUPLICATE_CART_ITEM(state,id){
+        let item = state.cart[id];
+
+        console.log(item)
+        state.cart.push(item);
+
+      },
+
 
       
       CLEAR_CART(state){
