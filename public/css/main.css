@@ -2353,11 +2353,13 @@ article.ttm-blog-classic .ttm-blog-classic-content {
 .button-block .prev{
     background: #232323;
     margin-left: 0px;
+    width: 35%;
 }
 
 .button-block .next{
     background: #00A85A;
     margin-right: 0px;
+    width: 60%;
 }
 
 

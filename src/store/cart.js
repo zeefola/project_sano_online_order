@@ -162,7 +162,6 @@ const mutations = {
       DUPLICATE_CART_ITEM(state,id){
         let item = state.cart[id];
 
-        console.log(item)
         state.cart.push(item);
 
       },
@@ -182,6 +181,17 @@ const actions = {
      commit('ADD_TO_CART', payload);
      return true;
   },
+
+  async duplicate_cart_item({commit},payload){
+    commit('DUPLICATE_CART_ITEM', payload);
+    return true;
+  },
+
+  async remove_cart_item({commit},payload){
+    commit('REMOVE_CART_ITEM', payload);
+    return true;
+  }
+
 
 
 

@@ -48,7 +48,14 @@
                                     <tbody>
                                         <tr class="cart_item" v-for="(item, index) in cart" :key="index+'item'">
                                             <td class="product-remove">
-                                                <a @click.prevent="REMOVE_CART_ITEM(index)" class="remove">×</a>
+                                                 <div class="product-remover" title="remove item" @click.prevent="removeCartItem(index)">
+                                                      <span class="fa fa-remove" style="font-size: 0.8rem"></span>
+                                                </div>
+                                               
+
+                                                 <div class="product-duplicator" title="duplicate item" @click.prevent="duplicateCartItem(index)">
+                                                      <span class="fa fa-plus" style="font-size: 0.8rem"></span>
+                                                </div>
                                             </td>
                                            
                                             <td class="product-name" data-title="Product">
@@ -59,9 +66,7 @@
                              
                                                 </select>
 
-                                                <div class="product-duplicator" title="duplicate item" @click.prevent="DUPLICATE_CART_ITEM(index)"  v-if="item.unit_rate.length > 0">
-                                                      <span class="fa fa-shopping-cart" style="font-size: 0.8rem"></span>
-                                                </div>
+                                               
                                             </td>
                                             <td class="product-mainprice" data-title="Price">
                                                 <span class="Price-amount">
@@ -177,6 +182,26 @@ export default {
       ]
       ),
 
+
+      duplicateCartItem(index){
+          let x = this;
+            this.$store.dispatch('cart/duplicate_cart_item',index).then((response) =>{
+              x.showNotif({ type: 'success', position: 'bottom-right', message: 'Product added again to cart'});
+           })
+          
+
+      },
+
+      removeCartItem(index){
+          let x = this;
+         
+            this.$store.dispatch('cart/remove_cart_item',index).then((response) =>{
+              x.showNotif({ type: 'warning', position: 'bottom-right', message: 'Product removed from cart'});
+           })
+          
+
+      },
+
       modifyCart(event,index){
           let quantity = event.target.value;
 
@@ -225,7 +250,6 @@ export default {
 
 .iform-control{
     display: inline-block;
-
 outline: 1px solid black;
 
 width: 5rem;
@@ -245,7 +269,19 @@ margin-left: 1rem;
     border: 1px solid;
     padding: 3px 6px;
     color: white;
-    background: green;
+    background: #00a85a;
+    cursor: pointer;
+}
+
+
+.product-remover{
+    display: inline-block;
+    color: white;
+    background: #a53692;
+    border-radius: 0%;
+    padding: 3px 6px;
+    width: auto;
+    font-size: 1rem;
     cursor: pointer;
 }
 
