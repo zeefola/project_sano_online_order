@@ -1,5 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import createPersistedState from "vuex-persistedstate";
 import shop from "./shop"
 import category from "./category"
 import cart from "./cart"
@@ -12,6 +13,7 @@ import config from "./config"
 Vue.use(Vuex);
 
 export default new Vuex.Store({
+  plugins: [createPersistedState()],
   state: {},
   getters: {},
   

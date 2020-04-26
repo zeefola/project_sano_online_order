@@ -437,7 +437,7 @@
 	    width: 100%;
 	    top: auto;
 	    background-color: #fff;
-	    border-top: 3px solid #d57315;
+	    border-top: 3px solid #00a85a;
 	}
 	#site-header-menu #site-navigation .menu ul.dropdown > li > ul > li.has-submenu > a:after{ content: '\f107'; }
 	#site-header-menu #site-navigation .menu ul.dropdown > li > ul > li.has-submenu > a.active:after{ content: '\f106'; }
