@@ -2110,7 +2110,8 @@ margin-bottom: 5px;
 .ttm-boxes-spacing-15px .ttm-box-col-wrapper {
     padding-right: 15px;
     padding-left: 15px;
-    margin: 0px 0 15px;
+    /* margin: 0px 0 15px; */
+    margin: 0px 0 30px;
 }
 .row.ttm-boxes-spacing-10px {
     margin: 0 0;

@@ -35,7 +35,7 @@
                                 </ul>
                             </div>
                             <ul class="top-contact ttm-highlight-right">
-                                <li><strong><i class="fa fa-phone"></i>Talk To Expert :</strong> <span class="tel-no">{{ this.$store.state.config.telephone1 }}</span></li>
+                                <li><strong><i class="fa fa-phone"></i>Customer Care :</strong> <span class="tel-no">{{ this.$store.state.config.telephone1 }}</span></li>
                             </ul>
                         </div>
                     </div>
