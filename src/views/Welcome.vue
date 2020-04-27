@@ -193,8 +193,8 @@ export default {
 
 .ttm-page-title-row {
     display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     z-index: 11;
 }
 
@@ -202,7 +202,7 @@ export default {
 .ttm-page-title-row {
     position: relative;
     background-image: url(/img/banner.png);
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     filter: grayscale(30%);
