@@ -116,15 +116,15 @@
                             <div class="featured-icon-box left-icon p-15 ttm-bgcolor-white mb-20">
                                 <div class="featured-icon"><!--  featured-icon --> 
                                     <div class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-sm">
-                                        <i class="flaticon flaticon-envelope"></i><!--  ttm-icon --> 
+                                        <i class="flaticon flaticon-placeholder"></i><!--  ttm-icon --> 
                                     </div>
                                 </div>
-                                <div class="featured-content" style="padding-bottom: 27px"><!--  featured-content -->
+                                <div class="featured-content"><!--  featured-content -->
                                     <div class="featured-title"><!--  featured-title -->
-                                        <h5>Email Us</h5>
+                                        <h5>Address</h5>
                                     </div>
                                     <div class="featured-desc"><!--  featured-desc -->
-                                        <p>{{ this.$store.state.config.email }}</p>
+                                        <p>{{ this.$store.state.config.address }}</p>
                                     </div>
                                 </div>
                             </div><!--  featured-icon-box END -->
@@ -142,11 +142,48 @@
                                         <h5>Address</h5>
                                     </div>
                                     <div class="featured-desc"><!--  featured-desc -->
-                                        <p>{{ this.$store.state.config.address }}</p>
+                                        <p>{{ this.$store.state.config.address2 }}</p>
                                     </div>
                                 </div>
                             </div><!--  featured-icon-box END -->
                         </div>
+                        <div class="col-lg-4">
+                            <!--  featured-icon-box --> 
+                            <div class="featured-icon-box left-icon p-15 ttm-bgcolor-white mb-20">
+                                <div class="featured-icon"><!--  featured-icon --> 
+                                    <div class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-sm">
+                                        <i class="flaticon flaticon-placeholder"></i><!--  ttm-icon --> 
+                                    </div>
+                                </div>
+                                <div class="featured-content"><!--  featured-content -->
+                                    <div class="featured-title"><!--  featured-title -->
+                                        <h5>Address</h5>
+                                    </div>
+                                    <div class="featured-desc"><!--  featured-desc -->
+                                        <p>{{ this.$store.state.config.address3 }}</p>
+                                    </div>
+                                </div>
+                            </div><!--  featured-icon-box END -->
+                        </div>
+                        <div class="col-lg-4">
+                            <!--  featured-icon-box --> 
+                            <div class="featured-icon-box left-icon p-15 ttm-bgcolor-white mb-20">
+                                <div class="featured-icon"><!--  featured-icon --> 
+                                    <div class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-sm">
+                                        <i class="flaticon flaticon-envelope"></i><!--  ttm-icon --> 
+                                    </div>
+                                </div>
+                                <div class="featured-content" style="padding-bottom: 27px"><!--  featured-content -->
+                                    <div class="featured-title"><!--  featured-title -->
+                                        <h5>Email Us</h5>
+                                    </div>
+                                    <div class="featured-desc"><!--  featured-desc -->
+                                        <p>{{ this.$store.state.config.email }}</p>
+                                    </div>
+                                </div>
+                            </div><!--  featured-icon-box END -->
+                        </div>
+                        
                     </div><!-- row end -->
                 </div>
             </section>

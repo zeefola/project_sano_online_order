@@ -189,7 +189,7 @@ const state = {
 
         {
             id: '15',
-            name: 'Garri(1kg)',
+            name: 'Garri (1kg)',
             price: '300',
             featured_image: '/img/24.png',
             category : 'staples & vegetables',
@@ -353,7 +353,7 @@ const state = {
         },
         {
             id: '29',
-            name: 'Hand Sanitizer(40ml)',
+            name: 'Hand Sanitizer (40ml)',
             price: '300',
             featured_image: '/img/sm.png',
             category : 'household materials',
@@ -365,7 +365,7 @@ const state = {
         },
         {
             id: '30',
-            name: 'Hand Sanitizer(250ml)',
+            name: 'Hand Sanitizer (250ml)',
             price: '900',
             featured_image: '/img/big.png',
             category : 'household materials',
@@ -508,7 +508,7 @@ const state = {
             featured_image: '/img/snaill.png',
             category : 'fish & meat',
             sub_category : 'ready-to-eat',
-            description: 'Spiced grilled snails. NOTE: 24HRS DELIVERY PERIOD',
+            description: 'Spiced grilled snails. \n\n NOTE: 24HRS DELIVERY PERIOD',
             unit: '',
             unit_rate: [],
             weight: '',
@@ -542,9 +542,9 @@ const state = {
         },
         {
             id: '44',
-            name: 'Garri(2kg)',
+            name: 'Garri (2kg)',
             price: '550',
-            featured_image: ' ',
+            featured_image: '/img/gabig.png',
             category : 'staples & vegetables',
             description: ' ',
             unit: '',
@@ -554,7 +554,7 @@ const state = {
         },
         {
             id: '45',
-            name: 'OFSP Garri(1kg)',
+            name: 'OFSP Garri (1kg)',
             price: '500',
             featured_image: ' ',
             category : 'staples & vegetables',
@@ -566,7 +566,7 @@ const state = {
         },
         {
             id: '46',
-            name: 'OFSP Garri(2kg)',
+            name: 'OFSP Garri (2kg)',
             price: '1000',
             featured_image: ' ',
             category : 'staples & vegetables',
