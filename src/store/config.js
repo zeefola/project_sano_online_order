@@ -10,6 +10,8 @@ const state = {
     telephone4: '+234 904 300 8269', // Ibadan
     telephone5: '+234 814 308 8123', // Abeokuta
     address: '20, Oba Ogunnusi Road, Akiode Bus-stop, Ojodu Berger, Lagos',
+    address2: '3, Moremi Crescent, Off Aare Avenue, New Bodija, Ibadan',
+    address3: 'No 52, Omida Shopping Complex, Ibara, Abeokuta',
     facebook: ' https://www.facebook.com/Foodpark-108913344131907/ ',
     twitter: '',
     instagram: 'https://www.instagram.com/foodpark__/',
