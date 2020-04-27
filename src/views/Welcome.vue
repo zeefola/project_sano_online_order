@@ -183,4 +183,43 @@ export default {
    .mine{
     margin : 0 0 8px;
     }
+
+   
+
+
+    
+         
+
+
+.ttm-page-title-row {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 11;
+}
+
+
+.ttm-page-title-row {
+    position: relative;
+    background-image: url(/img/banner.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(30%);
+    padding-top: 20px;
+}
+
+
+@media (min-width: 0px) and (max-width: 600px){
+
+    .ttm-page-title-row{
+        background-position-x: 15%;
+        background-position-y: 1%;
+    }
+}
+
+
+.breadcrumb-wrapper span{
+    color: white
+}
 </style>

@@ -556,7 +556,7 @@ const state = {
             id: '45',
             name: 'OFSP Garri (1kg)',
             price: '500',
-            featured_image: ' ',
+            featured_image: '/img/ofsp 1.png',
             category : 'staples & vegetables',
             description: ' ',
             unit: '',
@@ -568,7 +568,7 @@ const state = {
             id: '46',
             name: 'OFSP Garri (2kg)',
             price: '1000',
-            featured_image: ' ',
+            featured_image: '/img/ofsp 2.png',
             category : 'staples & vegetables',
             description: ' ',
             unit: '',
@@ -585,7 +585,7 @@ const state = {
         {
             id: '1',
             name: 'Fish & Meat',
-            featured_image: '/img/meat.png',
+            featured_image: '/img/ch.png',
             description: 'Organic animal protein which improves your diet needs and food safety.'
         },
 
