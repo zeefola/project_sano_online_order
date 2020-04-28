@@ -20,7 +20,7 @@
       <div slot="main-content">
 
 
-           <section class="ttm-row about-section clearfix" style="padding-bottom:40px;">
+           <section class="ttm-row about-section clearfix" style="padding-bottom:0px; padding-top: 70px;">
                 <div class="container">
                     <div class="row"><!-- row -->
                         <div class="col-lg-4">
@@ -34,7 +34,7 @@
                                                     <i class="flaticon flaticon-cow-3"></i> -->
                                                     <!--  ttm-icon --> 
                                                 <!-- </div> -->
-                                                <h6 style="margin-top:40px;">Organic Chicken</h6>
+                                               <router-link tag="a" to="/category/fish-&-meat"> <h6 style="margin-top:40px;">Organic Chicken</h6> </router-link>
                                             </div>
                                         </div>
                         </div>
@@ -81,15 +81,17 @@
               <!-- team-section -->
             <section class="ttm-row second-team-section clearfix" style="margin-top: 0px; padding-top: 40px">
                 <div class="container">
-                    <div class="row"><!-- row -->
-                        <div class="col-lg-9 col-xl-10 col-md-9">
+                    <!-- <div class="row"> -->
+                        <!-- row -->
+                        <!-- <div class="col-lg-9 col-xl-10 col-md-9"> -->
                             <!-- section-title -->
-                            <div class="section-title style2 clearfix">
+                            <!-- <div class="section-title style2 clearfix">
                                 <div class="title-header">
                                     <h5>Product Categories</h5>
                                 </div>
-                            </div><!-- section-title end -->
-                        </div>
+                            </div> -->
+                            <!-- section-title end -->
+                        <!-- </div>
                         <div class="col-lg-3 col-xl-2 col-md-3">
                             <div class="text-md-right">
                                 
@@ -97,7 +99,7 @@
                                 
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- row end -->
                     <!-- row -->
                     <div class="row slick_slider ttm-boxes-spacing-15px" data-slick='{"slidesToShow": 3, "slidesToScroll": 3, "dots":false, "arrows":false, "autoplay":false, "infinite":true, "centerMode":false}'>

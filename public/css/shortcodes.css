@@ -2275,8 +2275,8 @@ margin-bottom: 5px;
     padding-bottom: 0 !important;
 }
 .sidebar .content-area{
-    padding-top: 65px;
-    padding-bottom: 85px;
+    padding-top: 25px;
+    padding-bottom: 0px;
 }
 .sidebar div.widget-area{
     position: relative;
