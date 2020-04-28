@@ -2389,7 +2389,7 @@ article.ttm-blog-classic .ttm-blog-classic-content {
 
 
 .mt-lg{
-    margin-top: 7rem;
+    margin-top: 1.5rem;
 }
 
 
@@ -2499,7 +2499,7 @@ font-size: 1rem;
 @media (min-width: 0px) and (max-width: 600px){
 
 .mt-lg{
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 .item{
     width: 45%;

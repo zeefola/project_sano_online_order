@@ -246,7 +246,7 @@ const state = {
         {
             id: '20',
             name: 'Turmeric',
-            price: '350',
+            price: '300',
             featured_image: '/img/35.png',
             category : 'spices',
             description: ' ',
@@ -270,7 +270,7 @@ const state = {
         {
             id: '22',
             name: 'Sweet basil',
-            price: '500',
+            price: '300',
             featured_image: '/img/36.png',
             category : 'spices',
             description: ' ',
@@ -282,7 +282,7 @@ const state = {
         {
             id: '23',
             name: 'Tropical basil',
-            price: '350',
+            price: '300',
             featured_image: '/img/37.png',
             category : 'spices',
             description: ' ',
