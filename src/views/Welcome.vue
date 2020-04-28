@@ -11,6 +11,17 @@
                 <div class="breadcrumb-wrapper" style="text-align: center">
                     <span class="ttm-textcolor-skincolor"> &nbsp;&nbsp; {{ this.$store.state.config.tagline }} </span>
                 </div>  
+
+                <div class="about-overlay-02 center-overlay-style1 overlay-improved">
+                     <router-link tag="a" to="/products"> 
+                    <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-md">
+                        <i class="flaticon flaticon-cow-3"></i>
+                        <!--  ttm-icon --> 
+                    </div>
+                   <h6>Shop Now </h6>
+
+                    </router-link>
+                </div>
             </div>
         </app-breadcrumb>
     </div>
@@ -81,26 +92,24 @@
               <!-- team-section -->
             <section class="ttm-row second-team-section clearfix" style="margin-top: 0px; padding-top: 40px">
                 <div class="container">
-                    <!-- <div class="row"> -->
-                        <!-- row -->
-                        <!-- <div class="col-lg-9 col-xl-10 col-md-9"> -->
+                    <div class="row"> 
+                    
+                        <div class="col-lg-12 col-xl-12 col-md-12">
                             <!-- section-title -->
-                            <!-- <div class="section-title style2 clearfix">
-                                <div class="title-header">
-                                    <h5>Product Categories</h5>
-                                </div>
-                            </div> -->
+                             <div class="section-title clearfix">
+                                    <div class="title-header">
+                                        <!-- <h5>ABOUT FOOD PARK</h5> -->
+                                        <h2 class="title" style="font-size: 1.5rem">Product Categories</h2>
+                                    </div>
+                                    <div class="heading-seperator">
+                                        <span></span>
+                                    </div>
+                                </div><!-- section title end -->
                             <!-- section-title end -->
-                        <!-- </div>
-                        <div class="col-lg-3 col-xl-2 col-md-3">
-                            <div class="text-md-right">
-                                
-                                <router-link class="ttm-btn ttm-btn-size-md ttm-btn-style-border ttm-btn-color-darkgrey mb-40" to='/products' > <a> view more </a></router-link>
-                                
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- row end -->
+                         </div>
+          
+                    </div>
+                   
                     <!-- row -->
                     <div class="row slick_slider ttm-boxes-spacing-15px" data-slick='{"slidesToShow": 3, "slidesToScroll": 3, "dots":false, "arrows":false, "autoplay":false, "infinite":true, "centerMode":false}'>
                         
@@ -223,5 +232,20 @@ export default {
 
 .breadcrumb-wrapper span{
     color: white
+}
+
+
+.overlay-improved{
+    position: absolute;
+top: -10%;
+right: 0%;
+left:80%
+}
+
+
+@media (min-width: 0px) and (max-width: 600px){
+    .overlay-improved{
+        display: none;
+    }
 }
 </style>
