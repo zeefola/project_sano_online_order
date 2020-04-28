@@ -102,7 +102,7 @@
                                                 </li>
                                             </ul> -->
                                             <div class="checkout-form place-order clearfix">
-                                                <p class="payment_policy">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <a href="#" class="ttm-textcolor-skincolor">Return policy</a> </p>
+                                                <p class="payment_policy">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes.<a href="#" class="ttm-textcolor-skincolor"> 24hrs return policy</a> </p>
                                                 <span class="pull-right float-right">
 
                                                     <router-link class="button margin-sm ttm-btn ttm-btn-size-sm ttm-btn-bgcolor-darkgrey bg-dark" tag="a" to='/shipping'><a>Back</a></router-link>
