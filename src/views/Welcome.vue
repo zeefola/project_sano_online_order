@@ -46,7 +46,7 @@
                            <div class="ml_130 res-991-ml-0">
                                             <!-- ttm_single_image-wrapper -->
                                             <div class="ttm_single_image-wrapper after-border style1 position-relative">
-                                                <img class="img-fluid" src="/img/chic.jpg" title="single-img-three" alt="single-img-three">
+                                                <img class="img-fluid" src="/img/brief.png" title="single-img-three" alt="single-img-three">
                                             </div><!-- ttm_single_image-wrapper end -->
                                             <div class="about-overlay-02 center-overlay-style1">
                                                 <!-- <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-md">
@@ -220,7 +220,7 @@ export default {
 
 .ttm-page-title-row {
     position: relative;
-    background-image: url(/img/banner.png);
+    background-image: url(/img/homebanner.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
