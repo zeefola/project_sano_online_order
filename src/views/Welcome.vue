@@ -31,12 +31,17 @@
       <div slot="main-content">
 
           <div class="shopping-bar">
+               <div class="shopping-bar__button">
+                   <router-link to="/products">
+                     Shop Now
+                  </router-link>
+                 
+              </div>
               <div class="shopping-bar__content">
-                  Checkout list of products by us
+                 
+                  Experience best shopping experience 
               </div>
-              <div class="shopping-bar__button">
-                  Shop Now
-              </div>
+             
           </div>
 
            <section class="ttm-row about-section clearfix" style="padding-bottom:0px; padding-top: 70px;">
@@ -245,9 +250,13 @@ export default {
 
 .overlay-improved{
     position: absolute;
-top: -10%;
-right: 0%;
-left:80%
+    top: -10%;
+    right: 0%;
+    left:80%
+}
+
+.shopping-bar{
+    display: none;
 }
 
 
@@ -257,43 +266,54 @@ left:80%
     }
 
     .shopping-bar{
-        display: inline-block;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
         position: fixed;
         width: 100vw;
-        height: 3.5rem;
+        height: 3rem;
         background: white;
         z-index: 1900;
         bottom: 0;
         left: 0;
-        /* border: 1px solid black; */
         padding: 5px;
         box-shadow: 2px 2px 8px #000000c2;
     }
 
 
-    .shopping-bar div{
-        display: inline-block;
-        height: 100%;
-    }
-
-
+    
     .shopping-bar__content{
-        width: 65%;
-        visibility: hidden;
-        
+        text-align: center;
+        margin-left: 0.4rem;
+        font-size: 0.8rem;
+        font-style: italic;
+        line-height: 2.5;
     }
+
+
 
     .shopping-bar__button{
-        border: 1px solid green;
+        margin-left: 0rem;
         color: white;
         background: green;
-        width: 30%;
-        padding: 10px 16px;
-        font-size: 0.85rem;
+        width: auto;
+        padding: 0.4rem 1.0rem;
+        font-size: 0.7rem;
         text-align: center;
-        vertical-align: middle;
+        cursor: pointer;
+        border-radius: 5px;
         
         
+        
+    }
+
+    .shopping-bar__button a{
+        color: white;
+    }
+
+    .shopping-bar__button:hover,
+    .shopping-bar__button:active{
+        background: #00a85a;
     }
 }
 </style>
