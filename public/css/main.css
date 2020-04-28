@@ -1860,9 +1860,12 @@ ul.contact-widget-wrapper li i {
     Page-Title-Row
 ------------------------*/
 
-.ttm-page-title-row { 
+.ttm-page-title-row {
+filter: grayscale(30%);
+padding-top: 20px;
+
     position: relative;
-    background-image: url(/img/ban.jpg);
+    background-image: url(/img/banner.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1870,9 +1873,18 @@ ul.contact-widget-wrapper li i {
 div.ttm-page-title-row > .ttm-bg-layer { background-color: rgba(24,35,51,0.85); }
 .ttm-page-title-row { 
     display: block;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    /* padding-top: 80px;
+    padding-bottom: 80px; */
     z-index: 11;
+}
+@media (min-width: 0px) and (max-width: 600px){
+
+    .ttm-page-title-row{
+        background-position-x: 88%;
+        background-position-y: 1%;
+    }
 }
 .title-box .page-title-heading h1 {
     text-transform: capitalize;
@@ -1889,6 +1901,7 @@ div.ttm-page-title-row > .ttm-bg-layer { background-color: rgba(24,35,51,0.85); 
     text-transform: capitalize;
     font-size: 16px;
     line-height: 25px;
+    color: white;
 }
 .breadcrumb-wrapper span a{color: #fff;}
 /* ===============================================
