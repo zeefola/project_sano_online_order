@@ -30,6 +30,14 @@
 
       <div slot="main-content">
 
+          <div class="shopping-bar">
+              <div class="shopping-bar__content">
+                  Checkout list of products by us
+              </div>
+              <div class="shopping-bar__button">
+                  Shop Now
+              </div>
+          </div>
 
            <section class="ttm-row about-section clearfix" style="padding-bottom:0px; padding-top: 70px;">
                 <div class="container">
@@ -246,6 +254,46 @@ left:80%
 @media (min-width: 0px) and (max-width: 600px){
     .overlay-improved{
         display: none;
+    }
+
+    .shopping-bar{
+        display: inline-block;
+        position: fixed;
+        width: 100vw;
+        height: 3.5rem;
+        background: white;
+        z-index: 1900;
+        bottom: 0;
+        left: 0;
+        /* border: 1px solid black; */
+        padding: 5px;
+        box-shadow: 2px 2px 8px #000000c2;
+    }
+
+
+    .shopping-bar div{
+        display: inline-block;
+        height: 100%;
+    }
+
+
+    .shopping-bar__content{
+        width: 65%;
+        visibility: hidden;
+        
+    }
+
+    .shopping-bar__button{
+        border: 1px solid green;
+        color: white;
+        background: green;
+        width: 30%;
+        padding: 10px 16px;
+        font-size: 0.85rem;
+        text-align: center;
+        vertical-align: middle;
+        
+        
     }
 }
 </style>
