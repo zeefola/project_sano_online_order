@@ -199,7 +199,9 @@ export default {
                 /** If response status is 200 */
                 if(response.status == 200){
 
-                    x.showNotif({type: 'successLong', message: response.data.message });
+                    // let message = response.data.message;
+
+                    x.showNotif({type: 'successLong', message: 'Order submitted, kindly check your mail inbox or spam folder for payment instruction' });
 
                     //clear all input field
                     x.$store.commit('cart/CLEAR_CART');

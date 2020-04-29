@@ -250,9 +250,9 @@ export default {
       //SEO
       this.seoMetaData('Payment-details', ' ');
 
-      //Middleware 
-      this.cartMiddleware();
-      this.shippingMiddleware();
+    //   //Middleware 
+    //   this.cartMiddleware();
+    //   this.shippingMiddleware();
       this.display("collapseTwoData");
   }
 
