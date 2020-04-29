@@ -194,8 +194,6 @@ export default {
           if(type == 'PLACE_ORDER'){
               this.$store.dispatch('checkout/place_order',key).then((response) => {
 
-                  console.log(response);
-                 
                 /** If response status is 200 */
                 if(response.status == 200){
 
@@ -203,7 +201,9 @@ export default {
 
                     x.showNotif({type: 'successLong', message: 'Order submitted, kindly check your mail inbox or spam folder for payment instruction' });
 
-                    x.$store.commit('paymentdetails/UPDATE_PAYMENT_INSTRUCTION',message)
+
+                    x.$store.commit('paymentdetails/UPDATE_PAYMENT_INSTRUCTION',message);
+                    
                     //clear all input field
                     x.$store.commit('cart/CLEAR_CART');
 

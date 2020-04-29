@@ -143,7 +143,7 @@
                                             </div>
 
                                             <div class="col-sm-12">
-                                                <p class="mb-0 note" > Kindly call <span class="highlight">{{ payment_instruction.outlet_telephone }} </span> to confirm payment.</p>
+                                                <p class="mb-0 note" > Kindly call <span class="highlight">{{ payment_instruction.outlet_telephone }} </span> to confirm  your payment.</p>
                                             </div>
 
                                             
