@@ -24,6 +24,18 @@ export const middleware ={
             }
       }, 
 
+      paymentDetailsMiddleware(){
+        let x = this;
+        let cartLength = this.$store.state.cart.cart_backup.length;
+
+        if(cartLength < 1){
+             x.$router.push('/checkout').then(() => {
+                 x.showNotif({ type: 'warning', position: 'bottom-right', message: 'Ooops!! Something went wrong'});
+             })
+             
+        }
+      },
+
       shippingMiddleware(){
          let x = this;
          let customer_details = this.$store.state.shipping.customer_details;

@@ -199,14 +199,15 @@ export default {
                 /** If response status is 200 */
                 if(response.status == 200){
 
-                    // let message = response.data.message;
+                    let message = response.data.message;
 
                     x.showNotif({type: 'successLong', message: 'Order submitted, kindly check your mail inbox or spam folder for payment instruction' });
 
+                    x.$store.commit('paymentdetails/UPDATE_PAYMENT_INSTRUCTION',message)
                     //clear all input field
                     x.$store.commit('cart/CLEAR_CART');
 
-                    x.$router.push('/');
+                    x.$router.push('/payment-details');
 
                 }
 

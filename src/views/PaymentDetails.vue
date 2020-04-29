@@ -1,23 +1,7 @@
 <template>
    <app-master>
 
-    <div slot='breadcrumb'>
-        <app-breadcrumb>
-             <div class="title-box text-left">
-                  <div class="page-title-heading">
-                      <h1 class="title">Payment Details</h1>
-                  </div><!-- /.page-title-captions -->
-                  <div class="breadcrumb-wrapper">
-                      <span>
-                          <router-link to="/" tag="a" > <i class="ti ti-home"></i>&nbsp;&nbsp;Home </router-link>
-                      </span>
-                      <span class="ttm-bread-sep ttm-textcolor-white">&nbsp;   →  &nbsp;</span>
-                      <span class="ttm-textcolor-skincolor">Payment Details</span>
-                  </div>  
-              </div>
-        </app-breadcrumb>
-    </div>
-
+    
      <div slot="main-content">  
             <!-- services-section -->
             <section class="ttm-row faqpage-section clearfix">
@@ -26,7 +10,12 @@
                     <!-- row -->
                     <div class="row">
                         <div class="col-lg-12"  >
-                            <h5 id="order_review_heading">Your order has been place successfully </h5>
+                            <div class="coupon_toggle" >
+                                <div class="coupon_code">
+                                    <h5 id="order_review_heading" style="font-size: 1rem">Your order has been place successfully </h5>
+                                </div>
+                            </div>
+                           
                           <div class="accordion grey-background res-991-mt-30">
                               <!-- toggle -->
                                 <div class="toggle">
@@ -45,7 +34,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr class="cart_item" v-for="(item, index) in cart" :key="index+'item'">
+                                                <tr class="cart_item" v-for="(item, index) in cart_backup" :key="index+'item'">
                                                     <td class="product-name">{{ item.name }}  
                                                          <span v-if="item.weight">
                                                              ( {{ item.weight+' '+ item.unit }} )
@@ -66,7 +55,7 @@
                                                     <th>Subtotal</th>
                                                     <td>
                                                         <span class="Price-amount amount">
-                                                            <span class="Price-currencySymbol">&#8358;</span> {{ getCartTotal | number_format }}
+                                                            <span class="Price-currencySymbol">&#8358;</span> {{ getCartTotalBackup | number_format }}
                                                         </span>
                                                     </td>
                                                 </tr>
@@ -97,9 +86,70 @@
                                     </div>
                                     <div :class="{ block: this.menu.collapseTwoData }" class="toggle-content" >
                                         <div class="row">
-                                            <div class="col-sm-12">
-                                                <p class="mb-0"> Lemongrass oil is applied topically. Because lemongrass essential oil is highly concentrated, it should not be used directly on the skin. For use in aromatherapy, you can inhale lemongrass oil directly. Add a few drops of lemongrass oil into carrier oil of your choice, then mix into a warm bath or massage into skin.</p>
+
+                                             <div class="col-sm-12">
+                                                <div class="instruction-bloc">
+                                                      <div class="instruction-bloc__subtitle">
+                                                          <p>Bank Name </p>
+                                                      </div>
+
+                                                      <div class="instruction-bloc__title">
+                                                          <p> {{ payment_instruction.bank_name }} </p>
+                                                      </div>
+                                                </div>
+
+
+                                                <div class="instruction-bloc">
+                                                      <div class="instruction-bloc__subtitle">
+                                                          <p> Account Name </p>
+                                                      </div>
+
+                                                      <div class="instruction-bloc__title">
+                                                          <p> {{ payment_instruction.acc_name }} </p>
+                                                      </div>
+                                                </div>
+
+                                                <div class="instruction-bloc">
+                                                      <div class="instruction-bloc__subtitle">
+                                                          <p> Account Number </p>
+                                                      </div>
+
+                                                      <div class="instruction-bloc__title">
+                                                          <p> {{payment_instruction.acc_no}} </p>
+                                                      </div>
+                                                </div>
+
+                                                 <div class="instruction-bloc">
+                                                      <div class="instruction-bloc__subtitle">
+                                                          <p> Payment Amount </p>
+                                                      </div>
+
+                                                      <div class="instruction-bloc__title">
+                                                          <p> &#8358;  {{ getCartWithShippingTotal | number_format }} </p>
+                                                      </div>
+                                                </div>
+
+                                                <div class="instruction-bloc">
+                                                      <div class="instruction-bloc__subtitle">
+                                                          <p> Order ID </p>
+                                                      </div>
+
+                                                      <div class="instruction-bloc__title">
+                                                          <p>  {{ payment_instruction.order_id }} </p>
+                                                      </div>
+                                                </div>
+
+                                               
                                             </div>
+
+                                            <div class="col-sm-12">
+                                                <p class="mb-0 note" > Kindly call <span class="highlight">{{ payment_instruction.outlet_telephone }} </span> to confirm payment.</p>
+                                            </div>
+
+                                            
+
+
+                                            
                                         </div>
                                     </div>
                                 </div><!-- toggle end -->
@@ -143,7 +193,7 @@ export default {
         ...mapState(
           'cart',
           [
-          'cart',
+          'cart_backup',
           ]
         ),
 
@@ -154,11 +204,18 @@ export default {
           ]
         ),
 
+
+        ...mapState(
+          'paymentdetails',
+          [
+          'payment_instruction',
+          ]
+        ),
+
       ...mapGetters(
-          'checkout',
+          'paymentdetails',
           [
               'getCartWithShippingTotal',
-              'getFormData'
           ]
       ),
 
@@ -166,7 +223,7 @@ export default {
       ...mapGetters(
           'cart',
           [
-              'getCartTotal'
+            'getCartTotalBackup'
           ]
       ),
 
@@ -177,54 +234,7 @@ export default {
   },
 
   methods: {
-      api_calls(type){
-          let x = this;
-           /** Start loader gif */
-          this.showLoading();
-          
-          let key = { key: this.API_KEY };
-          if(type == 'PLACE_ORDER'){
-              this.$store.dispatch('checkout/place_order',key).then((response) => {
-
-                  console.log(response);
-                 
-                /** If response status is 200 */
-                if(response.status == 200){
-
-                    x.showNotif({type: 'successLong', message: response.data.message });
-
-                    //clear all input field
-                    x.$store.commit('cart/CLEAR_CART');
-
-                    x.$router.push('/');
-
-                }
-
-                  
-                /** If response status is 400 or 404 */
-                if(response.status == 400 || response.status == 404){
-                  x.showNotif({type: 'warning', message: response.data.message });
-
-                }
-
-                /** If response contains error */
-                if(response.data.errors){
-                  x.showNotif({type: 'warning', message: response.data.errors });
-                  
-                }
-
-
-                 x.hideLoading();
-
-              })
-          }
-
-
-          
-              /** End loader gif */
-              this.hideLoading();
-
-      },
+     
       display(val){
           let x = this;
           let obj = x.menu;
@@ -251,8 +261,7 @@ export default {
       this.seoMetaData('Payment-details', ' ');
 
     //   //Middleware 
-    //   this.cartMiddleware();
-    //   this.shippingMiddleware();
+      this.paymentDetailsMiddleware();
       this.display("collapseTwoData");
   }
 
@@ -290,6 +299,63 @@ export default {
 .bg-dark:hover,
 .bg-dark:active{
     background: #232323!important;
+}
+
+
+.instruction-bloc{
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: #f7f7f6;
+    padding: 10px 5px 0px 20px;
+    
+    margin: 5px 4px;
+    width: 48%;
+}
+
+
+.instruction-bloc__subtitle p{
+    line-height: 1;
+    color: green;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+
+}
+
+
+.instruction-bloc__title p{
+    font: inherit;
+    font-weight: 500;
+    color: #000000b8;
+    margin-bottom: 5px;
+
+}
+
+
+.note{
+    border-left: 2px solid teal;
+    padding: 1rem;
+}
+
+
+.highlight{
+    color: green;
+}
+
+
+
+@media (min-width: 0px) and (max-width: 600px){
+    .accordion .toggle-content {
+    padding: 4px 4px;
+    overflow: hidden;
+
+    }
+
+    .instruction-bloc{
+        display: block;
+        width: 100%;
+    }
 }
 
 </style>

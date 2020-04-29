@@ -6,6 +6,7 @@ import category from "./category"
 import cart from "./cart"
 import checkout from "./checkout"
 import shipping from "./shipping"
+import paymentdetails from "./paymentdetails"
 import config from "./config"
 
 
@@ -25,6 +26,7 @@ export default new Vuex.Store({
     cart,
     checkout,
     shipping,
+    paymentdetails,
     config
   }
 });
