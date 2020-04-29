@@ -641,6 +641,27 @@ const state = {
             cost: '900',
             category : ' ',
         },
+        {
+            id: '92',
+            state: 'lagos',
+            zone: 'Alagbole',
+            cost: '1000',
+            category : ' ',
+        },
+        {
+            id: '93',
+            state: 'lagos',
+            zone: 'Opic',
+            cost: '1000',
+            category : ' ',
+        },
+        {
+            id: '94',
+            state: 'lagos',
+            zone: 'Akute',
+            cost: '1000',
+            category : ' ',
+        },
         
         
         
