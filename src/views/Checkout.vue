@@ -247,6 +247,7 @@ export default {
       //Middleware 
       this.cartMiddleware();
       this.shippingMiddleware();
+      this.shippingAddressMiddleware();
   }
 
   

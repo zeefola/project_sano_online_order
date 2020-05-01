@@ -6,6 +6,7 @@ const state = {
             id: '1',
             state: 'lagos',
             zone: 'Agbado/Oke-odo',
+            zone_tags: ['Agbado','Oke','Odo','Oke-Odo'],
             cost: '1000',
             
         },
@@ -13,6 +14,7 @@ const state = {
             id: '2',
             state: 'lagos',
             zone: 'Agboyi/Ketu',
+            zone_tags: ['Agboyi','ketu'],
             cost: '1000',
             
         },

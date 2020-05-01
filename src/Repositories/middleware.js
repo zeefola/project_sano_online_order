@@ -22,7 +22,24 @@ export const middleware ={
                  })
                  
             }
-      }, 
+      },
+
+      shippingAddressMiddleware(){
+          let x = this;
+          let shipping_zone = this.$store.state.shipping.shipping_details.zone.toLowerCase();
+          let shipping_address = this.$store.state.shipping.customer_details.address.toLowerCase();
+
+          if(shipping_address.includes(shipping_zone)){
+
+          }else{
+            x.$router.push('/shipping').then(() => {
+                x.showNotif({ type: 'warning', position: 'bottom-right', message: 'Ooops!! shipping address and shipping location do not match'});
+            })
+          }
+
+          
+      },
+
 
       paymentDetailsMiddleware(){
         let x = this;
