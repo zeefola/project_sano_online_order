@@ -19,19 +19,21 @@ const state = {
             
         },
 
-        {
-            id: '3',
-            state: 'oyo',
-            zone: 'Bodija',
-            cost: '500',
-            category : ' ',
-        },
+        // {
+        //     id: '3',
+        //     state: 'oyo',
+        //     zone: 'Bodija',
+        //     cost: '500',
+        //     zone_tags: ['bodija'],
+        //     category : ' ',
+        // },
 
         {
             id: '4',
             state: 'lagos',
             zone: 'Agege',
             cost: '1000',
+            zone_tags: ['agege'],
             category : ' ',
         },
         {
@@ -39,6 +41,7 @@ const state = {
             state: 'lagos',
             zone: 'Ajeromi',
             cost: '1500',
+            zone_tags: ['ajeromi'],
             category : ' ',
         },
         {
@@ -46,6 +49,7 @@ const state = {
             state: 'lagos',
             zone: 'Alimosho',
             cost: '1500',
+            zone_tags: ['alimosho'],
             category : ' ',
         },
         {
@@ -53,6 +57,7 @@ const state = {
             state: 'lagos',
             zone: 'Apapa',
             cost: '1500',
+            zone_tags: ['apapa'],
             category : ' ',
         },
         {
@@ -60,6 +65,7 @@ const state = {
             state: 'lagos',
             zone: 'Apapa-Iganmu',
             cost: '1500',
+            zone_tags: ['apapa-iganmu'],
             category : ' ',
         },
         {
@@ -67,6 +73,7 @@ const state = {
             state: 'lagos',
             zone: 'Ayobo/Ipaja',
             cost: '1500',
+            zone_tags: ['ayobo','ipaja'],
             category : ' ',
         },
         // {
@@ -88,6 +95,7 @@ const state = {
             state: 'lagos',
             zone: 'Bariga',
             cost: '1000',
+            zone_tags: ['bariga'],
             category : ' ',
         },
         {
@@ -95,6 +103,7 @@ const state = {
             state: 'lagos',
             zone: 'Coker Aguda',
             cost: '1000',
+            zone_tags: ['coker','aguda'],
             category : ' ',
         },
         {
@@ -102,6 +111,7 @@ const state = {
             state: 'lagos',
             zone: 'Egbe Idimu',
             cost: '1500',
+            zone_tags:['egbe','idimu'],
             category : ' ',
         },
         {
@@ -109,6 +119,7 @@ const state = {
             state: 'lagos',
             zone: 'Ejigbo',
             cost: '1500',
+            zone_tags:['ejigbo'],
             category : ' ',
         },
         // {
@@ -130,6 +141,7 @@ const state = {
             state: 'lagos',
             zone: 'Eti Osa East',
             cost: '1500',
+            zone_tags:['eti osa east'],
             category : ' ',
         },
         {
@@ -137,6 +149,7 @@ const state = {
             state: 'lagos',
             zone: 'Eti Osa West',
             cost: '1500',
+            zone_tags:['eti osa west'],
             category : ' ',
         },
         {
@@ -144,6 +157,7 @@ const state = {
             state: 'lagos',
             zone: 'Iba',
             cost: '1500',
+            zone_tags:['iba'],
             category : ' ',
         },
         {
@@ -151,6 +165,7 @@ const state = {
             state: 'lagos',
             zone: 'Isolo',
             cost: '1000',
+            zone_tags: ['isolo'],
             category : ' ',
         },
         // {
@@ -165,6 +180,7 @@ const state = {
             state: 'lagos',
             zone: 'Ikoyi',
             cost: '1500',
+            zone_tags: ['ikoyi'],
             category : ' ',
         },
         {
@@ -172,6 +188,7 @@ const state = {
             state: 'lagos',
             zone: 'Ibeju',
             cost: '2000',
+            zone_tags: ['ibeju'],
             category : ' ',
         },
         {
@@ -179,6 +196,7 @@ const state = {
             state: 'lagos',
             zone: 'Ifako-Ijaiye',
             cost: '1000',
+            zone_tags: ['ifako', 'ijaiye', 'ifako-ijaiye'],
             category : ' ',
         },
         // {
@@ -193,6 +211,7 @@ const state = {
             state: 'lagos',
             zone: 'Igando/Ikotun',
             cost: '1500',
+            zone_tags: ['igando', 'ikotun'],
             category : ' ',
         },
         {
@@ -200,6 +219,7 @@ const state = {
             state: 'lagos',
             zone: 'Igbogbo/Bayeku',
             cost: '1500',
+            zone_tags: ['igbogbo' , 'bayeku'],
             category : ' ',
         },
         {
@@ -207,6 +227,7 @@ const state = {
             state: 'lagos',
             zone: 'Ikeja',
             cost: '1000',
+            zone_tags: ['ikeja'],
             category : ' ',
         },
         // {
@@ -221,6 +242,7 @@ const state = {
             state: 'lagos',
             zone: 'Ikorodu North',
             cost: '1500',
+            zone_tags: ['ikorodu north'],
             category : ' ',
         },
         {
@@ -228,6 +250,7 @@ const state = {
             state: 'lagos',
             zone: 'Ikorodu West',
             cost: '1500',
+            zone_tags: ['ikorodu west'],
             category : ' ',
         },
         // {
@@ -242,6 +265,7 @@ const state = {
             state: 'lagos',
             zone: 'Ikorodu',
             cost: '1500',
+            zone_tags: ['ikorodu'],
             category : ' ',
         },
         {
@@ -249,6 +273,7 @@ const state = {
             state: 'lagos',
             zone: 'Iru/Victoria Island',
             cost: '1500',
+            zone_tags: ['iru', 'victoria island'],
             category : ' ',
         },
         {
@@ -256,6 +281,7 @@ const state = {
             state: 'lagos',
             zone: 'Itire Ikate',
             cost: '1500',
+            zone_tags: ['itire ikate'],
             category : ' ',
         },
         {
@@ -263,6 +289,7 @@ const state = {
             state: 'lagos',
             zone: 'Lagos Island West',
             cost: '1500',
+            zone_tags: ['victoria island west'],
             category : ' ',
         },
         {
@@ -270,6 +297,7 @@ const state = {
             state: 'lagos',
             zone: 'Lagos Island East',
             cost: '1500',
+            zone_tags: ['victoria island east'],
             category : ' ',
         },
         {
@@ -277,6 +305,7 @@ const state = {
             state: 'lagos',
             zone: 'Lekki',
             cost: '1500',
+            zone_tags: ['lekki'],
             category : ' ',
         },
         {
@@ -284,6 +313,7 @@ const state = {
             state: 'lagos',
             zone: 'Mushin',
             cost: '1000',
+            zone_tags: ['mushin'],
             category : ' ',
         },
         {
@@ -291,6 +321,7 @@ const state = {
             state: 'lagos',
             zone: 'Olowo/Ojuwoye',
             cost: '1000',
+            zone_tags: ['olowo', 'ojuwoye'],
             category : ' ',
         },
         {
@@ -298,6 +329,7 @@ const state = {
             state: 'lagos',
             zone: 'Ojo',
             cost: '1500',
+            zone_tags: ['ojo'],
             category : ' ',
         },
         {
@@ -305,6 +337,7 @@ const state = {
             state: 'lagos',
             zone: 'Ojodu',
             cost: '1000',
+            zone_tags: ['ojodu'],
             category : ' ',
         },
         {
@@ -312,6 +345,7 @@ const state = {
             state: 'lagos',
             zone: 'Ojokoro',
             cost: '1000',
+            zone_tags: ['ojokoro'],
             category : ' ',
         },
         {
@@ -319,6 +353,7 @@ const state = {
             state: 'lagos',
             zone: 'Onigbongbo/Maryland',
             cost: '1000',
+            zone_tags: ['onigbongbo', 'maryland'],
             category : ' ',
         },
         {
@@ -326,6 +361,7 @@ const state = {
             state: 'lagos',
             zone: 'Orile Agege',
             cost: '1000',
+            zone_tags: ['orile agege'],
             category : ' ',
         },
         {
@@ -333,6 +369,7 @@ const state = {
             state: 'lagos',
             zone: 'Oshodi',
             cost: '1000',
+            zone_tags: ['oshodi'],
             category : ' ',
         },
         {
@@ -340,6 +377,7 @@ const state = {
             state: 'lagos',
             zone: 'Shomolu',
             cost: '1000',
+            zone_tags: ['shomolu'],
             category : ' ',
         },
         {
@@ -347,6 +385,7 @@ const state = {
             state: 'lagos',
             zone: 'Surulere',
             cost: '1000',
+            zone_tags: ['surulere'],
             category : ' ',
         },
         {
@@ -354,6 +393,7 @@ const state = {
             state: 'lagos',
             zone: 'Yaba',
             cost: '1000',
+            zone_tags: ['yaba'],
             category : ' ',
         },
         {
@@ -361,6 +401,7 @@ const state = {
             state: 'oyo',
             zone: 'Bodija',
             cost: '500',
+            zone_tags: ['bodija'],
             category : ' ',
         },
         {
@@ -368,6 +409,7 @@ const state = {
             state: 'oyo',
             zone: 'Ojoo',
             cost: '700',
+            zone_tags: ['ojoo'],
             category : ' ',
         },
         {
@@ -375,6 +417,7 @@ const state = {
             state: 'oyo',
             zone: 'UI',
             cost: '600',
+            zone_tags: ['ui'],
             category : ' ',
         },
         {
@@ -382,6 +425,7 @@ const state = {
             state: 'oyo',
             zone: 'Mokola',
             cost: '600',
+            zone_tags: ['mokola'],
             category : ' ',
         },
         {
@@ -389,6 +433,7 @@ const state = {
             state: 'oyo',
             zone: 'Shoprite',
             cost: '700',
+            zone_tags: ['shoprite'],
             category : ' ',
         },
         {
@@ -396,6 +441,7 @@ const state = {
             state: 'oyo',
             zone: 'Bashorun',
             cost: '600',
+            zone_tags: ['bashorun'],
             category : ' ',
         },
         {
@@ -403,6 +449,7 @@ const state = {
             state: 'oyo',
             zone: 'Challenge',
             cost: '700',
+            zone_tags: ['challenge'],
             category : ' ',
         },
         {
@@ -410,6 +457,7 @@ const state = {
             state: 'oyo',
             zone: 'Iwo-road',
             cost: '800',
+            zone_tags: ['iwo-road'],
             category : ' ',
         },
         {
@@ -417,6 +465,7 @@ const state = {
             state: 'oyo',
             zone: 'Ajibode',
             cost: '700',
+            zone_tags: ['ajibode'],
             category : ' ',
         },
         {
@@ -424,6 +473,7 @@ const state = {
             state: 'oyo',
             zone: 'Sango',
             cost: '800',
+            zone_tags: ['sango'],
             category : ' ',
         },
         {
@@ -431,6 +481,7 @@ const state = {
             state: 'oyo',
             zone: 'Eleyele',
             cost: '600',
+            zone_tags: ['eleyele'],
             category : ' ',
         },
         {
@@ -438,6 +489,7 @@ const state = {
             state: 'oyo',
             zone: 'Ologuneru',
             cost: '800',
+            zone_tags: ['ologuneru'],
             category : ' ',
         },
         {
@@ -445,6 +497,7 @@ const state = {
             state: 'oyo',
             zone: 'Apata',
             cost: '800',
+            zone_tags: ['apata'],
             category : ' ',
         },
         {
@@ -452,6 +505,7 @@ const state = {
             state: 'oyo',
             zone: 'Oluyole',
             cost: '700',
+            zone_tags: ['oluyole'],
             category : ' ',
         },
         {
@@ -459,6 +513,7 @@ const state = {
             state: 'oyo',
             zone: 'Dugbe',
             cost: '700',
+            zone_tags: ['dugbe'],
             category : ' ',
         },
         {
@@ -466,6 +521,7 @@ const state = {
             state: 'oyo',
             zone: 'Ajibade',
             cost: '500',
+            zone_tags: ['ajibade'],
             category : ' ',
         },
         {
@@ -473,6 +529,7 @@ const state = {
             state: 'oyo',
             zone: 'Akobo',
             cost: '700',
+            zone_tags: ['akobo'],
             category : ' ',
         },
         {
@@ -480,6 +537,7 @@ const state = {
             state: 'oyo',
             zone: 'Aleshinloye',
             cost: '700',
+            zone_tags: ['aleshinloye'],
             category : ' ',
         },
         {
@@ -487,6 +545,7 @@ const state = {
             state: 'oyo',
             zone: 'UCH',
             cost: '700',
+            zone_tags: ['uch'],
             category : ' ',
         },
         {
@@ -494,6 +553,7 @@ const state = {
             state: 'oyo',
             zone: 'Ring-road',
             cost: '800',
+            zone_tags: ['ring-road'],
             category : ' ',
         },
         {
@@ -501,6 +561,7 @@ const state = {
             state: 'oyo',
             zone: 'Elebu',
             cost: '1000',
+            zone_tags: ['elebu'],
             category : ' ',
         },
         {
@@ -508,6 +569,7 @@ const state = {
             state: 'oyo',
             zone: 'Moniya',
             cost: '1000',
+            zone_tags:['moniya'],
             category : ' ',
         },
         {
@@ -515,6 +577,7 @@ const state = {
             state: 'oyo',
             zone: 'Agbaje',
             cost: '1000',
+            zone_tags: ['agbaje'],
             category : ' ',
         },
         {
@@ -522,6 +585,7 @@ const state = {
             state: 'oyo',
             zone: 'Alakia Olosan',
             cost: '1000',
+            zone_tags: ['alakia olosan'],
             category : ' ',
         },
         {
@@ -529,6 +593,7 @@ const state = {
             state: 'oyo',
             zone: 'Soka',
             cost: '1000',
+            zone_tags: ['soka'],
             category : ' ',
         },
         {
@@ -536,6 +601,7 @@ const state = {
             state: 'oyo',
             zone: 'Olomi',
             cost: '1000',
+            zone_tags: ['olomi'],
             category : ' ',
         },
         {
@@ -543,6 +609,7 @@ const state = {
             state: 'oyo',
             zone: 'Agbowo',
             cost: '500',
+            zone_tags: ['agbowo'],
             category : ' ',
         },
         {
@@ -550,6 +617,7 @@ const state = {
             state: 'oyo',
             zone: 'Ijokodo',
             cost: '600',
+            zone_tags: ['ijokodo'],
             category : ' ',
         },
         {
@@ -557,6 +625,7 @@ const state = {
             state: 'oyo',
             zone: 'Gbagi',
             cost: '800',
+            zone_tags: ['gbagi'],
             category : ' ',
         },
         {
@@ -564,6 +633,7 @@ const state = {
             state: 'oyo',
             zone: 'Tipper garage',
             cost: '1000',
+            zone_tags: ['tipper garage'],
             category : ' ',
         },
         {
@@ -571,6 +641,7 @@ const state = {
             state: 'ogun',
             zone: 'Rounder',
             cost: '700',
+            zone_tags: ['rounder'],
             category : ' ',
         },
         {
@@ -578,6 +649,7 @@ const state = {
             state: 'ogun',
             zone: 'Lafenwa',
             cost: '700',
+            zone_tags: ['lafenwa'],
             category : ' ',
         },
         {
@@ -585,6 +657,7 @@ const state = {
             state: 'ogun',
             zone: 'Itaoshin',
             cost: '800',
+            zone_tags: ['itaoshin'],
             category : ' ',
         },
         {
@@ -592,6 +665,7 @@ const state = {
             state: 'ogun',
             zone: 'Olomore',
             cost: '800',
+            zone_tags: ['olomore'],
             category : ' ',
         },
         {
@@ -599,6 +673,7 @@ const state = {
             state: 'ogun',
             zone: 'Abiola way',
             cost: '900',
+            zone_tags: ['abiola way'],
             category : ' ',
         },
         {
@@ -606,6 +681,7 @@ const state = {
             state: 'ogun',
             zone: 'Idi-aba',
             cost: '900',
+            zone_tags: ['idi-aba'],
             category : ' ',
         },
         {
@@ -613,6 +689,7 @@ const state = {
             state: 'ogun',
             zone: 'Ibara',
             cost: '900',
+            zone_tags: ['ibara'],
             category : ' ',
         },
         {
@@ -620,6 +697,7 @@ const state = {
             state: 'ogun',
             zone: 'Asero',
             cost: '1000',
+            zone_tags: ['asero'],
             category : ' ',
         },
         {
@@ -627,6 +705,7 @@ const state = {
             state: 'ogun',
             zone: 'Obantoko',
             cost: '1000',
+            zone_tags: ['obantoko'],
             category : ' ',
         },
         {
@@ -634,6 +713,7 @@ const state = {
             state: 'ogun',
             zone: 'Camp',
             cost: '1000',
+            zone_tags: ['camp'],
             category : ' ',
         },
         {
@@ -641,6 +721,7 @@ const state = {
             state: 'ogun',
             zone: 'Elega',
             cost: '900',
+            zone_tags: ['elega'],
             category : ' ',
         },
         {
@@ -648,6 +729,7 @@ const state = {
             state: 'lagos',
             zone: 'Alagbole',
             cost: '1000',
+            zone_tags: ['alagbole'],
             category : ' ',
         },
         {
@@ -655,6 +737,7 @@ const state = {
             state: 'lagos',
             zone: 'Opic',
             cost: '1000',
+            zone_tags: ['opic'],
             category : ' ',
         },
         {
@@ -662,6 +745,15 @@ const state = {
             state: 'lagos',
             zone: 'Akute',
             cost: '1000',
+            zone_tags: ['akute'],
+            category : ' ',
+        },
+        {
+            id: '95',
+            state: 'lagos',
+            zone: 'Mile 2/Amuwo Odofin',
+            cost: '1000',
+            zone_tags: ['mile 2', 'amuwo odofin'],
             category : ' ',
         },
         
