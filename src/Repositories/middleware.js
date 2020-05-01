@@ -32,8 +32,9 @@ export const middleware ={
 
 
           //looping through the shipping_zone_tags
-          for(var tag in shipping_zone_tags){
-            if(shipping_address.toLowerCase().includes(tag.toLowerCase())){
+          for(var tag of shipping_zone_tags){
+
+            if(shipping_address.includes(tag.toLowerCase())){
                 result = true;
             }
 

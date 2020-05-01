@@ -65,7 +65,7 @@ const state = {
             state: 'lagos',
             zone: 'Apapa-Iganmu',
             cost: '1500',
-            zone_tags: ['apapa-iganmu'],
+            zone_tags: ['apapa','iganmu'],
             category : ' ',
         },
         {
@@ -141,7 +141,7 @@ const state = {
             state: 'lagos',
             zone: 'Eti Osa East',
             cost: '1500',
-            zone_tags:['eti osa east'],
+            zone_tags:['eti','osa','east'],
             category : ' ',
         },
         {
@@ -149,7 +149,7 @@ const state = {
             state: 'lagos',
             zone: 'Eti Osa West',
             cost: '1500',
-            zone_tags:['eti osa west'],
+            zone_tags:['eti osa','eti','osa','west'],
             category : ' ',
         },
         {
@@ -242,7 +242,7 @@ const state = {
             state: 'lagos',
             zone: 'Ikorodu North',
             cost: '1500',
-            zone_tags: ['ikorodu north'],
+            zone_tags: ['ikorodu','north'],
             category : ' ',
         },
         {
@@ -250,7 +250,7 @@ const state = {
             state: 'lagos',
             zone: 'Ikorodu West',
             cost: '1500',
-            zone_tags: ['ikorodu west'],
+            zone_tags: ['ikorodu','west'],
             category : ' ',
         },
         // {
@@ -273,7 +273,7 @@ const state = {
             state: 'lagos',
             zone: 'Iru/Victoria Island',
             cost: '1500',
-            zone_tags: ['iru', 'victoria island'],
+            zone_tags: ['iru', 'victoria','island'],
             category : ' ',
         },
         {
@@ -281,7 +281,7 @@ const state = {
             state: 'lagos',
             zone: 'Itire Ikate',
             cost: '1500',
-            zone_tags: ['itire ikate'],
+            zone_tags: ['itire','ikate'],
             category : ' ',
         },
         {
@@ -289,7 +289,7 @@ const state = {
             state: 'lagos',
             zone: 'Lagos Island West',
             cost: '1500',
-            zone_tags: ['victoria island west'],
+            zone_tags: ['victoria island west','victoria','island'],
             category : ' ',
         },
         {
@@ -297,7 +297,7 @@ const state = {
             state: 'lagos',
             zone: 'Lagos Island East',
             cost: '1500',
-            zone_tags: ['victoria island east'],
+            zone_tags: ['victoria island east','victoria','island'],
             category : ' ',
         },
         {
@@ -361,7 +361,7 @@ const state = {
             state: 'lagos',
             zone: 'Orile Agege',
             cost: '1000',
-            zone_tags: ['orile agege'],
+            zone_tags: ['orile','agege'],
             category : ' ',
         },
         {
@@ -457,7 +457,7 @@ const state = {
             state: 'oyo',
             zone: 'Iwo-road',
             cost: '800',
-            zone_tags: ['iwo-road'],
+            zone_tags: ['iwo-road','iwo'],
             category : ' ',
         },
         {
@@ -553,7 +553,7 @@ const state = {
             state: 'oyo',
             zone: 'Ring-road',
             cost: '800',
-            zone_tags: ['ring-road'],
+            zone_tags: ['ring-road','ring'],
             category : ' ',
         },
         {
@@ -585,7 +585,7 @@ const state = {
             state: 'oyo',
             zone: 'Alakia Olosan',
             cost: '1000',
-            zone_tags: ['alakia olosan'],
+            zone_tags: ['alakia','olosan'],
             category : ' ',
         },
         {
@@ -633,7 +633,7 @@ const state = {
             state: 'oyo',
             zone: 'Tipper garage',
             cost: '1000',
-            zone_tags: ['tipper garage'],
+            zone_tags: ['tipper','garage'],
             category : ' ',
         },
         {
@@ -673,7 +673,7 @@ const state = {
             state: 'ogun',
             zone: 'Abiola way',
             cost: '900',
-            zone_tags: ['abiola way'],
+            zone_tags: ['abiola','abiola way','way'],
             category : ' ',
         },
         {
@@ -753,7 +753,7 @@ const state = {
             state: 'lagos',
             zone: 'Mile 2/Amuwo Odofin',
             cost: '1000',
-            zone_tags: ['mile 2', 'amuwo odofin'],
+            zone_tags: ['mile 2', 'amuwo','odofin'],
             category : ' ',
         },
         
