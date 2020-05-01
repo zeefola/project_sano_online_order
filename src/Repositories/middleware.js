@@ -26,16 +26,27 @@ export const middleware ={
 
       shippingAddressMiddleware(){
           let x = this;
-          let shipping_zone = this.$store.state.shipping.shipping_details.zone.toLowerCase();
+          let shipping_zone_tags = this.$store.state.shipping.shipping_details.zone_tags;
           let shipping_address = this.$store.state.shipping.customer_details.address.toLowerCase();
+          let result =  false;
 
-          if(shipping_address.includes(shipping_zone)){
 
-          }else{
+          //looping through the shipping_zone_tags
+          for(var tag in shipping_zone_tags){
+            if(shipping_address.toLowerCase().includes(tag.toLowerCase())){
+                result = true;
+            }
+
+          }
+
+
+          if(result == false){
             x.$router.push('/shipping').then(() => {
-                x.showNotif({ type: 'warning', position: 'bottom-right', message: 'Ooops!! shipping address and shipping location do not match'});
+                x.showNotif({ type: 'warning', position: 'bottom-right', message: 'Ooops!! invalid shipping zone'});
             })
           }
+
+          
 
           
       },

@@ -680,6 +680,7 @@ const state = {
 
     shipping_details: {
         zone: '',
+        zone_tags: [],
         cost: 0,
     }
    
@@ -757,6 +758,7 @@ const mutations = {
     UPDATE_SHIPPING_DETAILS(state,zone){
         let data = state.shipping_rate.filter(rate => rate.zone === zone);
         state.shipping_details.cost = data[0].cost;
+        state.shipping_details.zone_tags = data[0].zone_tags;
         state.shipping_details.zone = zone;
        
     }
