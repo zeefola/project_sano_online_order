@@ -390,7 +390,7 @@ const state = {
         {
             id: '32',
             name: 'Lemongrass Hand Wash',
-            price: '300',
+            price: '600',
             featured_image: '/img/han.png',
             category : 'household materials',
             description: ' ',
