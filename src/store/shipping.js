@@ -756,6 +756,14 @@ const state = {
             zone_tags: ['mile 2', 'amuwo','odofin'],
             category : ' ',
         },
+        {
+            id: '96',
+            state: 'lagos',
+            zone: 'Ebute-Metta',
+            cost: '1500',
+            zone_tags: ['ebute-metta'],
+            category : ' ',
+        },
         
         
         
