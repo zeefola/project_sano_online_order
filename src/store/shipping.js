@@ -764,6 +764,30 @@ const state = {
             zone_tags: ['ebute-metta'],
             category : ' ',
         },
+        {
+            id: '97',
+            state: 'lagos',
+            zone: 'Ojota',
+            cost: '1000',
+            zone_tags: ['ojota'],
+            category : ' ',
+        },
+        {
+            id: '98',
+            state: 'lagos',
+            zone: 'Ogudu',
+            cost: '1000',
+            zone_tags: ['ogudu'],
+            category : ' ',
+        },
+        {
+            id: '99',
+            state: 'lagos',
+            zone: 'Magodo',
+            cost: '1000',
+            zone_tags: ['magodo'],
+            category : ' ',
+        },
         
         
         
