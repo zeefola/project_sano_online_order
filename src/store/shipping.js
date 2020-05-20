@@ -164,7 +164,7 @@ const state = {
             id: '21',
             state: 'lagos',
             zone: 'Isolo',
-            cost: '1000',
+            cost: '1500',
             zone_tags: ['isolo'],
             category : ' ',
         },
