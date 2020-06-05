@@ -60,6 +60,17 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
 
+    <script>
+      if(window.navigator && navigator.serviceWorker) {
+        navigator.serviceWorker.getRegistrations()
+        .then(function(registrations) {
+          for(let registration of registrations) {
+            registration.unregister();
+          }
+        });
+      }
+    </script>
+
     <script src="<%= BASE_URL %>js/jquery.min.js"></script>
     <script src="<%= BASE_URL %>js/tether.min.js"></script>
     <script src="<%= BASE_URL %>js/bootstrap.min.js"></script>
