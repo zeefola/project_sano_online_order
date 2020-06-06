@@ -184,10 +184,16 @@ export default {
 
      
         add_to_cart(payload){ 
-            let x = this;
-           this.$store.dispatch('cart/add_to_cart',payload).then((yes) =>{
-              x.showNotif({ type: 'success', position: 'bottom-right', message: 'Product added to cart'});
-           })
+
+             let x = this;
+            if(payload.availability == 'false'){
+                 x.showNotif({ type: 'warning', position: 'bottom-right', message: 'Selected product is not available'}); 
+            }else{
+                this.$store.dispatch('cart/add_to_cart',payload).then((response) =>{
+                  x.showNotif({ type: 'success', position: 'bottom-right', message: 'Product added to cart'});
+                })
+            }
+            
         }
 
 

@@ -23,7 +23,7 @@ module.exports = {
       before: app => {
         app.set('etag', 'strong')
         app.use((req, res, next) => {
-            //console.log('Hidddddddddddddddddd')
+            console.log('Hidddddddddddddddddd')
           res.set('Cache-Control', 'must-revalidate')
           next()
         })
