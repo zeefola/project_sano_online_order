@@ -23,7 +23,7 @@ const mutations = {
 
     
     ADD_TO_CART(state,payloadX){
-
+      
         //@ Step 1: Assigning PayloadX to payload
          let payload = {
            id: payloadX.id,
