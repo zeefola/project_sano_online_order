@@ -13,7 +13,7 @@ const state = {
             sub_category : 'fresh',
             description: ' ',
             unit: 'kg',
-            unit_rate: ['1.1','1.2'],
+            unit_rate: ['1.1','1.2','1.3','1.4'],
             weight: '1' // default
 
 
@@ -24,7 +24,7 @@ const state = {
             price: '5250',
             featured_image: '/img/11.png',
             category : 'fish & meat',
-            availability : 'false',
+            availability : 'true',
             sub_category : 'fresh',
             description: 'Parked in 5kg',
             unit: '',
@@ -633,6 +633,21 @@ const state = {
             unit: '',
             unit_rate: [],
             weight: '',
+
+        },
+
+        {
+            id: '48',
+            name: 'Dressed Turkey',
+            price: '1400',
+            featured_image: '/img/tuk.jpeg',
+            category : 'fish & meat',
+            availability : 'true',
+            sub_category : 'fresh',
+            description: ' ',
+            unit: 'kg',
+            unit_rate: ['1.0'],
+            weight: '1' 
 
         },
 
