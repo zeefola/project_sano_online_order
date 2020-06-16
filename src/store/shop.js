@@ -13,7 +13,7 @@ const state = {
             sub_category : 'fresh',
             description: ' ',
             unit: 'kg',
-            unit_rate: ['1.0','1.1','1.2','1.3','1.4'],
+            unit_rate: ['1.0','1.1'],
             weight: '1' // default
 
 
