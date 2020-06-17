@@ -624,7 +624,7 @@ const state = {
         {
             id: '47',
             name: 'Grilled Chicken',
-            price: '2000',
+            price: '2500',
             featured_image: '/img/pic.png',
             category : 'fish & meat',
             availability : 'true',
