@@ -423,7 +423,7 @@ const state = {
             price: '600',
             featured_image: '/img/han.png',
             category : 'household materials',
-            availability : 'true',
+            availability : 'false',
             description: ' ',
             unit: '',
             unit_rate: [],
