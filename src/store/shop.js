@@ -13,7 +13,7 @@ const state = {
             sub_category : 'fresh',
             description: ' ',
             unit: 'kg',
-            unit_rate: ['1.0','1.1'],
+            unit_rate: ['1.0','1.1','1.2','1.4','1.5'],
             weight: '1' // default
 
 
@@ -94,7 +94,7 @@ const state = {
             price: '1100',
             featured_image: '/img/16.png',
             category : 'fish & meat',
-            availability : 'true',
+            availability : 'false',
             sub_category : 'fresh',
             description: ' ',
             unit: '',
@@ -108,7 +108,7 @@ const state = {
             price: '1000',
             featured_image: '/img/17.png',
             category : 'fish & meat',
-            availability : 'true',
+            availability : 'false',
             sub_category : 'ready-to-eat',
             description: ' ',
             unit: '',
@@ -560,7 +560,7 @@ const state = {
             price: '3000 ',
             featured_image: '/img/rab.png',
             category : 'fish & meat',
-            availability : 'true',
+            availability : 'false',
             sub_category : 'fresh',
             description: ' ',
             unit: '',
