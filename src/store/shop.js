@@ -108,7 +108,7 @@ const state = {
             price: '1000',
             featured_image: '/img/17.png',
             category : 'fish & meat',
-            availability : 'false',
+            availability : 'true',
             sub_category : 'ready-to-eat',
             description: ' ',
             unit: '',
