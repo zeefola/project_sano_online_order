@@ -88,10 +88,11 @@
                                     <h4>Shipping Information</h4>
                                     <div class="row">
                                         <div class="col-sm-12">
-                                            <div class="form-group">
+                                            <div class="form-group" style="margin-bottom: 0.3rem">
                                                 <label>Shipping Address <abbr>*</abbr></label>
                                                 <textarea  class="form-control border" rows="4" v-model="address"></textarea>
-                                            </div>
+                                            </div> 
+                                            <p style="color: #B8B8B8;"> *** Please enter full shipping address with local government area. </p>
                                         </div>
 
                                          <div class="col-sm-12">
