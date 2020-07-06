@@ -796,6 +796,30 @@ const state = {
             zone_tags: ['festac'],
             category : ' ',
         },
+        {
+            id: '101',
+            state: 'lagos',
+            zone: 'Ajah',
+            cost: '2000',
+            zone_tags: ['ajah'],
+            category : ' ',
+        },
+        {
+            id: '102',
+            state: 'lagos',
+            zone: 'Sangotedo',
+            cost: '2000',
+            zone_tags: ['sangotedo'],
+            category : ' ',
+        },
+        {
+            id: '103',
+            state: 'lagos',
+            zone: 'Ahoyaya',
+            cost: '2000',
+            zone_tags: ['ahoyaya'],
+            category : ' ',
+        },
         
         
         
