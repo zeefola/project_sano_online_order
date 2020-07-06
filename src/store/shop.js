@@ -6,7 +6,7 @@ const state = {
         {
             id: '1',
             name: 'Dressed Chicken',
-            price: '1000',
+            price: '1150',
             featured_image: '/img/10.png',
             category : 'fish & meat',
             availability : 'true',
