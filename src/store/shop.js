@@ -13,7 +13,7 @@ const state = {
             sub_category : 'fresh',
             description: ' ',
             unit: 'kg',
-            unit_rate: ['1.0','1.1','1.2','1.3','1.4','1.5'],
+            unit_rate: ['1.0','1.1','1.4','1.5'],
             weight: '1' // default
 
 
@@ -21,7 +21,7 @@ const state = {
         {
             id: '2',
             name: '4 Parts Cut',
-            price: '5250',
+            price: '6000',
             featured_image: '/img/11.png',
             category : 'fish & meat',
             availability : 'true',
@@ -35,7 +35,7 @@ const state = {
         {
             id: '3',
             name: '8 Parts Cut',
-            price: '1050',
+            price: '1200',
             featured_image: '/img/12.png',
             category : 'fish & meat',
             availability : 'true',
@@ -63,7 +63,7 @@ const state = {
         {
             id: '5',
             name: 'Chicken Gizzard',
-            price: '1200',
+            price: '1350',
             featured_image: '/img/14.png',
             category : 'fish & meat',
             availability : 'true',
@@ -77,7 +77,7 @@ const state = {
         {
             id: '6',
             name: 'Chicken Laps',
-            price: '1200',
+            price: '1350',
             featured_image: '/img/lap.png',
             category : 'fish & meat',
             availability : 'true',
@@ -91,7 +91,7 @@ const state = {
         {
             id: '7',
             name: 'Chicken Breast With Bone',
-            price: '1100',
+            price: '1250',
             featured_image: '/img/16.png',
             category : 'fish & meat',
             availability : 'false',
@@ -119,7 +119,7 @@ const state = {
         {
             id: '9',
             name: 'Chicken Wings',
-            price: '1100',
+            price: '125',
             featured_image: '/img/18.png',
             category : 'fish & meat',
             availability : 'true',
@@ -133,7 +133,7 @@ const state = {
         {
             id: '10',
             name: 'Chicken Neck',
-            price: '500',
+            price: '600',
             featured_image: '/img/19.png',
             category : 'fish & meat',
             availability : 'true',
@@ -147,7 +147,7 @@ const state = {
         {
             id: '11',
             name: 'Chicken Back',
-            price: '750',
+            price: '850',
             featured_image: '/img/33.png',
             category : 'fish & meat',
             availability : 'true',
@@ -501,7 +501,7 @@ const state = {
         {
             id: '38',
             name: 'Picante Laps',
-            price: ' 2300',
+            price: ' 2500',
             featured_image: '/img/laps.png',
             category : 'fish & meat',
             availability : 'true',
@@ -515,7 +515,7 @@ const state = {
         {
             id: '39',
             name: 'Picante Wings',
-            price: ' 2100',
+            price: ' 2300',
             featured_image: '/img/wings.png',
             category : 'fish & meat',
             sub_category : 'ready-to-eat',
