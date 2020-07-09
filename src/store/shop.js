@@ -13,7 +13,7 @@ const state = {
             sub_category : 'fresh',
             description: ' ',
             unit: 'kg',
-            unit_rate: ['1.0','1.1','1.4','1.5'],
+            unit_rate: ['1.0','1.1','1.2','1.3','1.4','1.5'],
             weight: '1' // default
 
 
@@ -94,7 +94,7 @@ const state = {
             price: '1250',
             featured_image: '/img/16.png',
             category : 'fish & meat',
-            availability : 'false',
+            availability : 'true',
             sub_category : 'fresh',
             description: ' ',
             unit: '',
