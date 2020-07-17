@@ -41,9 +41,9 @@ const state = {
             availability : 'true',
             sub_category : 'fresh',
             description: ' ',
-            unit: '',
-            unit_rate: [],
-            weight: '',
+            unit: 'kg',
+            unit_rate: ['1.0','1.3','1.4'],
+            weight: '1' // default
 
         },
         {
@@ -639,7 +639,7 @@ const state = {
         {
             id: '48',
             name: 'Dressed Turkey',
-            price: '1400',
+            price: '1000',
             featured_image: '/img/tuk.jpeg',
             category : 'fish & meat',
             availability : 'true',
