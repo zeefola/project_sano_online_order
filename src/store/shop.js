@@ -119,7 +119,7 @@ const state = {
         {
             id: '9',
             name: 'Chicken Wings',
-            price: '125',
+            price: '1250',
             featured_image: '/img/18.png',
             category : 'fish & meat',
             availability : 'true',
