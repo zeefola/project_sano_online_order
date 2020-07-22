@@ -204,7 +204,7 @@ const state = {
         {
             id: '15',
             name: 'Garri (1kg)',
-            price: '300',
+            price: '400',
             featured_image: '/img/24.png',
             category : 'staples & vegetables',
             availability : 'true',
@@ -585,7 +585,7 @@ const state = {
         {
             id: '44',
             name: 'Garri (2kg)',
-            price: '550',
+            price: '750',
             featured_image: '/img/gabig.png',
             category : 'staples & vegetables',
             availability : 'true',
@@ -598,7 +598,7 @@ const state = {
         {
             id: '45',
             name: 'OFSP Garri (1kg)',
-            price: '500',
+            price: '700',
             featured_image: '/img/ofsp 1.png',
             category : 'staples & vegetables',
             availability : 'true',
@@ -611,7 +611,7 @@ const state = {
         {
             id: '46',
             name: 'OFSP Garri (2kg)',
-            price: '1000',
+            price: '1200',
             featured_image: '/img/ofsp 2.png',
             category : 'staples & vegetables',
             availability : 'true',
