@@ -52,7 +52,7 @@ const state = {
             price: '1400',
             featured_image: '/img/13.png',
             category : 'fish & meat',
-            availability : 'false',
+            availability : 'true',
             sub_category : 'fresh',
             description: ' ',
             unit: '',
@@ -650,6 +650,32 @@ const state = {
             weight: '1' 
 
         },
+        {
+            id: '49',
+            name: 'OFSP Bread',
+            price: '350',
+            featured_image: '/img/bread.jpg',
+            category : 'sano bakery',
+            availability : 'true',
+            description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
+
+        },
+        {
+            id: '49',
+            name: 'Lemongrass juice with pineapple',
+            price: '150',
+            featured_image: '/img/pineapple.png',
+            category : 'natural drinks',
+            availability : 'true',
+            description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
+
+        },
 
 
         
@@ -681,6 +707,18 @@ const state = {
             name: 'Household Materials',
             featured_image: '/img/hus.png',
             description: 'Our selection of household materials is formulated to keep you clean, safe, and healthy.',
+        },
+        {
+            id: '5',
+            name: 'SANO Bakery',
+            featured_image: '/img/bakery.png',
+            description: 'Experience Vitamin in every bite of all Sano Bakery Products.',
+        },
+        {
+            id: '6',
+            name: 'Natural Drinks',
+            featured_image: '/img/drink_banner_new.png',
+            description: 'Enjoy refreshing boost on every sip of Sano Natural Drinks.',
         }
     ],
 
