@@ -204,7 +204,7 @@ const state = {
         {
             id: '15',
             name: 'Garri (1kg)',
-            price: '400',
+            price: '350',
             featured_image: '/img/24.png',
             category : 'staples & vegetables',
             availability : 'true',
@@ -585,7 +585,7 @@ const state = {
         {
             id: '44',
             name: 'Garri (2kg)',
-            price: '750',
+            price: '650',
             featured_image: '/img/gabig.png',
             category : 'staples & vegetables',
             availability : 'true',
