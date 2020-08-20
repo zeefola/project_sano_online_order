@@ -80,7 +80,7 @@ const state = {
             price: '1350',
             featured_image: '/img/lap.png',
             category : 'fish & meat',
-            availability : 'true',
+            availability : 'false',
             sub_category : 'fresh',
             description: ' ',
             unit: '',
