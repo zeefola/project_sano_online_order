@@ -663,8 +663,35 @@ const state = {
             weight: '',
 
         },
+
         {
-            id: '49',
+            id: '50',
+            name: 'Bread Rolls',
+            price: '350',
+            featured_image: '/img/roll.png',
+            category : 'sano bakery',
+            availability : 'true',
+            description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
+
+        },
+        {
+            id: '51',
+            name: 'Coconut Bread',
+            price: '350',
+            featured_image: '/img/coconut.png',
+            category : 'sano bakery',
+            availability : 'true',
+            description: ' ',
+            unit: '',
+            unit_rate: [],
+            weight: '',
+
+        },
+        {
+            id: '52',
             name: 'Lemongrass juice with pineapple',
             price: '150',
             featured_image: '/img/pineapple.png',
